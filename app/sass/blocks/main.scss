@@ -1,0 +1,109 @@
+.main {
+  &-about {
+    padding-top: 10rem;
+    background-color: #eaebf0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-about__top {
+    border-bottom: 0.1rem solid;
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &-about__top-container {
+    padding-bottom: 6rem;
+    position: relative;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-about__top-desc-title {
+    text-align: right;
+    font-family: 'Good Timing', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 130%;
+    color: #67bf22;
+    max-width: 28rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &-about__top-desc-btn {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+    &:hover {
+      .main-about__top-desc-btn-title {
+        color: #67bf22;
+        transition: all 0.2s ease-in-out;
+      }
+      .main-about__top-desc-btn-img {
+        background: url(../../img/icon/arrows-green.svg) no-repeat center;
+        background-size: cover;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &-about__top-desc-btn-title {
+    color: #2c2a3b;
+    font-family: 'Good Timing', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+
+  &-about__top-desc-btn-img {
+    background: url(../../img/icon/arrows-black.svg) no-repeat center;
+    background-size: cover;
+    width: 3rem;
+    height: 1.4rem;
+  }
+
+  &-about__bottom {
+    display: flex;
+    column-gap: 6rem;
+    padding: 6rem 0 15rem 0;
+    width: 162rem;
+    margin: 0 auto;
+  }
+
+  &-about__bottom-logo {
+    width: 49.2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  &-about__bottom-text {
+    color: #2c2a3b;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 140%;
+    width: 49.2rem;
+  }
+
+  &-about__bottom-logo {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+
+  &-about__bottom-logo-img {
+    width: 18rem;
+    height: 6.5rem;
+  }
+
+  &-about__bg {
+    position: absolute;
+    width: 48rem;
+    height: 48rem;
+    border-radius: 48rem;
+    background: rgba(121, 203, 15, 0.5);
+    filter: blur(25rem);
+    bottom: -30rem;
+    right: 48rem;
+  }
+}
