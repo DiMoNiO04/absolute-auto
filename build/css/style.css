@@ -43,7 +43,7 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-  box-sizing: content-box; /* 1 */
+          box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -74,7 +74,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted; /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -173,9 +173,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -183,9 +183,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -194,9 +194,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -215,7 +215,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; /* 1 */
+          box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -241,18 +241,18 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type='checkbox'],
-[type='radio'] {
+[type=checkbox],
+[type=radio] {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; /* 1 */
+          box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -260,7 +260,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type='search'] {
+[type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -268,7 +268,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type='search']::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -317,11 +317,11 @@ template {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 500;
   font-style: normal;
   -webkit-text-size-adjust: 100%;
@@ -333,7 +333,7 @@ html {
 }
 
 body {
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 500;
   font-style: normal;
   -webkit-animation: bugfix infinite 1s;
@@ -421,11 +421,11 @@ button {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   background-color: unset;
   padding: 0;
@@ -458,13 +458,13 @@ ul li {
   overflow: hidden;
 }
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type='number'] {
+input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -484,56 +484,183 @@ input[type='number'] {
   }
 }
 @font-face {
-  font-family: 'Gilroy';
-  src: url('Gilroy-Medium.eot');
-  src: local('Gilroy-Medium'), local('Gilroy-Medium'), url('../fonts/Gilroy-Medium.eot') format('embedded-opentype'),
-    url('../fonts/Gilroy-Medium.woff') format('woff'), url('../fonts/Gilroy-Medium.ttf') format('truetype');
+  font-family: "Gilroy";
+  src: url("Gilroy-Medium.eot");
+  src: local("Gilroy-Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.eot") format("embedded-opentype"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy';
-  src: url('Gilroy-Semibold.eot');
-  src: local('Gilroy-Semibold'), local('Gilroy-Semibold'),
-    url('../fonts/Gilroy-Semibold.eot') format('embedded-opentype'), url('../fonts/Gilroy-Semibold.woff') format('woff'),
-    url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+  font-family: "Gilroy";
+  src: url("Gilroy-Semibold.eot");
+  src: local("Gilroy-Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.eot") format("embedded-opentype"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy';
-  src: url('Gilroy-Bold.eot');
-  src: local('Gilroy-Bold'), local('Gilroy-Bold'), url('../fonts/Gilroy-Bold.eot') format('embedded-opentype'),
-    url('../fonts/Gilroy-Bold.woff') format('woff'), url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-family: "Gilroy";
+  src: url("Gilroy-Bold.eot");
+  src: local("Gilroy-Bold"), local("Gilroy-Bold"), url("../fonts/Gilroy-Bold.eot") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Good Timing';
-  src: url('GoodTimingRg-Bold.eot');
-  src: local('GoodTimingRg-Bold'), local('GoodTimingRg-Bold'),
-    url('../fonts/GoodTimingRg-Bold.eot') format('embedded-opentype'),
-    url('../fonts/GoodTimingRg-Bold.woff') format('woff'), url('../fonts/GoodTimingRg-Bold.ttf') format('truetype');
+  font-family: "Good Timing";
+  src: url("GoodTimingRg-Bold.eot");
+  src: local("GoodTimingRg-Bold"), local("GoodTimingRg-Bold"), url("../fonts/GoodTimingRg-Bold.eot") format("embedded-opentype"), url("../fonts/GoodTimingRg-Bold.woff") format("woff"), url("../fonts/GoodTimingRg-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 .title {
   color: #2c2a3b;
-  font-family: 'Good Timing', sans-serif;
+  font-family: "Good Timing", sans-serif;
   font-size: 5rem;
   font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
-  max-width: 63rem;
 }
 
+.btn-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.btn-arrows:hover .btn-arrows__title {
+  color: #67bf22;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn-arrows:hover .btn-arrows__img {
+  background: url(../../img/icon/arrows-green.svg) no-repeat center;
+  background-size: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-arrows__title {
+  color: #2c2a3b;
+  font-family: "Good Timing", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.btn-arrows__img {
+  background: url(../../img/icon/arrows-black.svg) no-repeat center;
+  background-size: cover;
+  width: 3rem;
+  height: 1.4rem;
+}
+
+.main-brands {
+  background: #EAEBF0;
+}
+.main-brands__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 6rem;
+  padding: 6rem 0 15rem 0;
+}
+.main-brands__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-brands__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+}
+.main-brands__arrows button {
+  width: 6.7rem;
+  height: 6.7rem;
+  border: 1px solid transparent;
+  background: linear-gradient(130deg, #93C307 0%, #67BF22 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-brands__swiper-wrapper {
+  height: 52rem;
+}
+.main-brands__swiper-slide {
+  border: 0.2rem solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.35);
+  width: calc(16.6666666667% - 30px);
+  height: 22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-brands__swiper-slide img {
+  width: 14rem;
+  height: 6rem;
+}
+.main-brands__bullets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-brands__bullets span {
+  width: 3rem;
+  height: 0.2rem;
+  border-radius: 0;
+}
+.main-brands__bullets .swiper-pagination-bullet-active {
+  background: linear-gradient(130deg, #93C307 0%, #67BF22 100%);
+}
+.main-brands__arrows-prev.swiper-button-disabled, .main-brands__arrows-next.swiper-button-disabled {
+  width: 6.7rem;
+  height: 6.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: #F0F1F5;
+}
+.main-brands__arrows-prev.swiper-button-disabled svg path, .main-brands__arrows-next.swiper-button-disabled svg path {
+  stroke: #98A0B1;
+}
 .main-about {
-  padding-top: 10rem;
   background-color: #eaebf0;
   position: relative;
   overflow: hidden;
 }
 .main-about__top {
+  padding-top: 10rem;
   border-bottom: 0.1rem solid;
   border-color: rgba(255, 255, 255, 0.8);
 }
@@ -545,12 +672,12 @@ input[type='number'] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .main-about__top-desc-title {
   text-align: right;
-  font-family: 'Good Timing', sans-serif;
+  font-family: "Good Timing", sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 130%;
@@ -558,52 +685,13 @@ input[type='number'] {
   max-width: 28rem;
   margin-bottom: 3.2rem;
 }
-.main-about__top-desc-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 2rem;
-  -moz-column-gap: 2rem;
-  column-gap: 2rem;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.main-about__top-desc-btn:hover .main-about__top-desc-btn-title {
-  color: #67bf22;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.main-about__top-desc-btn:hover .main-about__top-desc-btn-img {
-  background: url(../../img/icon/arrows-green.svg) no-repeat center;
-  background-size: cover;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.main-about__top-desc-btn-title {
-  color: #2c2a3b;
-  font-family: 'Good Timing', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 130%;
-  text-transform: uppercase;
-}
-.main-about__top-desc-btn-img {
-  background: url(../../img/icon/arrows-black.svg) no-repeat center;
-  background-size: cover;
-  width: 3rem;
-  height: 1.4rem;
-}
 .main-about__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 6rem;
-  -moz-column-gap: 6rem;
-  column-gap: 6rem;
+     -moz-column-gap: 6rem;
+          column-gap: 6rem;
   padding: 6rem 0 15rem 0;
   width: 162rem;
   margin: 0 auto;
@@ -611,11 +699,11 @@ input[type='number'] {
 .main-about__bottom-logo {
   width: 49.2rem;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,7 +729,7 @@ input[type='number'] {
   border-radius: 48rem;
   background: rgba(121, 203, 15, 0.5);
   -webkit-filter: blur(25rem);
-  filter: blur(25rem);
+          filter: blur(25rem);
   bottom: -30rem;
   right: 48rem;
 }
@@ -657,8 +745,8 @@ input[type='number'] {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 16.8rem;
-  -moz-column-gap: 16.8rem;
-  column-gap: 16.8rem;
+     -moz-column-gap: 16.8rem;
+          column-gap: 16.8rem;
   padding-bottom: 4rem;
   border-bottom: 0.1rem solid #98a0b1;
 }
@@ -667,11 +755,11 @@ input[type='number'] {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 3rem;
-  -moz-column-gap: 3rem;
-  column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
 }
 .footer__top-menu-item-title {
-  font-family: 'Good Timing', sans-serif;
+  font-family: "Good Timing", sans-serif;
   color: #2c2a3b;
   font-size: 2.4rem;
   font-weight: 700;
@@ -701,8 +789,8 @@ input[type='number'] {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 3.3rem;
 }
 .footer__top-contact-items {
@@ -772,19 +860,19 @@ input[type='number'] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__bottom-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 3rem;
-  -moz-column-gap: 3rem;
-  column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
 }
 .footer__bottom-left li {
   color: #98a0b1;
@@ -802,11 +890,11 @@ input[type='number'] {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 1.5rem;
-  -moz-column-gap: 1.5rem;
-  column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .footer__bottom-right-desc span {
   color: #98a0b1;
