@@ -1,0 +1,153 @@
+.footer {
+  background: #f0f1f5;
+
+  &__container {
+    padding: 8rem 0;
+  }
+
+  &__top {
+    display: flex;
+    column-gap: 16.8rem;
+    padding-bottom: 4rem;
+    border-bottom: 0.1rem solid #98a0b1;
+  }
+
+  &__top-menu {
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  &__top-menu-item-title {
+    font-family: 'Good Timing', sans-serif;
+    color: #2c2a3b;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 2rem;
+  }
+
+  &__top-menu-item-list {
+    width: 24.5rem;
+    li {
+      color: #2c2a3b;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 140%;
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+      }
+      &:hover {
+        color: #67bf22;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__top-contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.3rem;
+  }
+
+  &__top-contact-items {
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__top-contact-item {
+    div {
+      color: #98a0b1;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 140%;
+    }
+    a {
+      color: #2c2a3b;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 140%;
+    }
+  }
+
+  &__top-search {
+    position: relative;
+    input {
+      width: 100%;
+      padding: 2rem;
+      border: none;
+      color: #2c2a3b;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 140%;
+      border: 0.2rem solid #f0f1f5;
+    }
+    input::placeholder {
+      color: #98a0b1;
+    }
+    input:focus {
+      border: 0.2rem solid #67bf22;
+    }
+    button {
+      background: linear-gradient(130deg, #93c307 0%, #67bf22 100%);
+      width: 4.4rem;
+      height: 4.4rem;
+      top: 1rem;
+      right: 1rem;
+      position: absolute;
+      img {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 2.4rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__bottom-left {
+    display: flex;
+    column-gap: 3rem;
+    li {
+      color: #98a0b1;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 130%;
+      &:not(:first-child):hover {
+        color: #2c2a3b;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__bottom-right {
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: flex-end;
+  }
+
+  &__bottom-right-desc {
+    span {
+      color: #98a0b1;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 150%;
+    }
+    div {
+      color: #2c2a3b;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__bottom-right-logo {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+}

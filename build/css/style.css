@@ -450,7 +450,7 @@ ul li {
 }
 
 .container {
-  width: 154.3rem;
+  width: 162rem;
   margin: 0 auto;
 }
 
@@ -483,16 +483,6 @@ input[type='number'] {
     width: 100%;
   }
 }
-p {
-  color: #2c2a3b;
-  font-family: 'Good Timing', sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 130%;
-  text-transform: uppercase;
-}
-
 @font-face {
   font-family: 'Gilroy';
   src: url('Gilroy-Medium.eot');
@@ -526,4 +516,182 @@ p {
     url('../fonts/GoodTimingRg-Bold.woff') format('woff'), url('../fonts/GoodTimingRg-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+}
+.footer {
+  background: #f0f1f5;
+}
+.footer__container {
+  padding: 8rem 0;
+}
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16.8rem;
+  -moz-column-gap: 16.8rem;
+  column-gap: 16.8rem;
+  padding-bottom: 4rem;
+  border-bottom: 0.1rem solid #98a0b1;
+}
+.footer__top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+  -moz-column-gap: 3rem;
+  column-gap: 3rem;
+}
+.footer__top-menu-item-title {
+  font-family: 'Good Timing', sans-serif;
+  color: #2c2a3b;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 2rem;
+}
+.footer__top-menu-item-list {
+  width: 24.5rem;
+}
+.footer__top-menu-item-list li {
+  color: #2c2a3b;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+.footer__top-menu-item-list li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.footer__top-menu-item-list li:hover {
+  color: #67bf22;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.footer__top-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 3.3rem;
+}
+.footer__top-contact-items {
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer__top-contact-item div {
+  color: #98a0b1;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+.footer__top-contact-item a {
+  color: #2c2a3b;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+.footer__top-search {
+  position: relative;
+}
+.footer__top-search input {
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  color: #2c2a3b;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 140%;
+  border: 0.2rem solid #f0f1f5;
+}
+.footer__top-search input::-webkit-input-placeholder {
+  color: #98a0b1;
+}
+.footer__top-search input::-moz-placeholder {
+  color: #98a0b1;
+}
+.footer__top-search input:-ms-input-placeholder {
+  color: #98a0b1;
+}
+.footer__top-search input::-ms-input-placeholder {
+  color: #98a0b1;
+}
+.footer__top-search input::placeholder {
+  color: #98a0b1;
+}
+.footer__top-search input:focus {
+  border: 0.2rem solid #67bf22;
+}
+.footer__top-search button {
+  background: linear-gradient(130deg, #93c307 0%, #67bf22 100%);
+  width: 4.4rem;
+  height: 4.4rem;
+  top: 1rem;
+  right: 1rem;
+  position: absolute;
+}
+.footer__top-search button img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 auto;
+}
+.footer__bottom {
+  padding-top: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.footer__bottom-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+  -moz-column-gap: 3rem;
+  column-gap: 3rem;
+}
+.footer__bottom-left li {
+  color: #98a0b1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 130%;
+}
+.footer__bottom-left li:not(:first-child):hover {
+  color: #2c2a3b;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.footer__bottom-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.footer__bottom-right-desc span {
+  color: #98a0b1;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+.footer__bottom-right-desc div {
+  color: #2c2a3b;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__bottom-right-logo {
+  width: 3.8rem;
+  height: 3.8rem;
 }
