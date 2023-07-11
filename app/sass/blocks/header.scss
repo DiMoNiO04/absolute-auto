@@ -1,0 +1,131 @@
+.header {
+  background: #eaebf0;
+
+  &__top,
+  &__bottom {
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
+  }
+
+  &__top-logo {
+    width: 18rem;
+    height: 6.5rem;
+    margin-right: 8.7rem;
+  }
+
+  &__top-search {
+    width: 75rem;
+    padding: 2.1rem 4rem;
+    border-left: 0.2rem solid rgba(255, 255, 255, 0.8);
+    border-right: 0.2rem solid rgba(255, 255, 255, 0.8);
+  }
+
+  &__top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__top-items {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    li {
+      list-style-type: none;
+    }
+    a {
+      display: flex;
+      column-gap: 0.8rem;
+      color: #2c2a3b;
+      text-align: right;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 130%;
+      span {
+        text-align: right;
+        font-family: 'Gilroy', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 130%;
+        color: #67bf22;
+      }
+      img {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+      &:hover {
+        color: #67bf22;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.1rem 0;
+  }
+
+  &__bottom-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    background: linear-gradient(130deg, #93c307 0%, #67bf22 100%);
+    padding: 2rem 4rem;
+    span {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 140%;
+    }
+  }
+
+  &__bottom-items {
+    display: flex;
+    column-gap: 4rem;
+    a {
+      color: #2c2a3b;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 130%;
+      &:hover {
+        color: #67bf22;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__bottom-buttons {
+    display: flex;
+    background: #ffffff;
+    padding: 1.3rem 2.2rem;
+  }
+
+  &__bottom-button {
+    &:not(:last-child) {
+      border-right: 0.2rem solid #f0f1f5;
+    }
+  }
+
+  &__bottom-button {
+    padding: 0 0.5rem;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    button {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      &:active {
+        background: linear-gradient(130deg, #93c307 0%, #67bf22 100%);
+        svg stop {
+          stop-color: #ffffff;
+        }
+      }
+    }
+  }
+}

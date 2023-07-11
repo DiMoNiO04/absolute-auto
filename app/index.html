@@ -3,185 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/swiper.css">
-		<link rel="stylesheet" href="./css/style.min.css" />
-    <title>ГЛавная страница</title>
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Главная страница</title>
   </head>
   <body>
+    @@include('./template/header.html')
 
     <main>
+      <section class="main-autos">
+        <div class="main-autos__container">
+          <div class="container">
+            <div class="main-autos__items">
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/bmw.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/audi.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/volkswagen.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/land-rover.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/audi.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/volkswagen.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/land-rover.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/bmw.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/volkswagen.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/land-rover.svg" alt="" />
+              </div>
+              <div class="main-autos__item">
+                <img src="./img/brands-auto/bmw.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section class="main-category">
-				<div class="main-category__container">
-					<div class="main-category__bg">
-						<img src="./img/backgrounds/bg-2.svg" alt="">
-					</div>
-					<div class="main-category__top">
-						<div class="container">
-							<div class="main-category__top-container">
-								<div class="title">категории</div>
-								<div class="main-category__top-number">10+</div>
-							</div>
-						</div>
-					</div>
-					<div class="main-category__center">
-						<div class="main-category__center-top">
-							<div class="container">
-								<div class="main-category__center-items">
-									<a href="#" class="main-category__center-item">
-										<img src="./img/category/brake.svg" alt="">
-										<div class="main-category__center-item-title">Тормозная система</div>
-										<div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-									</a>
-									<a href="#" class="main-category__center-item">
-										<img src="./img/category/engine.svg" alt="">
-										<div class="main-category__center-item-title">Двигатель</div>
-										<div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-									</a>
-									<a href="#" class="main-category__center-item">
-										<img src="./img/category/battery.svg" alt="">
-										<div class="main-category__center-item-title">Запуск и зарядка</div>
-										<div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-									</a>
-									<a href="#" class="main-category__center-item">
-										<img src="./img/category/clutch.svg" alt="">
-										<div class="main-category__center-item-title">Сцепление и маховик</div>
-										<div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="main-category__center-bottom">
-							<div class="container">
-								<div class="main-category__center-items">
-									<a href="#" class="main-category__center-item">
-										<img src="./img/category/depreciation.svg" alt="">
-										<div class="main-category__center-item-title">Амортизация</div>
-										<div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-									</a>
-									<a href="#" class="main-category__center-item">
-										<img src="./img/category/fuel-supply-system.svg" alt="">
-										<div class="main-category__center-item-title">Система подачи топлива</div>
-										<div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-									</a>
-									<a href="#" class="main-category__center-item">
-										<img src="./img/category/body-parts.svg" alt="">
-										<div class="main-category__center-item-title">Кузовные детали</div>
-										<div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-									</a>
-									<a href="#" class="main-category__center-item">
-										<img src="./img/category/mechanical-box.svg" alt="">
-										<div class="main-category__center-item-title">Механическая коробка</div>
-										<div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<a href="#" class="main-category__btn btn-arrows">
-						<div class="btn-arrows__title">Смотреть все</div>
-						<div class="btn-arrows__img"></div>
-					</a>
-				</div>
-			</section>
+      <section class="main-category">
+        <div class="main-category__container">
+          <div class="main-category__bg">
+            <img src="./img/backgrounds/bg-2.svg" alt="" />
+          </div>
+          <div class="main-category__top">
+            <div class="container">
+              <div class="main-category__top-container">
+                <div class="title">категории</div>
+                <div class="main-category__top-number">10+</div>
+              </div>
+            </div>
+          </div>
+          <div class="main-category__center">
+            <div class="main-category__center-top">
+              <div class="container">
+                <div class="main-category__center-items">
+                  <a href="#" class="main-category__center-item">
+                    <img src="./img/category/brake.svg" alt="" />
+                    <div class="main-category__center-item-title">Тормозная система</div>
+                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
+                  </a>
+                  <a href="#" class="main-category__center-item">
+                    <img src="./img/category/engine.svg" alt="" />
+                    <div class="main-category__center-item-title">Двигатель</div>
+                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
+                  </a>
+                  <a href="#" class="main-category__center-item">
+                    <img src="./img/category/battery.svg" alt="" />
+                    <div class="main-category__center-item-title">Запуск и зарядка</div>
+                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
+                  </a>
+                  <a href="#" class="main-category__center-item">
+                    <img src="./img/category/clutch.svg" alt="" />
+                    <div class="main-category__center-item-title">Сцепление и маховик</div>
+                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="main-category__center-bottom">
+              <div class="container">
+                <div class="main-category__center-items">
+                  <a href="#" class="main-category__center-item">
+                    <img src="./img/category/depreciation.svg" alt="" />
+                    <div class="main-category__center-item-title">Амортизация</div>
+                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
+                  </a>
+                  <a href="#" class="main-category__center-item">
+                    <img src="./img/category/fuel-supply-system.svg" alt="" />
+                    <div class="main-category__center-item-title">Система подачи топлива</div>
+                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
+                  </a>
+                  <a href="#" class="main-category__center-item">
+                    <img src="./img/category/body-parts.svg" alt="" />
+                    <div class="main-category__center-item-title">Кузовные детали</div>
+                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
+                  </a>
+                  <a href="#" class="main-category__center-item">
+                    <img src="./img/category/mechanical-box.svg" alt="" />
+                    <div class="main-category__center-item-title">Механическая коробка</div>
+                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="main-category__btn btn-arrows">
+            <div class="btn-arrows__title">Смотреть все</div>
+            <div class="btn-arrows__img"></div>
+          </a>
+        </div>
+      </section>
 
-			<section class="main-brands">
-				<div class="container">
-					<div class="main-brands__container">
-						<div class="main-brands__top">
-							<div class="title">Бренды автозапчастей</div>
-							<div class="main-brands__arrows">
-								<button class="main-brands__arrows-prev">
-									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
-										<path d="M9 16L2 9L9 2" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</button>
-								<button class="main-brands__arrows-next">
-									<svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
-										<path d="M2 16L9 9L2 2" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</button>
-							</div>
-						</div>
+      <section class="main-brands">
+        <div class="container">
+          <div class="main-brands__container">
+            <div class="main-brands__top">
+              <div class="title">Бренды автозапчастей</div>
+              <div class="main-brands__arrows">
+                <button class="main-brands__arrows-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
+                    <path
+                      d="M9 16L2 9L9 2"
+                      stroke="white"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button class="main-brands__arrows-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
+                    <path
+                      d="M2 16L9 9L2 2"
+                      stroke="white"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-						<div class="main-brands__slider">
-							<div class="swiper" id="brands-swiper">
-								<div class="main-brands__swiper-wrapper swiper-wrapper">
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/textar.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/hella.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/brembo.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/delphi.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/bosch.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/trw.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/valeo.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/checkstar.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/metzger.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/metzger.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/triscan.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/bosch.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/brembo.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/bosch.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/textar.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/hella.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/brembo.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/delphi.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/bosch.svg" alt="">
-									</div>
-									<div class="main-brands__swiper-slide swiper-slide">
-										<img src="./img/brands/trw.svg" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="pagination main__pagination">
-								<div class="pagination__bullets main-brands__bullets"></div>
-						</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="main-brands__slider">
+              <div class="swiper" id="brands-swiper">
+                <div class="main-brands__swiper-wrapper swiper-wrapper">
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/textar.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/hella.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/brembo.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/delphi.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/bosch.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/trw.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/valeo.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/checkstar.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/metzger.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/metzger.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/triscan.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/bosch.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/brembo.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/bosch.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/textar.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/hella.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/brembo.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/delphi.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/bosch.svg" alt="" />
+                  </div>
+                  <div class="main-brands__swiper-slide swiper-slide">
+                    <img src="./img/brands/trw.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="pagination main__pagination">
+                <div class="pagination__bullets main-brands__bullets"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="main-about">
         <div class="main-about__top">
           <div class="container">
             <div class="main-about__top-container">
-              <div class="title">О компании <br>absolute Auto</div>
+              <div class="title">О компании <br />absolute Auto</div>
               <div class="main-about__top-desc">
                 <div class="main-about__top-desc-title">15 лет в сфере автозапчастей</div>
                 <a href="#" class="btn-arrows">

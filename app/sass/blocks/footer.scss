@@ -70,39 +70,6 @@
     }
   }
 
-  &__top-search {
-    position: relative;
-    input {
-      width: 100%;
-      padding: 2rem;
-      border: none;
-      color: #2c2a3b;
-      font-size: 1.8rem;
-      font-weight: 500;
-      line-height: 140%;
-      border: 0.2rem solid #f0f1f5;
-    }
-    input::placeholder {
-      color: #98a0b1;
-    }
-    input:focus {
-      border: 0.2rem solid #67bf22;
-    }
-    button {
-      background: linear-gradient(130deg, #93c307 0%, #67bf22 100%);
-      width: 4.4rem;
-      height: 4.4rem;
-      top: 1rem;
-      right: 1rem;
-      position: absolute;
-      img {
-        width: 2.4rem;
-        height: 2.4rem;
-        margin: 0 auto;
-      }
-    }
-  }
-
   &__bottom {
     padding-top: 2.4rem;
     display: flex;
