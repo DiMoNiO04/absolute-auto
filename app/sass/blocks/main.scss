@@ -1,5 +1,105 @@
 .main {
 
+	&-category {
+		background:#EAEBF0;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&-category__container {
+		padding: 6rem 0 15rem 0;
+	}
+
+	&-category__top {
+		border-bottom: 0.2rem solid rgba(255, 255, 255, 0.80);
+		padding-bottom: 4.5rem;
+	}
+	
+	&-category__top-container {
+		display: flex;
+    align-items: center;
+    justify-content: space-between;
+	}
+
+	&-category__top-number {
+		font-family: 'Good Timing', sans-serif;
+		font-size: 7rem;
+		font-weight: 700;
+		line-height: 130%;
+		text-transform: uppercase;
+		color:#67BF22;
+	}
+
+	&-category__center {
+		margin-bottom: 4rem;
+	}
+
+	&-category__btn {
+		justify-content: center;
+	}
+
+	&-category__center-bottom,
+	&-category__center-top {
+		border-bottom: 0.2rem solid rgba(255, 255, 255, 0.80);
+	}
+
+	&-category__center-items {
+		display: flex;
+    justify-content: space-between;
+	}
+
+	&-category__center-item {
+		padding: 6.7rem;
+		&:not(:last-child) {
+			border-right: 0.2rem solid rgba(255, 255, 255, 0.80);
+		}
+		img {
+			width: 28rem;
+			height: 20.7rem;
+			margin-bottom: 2.8rem;
+		}
+	}
+
+	&-category__center-item-title {
+		color: #2C2A3B;
+		text-align: center;
+		font-family: 'Good Timing', sans-serif;
+		font-size: 2.4rem;
+		font-weight: 700;
+		line-height: 130%;
+		margin-bottom: 1rem;
+	}
+
+	&-category__center-item-subtitle {
+		color: #98A0B1;
+		font-family: 'Gilroy', sans-serif;
+		font-size: 1.8rem;
+		font-weight: 500;
+		line-height: 140%;
+		text-align: center;
+		span {
+			font-size: 2rem;
+			font-weight: 700;
+			color: #67BF22;
+		}
+	}
+
+	&-category__bg {
+		position: absolute;
+    width: 48rem;
+    height: 48rem;
+    border-radius: 48rem;
+    background: rgba(121, 203, 15, 0.5);
+    filter: blur(25rem);
+		right: -20rem;
+    top: -20rem;
+	}
+
+
+	&-1 {
+		height: 40rem;
+	}
+
 	&-brands {
 		background:#EAEBF0;
 	}

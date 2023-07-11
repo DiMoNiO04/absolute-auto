@@ -562,6 +562,103 @@ input[type=number] {
   height: 1.4rem;
 }
 
+.main-category {
+  background: #EAEBF0;
+  position: relative;
+  overflow: hidden;
+}
+.main-category__container {
+  padding: 6rem 0 15rem 0;
+}
+.main-category__top {
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
+  padding-bottom: 4.5rem;
+}
+.main-category__top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-category__top-number {
+  font-family: "Good Timing", sans-serif;
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #67BF22;
+}
+.main-category__center {
+  margin-bottom: 4rem;
+}
+.main-category__btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-category__center-bottom, .main-category__center-top {
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
+}
+.main-category__center-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-category__center-item {
+  padding: 6.7rem;
+}
+.main-category__center-item:not(:last-child) {
+  border-right: 0.2rem solid rgba(255, 255, 255, 0.8);
+}
+.main-category__center-item img {
+  width: 28rem;
+  height: 20.7rem;
+  margin-bottom: 2.8rem;
+}
+.main-category__center-item-title {
+  color: #2C2A3B;
+  text-align: center;
+  font-family: "Good Timing", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 1rem;
+}
+.main-category__center-item-subtitle {
+  color: #98A0B1;
+  font-family: "Gilroy", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+}
+.main-category__center-item-subtitle span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #67BF22;
+}
+.main-category__bg {
+  position: absolute;
+  width: 48rem;
+  height: 48rem;
+  border-radius: 48rem;
+  background: rgba(121, 203, 15, 0.5);
+  -webkit-filter: blur(25rem);
+          filter: blur(25rem);
+  right: -20rem;
+  top: -20rem;
+}
+.main-1 {
+  height: 40rem;
+}
 .main-brands {
   background: #EAEBF0;
 }
