@@ -11,5 +11,9 @@ module.exports = {
   },
   rules: {
     'import/prefer-default-export': 'off',
+    'no-undef': 'off',
+    'func-names': 'off',
+    'consistent-return': 'off',
+    'no-unused-vars': 'off',
   },
 };
