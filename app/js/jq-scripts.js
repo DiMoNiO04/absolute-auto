@@ -57,12 +57,12 @@ function addActive(x) {
 $('.main-main__search-form-select').on('click', function () {
   if ($(this).hasClass('active')) {
     $(this).removeClass('active');
-    $(this).find('.main-main__search-form-select-datalist').fadeOut();
+    $(this).find('.main-main__search-form-select-datalist').fadeOut(1000);
   } else {
     $('.main-main__search-form-select').removeClass('active');
-    $('.main-main__search-form-select-datalist').fadeOut();
+    $('.main-main__search-form-select-datalist').fadeOut(1000);
     $(this).addClass('active');
-    $(this).find('.main-main__search-form-select-datalist').fadeIn();
+    $(this).find('.main-main__search-form-select-datalist').fadeIn(1000);
   }
 
   $(this)
@@ -82,17 +82,24 @@ $('.main-main__search-form-select').on('click', function () {
     });
 });
 
-$('.main-main__search-form-select')
-  .find('option')
-  .each(function () {
-    $(this).on('click', function () {
-      $(this).parent().prev().val($(this).val());
+
+$('.main-main__search-form-select').each(function(index) {
+	$(this).find('option').each(function() {
+		$(this).on('click', function() {
+			$(this).parent().prev().val($(this).val());
       $(this).parent().fadeOut();
       changeCheckedInputForm($(this));
       changeDisableFormSubmitButton();
       changeDisableFormResetButton();
-    });
-  });
+
+			if(index !== 5 && $(this).parent().parent().next().css("display") !== 'flex' && $(this).parent().parent().next().attr('data-checked') === 'off') {
+				$(this).parent().parent().next().slideToggle(500).fadeIn()
+			}
+		})
+	})
+})
+
+
 
 $('.main-main__search-form-select')
   .find('button')
@@ -108,7 +115,7 @@ $('.main-main__search-form-select')
           $(this).css('display', 'block');
         });
 
-      $(this).parent().fadeIn();
+      $(this).parent().fadeIn(1000);
       changeCheckedInputForm($(this));
       changeDisableFormSubmitButton();
       changeDisableFormResetButton();
@@ -122,6 +129,12 @@ $('.main-main__search-form-btn-reset').on('click', () => {
   });
   changeDisableFormSubmitButton();
   changeDisableFormResetButton();
+
+	$(".main-main__search-form-select").each(function(index) {
+		if(index !== 0) {
+			$(this).slideUp().fadeOut()
+		}
+	})
 });
 
 $('.main-main__search-form-select-input').on('keydown', function (event) {
@@ -142,7 +155,7 @@ $('.main-main__search-form-select-input').on('keydown', function (event) {
 $(document).click((event) => {
   if (!$(event.target).closest('.main-main__search-form-select').length) {
     $('.main-main__search-form-select').removeClass('active');
-    $('.main-main__search-form-select-datalist').fadeOut();
+    $('.main-main__search-form-select-datalist').fadeOut(1000);
   }
 });
 // ----------------------------------------------------------------//
