@@ -4,17 +4,7 @@
     border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
     z-index: 2;
   }
-
-  &-main__bg-6 {
-    position: absolute;
-    z-index: 0;
-    overflow: hidden;
-    left: 0rem;
-    height: 127%;
-    top: -25rem;
-    opacity: 0.5;
-  }
-
+	
   &-main__bg-4 {
     width: 48rem;
     height: 48rem;
@@ -469,6 +459,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: a 1s;
     img {
       width: 14rem;
       height: 6rem;
@@ -480,6 +471,7 @@
       border: 0;
       background-size: contain;
       cursor: pointer;
+      animation: a 1s;
     }
   }
 
@@ -586,5 +578,14 @@
   flex-direction: column;
   option {
     width: 100%;
+  }
+}
+
+@keyframes a {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

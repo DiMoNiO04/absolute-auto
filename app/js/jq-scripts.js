@@ -82,24 +82,27 @@ $('.main-main__search-form-select').on('click', function () {
     });
 });
 
+$('.main-main__search-form-select').each(function (index) {
+  $(this)
+    .find('option')
+    .each(function () {
+      $(this).on('click', function () {
+        $(this).parent().prev().val($(this).val());
+        $(this).parent().fadeOut();
+        changeCheckedInputForm($(this));
+        changeDisableFormSubmitButton();
+        changeDisableFormResetButton();
 
-$('.main-main__search-form-select').each(function(index) {
-	$(this).find('option').each(function() {
-		$(this).on('click', function() {
-			$(this).parent().prev().val($(this).val());
-      $(this).parent().fadeOut();
-      changeCheckedInputForm($(this));
-      changeDisableFormSubmitButton();
-      changeDisableFormResetButton();
-
-			if(index !== 5 && $(this).parent().parent().next().css("display") !== 'flex' && $(this).parent().parent().next().attr('data-checked') === 'off') {
-				$(this).parent().parent().next().slideToggle(500).fadeIn()
-			}
-		})
-	})
-})
-
-
+        if (
+          index !== 5 &&
+          $(this).parent().parent().next().css('display') !== 'flex' &&
+          $(this).parent().parent().next().attr('data-checked') === 'off'
+        ) {
+          $(this).parent().parent().next().slideToggle(500).fadeIn();
+        }
+      });
+    });
+});
 
 $('.main-main__search-form-select')
   .find('button')
@@ -130,11 +133,11 @@ $('.main-main__search-form-btn-reset').on('click', () => {
   changeDisableFormSubmitButton();
   changeDisableFormResetButton();
 
-	$(".main-main__search-form-select").each(function(index) {
-		if(index !== 0) {
-			$(this).slideUp().fadeOut()
-		}
-	})
+  $('.main-main__search-form-select').each(function (index) {
+    if (index !== 0) {
+      $(this).slideUp().fadeOut();
+    }
+  });
 });
 
 $('.main-main__search-form-select-input').on('keydown', function (event) {

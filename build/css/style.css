@@ -780,15 +780,6 @@ body {
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
   z-index: 2;
 }
-.main-main__bg-6 {
-  position: absolute;
-  z-index: 0;
-  overflow: hidden;
-  left: 0rem;
-  height: 127%;
-  top: -25rem;
-  opacity: 0.5;
-}
 .main-main__bg-4 {
   width: 48rem;
   height: 48rem;
@@ -1329,6 +1320,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-animation: a 1s;
+          animation: a 1s;
 }
 .main-brands__swiper-slide img {
   width: 14rem;
@@ -1341,6 +1334,8 @@ body {
   border: 0;
   background-size: contain;
   cursor: pointer;
+  -webkit-animation: a 1s;
+          animation: a 1s;
 }
 .main-brands__bullets {
   display: -webkit-box;
@@ -1457,6 +1452,23 @@ body {
   width: 100%;
 }
 
+@-webkit-keyframes a {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes a {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .footer {
   background: #f0f1f5;
 }
