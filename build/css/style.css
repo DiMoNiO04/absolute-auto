@@ -1335,7 +1335,7 @@ body {
   height: 6rem;
 }
 .main-brands__swiper-slide:hover {
-  background: url("../../img/brands/brands-hover-bg.svg") no-repeat center;
+  background: url("../img/brands/brands-hover-bg.svg") no-repeat center;
   width: calc(16.6666666667% - 30px);
   height: 22rem;
   border: 0;
