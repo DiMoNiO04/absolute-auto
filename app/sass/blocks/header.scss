@@ -48,14 +48,14 @@
         font-size: 1.8rem;
         font-weight: 600;
         line-height: 130%;
-        color: #67bf22;
+        color: #4ec1c1;
       }
       img {
         width: 2.4rem;
         height: 2.4rem;
       }
       &:hover {
-        color: #67bf22;
+        color: #4ec1c1;
         transition: all 0.2s ease-in-out;
       }
     }
@@ -72,13 +72,17 @@
     display: flex;
     align-items: center;
     column-gap: 1rem;
-    background: linear-gradient(130deg, #93c307 0%, #67bf22 100%);
+    background: #4ec1c1;
     padding: 2rem 4rem;
     span {
       color: #fff;
       font-size: 2rem;
       font-weight: 700;
       line-height: 140%;
+    }
+    &:hover {
+      background: #2c2a3b;
+      transition: all 0.2s ease-in-out;
     }
   }
 
@@ -92,7 +96,7 @@
       font-weight: 600;
       line-height: 130%;
       &:hover {
-        color: #67bf22;
+        color: #4ec1c1;
         transition: all 0.2s ease-in-out;
       }
     }
@@ -123,9 +127,9 @@
       display: flex;
       justify-content: center;
       &:active {
-        background: linear-gradient(130deg, #93c307 0%, #67bf22 100%);
-        svg stop {
-          stop-color: #ffffff;
+        background: #4ec1c1;
+        svg path {
+          fill: #ffffff;
         }
       }
     }

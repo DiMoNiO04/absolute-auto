@@ -14,11 +14,11 @@
   align-items: center;
   &:hover {
     .btn-arrows__title {
-      color: #67bf22;
+      color: #4ec1c1;
       transition: all 0.2s ease-in-out;
     }
     .btn-arrows__img {
-      background: url(../../img/icon/arrows-green.svg) no-repeat center;
+      background: url(../../img/icon/arrows-blue.svg) no-repeat center;
       background-size: cover;
       transition: all 0.2s ease-in-out;
     }
@@ -57,10 +57,10 @@
     color: #98a0b1;
   }
   input:focus {
-    border: 0.2rem solid #67bf22;
+    border: 0.2rem solid #4ec1c1;
   }
   button {
-    background: linear-gradient(130deg, #93c307 0%, #67bf22 100%);
+    background: #4ec1c1;
     width: 4.4rem;
     height: 4.4rem;
     top: 1rem;
