@@ -1,5 +1,5 @@
 .footer {
-  background: #f0f1f5;
+  background: $greyLight;
 
   &__container {
     padding: 8rem 0;
@@ -9,7 +9,7 @@
     display: flex;
     column-gap: 16.8rem;
     padding-bottom: 4rem;
-    border-bottom: 0.1rem solid #98a0b1;
+    border-bottom: 0.1rem solid $grey;
   }
 
   &__top-menu {
@@ -19,7 +19,7 @@
 
   &__top-menu-item-title {
     font-family: 'Good Timing', sans-serif;
-    color: #2c2a3b;
+    color: $black;
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 130%;
@@ -29,7 +29,7 @@
   &__top-menu-item-list {
     width: 24.5rem;
     li {
-      color: #2c2a3b;
+      color: $black;
       font-size: 1.8rem;
       font-weight: 500;
       line-height: 140%;
@@ -37,7 +37,7 @@
         margin-bottom: 1.2rem;
       }
       &:hover {
-        color: #4ec1c1;
+        color: $mainColor;
         transition: all 0.2s ease-in-out;
       }
     }
@@ -57,13 +57,13 @@
 
   &__top-contact-item {
     div {
-      color: #98a0b1;
+      color: $grey;
       font-size: 1.8rem;
       font-weight: 500;
       line-height: 140%;
     }
     a {
-      color: #2c2a3b;
+      color: $black;
       font-size: 2rem;
       font-weight: 700;
       line-height: 140%;
@@ -81,12 +81,12 @@
     display: flex;
     column-gap: 3rem;
     li {
-      color: #98a0b1;
+      color: $grey;
       font-size: 1.6rem;
       font-weight: 600;
       line-height: 130%;
       &:not(:first-child):hover {
-        color: #2c2a3b;
+        color: $black;
         transition: all 0.2s ease-in-out;
       }
     }
@@ -100,13 +100,13 @@
 
   &__bottom-right-desc {
     span {
-      color: #98a0b1;
+      color: $grey;
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 150%;
     }
     div {
-      color: #2c2a3b;
+      color: $black;
       font-size: 1.8rem;
       font-weight: 400;
       line-height: normal;

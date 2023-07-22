@@ -26,7 +26,7 @@
               </div>
               <div class="main-main__search-center">
                 <div class="main-main__search-btns">
-                  <button class="main-main__search-btn active">
+                  <button class="main-main__search-btn active" data-open-block="form__search-auto">
                     <div class="main-main__search-btn-top">
                       <div class="main-main__search-btn-img">
                         <img src="./img/icon/search-auto.svg" alt="" />
@@ -37,8 +37,7 @@
                       <img src="./img/icon/search-two-arrows.svg" alt="" />
                     </div>
                   </button>
-
-                  <button class="main-main__search-btn">
+                  <button class="main-main__search-btn" data-open-block="form__search-detail">
                     <div class="main-main__search-btn-top">
                       <div class="main-main__search-btn-img">
                         <img src="./img/icon/details-auto.svg" alt="" />
@@ -50,7 +49,7 @@
                     </div>
                   </button>
                 </div>
-                <form class="main-main__search-form" action="#" method="#">
+                <form class="main-main__search-form active" action="#" method="#" data-block="form__search-auto">
                   <input
                     class="main-main__search-form-vin"
                     autocomplete="off"
@@ -248,6 +247,76 @@
                     <button disabled type="reset" class="main-main__search-form-btn-reset">Сбросить</button>
                   </div>
                 </form>
+                <form class="main-main__search-form" action="#" method="#" data-block="form__search-detail">
+                  <div class="main-main__search-form-select" data-checked="off">
+                    <div class="main-main__search-form-select-count">01</div>
+                    <input
+                      class="main-main__search-form-select-input"
+                      autocomplete="off"
+                      role="combobox"
+                      list=""
+                      name="detailt"
+                      placeholder="Название запчасти"
+                    />
+                    <datalist
+                      class="main-main__search-form-select-datalist"
+                      datalist
+                      role="listbox"
+                      style="display: none"
+                    >
+                      <button class="main-main__search-form-select-reset">Название запчасти</button>
+                      <option value="Acura">Acura</option>
+                      <option value="Audi">Audi</option>
+                      <option value="Alfa Romeo">Alfa Romeo</option>
+                      <option value="Bentley">Bentley</option>
+                      <option value="BMW">BMW</option>
+                      <option value="Cadilac">Cadilac</option>
+                      <option value="Chery">Chery</option>
+                      <option value="Lada">Lada</option>
+                      <option value="Porsche">Porsche</option>
+                      <option value="Mazda">Mazda</option>
+                      <option value="Lamborgini">Lamborgini</option>
+                      <option value="Bentley">Bentley</option>
+                      <option value="Volkswagen">Volkswagen</option>
+                    </datalist>
+                  </div>
+
+                  <div class="main-main__search-form-select" data-checked="off" style="display: none">
+                    <div class="main-main__search-form-select-count">02</div>
+                    <input
+                      class="main-main__search-form-select-input"
+                      autocomplete="off"
+                      role="combobox"
+                      list=""
+                      name="detail-brand"
+                      placeholder="Бренд"
+                    />
+                    <datalist
+                      class="main-main__search-form-select-datalist"
+                      datalist
+                      role="listbox"
+                      style="display: none"
+                    >
+                      <button class="main-main__search-form-select-reset">Бренд</button>
+                      <option value="A3">A3</option>
+                      <option value="A4">A4</option>
+                      <option value="A6">A6</option>
+                      <option value="A8">A8</option>
+                      <option value="Q5">Q5</option>
+                      <option value="Q7">Q7</option>
+                      <option value="RS6">RS6</option>
+                      <option value="RS6C6">RS6C6</option>
+                    </datalist>
+                  </div>
+
+                  <div class="main-main__search-form-btns">
+                    <button disabled class="main-main__search-form-btn-search" type="submit" name="#">
+                      <span>Найти запчасть</span>
+                      <img src="./img/icon/arrows-white.svg" alt="" />
+                    </button>
+                    <button disabled type="reset" class="main-main__search-form-btn-reset">Сбросить</button>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="main-main__right">
@@ -267,36 +336,47 @@
             <div class="main-autos__items">
               <div class="main-autos__item">
                 <img src="./img/brands-auto/bmw.svg" alt="" />
+                <img src="./img/brands-auto/bmw-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/audi.svg" alt="" />
+                <img src="./img/brands-auto/audi-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/volkswagen.svg" alt="" />
+                <img src="./img/brands-auto/volkswagen-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/land-rover.svg" alt="" />
+                <img src="./img/brands-auto/land-rover-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/audi.svg" alt="" />
+                <img src="./img/brands-auto/audi-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/volkswagen.svg" alt="" />
+                <img src="./img/brands-auto/volkswagen-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/land-rover.svg" alt="" />
+                <img src="./img/brands-auto/land-rover-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/bmw.svg" alt="" />
+                <img src="./img/brands-auto/bmw-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/volkswagen.svg" alt="" />
+                <img src="./img/brands-auto/volkswagen-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/land-rover.svg" alt="" />
+                <img src="./img/brands-auto/land-rover-hover.svg" alt="" />
               </div>
               <div class="main-autos__item">
                 <img src="./img/brands-auto/bmw.svg" alt="" />
+                <img src="./img/brands-auto/bmw-hover.svg" alt="" />
               </div>
             </div>
           </div>
@@ -407,64 +487,64 @@
             <div class="main-brands__slider">
               <div class="swiper" id="brands-swiper">
                 <div class="main-brands__swiper-wrapper swiper-wrapper">
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/textar.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/hella.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/brembo.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/delphi.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/bosch.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/trw.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/valeo.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/checkstar.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/metzger.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/metzger.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/triscan.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/bosch.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/brembo.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/bosch.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/textar.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/hella.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/brembo.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/delphi.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/bosch.svg" alt="" />
                   </div>
-                  <div class="main-brands__swiper-slide swiper-slide">
+                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
                     <img src="./img/brands/trw.svg" alt="" />
                   </div>
                 </div>
