@@ -194,6 +194,4 @@ $('[data-open-block]').on('click', function () {
   $(`[data-block="${$(this).data('open-block')}"`).addClass('active');
 });
 
-$(() => {
-  $('#tabs').tabs();
-});
+$(() => $('#tabs').tabs());
