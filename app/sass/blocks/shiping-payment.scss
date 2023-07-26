@@ -5,17 +5,6 @@
     padding: 6rem 0 15rem 0;
   }
 
-  &__bg {
-    border-radius: 48rem;
-    background: rgba(78, 193, 193, 0.5);
-    filter: blur(25rem);
-    width: 48rem;
-    height: 48rem;
-    flex-shrink: 0;
-    position: absolute;
-    left: -50rem;
-  }
-
   &__aside {
     border: $border;
     display: flex;

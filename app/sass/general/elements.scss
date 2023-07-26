@@ -7,6 +7,15 @@
   text-transform: uppercase;
 }
 
+.subtitle {
+  color: $black;
+  font-family: Good Timing, sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
 .btn-arrows {
   display: flex;
   column-gap: 2rem;
@@ -39,6 +48,10 @@
   background-size: cover;
   width: 3rem;
   height: 1.4rem;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 .search {
@@ -84,4 +97,23 @@ body {
 
 main {
   flex: 1;
+}
+
+.left-body__bg {
+  border-radius: 48rem;
+  background: rgba(78, 193, 193, 0.5);
+  filter: blur(25rem);
+  width: 48rem;
+  height: 48rem;
+  flex-shrink: 0;
+  position: absolute;
+  left: -50rem;
+}
+
+.btn-back {
+  justify-content: flex-start;
+  div:last-child {
+    order: -1;
+    transform: rotate(180deg);
+  }
 }

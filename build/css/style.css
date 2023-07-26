@@ -487,6 +487,12 @@ input[type=number] {
     width: 100%;
   }
 }
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 @font-face {
   font-family: "Gilroy";
   src: url("Gilroy-Medium.eot");
@@ -522,6 +528,15 @@ input[type=number] {
   font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
+}
+
+.subtitle {
+  color: #2c2a3b;
+  font-family: Good Timing, sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
 }
 
 .btn-arrows {
@@ -564,6 +579,10 @@ input[type=number] {
   background-size: cover;
   width: 3rem;
   height: 1.4rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .search {
@@ -628,6 +647,32 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.left-body__bg {
+  border-radius: 48rem;
+  background: rgba(78, 193, 193, 0.5);
+  -webkit-filter: blur(25rem);
+          filter: blur(25rem);
+  width: 48rem;
+  height: 48rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: absolute;
+  left: -50rem;
+}
+
+.btn-back {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.btn-back div:last-child {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .header {
@@ -1805,18 +1850,6 @@ main {
           column-gap: 3rem;
   padding: 6rem 0 15rem 0;
 }
-.shiping__bg {
-  border-radius: 48rem;
-  background: rgba(78, 193, 193, 0.5);
-  -webkit-filter: blur(25rem);
-          filter: blur(25rem);
-  width: 48rem;
-  height: 48rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  position: absolute;
-  left: -50rem;
-}
 .shiping__aside {
   border: 0.2rem solid rgba(255, 255, 255, 0.8);
   display: -webkit-box;
@@ -1956,4 +1989,93 @@ main {
   font-size: 2rem;
   font-weight: 700;
   line-height: 140%;
+}
+
+.ordering__container {
+  padding: 6rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 6rem;
+}
+.ordering__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+}
+.ordering__order-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4.8rem;
+  width: 66%;
+}
+.ordering__order-form-fieldset legend {
+  margin-bottom: 3.2rem;
+}
+.ordering__order-form-fieldset-input {
+  border: 0.2rem solid rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.2rem;
+     -moz-column-gap: 1.2rem;
+          column-gap: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2.4rem;
+  background: rgba(255, 255, 255, 0.35);
+}
+.ordering__order-form-fieldset-input:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.ordering__order-form-fieldset-input label {
+  color: #2c2a3b;
+  font-family: Gilroy;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  width: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.2rem;
+     -moz-column-gap: 1.2rem;
+          column-gap: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.ordering__order-form-fieldset-input label:before {
+  content: "";
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url("../img/icon/radio-button-order-form.svg") 0 0 no-repeat;
+  background-size: contain;
+}
+.ordering__order-form-fieldset-input input[type=radio] {
+  display: none;
+}
+.ordering__order-form-fieldset-input input[type=radio]:checked + label:before {
+  background: url("../img/icon/radio-button-order-form-checked.svg") no-repeat;
+  background-size: contain;
+}
+.ordering__ordermy {
+  width: 52rem;
 }

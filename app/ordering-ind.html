@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Оформление заказа (физ.лицо)</title>
+  </head>
+
+  <body>
+    @@include('./template/header.html')
+
+    <main>
+      <section class="ordering">
+        <div class="left-body__bg"></div>
+        <div class="container">
+          <div class="ordering__container">
+            <a href="#" class="btn-back btn-arrows">
+              <div class="btn-arrows__title">Вернуться к покупкам</div>
+              <div class="btn-arrows__img"></div>
+            </a>
+            <div class="title">Оформление заказа</div>
+            <div class="ordering__order">
+              <form class="ordering__order-form" action="#" method="POST">
+                <fieldset class="ordering__order-form-fieldset">
+                  <legend class="subtitle">Способ доставки</legend>
+                  <div class="ordering__order-form-fieldset-input">
+                    <input type="radio" name="delivery_method" id="pickup" value="pickup" />
+                    <label for="pickup">Самовывоз со склада, Москва, ул. Энергетиков, 3</label>
+                  </div>
+                  <div class="ordering__order-form-fieldset-input">
+                    <input type="radio" name="delivery_method" id="sdek" value="sdek" />
+                    <label for="sdek">Служба доставки СДЭК</label>
+                  </div>
+                </fieldset>
+                <fieldset class="ordering__order-form-fieldset">
+                  <legend class="subtitle">Способ оплаты</legend>
+                  <div class="ordering__order-form-fieldset-input">
+                    <input type="radio" name="card_payment" id="card_payment" value="card_payment" />
+                    <label for="card_payment">Оплата банковской картой</label>
+                  </div>
+                </fieldset>
+                <fieldset class="ordering__order-form-fieldset">
+                  <legend class="subtitle">Получатель</legend>
+                </fieldset>
+              </form>
+
+              <div class="ordering__ordermy"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('./template/footer.html')
+  </body>
+</html>

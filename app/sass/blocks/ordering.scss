@@ -1,0 +1,72 @@
+.ordering {
+  &__container {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+  }
+
+  &__order {
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  &__order-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.8rem;
+    width: 66%;
+  }
+
+  &__order-form-fieldset {
+    legend {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__order-form-fieldset-input {
+    border: $border;
+    display: flex;
+    column-gap: 1.2rem;
+    align-items: center;
+    padding: 1rem 2.4rem;
+    background: rgba(255, 255, 255, 0.35);
+    &:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+    label {
+      color: $black;
+      font-family: Gilroy;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      column-gap: 1.2rem;
+      align-items: center;
+      position: relative;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: url('../img/icon/radio-button-order-form.svg') 0 0 no-repeat;
+        background-size: contain;
+      }
+    }
+
+    input[type='radio'] {
+      display: none;
+      &:checked + label:before {
+        background: url('../img/icon/radio-button-order-form-checked.svg') no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__ordermy {
+    width: 52rem;
+  }
+}
