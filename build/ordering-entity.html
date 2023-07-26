@@ -290,22 +290,33 @@
                   </div>
                   <div class="ordering__order-form-item">
                     <legend class="subtitle">Способ оплаты</legend>
+
                     <div class="input-radio">
                       <div class="input-radio__inp">
                         <input
-                          autocomplete="off"
+                          class="input__slide-btn input__slide-toggle"
                           type="radio"
                           name="card_payment"
                           id="card_payment"
                           value="card_payment"
                         />
-                        <label for="card_payment">Оплата банковской картой</label>
+                        <label for="card_payment">Банковский перевод</label>
+                      </div>
+                      <div class="ordering__order-form-item-block input__slide-content">
+                        <div class="ordering__order-form-item-block ordering__order-form-item-bank">
+                          <input type="text" name="#" autocomplete="off" placeholder="Наименование организации" />
+                          <input type="text" name="#" autocomplete="off" placeholder="Юридический адрес" />
+                          <input type="text" name="#" autocomplete="off" placeholder="ИНН" />
+                          <input type="text" name="#" autocomplete="off" placeholder="ОГРН" />
+                          <input type="text" name="#" autocomplete="off" placeholder="КПП" />
+                          <input type="text" name="#" autocomplete="off" placeholder="Корпоративный счёт" />
+                          <input type="text" name="#" autocomplete="off" placeholder="БИК" />
+                          <input type="text" name="#" autocomplete="off" placeholder="Наименование банка" />
+                          <input type="text" name="#" autocomplete="off" placeholder="Расчётный счёт" />
+                          <textarea name="#" cols="30" rows="1" autocomplete="off" placeholder="Комментарий"></textarea>
+                        </div>
                       </div>
                     </div>
-                    <p>
-                      На нашем сайте оплата возможна только банковской картой для физических лиц, для юридических лиц
-                      возможна только оплата по счёту
-                    </p>
                   </div>
                   <div class="ordering__order-form-item">
                     <legend class="subtitle">Получатель</legend>

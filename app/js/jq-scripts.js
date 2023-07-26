@@ -195,3 +195,20 @@ $('[data-open-block]').on('click', function () {
 });
 
 $(() => $('#tabs').tabs());
+
+$('.your-order__list-item-desc-title').text(function (i, text) {
+  let txt = text;
+  if (txt.length >= 25) {
+    txt = txt.substring(0, 37);
+    txt = `${txt.substring(0, 37)}...`;
+  }
+  $(this).text(txt);
+});
+
+$('.input__slide-btn').change(function () {
+  if ($(this).parent().find('.input__slide-toggle').is(':checked')) {
+    $(this).parent().parent().parent().find('.input__slide-content').slideDown();
+  } else {
+    $(this).parent().parent().parent().find('.input__slide-content').slideUp();
+  }
+});

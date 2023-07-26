@@ -50,8 +50,39 @@
   height: 1.4rem;
 }
 
+.btn-form {
+  display: flex;
+  align-items: center;
+  padding: 2.4rem 4rem;
+  column-gap: 2rem;
+  background: $mainColor;
+  justify-content: center;
+
+  span {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  img {
+    width: 2.9rem;
+    height: 1.4rem;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: auto;
+  }
+
+  &:not([disabled]):hover {
+    background: $black;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .search {
@@ -99,7 +130,8 @@ main {
   flex: 1;
 }
 
-.left-body__bg {
+.left-body__bg,
+.right-body__bg {
   border-radius: 48rem;
   background: rgba(78, 193, 193, 0.5);
   filter: blur(25rem);
@@ -107,7 +139,15 @@ main {
   height: 48rem;
   flex-shrink: 0;
   position: absolute;
+}
+
+.left-body__bg {
   left: -50rem;
+}
+
+.right-body__bg {
+  top: 94rem;
+  right: -14rem;
 }
 
 .btn-back {
@@ -116,4 +156,12 @@ main {
     order: -1;
     transform: rotate(180deg);
   }
+}
+
+.price {
+  color: $black;
+  font-family: Gilroy;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
 }

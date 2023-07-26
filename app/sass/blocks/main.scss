@@ -242,32 +242,6 @@
     margin-top: 2.4rem;
   }
 
-  &-main__search-form-btn-search {
-    display: flex;
-    align-items: center;
-    padding: 2.4rem 4rem;
-    column-gap: 2rem;
-    background: $mainColor;
-    span {
-      color: #fff;
-      font-size: 1.8rem;
-      font-weight: 700;
-      line-height: 120%;
-    }
-    img {
-      width: 2.9rem;
-      height: 1.4rem;
-    }
-    &:disabled {
-      opacity: 0.4;
-      cursor: auto;
-    }
-    &:not([disabled]):hover {
-      background: $black;
-      transition: all 0.2s ease-in-out;
-    }
-  }
-
   &-main__search-form-btn-reset {
     color: $grey;
     font-size: 1.8rem;

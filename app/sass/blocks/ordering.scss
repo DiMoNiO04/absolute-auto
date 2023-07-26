@@ -1,4 +1,7 @@
 .ordering {
+  position: relative;
+  overflow: hidden;
+
   &__container {
     padding: 6rem 0;
     display: flex;
@@ -15,58 +18,103 @@
     display: flex;
     flex-direction: column;
     row-gap: 4.8rem;
-    width: 66%;
+    width: 107rem;
   }
 
-  &__order-form-fieldset {
+  &__order-form-item {
+    &:not(:last-child) {
+      margin-bottom: 4.8rem;
+    }
     legend {
       margin-bottom: 3.2rem;
     }
-  }
-
-  &__order-form-fieldset-input {
-    border: $border;
-    display: flex;
-    column-gap: 1.2rem;
-    align-items: center;
-    padding: 1rem 2.4rem;
-    background: rgba(255, 255, 255, 0.35);
-    &:not(:last-child) {
-      margin-bottom: 1.2rem;
-    }
-    label {
-      color: $black;
-      font-family: Gilroy;
-      font-size: 1.8rem;
+    p {
+      color: $grey;
+      font-size: 1.6rem;
       font-style: normal;
       font-weight: 600;
       line-height: 130%;
-      width: 100%;
-      cursor: pointer;
-      display: flex;
-      column-gap: 1.2rem;
-      align-items: center;
-      position: relative;
-      &:before {
-        content: '';
-        display: inline-block;
-        width: 2.5rem;
-        height: 2.5rem;
-        background: url('../img/icon/radio-button-order-form.svg') 0 0 no-repeat;
-        background-size: contain;
-      }
-    }
-
-    input[type='radio'] {
-      display: none;
-      &:checked + label:before {
-        background: url('../img/icon/radio-button-order-form-checked.svg') no-repeat;
-        background-size: contain;
-      }
+      max-width: 58rem;
+      margin-top: 2rem;
     }
   }
 
-  &__ordermy {
-    width: 52rem;
+  &__order-form-item-block {
+    padding: 2rem 2.4rem 3.2rem 2.4rem;
+    background: rgba(255, 255, 255, 0.35);
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      width: 30rem;
+      height: 50rem;
+      transform: rotate(-90deg);
+      flex-shrink: 0;
+      background: rgba(78, 193, 193, 0.5);
+      filter: blur(25rem);
+      position: absolute;
+      right: 10rem;
+      top: -12rem;
+      display: block;
+      z-index: -1;
+    }
+  }
+
+  &__order-form-item-title {
+    border: $border;
+    column-gap: 1.2rem;
+    padding: 1rem 2.4rem;
+    background: rgba(255, 255, 255, 0.35);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    color: $black;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 130%;
+
+    &::after {
+      content: '';
+      width: 30rem;
+      height: 50rem;
+      transform: rotate(-90deg);
+      flex-shrink: 0;
+      background: rgba(78, 193, 193, 0.5);
+      filter: blur(25rem);
+      position: absolute;
+      right: 10rem;
+      top: -12rem;
+      display: block;
+      z-index: -1;
+    }
+  }
+
+  &__order-form-item-inputs,
+  &__order-form-item-bank {
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 3rem 2.4rem 2.4rem 2.4rem;
+
+    input:nth-child(3) {
+      grid-area: 2/1/3/3;
+    }
+
+    textarea {
+      grid-area: 3/1/4/3;
+    }
+  }
+
+  &__order-form-item-bank {
+    padding: 0;
+    input {
+      grid-area: auto !important;
+    }
+    textarea {
+      grid-area: 6/1/7/3;
+    }
   }
 }
