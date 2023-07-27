@@ -18,15 +18,21 @@
 
   &__list-item {
     display: flex;
-    column-gap: 1.2rem;
+    justify-content: space-between;
     align-items: center;
 
-    &-img {
+    &-main {
+      display: flex;
+      column-gap: 1.2rem;
+      align-items: center;
+    }
+
+    &-main-img {
       width: 8rem;
       height: 8rem;
     }
 
-    &-desc {
+    &-main-desc {
       flex-grow: 1;
 
       &-number {
@@ -34,6 +40,10 @@
         font-size: 1.8rem;
         font-weight: 600;
         line-height: 130%;
+        &:hover {
+          color: $mainColor;
+          transition: all 0.2s ease-in-out;
+        }
       }
 
       &-title {

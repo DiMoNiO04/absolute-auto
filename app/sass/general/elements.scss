@@ -147,7 +147,7 @@ main {
 
 .right-body__bg {
   top: 94rem;
-  right: -14rem;
+  right: 0;
 }
 
 .btn-back {
@@ -164,4 +164,11 @@ main {
   font-size: 2rem;
   font-weight: 700;
   line-height: 140%;
+}
+
+.count {
+  color: $black;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 130%;
 }

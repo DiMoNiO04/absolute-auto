@@ -38,8 +38,6 @@
     margin: 0 auto;
     border: $border;
     background: $background;
-    max-width: 61rem;
-    padding: 6rem;
   }
 
   &__content-close {
@@ -64,6 +62,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 4.8rem;
+    max-width: 61rem;
+    padding: 6rem;
   }
 
   &__content-brand-info-logo {
@@ -121,5 +121,92 @@
         top: 0.5rem;
       }
     }
+  }
+
+  &__content-order-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    width: 97rem;
+    padding: 8rem;
+    button {
+      max-width: 43rem;
+    }
+  }
+
+  &__content-order-info-content {
+    overflow: auto;
+    height: 45rem;
+    &::-webkit-scrollbar {
+      width: 0.4rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $greyLight;
+      border: 0.4rem solid $greyLight;
+    }
+  }
+
+  &__content-order-info-content-lists {
+    margin-right: 4rem;
+  }
+
+  &__content-order-info-title {
+    color: $black;
+    font-family: Good Timing, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  &__content-order-info-content-lists-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: $border;
+    &:first-child {
+      border-top: $border;
+    }
+  }
+
+  &__content-order-info-content-lists-item-submain {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8rem;
+  }
+
+  &__content-order-info-content-lists-item-main {
+    display: flex;
+    column-gap: 2.4rem;
+    align-items: center;
+  }
+
+  &__content-order-info-content-lists-item-main-img {
+    width: 10.5rem;
+    height: 10.5rem;
+  }
+
+  &__content-order-info-content-lists-item-main-desc {
+    flex-grow: 1;
+    width: 38rem;
+  }
+
+  &__content-order-info-content-lists-item-main-desc-number {
+    color: $black;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+    &:hover {
+      color: $mainColor;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &__content-order-info-content-lists-item-main-desc-title {
+    color: $grey;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 140%;
   }
 }

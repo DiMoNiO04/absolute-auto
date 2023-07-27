@@ -53,3 +53,4 @@ class Modal {
 }
 
 const modalBrandInfo = document.querySelector('[data-modal="brand-info"]') ? new Modal('brand-info') : null;
+const modalOrderInfo = document.querySelector('[data-modal="order-info"]') ? new Modal('order-info') : null;

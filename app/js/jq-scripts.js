@@ -196,7 +196,7 @@ $('[data-open-block]').on('click', function () {
 
 $(() => $('#tabs').tabs());
 
-$('.your-order__list-item-desc-title').text(function (i, text) {
+$('.your-order__list-item-main-desc-title').text(function (i, text) {
   let txt = text;
   if (txt.length >= 25) {
     txt = txt.substring(0, 37);
