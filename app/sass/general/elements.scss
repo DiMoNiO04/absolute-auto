@@ -16,71 +16,6 @@
   line-height: 130%;
 }
 
-.btn-arrows {
-  display: flex;
-  column-gap: 2rem;
-  justify-content: flex-end;
-  align-items: center;
-  &:hover {
-    .btn-arrows__title {
-      color: #4ec1c1;
-      transition: all 0.2s ease-in-out;
-    }
-    .btn-arrows__img {
-      background: url(../../img/icon/arrows-blue.svg) no-repeat center;
-      background-size: cover;
-      transition: all 0.2s ease-in-out;
-    }
-  }
-}
-
-.btn-arrows__title {
-  color: #2c2a3b;
-  font-family: 'Good Timing', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 130%;
-  text-transform: uppercase;
-}
-
-.btn-arrows__img {
-  background: url(../../img/icon/arrows-black.svg) no-repeat center;
-  background-size: cover;
-  width: 3rem;
-  height: 1.4rem;
-}
-
-.btn-form {
-  display: flex;
-  align-items: center;
-  padding: 2.4rem 4rem;
-  column-gap: 2rem;
-  background: $mainColor;
-  justify-content: center;
-
-  span {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  img {
-    width: 2.9rem;
-    height: 1.4rem;
-  }
-
-  &:disabled {
-    opacity: 0.4;
-    cursor: auto;
-  }
-
-  &:not([disabled]):hover {
-    background: $black;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -150,20 +85,20 @@ main {
   right: 0;
 }
 
-.btn-back {
-  justify-content: flex-start;
-  div:last-child {
-    order: -1;
-    transform: rotate(180deg);
-  }
-}
-
 .price {
   color: $black;
   font-family: Gilroy;
   font-size: 2rem;
   font-weight: 700;
   line-height: 140%;
+  &__result-basket {
+    font-size: 2.4rem;
+    font-family: Good Timing, sans-serif;
+  }
+  &__basket {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
 }
 
 .count {
@@ -171,4 +106,42 @@ main {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 130%;
+}
+
+.pagination__bullets {
+  display: flex;
+  justify-content: center;
+  span {
+    width: 3rem;
+    height: 0.2rem;
+    border-radius: 0;
+  }
+  .swiper-pagination-bullet-active {
+    background: $mainColor;
+  }
+}
+
+.swiper__arrows {
+  display: flex;
+  column-gap: 2rem;
+  button {
+    width: 6.7rem;
+    height: 6.7rem;
+    border: 1px solid transparent;
+    background: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.swiper__arrows-prev.swiper-button-disabled,
+.swiper__arrows-next.swiper-button-disabled {
+  width: 6.7rem;
+  height: 6.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: $greyLight;
+  svg path {
+    stroke: $grey;
+  }
 }

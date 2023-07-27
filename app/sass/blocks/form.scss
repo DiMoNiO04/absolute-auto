@@ -1,0 +1,21 @@
+.form {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 4.8rem;
+    }
+
+    legend {
+      margin-bottom: 3.2rem;
+    }
+
+    p {
+      color: $grey;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      max-width: 58rem;
+      margin-top: 2rem;
+    }
+  }
+}

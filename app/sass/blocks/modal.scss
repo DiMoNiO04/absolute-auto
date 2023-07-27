@@ -188,14 +188,13 @@
   }
 
   &__content-order-info-content-lists-item-main-desc {
-    flex-grow: 1;
     width: 38rem;
   }
 
   &__content-order-info-content-lists-item-main-desc-number {
     color: $black;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 130%;
     &:hover {
       color: $mainColor;

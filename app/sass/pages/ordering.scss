@@ -20,24 +20,6 @@
     width: 107rem;
   }
 
-  &__order-form-item {
-    &:not(:last-child) {
-      margin-bottom: 4.8rem;
-    }
-    legend {
-      margin-bottom: 3.2rem;
-    }
-    p {
-      color: $grey;
-      font-size: 1.6rem;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 130%;
-      max-width: 58rem;
-      margin-top: 2rem;
-    }
-  }
-
   &__order-form-item-block {
     padding: 2rem 2.4rem 3.2rem 2.4rem;
     background: rgba(255, 255, 255, 0.35);

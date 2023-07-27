@@ -212,3 +212,9 @@ $('.input__slide-btn').change(function () {
     $(this).parent().parent().parent().find('.input__slide-content').slideUp();
   }
 });
+
+$('.click-toggle').each(function () {
+  $(this).on('click', function () {
+    $(this).toggleClass('active');
+  });
+});
