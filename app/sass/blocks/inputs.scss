@@ -1,5 +1,6 @@
 input[type='text'],
 input[type='email'],
+input[type='password'],
 textarea {
   padding: 1.2rem 2rem;
   border: none;
@@ -160,5 +161,51 @@ textarea {
       width: 4.3rem;
       height: 4.3rem;
     }
+  }
+
+  &-checkbox {
+    display: block;
+    margin: 0 0 5rem 0;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    input[type='checkbox'] {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      display: block;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &-checkbox span {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 4rem;
+    color: $black;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 140%;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      border: $border;
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      background: none;
+    }
+  }
+
+  &-checkbox input[type='checkbox']:checked + span:before {
+    border: none;
+    background-color: $mainColor;
+    background-position: 50% 50%;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-image: url('../img/icon/check-white.svg');
   }
 }

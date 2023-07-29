@@ -194,6 +194,14 @@ $('[data-open-block]').on('click', function () {
   $(`[data-block="${$(this).data('open-block')}"`).addClass('active');
 });
 
+$('[data-block-entrance-btn').on('click', function () {
+  $('[data-block-entrance-btn]').removeClass('active');
+  $(`[data-block-entrance-btn="${$(this).data('block-entrance-btn')}"`).addClass('active');
+
+  $('[data-block-entrance]').hide();
+  $(`[data-block-entrance="${$(this).data('block-entrance-btn')}"`).fadeIn(1000);
+});
+
 $(() => $('#tabs').tabs());
 
 $('.your-order__list-item-main-desc-title').text(function (i, text) {
@@ -217,4 +225,19 @@ $('.click-toggle').each(function () {
   $(this).on('click', function () {
     $(this).toggleClass('active');
   });
+});
+
+$('.view-pass').on('click', function () {
+  const el = $(this).parent().find('input');
+
+  if (el.attr('type') === 'password') {
+    el.attr('type', 'text');
+  } else {
+    el.attr('type', 'password');
+  }
+});
+
+$('.btn-signup').on('click', () => {
+  $('.form-login').fadeOut();
+  $('.form-sign').fadeIn();
 });

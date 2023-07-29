@@ -1,601 +1,472 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/swiper.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
-    <title>Главная страница</title>
+    <title>Абсолют авто</title>
   </head>
+
+  <style>
+    body {
+      background: rgb(0, 62, 0);
+      width: 100%;
+      height: 100%;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 5rem 0 0 5rem;
+    }
+
+    .menu {
+      margin: 3rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      column-gap: 3rem;
+      flex-wrap: wrap;
+      row-gap: 2rem;
+    }
+
+    .item {
+      display: block;
+      border: 0.3rem solid black;
+      height: 6rem;
+      width: 24rem;
+      border-radius: 1rem;
+      background: rgb(163, 172, 148);
+      text-align: center;
+    }
+
+    .item a,
+    .item div {
+      font-size: 1.4rem;
+      font-weight: 700;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+      text-decoration: none;
+      font-family: Goog Timing, sans-serif;
+    }
+
+    .item:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  </style>
+
   <body>
-    @@include('./template/header.html')
+    <ul class="menu">
+      <li class="item">
+        <a href="./main.html">Главная</a>
+      </li>
+      <li class="item">
+        <a href="./shiping-payment.html">Доставка и оплата</a>
+      </li>
+      <li class="item">
+        <a href="./ordering-ind.html">Оформление заказа (физ.лицо)</a>
+      </li>
+      <li class="item">
+        <a href="./ordering-entity.html">Оформление заказа (юр.лицо)</a>
+      </li>
+      <li class="item">
+        <a href="./basket-order.html">Корзина</a>
+      </li>
+    </ul>
 
-    <main>
-      <section class="main-main">
-        <div class="main-main__bg-2"></div>
-        <div class="main-main__bg-1">
-          <img src="./img/backgrounds/main.svg" alt="" />
-        </div>
-
-        <div class="container">
-          <div class="main-main__container">
-            <div class="main-main__search">
-              <div class="main-main__search-top">
-                <div class="main-main__search-top-title">поиск запчастей</div>
-                <div class="main-main__seacrh-top-count">1200 единиц</div>
-              </div>
-              <div class="main-main__search-center">
-                <div class="main-main__search-btns">
-                  <button class="main-main__search-btn active" data-open-block="form__search-auto">
-                    <div class="main-main__search-btn-top">
-                      <div class="main-main__search-btn-img">
-                        <img src="./img/icon/search-auto.svg" alt="" />
-                      </div>
-                      <div class="main-main__search-btn-title">Поиск по автомобилю</div>
-                    </div>
-                    <div class="main-main__search-arrow">
-                      <img src="./img/icon/search-two-arrows.svg" alt="" />
-                    </div>
-                  </button>
-                  <button class="main-main__search-btn" data-open-block="form__search-detail">
-                    <div class="main-main__search-btn-top">
-                      <div class="main-main__search-btn-img">
-                        <img src="./img/icon/details-auto.svg" alt="" />
-                      </div>
-                      <div class="main-main__search-btn-title">Поиск по запчасти</div>
-                    </div>
-                    <div class="main-main__search-arrow">
-                      <img src="./img/icon/search-two-arrows.svg" alt="" />
-                    </div>
-                  </button>
-                </div>
-                <form class="main-main__search-form active" action="#" method="#" data-block="form__search-auto">
-                  <input
-                    class="main-main__search-form-vin"
-                    autocomplete="off"
-                    type="text"
-                    name="#"
-                    placeholder="VIN номер"
-                  />
-
-                  <div class="main-main__search-form-select" data-checked="off">
-                    <div class="main-main__search-form-select-count">01</div>
-                    <input
-                      class="main-main__search-form-select-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="brands"
-                      placeholder="Марка"
-                    />
-                    <datalist
-                      class="main-main__search-form-select-datalist"
-                      datalist
-                      role="listbox"
-                      style="display: none"
-                    >
-                      <button class="main-main__search-form-select-reset">Марка</button>
-                      <option value="Acura">Acura</option>
-                      <option value="Audi">Audi</option>
-                      <option value="Alfa Romeo">Alfa Romeo</option>
-                      <option value="Bentley">Bentley</option>
-                      <option value="BMW">BMW</option>
-                      <option value="Cadilac">Cadilac</option>
-                      <option value="Chery">Chery</option>
-                      <option value="Lada">Lada</option>
-                      <option value="Porsche">Porsche</option>
-                      <option value="Mazda">Mazda</option>
-                      <option value="Lamborgini">Lamborgini</option>
-                      <option value="Bentley">Bentley</option>
-                      <option value="Volkswagen">Volkswagen</option>
-                    </datalist>
-                  </div>
-
-                  <div class="main-main__search-form-select" data-checked="off" style="display: none">
-                    <div class="main-main__search-form-select-count">02</div>
-                    <input
-                      class="main-main__search-form-select-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="models"
-                      placeholder="Модель"
-                    />
-                    <datalist
-                      class="main-main__search-form-select-datalist"
-                      datalist
-                      role="listbox"
-                      style="display: none"
-                    >
-                      <button class="main-main__search-form-select-reset">Модель</button>
-                      <option value="A3">A3</option>
-                      <option value="A4">A4</option>
-                      <option value="A6">A6</option>
-                      <option value="A8">A8</option>
-                      <option value="Q5">Q5</option>
-                      <option value="Q7">Q7</option>
-                      <option value="RS6">RS6</option>
-                      <option value="RS6C6">RS6C6</option>
-                    </datalist>
-                  </div>
-
-                  <div class="main-main__search-form-select" data-checked="off" style="display: none">
-                    <div class="main-main__search-form-select-count">03</div>
-                    <input
-                      class="main-main__search-form-select-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="year_create"
-                      placeholder="Год выпуска"
-                    />
-                    <datalist
-                      class="main-main__search-form-select-datalist"
-                      datalist
-                      role="listbox"
-                      style="display: none"
-                    >
-                      <button class="main-main__search-form-select-reset">Год выпуска</button>
-                      <option value="2022">2022</option>
-                      <option value="2021">2021</option>
-                      <option value="2020">2020</option>
-                      <option value="2019">2019</option>
-                      <option value="2018">2018</option>
-                      <option value="2017">2017</option>
-                      <option value="2016">2016</option>
-                      <option value="2015">2015</option>
-                    </datalist>
-                  </div>
-
-                  <div class="main-main__search-form-select" data-checked="off" style="display: none">
-                    <div class="main-main__search-form-select-count">04</div>
-                    <input
-                      class="main-main__search-form-select-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="body-car"
-                      placeholder="Кузов"
-                    />
-                    <datalist
-                      class="main-main__search-form-select-datalist"
-                      datalist
-                      role="listbox"
-                      style="display: none"
-                    >
-                      <button class="main-main__search-form-select-reset">Кузов</button>
-                      <option value="Седан">Седан</option>
-                      <option value="Хатчбэк">Хатчбэк</option>
-                      <option value="Универсал">Универсал</option>
-                      <option value="Купе">Купе</option>
-                      <option value="Кабриолет">Кабриолет</option>
-                      <option value="Тарга">Тарга</option>
-                    </datalist>
-                  </div>
-
-                  <div class="main-main__search-form-select" data-checked="off" style="display: none">
-                    <div class="main-main__search-form-select-count">05</div>
-                    <input
-                      class="main-main__search-form-select-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="engine"
-                      placeholder="Двигатель"
-                    />
-                    <datalist
-                      class="main-main__search-form-select-datalist"
-                      datalist
-                      role="listbox"
-                      style="display: none"
-                    >
-                      <button class="main-main__search-form-select-reset">Двигатель</button>
-                      <option value="1.6 Дизель">1.6 Дизель</option>
-                      <option value="2.0 Бензин">2.0 Бензин</option>
-                      <option value="1.9 Безин">1.9 Безин</option>
-                      <option value="1.6 Бензин">1.6 Бензин</option>
-                      <option value="1.6 Дизель">1.6 Дизель</option>
-                      <option value="2.0 Бензин">2.0 Бензин</option>
-                      <option value="1.9 Безин">1.9 Безин</option>
-                      <option value="1.6 Бензин">1.6 Бензин</option>
-                    </datalist>
-                  </div>
-
-                  <div class="main-main__search-form-select" data-checked="off" style="display: none">
-                    <div class="main-main__search-form-select-count">06</div>
-                    <input
-                      class="main-main__search-form-select-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="modification"
-                      placeholder="Модификация"
-                    />
-                    <datalist
-                      class="main-main__search-form-select-datalist modification-datalist"
-                      datalist
-                      role="listbox"
-                      style="display: none"
-                    >
-                      <button class="main-main__search-form-select-reset">Модификация</button>
-                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
-                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
-                      </option>
-                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
-                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
-                      </option>
-                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
-                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
-                      </option>
-                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
-                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
-                      </option>
-                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
-                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
-                      </option>
-                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
-                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
-                      </option>
-                    </datalist>
-                  </div>
-
-                  <div class="main-main__search-form-btns">
-                    <button disabled class="btn-form" type="submit" name="#">
-                      <span>Найти запчасть</span>
-                      <img src="./img/icon/arrows-white.svg" alt="" />
-                    </button>
-                    <button disabled type="reset" class="main-main__search-form-btn-reset">Сбросить</button>
-                  </div>
-                </form>
-                <form class="main-main__search-form" action="#" method="#" data-block="form__search-detail">
-                  <div class="main-main__search-form-select" data-checked="off">
-                    <div class="main-main__search-form-select-count">01</div>
-                    <input
-                      class="main-main__search-form-select-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="detailt"
-                      placeholder="Название запчасти"
-                    />
-                    <datalist
-                      class="main-main__search-form-select-datalist"
-                      datalist
-                      role="listbox"
-                      style="display: none"
-                    >
-                      <button class="main-main__search-form-select-reset">Название запчасти</button>
-                      <option value="Acura">Acura</option>
-                      <option value="Audi">Audi</option>
-                      <option value="Alfa Romeo">Alfa Romeo</option>
-                      <option value="Bentley">Bentley</option>
-                      <option value="BMW">BMW</option>
-                      <option value="Cadilac">Cadilac</option>
-                      <option value="Chery">Chery</option>
-                      <option value="Lada">Lada</option>
-                      <option value="Porsche">Porsche</option>
-                      <option value="Mazda">Mazda</option>
-                      <option value="Lamborgini">Lamborgini</option>
-                      <option value="Bentley">Bentley</option>
-                      <option value="Volkswagen">Volkswagen</option>
-                    </datalist>
-                  </div>
-
-                  <div class="main-main__search-form-select" data-checked="off" style="display: none">
-                    <div class="main-main__search-form-select-count">02</div>
-                    <input
-                      class="main-main__search-form-select-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="detail-brand"
-                      placeholder="Бренд"
-                    />
-                    <datalist
-                      class="main-main__search-form-select-datalist"
-                      datalist
-                      role="listbox"
-                      style="display: none"
-                    >
-                      <button class="main-main__search-form-select-reset">Бренд</button>
-                      <option value="A3">A3</option>
-                      <option value="A4">A4</option>
-                      <option value="A6">A6</option>
-                      <option value="A8">A8</option>
-                      <option value="Q5">Q5</option>
-                      <option value="Q7">Q7</option>
-                      <option value="RS6">RS6</option>
-                      <option value="RS6C6">RS6C6</option>
-                    </datalist>
-                  </div>
-
-                  <div class="main-main__search-form-btns">
-                    <button disabled class="main-main__search-form-btn-search" type="submit" name="#">
-                      <span>Найти запчасть</span>
-                      <img src="./img/icon/arrows-white.svg" alt="" />
-                    </button>
-                    <button disabled type="reset" class="main-main__search-form-btn-reset">Сбросить</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="main-main__right">
-              <div class="main-main__title title">
-                Все, что нужно <br />для <span>обслуживания<br /> </span> автомобиля
-              </div>
-              <div class="main-main__img">
-                <img src="./img/main-porshe.webp" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-autos">
-        <div class="main-autos__container">
-          <div class="container">
-            <div class="main-autos__items">
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/bmw.svg" alt="" />
-                <img src="./img/brands-auto/bmw-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/audi.svg" alt="" />
-                <img src="./img/brands-auto/audi-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/volkswagen.svg" alt="" />
-                <img src="./img/brands-auto/volkswagen-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/land-rover.svg" alt="" />
-                <img src="./img/brands-auto/land-rover-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/audi.svg" alt="" />
-                <img src="./img/brands-auto/audi-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/volkswagen.svg" alt="" />
-                <img src="./img/brands-auto/volkswagen-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/land-rover.svg" alt="" />
-                <img src="./img/brands-auto/land-rover-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/bmw.svg" alt="" />
-                <img src="./img/brands-auto/bmw-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/volkswagen.svg" alt="" />
-                <img src="./img/brands-auto/volkswagen-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/land-rover.svg" alt="" />
-                <img src="./img/brands-auto/land-rover-hover.svg" alt="" />
-              </div>
-              <div class="main-autos__item">
-                <img src="./img/brands-auto/bmw.svg" alt="" />
-                <img src="./img/brands-auto/bmw-hover.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-category">
-        <div class="main-category__container">
-          <div class="main-category__bg"></div>
-          <div class="main-category__top">
-            <div class="container">
-              <div class="main-category__top-container">
-                <div class="title">категории</div>
-                <div class="main-category__top-number">10+</div>
-              </div>
-            </div>
-          </div>
-          <div class="main-category__center">
-            <div class="main-category__center-top">
-              <div class="container">
-                <div class="main-category__center-items">
-                  <a href="#" class="main-category__center-item">
-                    <img src="./img/category/brake.svg" alt="" />
-                    <div class="main-category__center-item-title">Тормозная система</div>
-                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-                  </a>
-                  <a href="#" class="main-category__center-item">
-                    <img src="./img/category/engine.svg" alt="" />
-                    <div class="main-category__center-item-title">Двигатель</div>
-                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-                  </a>
-                  <a href="#" class="main-category__center-item">
-                    <img src="./img/category/battery.svg" alt="" />
-                    <div class="main-category__center-item-title">Запуск и зарядка</div>
-                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-                  </a>
-                  <a href="#" class="main-category__center-item">
-                    <img src="./img/category/clutch.svg" alt="" />
-                    <div class="main-category__center-item-title">Сцепление и маховик</div>
-                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="main-category__center-bottom">
-              <div class="container">
-                <div class="main-category__center-items">
-                  <a href="#" class="main-category__center-item">
-                    <img src="./img/category/depreciation.svg" alt="" />
-                    <div class="main-category__center-item-title">Амортизация</div>
-                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-                  </a>
-                  <a href="#" class="main-category__center-item">
-                    <img src="./img/category/fuel-supply-system.svg" alt="" />
-                    <div class="main-category__center-item-title">Система подачи топлива</div>
-                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-                  </a>
-                  <a href="#" class="main-category__center-item">
-                    <img src="./img/category/body-parts.svg" alt="" />
-                    <div class="main-category__center-item-title">Кузовные детали</div>
-                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-                  </a>
-                  <a href="#" class="main-category__center-item">
-                    <img src="./img/category/mechanical-box.svg" alt="" />
-                    <div class="main-category__center-item-title">Механическая коробка</div>
-                    <div class="main-category__center-item-subtitle">более <span>20000 </span>товаров</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="main-category__btn btn-arrows">
-            <div class="btn-arrows__title">Смотреть все</div>
-            <div class="btn-arrows__img"></div>
-          </a>
-        </div>
-      </section>
-      <section class="main-brands">
-        <div class="container">
-          <div class="main-brands__container">
-            <div class="main-brands__top">
-              <div class="title">Бренды автозапчастей</div>
-              <div class="swiper__arrows">
-                <button class="swiper__arrows-prev main-brands__arrows-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
-                    <path
-                      d="M9 16L2 9L9 2"
-                      stroke="white"
-                      stroke-width="2.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-                <button class="swiper__arrows-next main-brands__arrows-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none">
-                    <path
-                      d="M2 16L9 9L2 2"
-                      stroke="white"
-                      stroke-width="2.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <div class="main-brands__slider">
-              <div class="swiper" id="brands-swiper">
-                <div class="main-brands__swiper-wrapper swiper-wrapper">
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/textar.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/hella.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/brembo.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/delphi.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/bosch.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/trw.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/valeo.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/checkstar.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/metzger.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/metzger.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/triscan.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/bosch.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/brembo.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/bosch.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/textar.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/hella.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/brembo.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/delphi.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/bosch.svg" alt="" />
-                  </div>
-                  <div class="main-brands__swiper-slide swiper-slide" data-modal-el="brand-info">
-                    <img src="./img/brands/trw.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="pagination main__pagination">
-                <div class="pagination__bullets main-brands__bullets"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-about">
-        <div class="main-about__top">
-          <div class="container">
-            <div class="main-about__top-container">
-              <div class="title">О компании <br />absolute Auto</div>
-              <div class="main-about__top-desc">
-                <div class="main-about__top-desc-title">15 лет в сфере автозапчастей</div>
-                <a href="#" class="btn-arrows">
-                  <div class="btn-arrows__title">Подробнее</div>
-                  <div class="btn-arrows__img"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main-about__bottom">
-          <div class="main-about__bottom-logo">
-            <div class="main-about__bottom-logo-img">
-              <img src="./img/icon/logo.svg" alt="" />
-            </div>
-          </div>
-          <div class="main-about__bottom-text">
-            Качественные автозапчасти для иномарок в нашем интернет-магазине Absolute parts – один из ведущих
-            поставщиков автозапчастей в России. Мы напрямую сотрудничаем с импортерами, у нас можно заказать любые
-            комплектующие для автомобилей и получить их в течение 24 часов. Для подбора нужной детали на сайте можно
-            воспользоваться поиском, отметив номер в поисковой строке или выбрать онлайн по марке машины, указав модель
-            и модификацию.Сотрудничество с нами уже оценили тысячи благодарных клиентов:
-          </div>
-          <div class="main-about__bottom-text">
-            Absolute parts – лидер на Российском рынке, подтвердивший свою квалификацию и профессионализм. Ежедневно к
-            нам на сайт заходят тысячи посетителей, многие становятся нашими постоянными клиентами.Сотрудники магазина
-            вежливые, коммуникабельные, смогут подобрать автозапчасти по артикулу, модели, серии или по году выпуска
-            машины. Каждый заказчик может рассчитывать на квалифицированную поддержку, качественное обслуживание и
-            умеренные цены!
-          </div>
-        </div>
-        <div class="main-about__bg"></div>
-      </section>
-    </main>
-
-    @@include('./template/footer.html')
+    <h2>Модальные окна</h2>
+    <ul class="menu">
+      <li class="item">
+        <div data-modal-el="brand-info">Информация о бренде</div>
+      </li>
+      <li class="item">
+        <div data-modal-el="order-info">Подробнее о товарах в заказе</div>
+      </li>
+      <li class="item">
+        <div data-modal-el="entrance">Вход / Регистрация / Восстановление пароля</div>
+      </li>
+    </ul>
   </body>
+
+  <!--Модалка информация о бренде-->
+  <div class="modal close-x" data-modal="brand-info">
+    <div class="modal__inner">
+      <div class="modal__content modal__content-brand-info">
+        <div class="modal__content-close close-x">
+          <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+        </div>
+        <div class="modal__content-brand-info-logo">
+          <img src="./img/brands/modal/bosch.svg" alt="" />
+        </div>
+        <div class="modal__content-brand-info-descs">
+          <div class="modal__content-brand-info-desc">
+            <img src="./img/icon/based.svg" alt="" />
+            <p>Основан в: <span>1886 году</span></p>
+          </div>
+          <div class="modal__content-brand-info-desc">
+            <img src="./img/icon/location.svg" alt="" />
+            <p>Штаб-квартира: <span>Герлинген, Германия</span></p>
+          </div>
+        </div>
+        <div class="modal__content-brand-info-text">
+          <p>
+            Производство компонентов ходовой части и трансмиссии автотранспорта, автомобильной электроники,
+            электромоторов, аккумуляторных батарей, сеть автомастерских (15 тыс. в 150 странах)
+          </p>
+          <p>Около 500 дочерних компаний и региональных представителей примерно в 60 странах мира.</p>
+          <p>55 800 специалистов в 118 городах мира занимаются исследованиями и разработками.</p>
+          <p>
+            Автозапчасти Bosch являются продукцией премиум-класса и служат для обслуживания автомобилей соответствующего
+            уровня.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------------->
+
+  <!--Модалка подробнее о товарах в заказе-->
+  <div class="modal close-x" data-modal="order-info">
+    <div class="modal__inner">
+      <div class="modal__content modal__content-order-info">
+        <div class="modal__content-close close-x">
+          <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+        </div>
+        <div class="modal__title">Ваш заказ</div>
+        <div class="modal__content-order-info-content">
+          <ul class="modal__content-order-info-content-lists">
+            <li class="modal__content-order-info-content-lists-item">
+              <div class="modal__content-order-info-content-lists-item-main">
+                <div class="modal__content-order-info-content-lists-item-main-img">
+                  <img src="./img/order/detail.svg" alt="" />
+                </div>
+                <div class="modal__content-order-info-content-lists-item-main-desc">
+                  <a href="#" class="modal__content-order-info-content-lists-item-main-desc-number">
+                    1611455580 EUROREPAR
+                  </a>
+                  <div class="modal__content-order-info-content-lists-item-main-desc-title">
+                    Комплект тормозов барабанного тормозного механизма
+                  </div>
+                </div>
+              </div>
+              <div class="modal__content-order-info-content-lists-item-submain">
+                <div class="count">2 шт</div>
+                <div class="price">549 ₽</div>
+              </div>
+            </li>
+            <li class="modal__content-order-info-content-lists-item">
+              <div class="modal__content-order-info-content-lists-item-main">
+                <div class="modal__content-order-info-content-lists-item-main-img">
+                  <img src="./img/order/detail.svg" alt="" />
+                </div>
+                <div class="modal__content-order-info-content-lists-item-main-desc">
+                  <a href="#" class="modal__content-order-info-content-lists-item-main-desc-number">
+                    1611455580 EUROREPAR
+                  </a>
+                  <div class="modal__content-order-info-content-lists-item-main-desc-title">
+                    Комплект тормозов барабанного тормозного механизма
+                  </div>
+                </div>
+              </div>
+              <div class="modal__content-order-info-content-lists-item-submain">
+                <div class="count">2 шт</div>
+                <div class="price">549 ₽</div>
+              </div>
+            </li>
+            <li class="modal__content-order-info-content-lists-item">
+              <div class="modal__content-order-info-content-lists-item-main">
+                <div class="modal__content-order-info-content-lists-item-main-img">
+                  <img src="./img/order/detail.svg" alt="" />
+                </div>
+                <div class="modal__content-order-info-content-lists-item-main-desc">
+                  <a href="#" class="modal__content-order-info-content-lists-item-main-desc-number">
+                    1611455580 EUROREPAR
+                  </a>
+                  <div class="modal__content-order-info-content-lists-item-main-desc-title">
+                    Комплект тормозов барабанного тормозного механизма
+                  </div>
+                </div>
+              </div>
+              <div class="modal__content-order-info-content-lists-item-submain">
+                <div class="count">2 шт</div>
+                <div class="price">549 ₽</div>
+              </div>
+            </li>
+            <li class="modal__content-order-info-content-lists-item">
+              <div class="modal__content-order-info-content-lists-item-main">
+                <div class="modal__content-order-info-content-lists-item-main-img">
+                  <img src="./img/order/detail.svg" alt="" />
+                </div>
+                <div class="modal__content-order-info-content-lists-item-main-desc">
+                  <div class="modal__content-order-info-content-lists-item-main-desc-number">1611455580 EUROREPAR</div>
+                  <div class="modal__content-order-info-content-lists-item-main-desc-title">
+                    Комплект тормозов барабанного тормозного механизма
+                  </div>
+                </div>
+              </div>
+              <div class="modal__content-order-info-content-lists-item-submain">
+                <div class="count">2 шт</div>
+                <div class="price">549 ₽</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button disabled class="btn-form" type="submit" name="#">
+          <span>Оформить заказ</span>
+          <img src="./img/icon/arrows-white.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+  <!---------------------------------------->
+
+  <!--Модалка Вход/Регистрация/Восставновление пароля-->
+  <div class="modal close-x" data-modal="entrance">
+    <div class="modal__inner">
+      <div class="modal__content modal__content-entrance">
+        <div class="modal__content-close close-x">
+          <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+        </div>
+
+        <div class="entrance" data-block-entrance="entrance" id="entrance-content">
+          <div class="entrance__title">Войти</div>
+
+          <form action="" name="" method="" class="entrance__form">
+            <input autocomplete="off" type="email" name="#" placeholder="E-mail" required />
+            <div class="entrance__form-password">
+              <input autocomplete="off" type="password" name="w" placeholder="Пароль" required />
+              <button type="button" class="view-pass click-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.4rem" height="1.6rem" viewBox="0 0 24 16" fill="none">
+                  <path
+                    d="M12.0005 11.6969C14.0411 11.6969 15.6954 10.0427 15.6954 8.0021C15.6954 5.96149 14.0411 4.30725 12.0005 4.30725C9.9599 4.30725 8.30566 5.96149 8.30566 8.0021C8.30566 10.0427 9.9599 11.6969 12.0005 11.6969Z"
+                    fill="#98A0B1"
+                  />
+                  <path
+                    d="M23.6319 6.97862C20.7917 3.54657 16.4926 0.24292 12 0.24292C7.50665 0.24292 3.20646 3.54888 0.368214 6.97862C-0.122738 7.57164 -0.122738 8.43254 0.368214 9.02557C1.08178 9.88785 2.57773 11.5524 4.57572 13.0068C9.60759 16.6698 14.3814 16.6779 19.4244 13.0068C21.4224 11.5524 22.9183 9.88785 23.6319 9.02557C24.1214 8.4337 24.1239 7.57358 23.6319 6.97862ZM12 2.82931C14.8525 2.82931 17.1728 5.14967 17.1728 8.00209C17.1728 10.8545 14.8525 13.1749 12 13.1749C9.14763 13.1749 6.82726 10.8545 6.82726 8.00209C6.82726 5.14967 9.14763 2.82931 12 2.82931Z"
+                    fill="#98A0B1"
+                  />
+                </svg>
+              </button>
+            </div>
+            <button class="btn-form" type="button" name="#">
+              <span>Войти</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+          </form>
+
+          <div class="entrance__btns">
+            <button class="entrance__btn" data-block-entrance-btn="reg">Зарегистрироваться</button>
+            <button class="entrance__btn" data-block-entrance-btn="reccovery-pass">Забыли пароль?</button>
+          </div>
+        </div>
+
+        <div class="entrance" data-block-entrance="reg" id="tabs">
+          <div class="entrance__title">Регистрация</div>
+          <ul class="entrance__panel">
+            <li>
+              <a href="#reg-ind" class="entrace__panel-btn active">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2.4rem"
+                    height="2.4rem"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17 7C17 9.76142 14.7614 12 12 12C9.23858 12 7 9.76142 7 7C7 4.23858 9.23858 2 12 2C14.7614 2 17 4.23858 17 7ZM2.91016 21C2.91016 16.86 6.99016 14.5 12.0002 14.5C17.0102 14.5 21.0902 16.86 21.0902 21C21.0902 22.085 20.5 22.5 19.5902 22.5H4.41016C4 22.5 2.91016 22.5 2.91016 21Z"
+                      fill="#98A0B1"
+                    />
+                  </svg>
+                </div>
+                <span>Физическое лицо</span>
+              </a>
+            </li>
+            <li>
+              <a href="#reg-ent" class="entrace__panel-btn">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2.4rem"
+                    height="2.2rem"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M21.606 4.44558H16.4371V2.36275C16.4371 1.371 15.6302 0.564213 14.6385 0.564213H9.36111C8.36937 0.564213 7.56253 1.371 7.56253 2.36275V4.44558H2.39359C1.07684 4.44558 0.00554568 5.51688 0.00554568 6.83363C0.00554568 8.0297 -0.116946 9.10385 0.789437 10.3118C1.30226 10.9953 2.00698 11.4828 2.82738 11.7216L10.7941 14.0412C11.5815 14.2708 12.4181 14.2708 13.2054 14.0412L21.1721 11.7216C21.9925 11.4828 22.6973 10.9953 23.2101 10.3118C24.1206 9.09842 23.994 8.01323 23.994 6.83363C23.994 5.51688 22.9228 4.44558 21.606 4.44558ZM9.08595 2.36275C9.08604 2.2898 9.11506 2.21986 9.16664 2.16829C9.21823 2.11671 9.28817 2.0877 9.36111 2.08763H14.6385C14.7115 2.0877 14.7814 2.11671 14.833 2.16829C14.8846 2.21986 14.9136 2.2898 14.9137 2.36275V4.44558H9.08595V2.36275Z"
+                      fill="#98A0B1"
+                    />
+                    <path
+                      d="M21.5983 13.1843C13.0053 15.6862 13.1165 15.7368 12.0001 15.7368C10.8916 15.7368 11.1546 15.7327 2.40186 13.1844C1.479 12.9156 0.661689 12.4203 0.00585938 11.7375V19.0478C0.00585938 20.3645 1.0771 21.4358 2.39391 21.4358H21.6063C22.923 21.4358 23.9943 20.3645 23.9943 19.0478V11.7375C23.3385 12.4203 22.5212 12.9156 21.5983 13.1843Z"
+                      fill="#98A0B1"
+                    />
+                  </svg>
+                </div>
+                <span>Юридическое лицо</span>
+              </a>
+            </li>
+          </ul>
+          <form action="" name="" method="#" class="entrance__form" id="reg-ind">
+            <input autocomplete="off" type="email" name="email" placeholder="E-mail" required />
+            <div class="entrance__form-password">
+              <input autocomplete="off" type="password" name="password" placeholder="Пароль" required />
+              <button type="button" class="view-pass click-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.4rem" height="1.6rem" viewBox="0 0 24 16" fill="none">
+                  <path
+                    d="M12.0005 11.6969C14.0411 11.6969 15.6954 10.0427 15.6954 8.0021C15.6954 5.96149 14.0411 4.30725 12.0005 4.30725C9.9599 4.30725 8.30566 5.96149 8.30566 8.0021C8.30566 10.0427 9.9599 11.6969 12.0005 11.6969Z"
+                    fill="#98A0B1"
+                  />
+                  <path
+                    d="M23.6319 6.97862C20.7917 3.54657 16.4926 0.24292 12 0.24292C7.50665 0.24292 3.20646 3.54888 0.368214 6.97862C-0.122738 7.57164 -0.122738 8.43254 0.368214 9.02557C1.08178 9.88785 2.57773 11.5524 4.57572 13.0068C9.60759 16.6698 14.3814 16.6779 19.4244 13.0068C21.4224 11.5524 22.9183 9.88785 23.6319 9.02557C24.1214 8.4337 24.1239 7.57358 23.6319 6.97862ZM12 2.82931C14.8525 2.82931 17.1728 5.14967 17.1728 8.00209C17.1728 10.8545 14.8525 13.1749 12 13.1749C9.14763 13.1749 6.82726 10.8545 6.82726 8.00209C6.82726 5.14967 9.14763 2.82931 12 2.82931Z"
+                    fill="#98A0B1"
+                  />
+                </svg>
+              </button>
+            </div>
+            <label class="input-checkbox">
+              <input type="checkbox" name="#" />
+              <span>Согласен(а) с правилами пользования сайта и приобретения товара</span>
+            </label>
+            <button class="btn-form" type="submit" name="#">
+              <span>Зарегистрироваться</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+          </form>
+          <form action="" name="" method="#" class="entrance__form" id="reg-ent">
+            <input autocomplete="off" type="email" name="email" placeholder="E-mail" required />
+            <div class="entrance__form-password">
+              <input autocomplete="off" type="password" name="password" placeholder="Пароль" required />
+              <button type="button" class="view-pass click-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.4rem" height="1.6rem" viewBox="0 0 24 16" fill="none">
+                  <path
+                    d="M12.0005 11.6969C14.0411 11.6969 15.6954 10.0427 15.6954 8.0021C15.6954 5.96149 14.0411 4.30725 12.0005 4.30725C9.9599 4.30725 8.30566 5.96149 8.30566 8.0021C8.30566 10.0427 9.9599 11.6969 12.0005 11.6969Z"
+                    fill="#98A0B1"
+                  />
+                  <path
+                    d="M23.6319 6.97862C20.7917 3.54657 16.4926 0.24292 12 0.24292C7.50665 0.24292 3.20646 3.54888 0.368214 6.97862C-0.122738 7.57164 -0.122738 8.43254 0.368214 9.02557C1.08178 9.88785 2.57773 11.5524 4.57572 13.0068C9.60759 16.6698 14.3814 16.6779 19.4244 13.0068C21.4224 11.5524 22.9183 9.88785 23.6319 9.02557C24.1214 8.4337 24.1239 7.57358 23.6319 6.97862ZM12 2.82931C14.8525 2.82931 17.1728 5.14967 17.1728 8.00209C17.1728 10.8545 14.8525 13.1749 12 13.1749C9.14763 13.1749 6.82726 10.8545 6.82726 8.00209C6.82726 5.14967 9.14763 2.82931 12 2.82931Z"
+                    fill="#98A0B1"
+                  />
+                </svg>
+              </button>
+            </div>
+            <input autocomplete="off" type="text" name="name-org" placeholder="Наименование организации" required />
+            <label class="input-checkbox">
+              <input type="checkbox" name="#" />
+              <span>Согласен(а) с правилами пользования сайта и приобретения товара</span>
+            </label>
+            <button class="btn-form" type="submit" name="#">
+              <span>Зарегистрироваться</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+          </form>
+          <button class="entrance__btn" data-block-entrance-btn="entrance">Войти в профиль</button>
+        </div>
+
+        <div class="entrance" data-block-entrance="activate-acc">
+          <div class="entrance__title">Активируйте ваш личный кабинет</div>
+          <div class="entrance__activate">
+            <p>
+              Пожалуйста, проверьте Ваш почтовый ящик <a href="mailto: example@mail.ru">example@mail.ru</a> чтобы
+              активировать личный кабинет.
+            </p>
+            <p>
+              Если Вы не можете найти письмо, проверьте папку СПАМ или свяжитесь с нами любым удобны для Вас способом
+            </p>
+          </div>
+        </div>
+
+        <div class="entrance" data-block-entrance="reg-success">
+          <div class="entrance__success">
+            <div class="entrance__success-img">
+              <img src="./img/icon/check-white.svg" alt="" />
+            </div>
+            <div class="entrance__success-text">Регистрация прошла успешно!</div>
+          </div>
+        </div>
+
+        <div class="entrance entrance__recovery" data-block-entrance="reccovery-pass">
+          <div class="entrance__title">Восстановление пароля</div>
+          <p>На указанный адрес электронной почты придет ссылка для сброса пароля</p>
+          <form action="" name="" method="#" class="entrance__form">
+            <input autocomplete="off" type="email" name="email" placeholder="E-mail" required />
+            <button class="btn-form" type="submit" name="#">
+              <span>Сбросить пароль</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+          </form>
+        </div>
+
+        <div class="entrance entrance__recovery-email" data-block-entrance="reccovery-pass-email">
+          <div class="entrance__title">Восстановление пароля</div>
+          <p>Ссылка для сброса пароля выслана на почту</p>
+        </div>
+
+        <div class="entrance entrance__recovery" data-block-entrance="reccovery-pass-success">
+          <div class="entrance__title">Восстановление пароля</div>
+          <p>Утерянный пароль сброшен успешно, введите новый пароль и повторите его для сохранения</p>
+          <form action="" name="" method="#" class="entrance__form" id="reg-ind-form">
+            <div class="entrance__form-password">
+              <input autocomplete="off" type="password" name="password-first" placeholder="Новый пароль" required />
+              <button type="button" class="view-pass click-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.4rem" height="1.6rem" viewBox="0 0 24 16" fill="none">
+                  <path
+                    d="M12.0005 11.6969C14.0411 11.6969 15.6954 10.0427 15.6954 8.0021C15.6954 5.96149 14.0411 4.30725 12.0005 4.30725C9.9599 4.30725 8.30566 5.96149 8.30566 8.0021C8.30566 10.0427 9.9599 11.6969 12.0005 11.6969Z"
+                    fill="#98A0B1"
+                  />
+                  <path
+                    d="M23.6319 6.97862C20.7917 3.54657 16.4926 0.24292 12 0.24292C7.50665 0.24292 3.20646 3.54888 0.368214 6.97862C-0.122738 7.57164 -0.122738 8.43254 0.368214 9.02557C1.08178 9.88785 2.57773 11.5524 4.57572 13.0068C9.60759 16.6698 14.3814 16.6779 19.4244 13.0068C21.4224 11.5524 22.9183 9.88785 23.6319 9.02557C24.1214 8.4337 24.1239 7.57358 23.6319 6.97862ZM12 2.82931C14.8525 2.82931 17.1728 5.14967 17.1728 8.00209C17.1728 10.8545 14.8525 13.1749 12 13.1749C9.14763 13.1749 6.82726 10.8545 6.82726 8.00209C6.82726 5.14967 9.14763 2.82931 12 2.82931Z"
+                    fill="#98A0B1"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="entrance__form-password">
+              <input
+                autocomplete="off"
+                type="password"
+                name="password-second"
+                placeholder="Повторите пароль"
+                required
+              />
+              <button type="button" class="view-pass click-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.4rem" height="1.6rem" viewBox="0 0 24 16" fill="none">
+                  <path
+                    d="M12.0005 11.6969C14.0411 11.6969 15.6954 10.0427 15.6954 8.0021C15.6954 5.96149 14.0411 4.30725 12.0005 4.30725C9.9599 4.30725 8.30566 5.96149 8.30566 8.0021C8.30566 10.0427 9.9599 11.6969 12.0005 11.6969Z"
+                    fill="#98A0B1"
+                  />
+                  <path
+                    d="M23.6319 6.97862C20.7917 3.54657 16.4926 0.24292 12 0.24292C7.50665 0.24292 3.20646 3.54888 0.368214 6.97862C-0.122738 7.57164 -0.122738 8.43254 0.368214 9.02557C1.08178 9.88785 2.57773 11.5524 4.57572 13.0068C9.60759 16.6698 14.3814 16.6779 19.4244 13.0068C21.4224 11.5524 22.9183 9.88785 23.6319 9.02557C24.1214 8.4337 24.1239 7.57358 23.6319 6.97862ZM12 2.82931C14.8525 2.82931 17.1728 5.14967 17.1728 8.00209C17.1728 10.8545 14.8525 13.1749 12 13.1749C9.14763 13.1749 6.82726 10.8545 6.82726 8.00209C6.82726 5.14967 9.14763 2.82931 12 2.82931Z"
+                    fill="#98A0B1"
+                  />
+                </svg>
+              </button>
+            </div>
+            <button class="btn-form" type="submit" name="#">
+              <span>Сохранить пароль</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------->
+
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/modal.js"></script>
+  <script language="JavaScript" type="text/javascript" src="./js/jq-scripts.js"></script>
 </html>

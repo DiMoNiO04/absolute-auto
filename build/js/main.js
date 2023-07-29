@@ -33,7 +33,7 @@ document.querySelectorAll('.card__slider').forEach((content) => {
   const slider = content.querySelector('.card__swiper');
   const pagination = content.querySelector('.card__bullets');
 
-  new Swiper(slider, {
+  const cardSwiper = new Swiper(slider, {
     slidesPerView: 1,
     spaceBetween: 20,
     allowTouchMove: true,

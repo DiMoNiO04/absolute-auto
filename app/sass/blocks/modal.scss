@@ -24,6 +24,14 @@
     }
   }
 
+  &__title {
+    color: $black;
+    font-family: Good Timing, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
   &__inner {
     width: fit-content;
     position: relative;
@@ -151,14 +159,6 @@
     margin-right: 4rem;
   }
 
-  &__content-order-info-title {
-    color: $black;
-    font-family: Good Timing, sans-serif;
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 130%;
-  }
-
   &__content-order-info-content-lists-item {
     display: flex;
     justify-content: space-between;
@@ -207,5 +207,13 @@
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 140%;
+  }
+
+  &__content-entrance {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.8rem;
+    width: 61rem;
+    padding: 6rem;
   }
 }

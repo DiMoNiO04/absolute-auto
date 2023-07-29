@@ -40,6 +40,7 @@ class Modal {
     this.triggers.forEach((item) => {
       item.addEventListener('click', (event) => {
         event.preventDefault();
+        showEntranceContent($(this)[0]);
         this.open();
       });
     });
@@ -54,3 +55,13 @@ class Modal {
 
 const modalBrandInfo = document.querySelector('[data-modal="brand-info"]') ? new Modal('brand-info') : null;
 const modalOrderInfo = document.querySelector('[data-modal="order-info"]') ? new Modal('order-info') : null;
+const modalEntrance = document.querySelector('[data-modal="entrance"]') ? new Modal('entrance') : null;
+
+function showEntranceContent(el) {
+  if (el.name === 'entrance') {
+    $('.entrance').each(function () {
+      $(this).hide();
+    });
+    $('#entrance-content').fadeIn(1000);
+  }
+}
