@@ -236,8 +236,3 @@ $('.view-pass').on('click', function () {
     el.attr('type', 'password');
   }
 });
-
-$('.btn-signup').on('click', () => {
-  $('.form-login').fadeOut();
-  $('.form-sign').fadeIn();
-});

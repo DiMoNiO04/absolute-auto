@@ -94,6 +94,9 @@
       <li class="item">
         <div data-modal-el="entrance">Вход / Регистрация / Восстановление пароля</div>
       </li>
+      <li class="item">
+        <div data-modal-el="warning-order">Модалка предупреждения оформления заказа</div>
+      </li>
     </ul>
   </body>
 
@@ -237,7 +240,7 @@
           <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
         </div>
 
-        <div class="entrance" data-block-entrance="entrance" id="entrance-content">
+        <div class="entrance" data-block-entrance="entrance">
           <div class="entrance__title">Войти</div>
 
           <form action="" name="" method="" class="entrance__form">
@@ -461,12 +464,35 @@
       </div>
     </div>
   </div>
-  <!----------------->
+  <!--------------------------------------------------->
+
+  <!--Модалка предупреждения оформления заказа-->
+  <div class="modal close-x" data-modal="warning-order" id="warning-order">
+    <div class="modal__inner">
+      <div class="modal__content modal__content-warning-order">
+        <div class="modal__content-close close-x">
+          <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+        </div>
+        <div class="modal__content-warning-order-img">
+          <img src="./img/icon/exclamation-point.svg" alt="" />
+        </div>
+        <div class="modal__title">Авторизуйтесь для оформления заказа!</div>
+        <button class="btn-form" type="button" data-modal-el="entrance">
+          <span>Войти в профиль</span>
+          <img src="./img/icon/arrows-white.svg" alt="" />
+        </button>
+        <button class="modal__content-warning-order-reg" type="button" data-modal-el="entrance" id="reg-btn">
+          Зарегистрироваться
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------->
 
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="./js/swiper-bundle.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/swipers.js"></script>
   <script src="./js/modal.js"></script>
   <script language="JavaScript" type="text/javascript" src="./js/jq-scripts.js"></script>
 </html>

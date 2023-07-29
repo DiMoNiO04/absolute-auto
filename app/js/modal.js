@@ -1,10 +1,16 @@
-function showEntranceContent(el) {
-  if (el.name === 'entrance') {
-    $('.entrance').each(function () {
-      $(this).hide();
-    });
-    $('#entrance-content').fadeIn(1000);
-  }
+function showEntranceModal() {
+  $('.modal').each(function () {
+    $(this).removeClass('active');
+  });
+  $('#entrance').addClass('active');
+}
+
+function showEntranceModalContent(contentName) {
+  showEntranceModal();
+  $('.entrance').each(function () {
+    $(this).hide();
+  });
+  $(`[data-block-entrance=${contentName}]`).fadeIn(1000);
 }
 
 class Modal {
@@ -49,7 +55,13 @@ class Modal {
     this.triggers.forEach((item) => {
       item.addEventListener('click', (event) => {
         event.preventDefault();
-        showEntranceContent($(this)[0]);
+
+        if (event.target.id === 'reg-btn') {
+          showEntranceModalContent('reg');
+        } else if ($(this)[0].name === 'entrance') {
+          showEntranceModalContent('entrance');
+        }
+
         this.open();
       });
     });
@@ -65,3 +77,4 @@ class Modal {
 const modalBrandInfo = document.querySelector('[data-modal="brand-info"]') ? new Modal('brand-info') : null;
 const modalOrderInfo = document.querySelector('[data-modal="order-info"]') ? new Modal('order-info') : null;
 const modalEntrance = document.querySelector('[data-modal="entrance"]') ? new Modal('entrance') : null;
+const modalWarningOrder = document.querySelector('[data-modal="warning-order"]') ? new Modal('warning-order') : null;

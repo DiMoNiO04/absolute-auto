@@ -94,6 +94,9 @@
       <li class="item">
         <div data-modal-el="entrance">Вход / Регистрация / Восстановление пароля</div>
       </li>
+      <li class="item">
+        <div data-modal-el="warning-order">Модалка предупреждения оформления заказа</div>
+      </li>
     </ul>
   </body>
 
@@ -229,7 +232,7 @@
   </div>
   <!---------------------------------------->
 
-  <!--Модалка ВХОД-->
+  <!--Модалка Вход/Регистрация/Восставновление пароля-->
   <div class="modal close-x" data-modal="entrance">
     <div class="modal__inner">
       <div class="modal__content modal__content-entrance">
@@ -237,7 +240,7 @@
           <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
         </div>
 
-        <div class="entrance" data-block="entrance" id="entrance-content">
+        <div class="entrance" data-block-entrance="entrance">
           <div class="entrance__title">Войти</div>
 
           <form action="" name="" method="" class="entrance__form">
@@ -264,12 +267,12 @@
           </form>
 
           <div class="entrance__btns">
-            <button class="entrance__btn" data-block-btn="reg">Зарегистрироваться</button>
-            <button class="entrance__btn" data-block-btn="reccovery-pass">Забыли пароль?</button>
+            <button class="entrance__btn" data-block-entrance-btn="reg">Зарегистрироваться</button>
+            <button class="entrance__btn" data-block-entrance-btn="reccovery-pass">Забыли пароль?</button>
           </div>
         </div>
 
-        <div class="entrance" data-block="reg" id="tabs">
+        <div class="entrance" data-block-entrance="reg" id="tabs">
           <div class="entrance__title">Регистрация</div>
           <ul class="entrance__panel">
             <li>
@@ -370,10 +373,10 @@
               <img src="./img/icon/arrows-white.svg" alt="" />
             </button>
           </form>
-          <button class="entrance__btn" data-block-btn="entrance">Войти в профиль</button>
+          <button class="entrance__btn" data-block-entrance-btn="entrance">Войти в профиль</button>
         </div>
 
-        <div class="entrance" data-block="activate-acc">
+        <div class="entrance" data-block-entrance="activate-acc">
           <div class="entrance__title">Активируйте ваш личный кабинет</div>
           <div class="entrance__activate">
             <p>
@@ -386,7 +389,7 @@
           </div>
         </div>
 
-        <div class="entrance" data-block="reg-success">
+        <div class="entrance" data-block-entrance="reg-success">
           <div class="entrance__success">
             <div class="entrance__success-img">
               <img src="./img/icon/check-white.svg" alt="" />
@@ -395,7 +398,7 @@
           </div>
         </div>
 
-        <div class="entrance entrance__recovery" data-block="reccovery-pass">
+        <div class="entrance entrance__recovery" data-block-entrance="reccovery-pass">
           <div class="entrance__title">Восстановление пароля</div>
           <p>На указанный адрес электронной почты придет ссылка для сброса пароля</p>
           <form action="" name="" method="#" class="entrance__form">
@@ -407,12 +410,12 @@
           </form>
         </div>
 
-        <div class="entrance entrance__recovery-email" data-block="reccovery-pass-email">
+        <div class="entrance entrance__recovery-email" data-block-entrance="reccovery-pass-email">
           <div class="entrance__title">Восстановление пароля</div>
           <p>Ссылка для сброса пароля выслана на почту</p>
         </div>
 
-        <div class="entrance entrance__recovery" data-block="reccovery-pass-success">
+        <div class="entrance entrance__recovery" data-block-entrance="reccovery-pass-success">
           <div class="entrance__title">Восстановление пароля</div>
           <p>Утерянный пароль сброшен успешно, введите новый пароль и повторите его для сохранения</p>
           <form action="" name="" method="#" class="entrance__form" id="reg-ind-form">
@@ -461,12 +464,35 @@
       </div>
     </div>
   </div>
-  <!----------------->
+  <!--------------------------------------------------->
+
+  <!--Модалка предупреждения оформления заказа-->
+  <div class="modal close-x" data-modal="warning-order" id="warning-order">
+    <div class="modal__inner">
+      <div class="modal__content modal__content-warning-order">
+        <div class="modal__content-close close-x">
+          <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+        </div>
+        <div class="modal__content-warning-order-img">
+          <img src="./img/icon/exclamation-point.svg" alt="" />
+        </div>
+        <div class="modal__title">Авторизуйтесь для оформления заказа!</div>
+        <button class="btn-form" type="button" data-modal-el="entrance">
+          <span>Войти в профиль</span>
+          <img src="./img/icon/arrows-white.svg" alt="" />
+        </button>
+        <button class="modal__content-warning-order-reg" type="button" data-modal-el="entrance" id="reg-btn">
+          Зарегистрироваться
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------->
 
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="./js/swiper-bundle.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/swipers.js"></script>
   <script src="./js/modal.js"></script>
   <script language="JavaScript" type="text/javascript" src="./js/jq-scripts.js"></script>
 </html>

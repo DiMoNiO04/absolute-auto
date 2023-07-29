@@ -193,7 +193,7 @@
 
   &__content-order-info-content-lists-item-main-desc-number {
     color: $black;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 130%;
     &:hover {
@@ -215,5 +215,46 @@
     row-gap: 4.8rem;
     width: 61rem;
     padding: 6rem;
+  }
+}
+
+.modal__content-warning-order {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+  width: 61rem;
+  padding: 6rem;
+  align-items: center;
+  justify-content: center;
+
+  &-img {
+    width: 3.4rem;
+    height: 3.4rem;
+    background: $mainColor;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  .modal__title {
+    text-align: center;
+  }
+
+  .btn-form {
+    width: 31.5rem;
+  }
+
+  &-reg {
+    color: $black;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 110%;
   }
 }
