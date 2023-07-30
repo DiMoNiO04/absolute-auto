@@ -1,8 +1,7 @@
-'use strict';
-
 // -------------------------------Form------------------------------//
 // --------------------Form function--------------------------------//
-var currentFocus;
+let currentFocus;
+
 function changeCheckedInputForm(elem) {
   if (elem.parent().prev().val() === '') {
     elem.parent().parent().attr('data-checked', 'off');
@@ -10,21 +9,25 @@ function changeCheckedInputForm(elem) {
     elem.parent().parent().attr('data-checked', 'on');
   }
 }
+
 function changeDisableFormSubmitButton(elem) {
-  var isRes = true;
+  let isRes = true;
+
   elem.find('.main-main__search-form-select').each(function () {
     if ($(this).attr('data-checked') === 'off') {
       isRes = false;
     }
   });
+
   if (isRes) {
     elem.find('.main-main__search-form-btn-search').removeAttr('disabled');
   } else {
     elem.find('.main-main__search-form-btn-search').attr('disabled', 'disabled');
   }
 }
+
 function changeDisableFormResetButton(elem) {
-  var isRes = true;
+  let isRes = true;
   elem.find('.main-main__search-form-select').each(function () {
     if ($(this).attr('data-checked') === 'on') {
       isRes = false;
@@ -36,11 +39,13 @@ function changeDisableFormResetButton(elem) {
     elem.find('.main-main__search-form-btn-reset').attr('disabled', 'disabled');
   }
 }
+
 function removeActive(x) {
-  for (var i = 0; i < x.length; i += 1) {
+  for (let i = 0; i < x.length; i += 1) {
     x[i].classList.remove('active');
   }
 }
+
 function addActive(x) {
   if (!x) return false;
   removeActive(x);
@@ -63,10 +68,11 @@ $('.main-main__search-form').each(function () {
         $(this).addClass('active');
         $(this).find('.main-main__search-form-select-datalist').fadeIn(1000);
       }
+
       $(this)
         .find('.main-main__search-form-select-input')
         .on('input', function () {
-          var text = $(this).val().toUpperCase();
+          const text = $(this).val().toUpperCase();
           $(this)
             .next()
             .find('option')
@@ -79,6 +85,7 @@ $('.main-main__search-form').each(function () {
             });
         });
     });
+
   $(this)
     .find('.main-main__search-form-select')
     .each(function (index) {
@@ -91,6 +98,7 @@ $('.main-main__search-form').each(function () {
             changeCheckedInputForm($(this));
             changeDisableFormSubmitButton($(this).parent().parent().parent());
             changeDisableFormResetButton($(this).parent().parent().parent());
+
             if (
               index !== 5 &&
               $(this).parent().parent().next().css('display') !== 'flex' &&
@@ -101,6 +109,7 @@ $('.main-main__search-form').each(function () {
           });
         });
     });
+
   $(this)
     .find('.main-main__search-form-select')
     .find('button')
@@ -108,18 +117,21 @@ $('.main-main__search-form').each(function () {
       $(this).on('click', function (event) {
         event.preventDefault();
         $(this).parent().prev().val('');
+
         $(this)
           .parent()
           .find('option')
           .each(function () {
             $(this).css('display', 'block');
           });
+
         $(this).parent().fadeIn(1000);
         changeCheckedInputForm($(this));
         changeDisableFormSubmitButton($(this).parent().parent().parent());
         changeDisableFormResetButton($(this).parent().parent().parent());
       });
     });
+
   $(this)
     .find('.main-main__search-form-btn-reset')
     .each(function () {
@@ -134,6 +146,7 @@ $('.main-main__search-form').each(function () {
           });
         changeDisableFormSubmitButton($(this).parent().parent().parent());
         changeDisableFormResetButton($(this).parent().parent().parent());
+
         $(this)
           .parent()
           .parent()
@@ -145,6 +158,7 @@ $('.main-main__search-form').each(function () {
           });
       });
     });
+
   $(this)
     .find('.main-main__search-form-select-input')
     .on('keydown', function (event) {
@@ -162,7 +176,8 @@ $('.main-main__search-form').each(function () {
       }
     });
 });
-$(document).click(function (event) {
+
+$(document).click((event) => {
   if (!$(event.target).closest('.main-main__search-form-select').length) {
     $('.main-main__search-form-select').removeClass('active');
     $('.main-main__search-form-select-datalist').fadeOut(1000);
@@ -173,27 +188,31 @@ $(document).click(function (event) {
 
 $('[data-open-block]').on('click', function () {
   $('[data-open-block]').removeClass('active');
-  $('[data-open-block="'.concat($(this).data('open-block'), '"')).addClass('active');
+  $(`[data-open-block="${$(this).data('open-block')}"`).addClass('active');
+
   $('[data-block]').removeClass('active');
-  $('[data-block="'.concat($(this).data('open-block'), '"')).addClass('active');
+  $(`[data-block="${$(this).data('open-block')}"`).addClass('active');
 });
+
 $('[data-block-entrance-btn').on('click', function () {
   $('[data-block-entrance-btn]').removeClass('active');
-  $('[data-block-entrance-btn="'.concat($(this).data('block-entrance-btn'), '"')).addClass('active');
+  $(`[data-block-entrance-btn="${$(this).data('block-entrance-btn')}"`).addClass('active');
+
   $('[data-block-entrance]').hide();
-  $('[data-block-entrance="'.concat($(this).data('block-entrance-btn'), '"')).fadeIn(1000);
+  $(`[data-block-entrance="${$(this).data('block-entrance-btn')}"`).fadeIn(1000);
 });
-$(function () {
-  return $('#tabs').tabs();
-});
+
+$(() => $('#tabs').tabs());
+
 $('.your-order__list-item-main-desc-title').text(function (i, text) {
-  var txt = text;
+  let txt = text;
   if (txt.length >= 25) {
     txt = txt.substring(0, 37);
-    txt = ''.concat(txt.substring(0, 37), '...');
+    txt = `${txt.substring(0, 37)}...`;
   }
   $(this).text(txt);
 });
+
 $('.input__slide-btn').change(function () {
   if ($(this).parent().find('.input__slide-toggle').is(':checked')) {
     $(this).parent().parent().parent().find('.input__slide-content').slideDown();
@@ -201,13 +220,16 @@ $('.input__slide-btn').change(function () {
     $(this).parent().parent().parent().find('.input__slide-content').slideUp();
   }
 });
+
 $('.click-toggle').each(function () {
   $(this).on('click', function () {
     $(this).toggleClass('active');
   });
 });
+
 $('.view-pass').on('click', function () {
-  var el = $(this).parent().find('input');
+  const el = $(this).parent().find('input');
+
   if (el.attr('type') === 'password') {
     el.attr('type', 'text');
   } else {

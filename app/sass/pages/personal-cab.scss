@@ -1,0 +1,51 @@
+.pers-cab {
+  position: relative;
+
+  &__container {
+    display: flex;
+    column-gap: 3rem;
+    padding: 6rem 0 15rem 0;
+  }
+
+  &__content {
+    display: none;
+    width: 100%;
+  }
+
+  form {
+    border: $border;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 6rem 21rem 6rem 6rem;
+    margin-top: 6rem;
+    position: relative;
+  }
+
+  &__form-block {
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .form__item {
+    margin-bottom: 4rem;
+  }
+
+  &__btn-arrows {
+    justify-content: flex-start;
+    width: fit-content;
+    .btn-arrows__title {
+      font-family: Gilroy, sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 120%;
+      text-transform: inherit;
+    }
+  }
+
+  .input-radio__inp {
+    &:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+  }
+}

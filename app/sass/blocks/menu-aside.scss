@@ -1,0 +1,60 @@
+.menu-aside {
+  border: $border;
+  display: flex;
+  flex-direction: column;
+  width: 38.3rem;
+  height: 100%;
+
+  li {
+    &:not(:last-child) {
+      border-bottom: $border;
+    }
+
+    &.ui-state-active {
+      background: rgba(255, 255, 255, 0.35);
+
+      .menu-aside__btn-icon {
+        background: $mainColor;
+      }
+    }
+
+    &:not(:last-child).ui-state-active {
+      svg path {
+        fill: $white;
+      }
+    }
+
+    &:last-child.ui-state-active {
+      svg path {
+        stroke: $white;
+      }
+    }
+  }
+
+  &__btn {
+    padding: 2rem 3.2rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+
+  &__btn-icon {
+    width: 4.3rem;
+    height: 4.3rem;
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  &__btn-name {
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+  }
+}
