@@ -258,3 +258,22 @@
     line-height: 110%;
   }
 }
+
+.modal__content-update-pass {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.8rem;
+  width: 58rem;
+  padding: 6rem;
+
+  .input-password {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .btn-form {
+    margin-top: 4.8rem;
+    width: 100%;
+  }
+}

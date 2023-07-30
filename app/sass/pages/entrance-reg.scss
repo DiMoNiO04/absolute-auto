@@ -21,23 +21,6 @@
     }
   }
 
-  &__form-password {
-    position: relative;
-    button {
-      position: absolute;
-      right: 2rem;
-      top: 1.6rem;
-    }
-    button {
-      &.active {
-        svg path {
-          fill: $mainColor;
-          transition: all 0.2s ease-in-out;
-        }
-      }
-    }
-  }
-
   &__btns {
     display: flex;
     flex-direction: column;

@@ -209,4 +209,21 @@ textarea {
     background-repeat: no-repeat;
     background-image: url('../img/icon/check-white.svg');
   }
+
+  &-password {
+    position: relative;
+    button {
+      position: absolute;
+      right: 2rem;
+      top: 1.6rem;
+    }
+    button {
+      &.active {
+        svg path {
+          fill: $mainColor;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
 }

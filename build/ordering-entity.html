@@ -653,7 +653,7 @@
 
             <form action="" name="" method="" class="entrance__form">
               <input autocomplete="off" type="email" name="#" placeholder="E-mail" required />
-              <div class="entrance__form-password">
+              <div class="input-password">
                 <input autocomplete="off" type="password" name="w" placeholder="Пароль" required />
                 <button type="button" class="view-pass click-toggle">
                   <svg
@@ -736,7 +736,7 @@
             </ul>
             <form action="" name="" method="#" class="entrance__form" id="reg-ind">
               <input autocomplete="off" type="email" name="email" placeholder="E-mail" required />
-              <div class="entrance__form-password">
+              <div class="input-password">
                 <input autocomplete="off" type="password" name="password" placeholder="Пароль" required />
                 <button type="button" class="view-pass click-toggle">
                   <svg
@@ -768,7 +768,7 @@
             </form>
             <form action="" name="" method="#" class="entrance__form" id="reg-ent">
               <input autocomplete="off" type="email" name="email" placeholder="E-mail" required />
-              <div class="entrance__form-password">
+              <div class="input-password">
                 <input autocomplete="off" type="password" name="password" placeholder="Пароль" required />
                 <button type="button" class="view-pass click-toggle">
                   <svg
@@ -845,7 +845,7 @@
             <div class="entrance__title">Восстановление пароля</div>
             <p>Утерянный пароль сброшен успешно, введите новый пароль и повторите его для сохранения</p>
             <form action="" name="" method="#" class="entrance__form" id="reg-ind-form">
-              <div class="entrance__form-password">
+              <div class="input-password">
                 <input autocomplete="off" type="password" name="password-first" placeholder="Новый пароль" required />
                 <button type="button" class="view-pass click-toggle">
                   <svg
@@ -866,7 +866,7 @@
                   </svg>
                 </button>
               </div>
-              <div class="entrance__form-password">
+              <div class="input-password">
                 <input
                   autocomplete="off"
                   type="password"
@@ -903,6 +903,76 @@
       </div>
     </div>
     <!----------------->
+
+    <!--Модалка изменение пароля-->
+    <div class="modal close-x" data-modal="update-password">
+      <div class="modal__inner">
+        <div class="modal__content modal__content-update-pass">
+          <div class="modal__content-close close-x">
+            <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+          </div>
+          <div class="modal__title">Изменение пароля</div>
+          <form method="" action="">
+            <div class="input-password">
+              <input autocomplete="off" type="password" name="old-pass" placeholder="Старый пароль" required />
+              <button type="button" class="view-pass click-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.4rem" height="1.6rem" viewBox="0 0 24 16" fill="none">
+                  <path
+                    d="M12.0005 11.6969C14.0411 11.6969 15.6954 10.0427 15.6954 8.0021C15.6954 5.96149 14.0411 4.30725 12.0005 4.30725C9.9599 4.30725 8.30566 5.96149 8.30566 8.0021C8.30566 10.0427 9.9599 11.6969 12.0005 11.6969Z"
+                    fill="#98A0B1"
+                  />
+                  <path
+                    d="M23.6319 6.97862C20.7917 3.54657 16.4926 0.24292 12 0.24292C7.50665 0.24292 3.20646 3.54888 0.368214 6.97862C-0.122738 7.57164 -0.122738 8.43254 0.368214 9.02557C1.08178 9.88785 2.57773 11.5524 4.57572 13.0068C9.60759 16.6698 14.3814 16.6779 19.4244 13.0068C21.4224 11.5524 22.9183 9.88785 23.6319 9.02557C24.1214 8.4337 24.1239 7.57358 23.6319 6.97862ZM12 2.82931C14.8525 2.82931 17.1728 5.14967 17.1728 8.00209C17.1728 10.8545 14.8525 13.1749 12 13.1749C9.14763 13.1749 6.82726 10.8545 6.82726 8.00209C6.82726 5.14967 9.14763 2.82931 12 2.82931Z"
+                    fill="#98A0B1"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="input-password">
+              <input autocomplete="off" type="password" name="new-pass" placeholder="Новый пароль" required />
+              <button type="button" class="view-pass click-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.4rem" height="1.6rem" viewBox="0 0 24 16" fill="none">
+                  <path
+                    d="M12.0005 11.6969C14.0411 11.6969 15.6954 10.0427 15.6954 8.0021C15.6954 5.96149 14.0411 4.30725 12.0005 4.30725C9.9599 4.30725 8.30566 5.96149 8.30566 8.0021C8.30566 10.0427 9.9599 11.6969 12.0005 11.6969Z"
+                    fill="#98A0B1"
+                  />
+                  <path
+                    d="M23.6319 6.97862C20.7917 3.54657 16.4926 0.24292 12 0.24292C7.50665 0.24292 3.20646 3.54888 0.368214 6.97862C-0.122738 7.57164 -0.122738 8.43254 0.368214 9.02557C1.08178 9.88785 2.57773 11.5524 4.57572 13.0068C9.60759 16.6698 14.3814 16.6779 19.4244 13.0068C21.4224 11.5524 22.9183 9.88785 23.6319 9.02557C24.1214 8.4337 24.1239 7.57358 23.6319 6.97862ZM12 2.82931C14.8525 2.82931 17.1728 5.14967 17.1728 8.00209C17.1728 10.8545 14.8525 13.1749 12 13.1749C9.14763 13.1749 6.82726 10.8545 6.82726 8.00209C6.82726 5.14967 9.14763 2.82931 12 2.82931Z"
+                    fill="#98A0B1"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="input-password">
+              <input
+                autocomplete="off"
+                type="password"
+                name="repeat-new-pass"
+                placeholder="Повторите пароль"
+                required
+              />
+              <button type="button" class="view-pass click-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.4rem" height="1.6rem" viewBox="0 0 24 16" fill="none">
+                  <path
+                    d="M12.0005 11.6969C14.0411 11.6969 15.6954 10.0427 15.6954 8.0021C15.6954 5.96149 14.0411 4.30725 12.0005 4.30725C9.9599 4.30725 8.30566 5.96149 8.30566 8.0021C8.30566 10.0427 9.9599 11.6969 12.0005 11.6969Z"
+                    fill="#98A0B1"
+                  />
+                  <path
+                    d="M23.6319 6.97862C20.7917 3.54657 16.4926 0.24292 12 0.24292C7.50665 0.24292 3.20646 3.54888 0.368214 6.97862C-0.122738 7.57164 -0.122738 8.43254 0.368214 9.02557C1.08178 9.88785 2.57773 11.5524 4.57572 13.0068C9.60759 16.6698 14.3814 16.6779 19.4244 13.0068C21.4224 11.5524 22.9183 9.88785 23.6319 9.02557C24.1214 8.4337 24.1239 7.57358 23.6319 6.97862ZM12 2.82931C14.8525 2.82931 17.1728 5.14967 17.1728 8.00209C17.1728 10.8545 14.8525 13.1749 12 13.1749C9.14763 13.1749 6.82726 10.8545 6.82726 8.00209C6.82726 5.14967 9.14763 2.82931 12 2.82931Z"
+                    fill="#98A0B1"
+                  />
+                </svg>
+              </button>
+            </div>
+            <button class="btn-form" type="submit" name="#">
+              <span>Изменить пароль</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!---------------------------->
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

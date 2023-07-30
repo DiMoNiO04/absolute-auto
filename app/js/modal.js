@@ -78,3 +78,6 @@ const modalBrandInfo = document.querySelector('[data-modal="brand-info"]') ? new
 const modalOrderInfo = document.querySelector('[data-modal="order-info"]') ? new Modal('order-info') : null;
 const modalEntrance = document.querySelector('[data-modal="entrance"]') ? new Modal('entrance') : null;
 const modalWarningOrder = document.querySelector('[data-modal="warning-order"]') ? new Modal('warning-order') : null;
+const modalUpdatePassword = document.querySelector('[data-modal="update-password"]')
+  ? new Modal('update-password')
+  : null;

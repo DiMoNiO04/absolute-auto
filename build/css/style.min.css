@@ -1076,7 +1076,7 @@ textarea::placeholder {
   height: 2.4rem;
   display: inline-block;
 }
-.entrance__form-password button.active svg path,
+.input-password button.active svg path,
 .input-radio__panel a svg:hover path {
   fill: #4ec1c1;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1148,6 +1148,14 @@ textarea::placeholder {
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-image: url(../img/icon/check-white.svg);
+}
+.input-password {
+  position: relative;
+}
+.input-password button {
+  position: absolute;
+  right: 2rem;
+  top: 1.6rem;
 }
 .modal {
   display: -webkit-box;
@@ -1443,6 +1451,25 @@ textarea::placeholder {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 110%;
+}
+.modal__content-update-pass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 4.8rem;
+  width: 58rem;
+  padding: 6rem;
+}
+.modal__content-update-pass .input-password:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.modal__content-update-pass .btn-form {
+  margin-top: 4.8rem;
+  width: 100%;
 }
 .your-order,
 .your-order__list {
@@ -2761,14 +2788,6 @@ textarea::placeholder {
 .entrance__form .btn-form {
   width: 100%;
   margin-top: 4.8rem;
-}
-.entrance__form-password {
-  position: relative;
-}
-.entrance__form-password button {
-  position: absolute;
-  right: 2rem;
-  top: 1.6rem;
 }
 .entrance__btns {
   display: -webkit-box;
