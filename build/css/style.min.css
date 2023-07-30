@@ -2948,3 +2948,47 @@ textarea::placeholder {
 .pers-cab .input-radio__inp:not(:last-child) {
   margin-bottom: 1.2rem;
 }
+.pers-cab__empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20rem;
+  -moz-column-gap: 20rem;
+  column-gap: 20rem;
+  padding: 12.4rem 0 0 16rem;
+}
+.pers-cab__empty-bg {
+  width: 31.4rem;
+  height: 31.4rem;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(78, 193, 193, 0.5);
+  -webkit-filter: blur(25rem);
+  filter: blur(25rem);
+  position: absolute;
+  top: -10rem;
+  left: -6rem;
+}
+.pers-cab__empty-icons {
+  position: relative;
+}
+.pers-cab__empty-icons-img {
+  width: 19rem;
+  height: 19rem;
+}
+.pers-cab__empty-desc {
+  width: 42rem;
+}
+.pers-cab__empty-desc p {
+  color: #2c2a3b;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 1.6rem 0 4rem;
+}
+.pers-cab__empty-desc .btn-form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}

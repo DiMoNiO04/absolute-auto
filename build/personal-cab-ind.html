@@ -332,7 +332,10 @@
                       <div class="input-radio__inp">
                         <input type="radio" name="address" id="address-1" value="address-1" />
                         <label for="address-1">
-                          <div class="input-address__text">г. Санкт-Петербург, Парфеновская ул 9к1 стр 1</div>
+                          <div class="input-address__text">
+                            г. Санкт-Петербург, Парфеновская ул 9к1 стр 1
+                            <span>Основной адрес</span>
+                          </div>
                         </label>
                         <div class="input-radio__panel">
                           <a href="#">
@@ -434,12 +437,78 @@
             </section>
             <section class="pers-cab__content" id="history-order">
               <div class="title">История заказов</div>
+              <!--Нет заказов-->
+              <div class="pers-cab__empty">
+                <div class="pers-cab__empty-icons">
+                  <div class="pers-cab__empty-icons-img">
+                    <img src="./img/icon/shopping-cart-big.svg" alt="" />
+                  </div>
+                  <div class="pers-cab__empty-bg"></div>
+                </div>
+                <div class="pers-cab__empty-desc">
+                  <div class="subtitle">У вас пока нет заказов</div>
+                  <p>Более 1000 запчастей и более 100 брендов в наличии. Найдите вашу запчасть.</p>
+                  <a href="#" class="btn-form" type="submit" name="#">
+                    <span>Перейти в каталог</span>
+                    <img src="./img/icon/arrows-white.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!---------------->
+
+              <!--Есть заказы-->
+
+              <!---------------->
             </section>
             <section class="pers-cab__content" id="my-garage">
               <div class="title">Мой гараж</div>
+              <!--Нет машин в гараже-->
+              <div class="pers-cab__empty">
+                <div class="pers-cab__empty-icons">
+                  <div class="pers-cab__empty-icons-img">
+                    <img src="./img/icon/driving-big.svg" alt="" />
+                  </div>
+                  <div class="pers-cab__empty-bg"></div>
+                </div>
+                <div class="pers-cab__empty-desc">
+                  <div class="subtitle">В гараже пока нет машин</div>
+                  <p>Добавляйте автомобили в гараж, так вы сможете быстрее находить нужные для вас детали.</p>
+                  <a href="#" class="btn-form" type="submit" name="#">
+                    <span>Добавить авто в гараж</span>
+                    <img src="./img/icon/arrows-white.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!----------------------->
+
+              <!--Есть машины в гараже-->
+
+              <!------------------------->
             </section>
             <section class="pers-cab__content" id="favorites">
               <div class="title">Избранное</div>
+              <!--Нет машин в гараже-->
+              <div class="pers-cab__empty">
+                <div class="pers-cab__empty-icons">
+                  <div class="pers-cab__empty-icons-img">
+                    <img src="./img/icon/heart-big.svg" alt="" />
+                  </div>
+                  <div class="pers-cab__empty-bg"></div>
+                </div>
+                <div class="pers-cab__empty-desc">
+                  <div class="subtitle">В избранном пока ничего нет</div>
+                  <p>Добавляйте товары в избранное с помощью ❤️</p>
+                  <a href="#" class="btn-form" type="submit" name="#">
+                    <span>Перейти в каталог</span>
+                    <img src="./img/icon/arrows-white.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!----------------------->
+
+              <!--Есть машины в гараже-->
+
+              <!------------------------->
             </section>
             <section class="pers-cab__content" id="VIN-inquiries">
               <div class="title">Запросы по VIN</div>
