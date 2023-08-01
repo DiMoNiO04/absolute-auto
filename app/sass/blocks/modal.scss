@@ -277,3 +277,11 @@
     width: 100%;
   }
 }
+
+.modal__content-update-address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.8rem;
+  width: 58rem;
+  padding: 6rem;
+}

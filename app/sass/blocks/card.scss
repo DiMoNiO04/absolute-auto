@@ -1,11 +1,31 @@
 .card {
+  &-no-available {
+    .card__content-panel-status {
+      background-color: $black;
+    }
+
+    .card__content-panel {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-available {
+    .card__content-panel {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   &__content {
     padding: 2rem 2rem 3.2rem 2rem;
     background: $white;
     max-width: 24.5rem;
-    height: 36rem;
+    height: 100%;
     border: $border;
     border-color: transparent;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
       border-color: $mainColor;
@@ -13,9 +33,16 @@
   }
 
   &__content-panel {
-    // display: flex;
-    // justify-content: space-between;
     margin-bottom: 0.5rem;
+  }
+
+  &__content-panel-status {
+    padding: 0.4rem 0.8rem;
+    background: $mainColor;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
   }
 
   &__content-panel-like {
@@ -56,11 +83,19 @@
     display: flex;
     flex-direction: column;
     row-gap: 1.2rem;
+    height: 100%;
     p {
       color: $black;
       font-size: 1.6rem;
       font-weight: 600;
       line-height: 130%;
+    }
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.2rem;
+      height: 100%;
+      justify-content: space-between;
     }
   }
 
@@ -73,7 +108,7 @@
       font-size: 1.8rem;
       font-weight: 700;
       line-height: 120%;
-      text-transform: capitalize;
+      text-transform: inherit;
     }
   }
 }

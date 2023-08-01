@@ -81,3 +81,4 @@ const modalWarningOrder = document.querySelector('[data-modal="warning-order"]')
 const modalUpdatePassword = document.querySelector('[data-modal="update-password"]')
   ? new Modal('update-password')
   : null;
+const modalUpdateAddress = document.querySelector('[data-modal="update-address"]') ? new Modal('update-address') : null;

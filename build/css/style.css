@@ -754,6 +754,7 @@ main {
   font-weight: 600;
   line-height: 130%;
   padding-bottom: 0.8rem;
+  cursor: pointer;
 }
 .btn-reset:hover {
   color: #2c2a3b;
@@ -1726,6 +1727,19 @@ textarea::placeholder {
   width: 100%;
 }
 
+.modal__content-update-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 4.8rem;
+  width: 58rem;
+  padding: 6rem;
+}
+
 .your-order {
   width: 52rem;
   height: 100%;
@@ -1898,19 +1912,53 @@ textarea::placeholder {
   margin-top: 2rem;
 }
 
+.card-no-available .card__content-panel-status {
+  background-color: #2c2a3b;
+}
+.card-no-available .card__content-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.card-available .card__content-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 .card__content {
   padding: 2rem 2rem 3.2rem 2rem;
   background: #ffffff;
   max-width: 24.5rem;
-  height: 36rem;
+  height: 100%;
   border: 0.2rem solid rgba(255, 255, 255, 0.8);
   border-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .card__content:hover {
   border-color: #4ec1c1;
 }
 .card__content-panel {
   margin-bottom: 0.5rem;
+}
+.card__content-panel-status {
+  padding: 0.4rem 0.8rem;
+  background: #4ec1c1;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 130%;
 }
 .card__content-panel-like {
   display: -webkit-box;
@@ -1950,12 +1998,27 @@ textarea::placeholder {
   -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 1.2rem;
+  height: 100%;
 }
 .card__content-info p {
   color: #2c2a3b;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 130%;
+}
+.card__content-info-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  height: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .card__btn-buy {
   -webkit-column-gap: 1.2rem;
@@ -1971,7 +2034,7 @@ textarea::placeholder {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 120%;
-  text-transform: capitalize;
+  text-transform: inherit;
 }
 
 .menu-aside {
@@ -3286,6 +3349,7 @@ textarea::placeholder {
 .pers-cab__content {
   display: none;
   width: 100%;
+  position: relative;
 }
 .pers-cab form {
   border: 0.2rem solid rgba(255, 255, 255, 0.8);
@@ -3365,4 +3429,152 @@ textarea::placeholder {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.pers-cab__fill {
+  margin-top: 6rem;
+}
+
+.pers-cab__fill-garage {
+  padding: 2rem 2.4rem;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.pers-cab__fill-garage:hover {
+  cursor: pointer;
+}
+.pers-cab__fill-garage:hover::after {
+  content: '';
+  position: absolute;
+  width: 48rem;
+  height: 24rem;
+  background: rgba(78, 193, 193, 0.5);
+  -webkit-filter: blur(25rem);
+  filter: blur(25rem);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  top: 0;
+  left: 0;
+}
+.pers-cab__fill-garage:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.pers-cab__fill-garage-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.4rem;
+  -moz-column-gap: 2.4rem;
+  column-gap: 2.4rem;
+}
+.pers-cab__fill-garage-logo {
+  width: 10rem;
+  height: 10rem;
+}
+.pers-cab__fill-garage-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+.pers-cab__fill-garage-desc-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.4rem;
+  -moz-column-gap: 2.4rem;
+  column-gap: 2.4rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.pers-cab__fill-garage-desc-titles-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+.pers-cab__fill-garage-desc-titles-title {
+  color: #2c2a3b;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+.pers-cab__fill-garage-desc-vin,
+.pers-cab__fill-garage-desc-year {
+  color: #98a0b1;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 130%;
+}
+.pers-cab__fill-garage-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.4rem;
+  -moz-column-gap: 2.4rem;
+  column-gap: 2.4rem;
+}
+.pers-cab__fill-garage-btns a {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.pers-cab__fill-garage-btns-del {
+  background: #eaebf0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+}
+.pers-cab__fill-garage-btns-del img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.pers-cab__fill-fav:not(:last-child) {
+  margin-bottom: 15rem;
+}
+.pers-cab__fill-fav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.pers-cab__fill-fav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+  -moz-column-gap: 3rem;
+  column-gap: 3rem;
+  row-gap: 3rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }

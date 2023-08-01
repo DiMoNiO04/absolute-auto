@@ -10,6 +10,7 @@
   &__content {
     display: none;
     width: 100%;
+    position: relative;
   }
 
   form {
@@ -88,5 +89,122 @@
     .btn-form {
       width: fit-content;
     }
+  }
+}
+
+.pers-cab__fill {
+  margin-top: 6rem;
+}
+
+.pers-cab__fill-garage {
+  padding: 2rem 2.4rem;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 48rem;
+      height: 24rem;
+      background: rgba(78, 193, 193, 0.5);
+      filter: blur(25rem);
+      transition: all 0.2s ease-in-out;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &-left {
+    display: flex;
+    column-gap: 2.4rem;
+  }
+
+  &-logo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &-desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+  }
+
+  &-desc-titles {
+    display: flex;
+    column-gap: 2.4rem;
+    align-items: center;
+  }
+
+  &-desc-titles-btn {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+  }
+
+  &-desc-titles-title {
+    color: $black;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  &-desc-vin,
+  &-desc-year {
+    color: $grey;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &-btns {
+    display: flex;
+    column-gap: 2.4rem;
+    a {
+      height: fit-content;
+    }
+  }
+
+  &-btns-del {
+    background: $background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}
+
+.pers-cab__fill-fav {
+  &:not(:last-child) {
+    margin-bottom: 15rem;
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  &-items {
+    display: flex;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    flex-wrap: wrap;
   }
 }

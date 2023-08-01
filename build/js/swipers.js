@@ -1,4 +1,6 @@
-const brandsSwiper = new Swiper('#brands-swiper', {
+'use strict';
+
+var brandsSwiper = new Swiper('#brands-swiper', {
   slidesPerView: 6,
   slidesPerColumn: 2,
   grid: {
@@ -14,8 +16,7 @@ const brandsSwiper = new Swiper('#brands-swiper', {
     clickable: true,
   },
 });
-
-const cardsSwiper = new Swiper('#cards-swiper', {
+var cardsSwiper = new Swiper('#cards-swiper', {
   slidesPerView: 6,
   spaceBetween: 20,
   allowTouchMove: false,
@@ -28,12 +29,10 @@ const cardsSwiper = new Swiper('#cards-swiper', {
     clickable: true,
   },
 });
-
-document.querySelectorAll('.card__slider').forEach((content) => {
-  const slider = content.querySelector('.card__swiper');
-  const pagination = content.querySelector('.card__bullets');
-
-  const cardSwiper = new Swiper(slider, {
+document.querySelectorAll('.card__slider').forEach(function (content) {
+  var slider = content.querySelector('.card__swiper');
+  var pagination = content.querySelector('.card__bullets');
+  var cardSwiper = new Swiper(slider, {
     slidesPerView: 1,
     spaceBetween: 20,
     allowTouchMove: true,
