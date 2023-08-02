@@ -1831,7 +1831,7 @@ input:focus:-ms-input-placeholder {
   width: 58rem;
   padding: 6rem;
 }
-.modal__content-update-pass .input-password:not(:last-child) {
+.modal__content-update-pass .input__block:not(:last-child) {
   margin-bottom: 3rem;
 }
 .modal__content-update-pass .btn-form {
@@ -3311,7 +3311,8 @@ input:focus:-ms-input-placeholder {
   font-weight: 700;
   line-height: 130%;
 }
-.entrance__form input {
+.entrance__form .input__block,
+.entrance__form .input__block-pass {
   margin-bottom: 3rem;
 }
 .entrance__form .btn-form {

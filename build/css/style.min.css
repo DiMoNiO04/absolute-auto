@@ -1571,7 +1571,7 @@ input:focus:-ms-input-placeholder {
   width: 58rem;
   padding: 6rem;
 }
-.modal__content-update-pass .input-password:not(:last-child) {
+.modal__content-update-pass .input__block:not(:last-child) {
   margin-bottom: 3rem;
 }
 .modal__content-update-pass .btn-form {
@@ -2845,7 +2845,9 @@ input:focus:-ms-input-placeholder {
 .basket__main-calculation .title {
   font-size: 3.8rem;
 }
-.basket__main-calculation .form__item {
+.basket__main-calculation .form__item,
+.entrance__recovery input,
+.entrance__recovery-email input {
   margin-bottom: 0;
 }
 .basket__main-calculation .form__item .input-radio:last-child {
@@ -2932,7 +2934,8 @@ input:focus:-ms-input-placeholder {
   font-weight: 700;
   line-height: 130%;
 }
-.entrance__form input {
+.entrance__form .input__block,
+.entrance__form .input__block-pass {
   margin-bottom: 3rem;
 }
 .entrance__form .btn-form {
@@ -3051,10 +3054,6 @@ input:focus:-ms-input-placeholder {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 140%;
-}
-.entrance__recovery input,
-.entrance__recovery-email input {
-  margin-bottom: 0;
 }
 .pers-cab,
 .pers-cab form {

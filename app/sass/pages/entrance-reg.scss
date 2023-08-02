@@ -12,7 +12,8 @@
   }
 
   &__form {
-    input {
+    .input__block,
+    .input__block-pass {
       margin-bottom: 3rem;
     }
     .btn-form {
