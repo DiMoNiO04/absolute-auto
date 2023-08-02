@@ -23,8 +23,8 @@ $(window).on('hashchange', () => {
 });
 
 $(document).ready(() => {
-  let locationArr = window.location.href.split('/');
-  let page = locationArr[locationArr.length - 1];
+  const locationArr = window.location.href.split('/');
+  const page = locationArr[locationArr.length - 1];
 
   if (window.location.hash) {
     const hash = window.location.hash.slice(1);

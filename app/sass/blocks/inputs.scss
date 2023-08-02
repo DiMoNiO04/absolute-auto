@@ -73,6 +73,54 @@ input:focus:-ms-input-placeholder {
     height: 1.6rem;
     right: 2rem;
     top: 1.8rem;
+    display: none;
+  }
+  span {
+    color: #df3030;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 0.4rem 0 0 2rem;
+    display: none;
+  }
+  //Если инпут заполнен некорректно
+  &.error {
+    span {
+      display: block;
+    }
+    input {
+      color: $red;
+      &::placeholder {
+        color: $red;
+      }
+      &:focus {
+        border-color: $red;
+      }
+    }
+  }
+
+  &-pass {
+    button {
+      display: block;
+      width: 2.4rem;
+      height: 2.4rem;
+      top: 1.4rem;
+    }
+    img:first-child {
+      display: block;
+    }
+    img:last-child {
+      display: none;
+    }
+  }
+  &.open {
+    img:first-child {
+      display: none;
+    }
+
+    img:last-child {
+      display: block;
+    }
   }
 }
 
@@ -86,6 +134,10 @@ input:focus:-ms-input-placeholder {
     &__inputs {
       display: flex;
       column-gap: 2.4rem;
+    }
+
+    .input__block {
+      width: 50%;
     }
 
     .btn-arrows {
@@ -264,22 +316,5 @@ input:focus:-ms-input-placeholder {
     background-size: 2.5rem 2.5rem;
     background-repeat: no-repeat;
     background-image: url('../img/icon/check-blue.svg');
-  }
-
-  &-password {
-    position: relative;
-    button {
-      position: absolute;
-      right: 2rem;
-      top: 1.6rem;
-    }
-    button {
-      &.active {
-        svg path {
-          fill: $mainColor;
-          transition: all 0.2s ease-in-out;
-        }
-      }
-    }
   }
 }

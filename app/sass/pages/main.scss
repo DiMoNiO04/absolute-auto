@@ -125,6 +125,15 @@
     }
   }
 
+  &-main__search-form-select-reset {
+    color: $grey;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 0.8rem;
+    width: 100%;
+  }
+
   &-main__search-form-select {
     position: relative;
     width: 100%;

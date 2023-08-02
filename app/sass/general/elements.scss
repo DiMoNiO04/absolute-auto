@@ -23,14 +23,7 @@ html {
 .search {
   position: relative;
   input {
-    width: 100%;
-    padding: 2rem;
-    border: none;
-    color: #2c2a3b;
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 140%;
-    border: 0.2rem solid #f0f1f5;
+    padding: 1.7rem 7rem 1.7rem 2rem !important;
   }
   input::placeholder {
     color: #98a0b1;

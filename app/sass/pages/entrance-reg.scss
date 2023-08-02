@@ -37,10 +37,17 @@
     line-height: 140%;
   }
 
+  &__form-reg {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
   &__panel {
     display: flex;
     column-gap: 4rem;
-    li a {
+    li button {
       display: flex;
       align-items: center;
       column-gap: 1.5rem;
@@ -59,7 +66,7 @@
         line-height: 140%;
       }
     }
-    .ui-tabs-active {
+    .active {
       div {
         background: $mainColor;
       }
