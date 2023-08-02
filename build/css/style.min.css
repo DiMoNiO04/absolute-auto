@@ -1752,16 +1752,16 @@ textarea::placeholder {
 .menu-aside li:not(:last-child) {
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
 }
-.menu-aside li.ui-state-active {
+.menu-aside li.active {
   background: rgba(255, 255, 255, 0.35);
 }
-.menu-aside li.ui-state-active .menu-aside__btn-icon {
+.menu-aside li.active .menu-aside__btn-icon {
   background: #4ec1c1;
 }
-.menu-aside li:not(:last-child).ui-state-active svg path {
+.menu-aside li:not(:last-child).active svg path {
   fill: #fff;
 }
-.menu-aside li:last-child.ui-state-active svg path {
+.menu-aside li:last-child.active svg path {
   stroke: #fff;
 }
 .menu-aside__btn,
@@ -2528,6 +2528,9 @@ textarea::placeholder {
 }
 .shiping__content {
   display: none;
+}
+.shiping__content.active {
+  display: block;
 }
 .shiping__content-wrap,
 .shiping__content-wrap ul {

@@ -74,7 +74,7 @@ gulp.task('server', function () {
 
 gulp.task('copy', function () {
   return gulp
-    .src(['app/fonts/**/*.{woff, woff2, eot, ttf}', 'app/img/**', 'app/js/**', 'app/css/**'], {
+    .src(['app/fonts/**/*.{woff, woff2, eot, ttf}', 'app/img/**', 'app/js/**', 'app/css/**', 'app/libs/**'], {
       base: 'app',
     })
     .pipe(gulp.dest('build'));

@@ -10,7 +10,7 @@
       border-bottom: $border;
     }
 
-    &.ui-state-active {
+    &.active {
       background: rgba(255, 255, 255, 0.35);
 
       .menu-aside__btn-icon {
@@ -18,13 +18,13 @@
       }
     }
 
-    &:not(:last-child).ui-state-active {
+    &:not(:last-child).active {
       svg path {
         fill: $white;
       }
     }
 
-    &:last-child.ui-state-active {
+    &:last-child.active {
       svg path {
         stroke: $white;
       }

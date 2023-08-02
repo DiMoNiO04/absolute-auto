@@ -16,10 +16,10 @@
         <div class="left-body__bg"></div>
         <div class="right-body__bg"></div>
         <div class="container">
-          <div class="shiping__container" id="tabs">
+          <div class="shiping__container">
             <ul class="menu-aside">
               <li>
-                <a href="#payment" class="menu-aside__btn">
+                <a href="#payment" data-open-content="payment" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@
                 </a>
               </li>
               <li>
-                <a href="#delivery" class="menu-aside__btn">
+                <a href="#delivery" data-open-content="delivery" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@
                 </a>
               </li>
               <li>
-                <a href="#return" class="menu-aside__btn">
+                <a href="#return" data-open-content="return" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@
                 </a>
               </li>
             </ul>
-            <section class="shiping__content" id="payment" style="display: block">
+            <section class="shiping__content" data-content="payment">
               <div class="title">Оплата</div>
               <div class="shiping__content-wrap">
                 <div class="shiping__content-block">
@@ -142,7 +142,7 @@
                 </div>
               </div>
             </section>
-            <section class="shiping__content" id="delivery">
+            <section class="shiping__content" data-content="delivery">
               <div class="title">Доставка</div>
               <div class="shiping__content-wrap">
                 <div class="shiping__content-block">
@@ -169,7 +169,7 @@
                 </div>
               </div>
             </section>
-            <section class="shiping__content" id="return">
+            <section class="shiping__content" data-content="return">
               <div class="title">Возврат</div>
               <div class="shiping__content-wrap">
                 <div class="shiping__content-block">
