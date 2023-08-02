@@ -19,7 +19,12 @@
               </a>
               <div class="header__top-search">
                 <form class="search" action="" method="get">
-                  <input name="#" placeholder="Поиск по VIN номеру, названию, OEM номеру, артикулу" type="search" />
+                  <input
+                    name="#"
+                    autocomplete="off"
+                    placeholder="Поиск по VIN номеру, названию, OEM номеру, артикулу"
+                    type="search"
+                  />
                   <button type="submit" name="#">
                     <img src="./img/icon/search.svg" alt="" />
                   </button>
@@ -165,10 +170,10 @@
         <div class="left-body__bg"></div>
         <div class="right-body__bg"></div>
         <div class="container">
-          <div class="pers-cab__container" id="tabs">
+          <div class="pers-cab__container">
             <ul class="menu-aside">
               <li>
-                <a href="#profile" class="menu-aside__btn">
+                <a href="#profile" data-open-content="profile" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +194,7 @@
                 </a>
               </li>
               <li>
-                <a href="#history-order" class="menu-aside__btn">
+                <a href="#history-order" data-open-content="history-order" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +215,7 @@
                 </a>
               </li>
               <li>
-                <a href="#my-garage" class="menu-aside__btn">
+                <a href="#my-garage" data-open-content="my-garage" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +236,7 @@
                 </a>
               </li>
               <li>
-                <a href="#favorites" class="menu-aside__btn">
+                <a href="#favorites" data-open-content="favorites" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +255,7 @@
                 </a>
               </li>
               <li>
-                <a href="#VIN-inquiries" class="menu-aside__btn">
+                <a href="#VIN-inquiries" data-open-content="VIN-inquiries" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -310,7 +315,7 @@
                 </button>
               </li>
             </ul>
-            <section class="pers-cab__content" id="profile" style="display: block">
+            <section class="pers-cab__content" data-content="profile">
               <div class="title">Личные данные</div>
               <form action="#" method="#">
                 <fieldset>
@@ -435,7 +440,7 @@
                 </button>
               </form>
             </section>
-            <section class="pers-cab__content" id="history-order">
+            <section class="pers-cab__content" data-content="history-order">
               <div class="title">История заказов</div>
               <!--Нет заказов-->
               <div class="pers-cab__empty">
@@ -460,7 +465,7 @@
 
               <!---------------->
             </section>
-            <section class="pers-cab__content" id="my-garage">
+            <section class="pers-cab__content" data-content="my-garage">
               <div class="title">Мой гараж</div>
               <!--Нет машин в гараже-->
               <div class="pers-cab__empty" style="display: none">
@@ -570,7 +575,7 @@
               </div>
               <!------------------------->
             </section>
-            <section class="pers-cab__content" id="favorites">
+            <section class="pers-cab__content" data-content="favorites">
               <div class="title">Избранное</div>
               <!--Нет машин в гараже-->
               <div class="pers-cab__empty" style="display: none">
@@ -1035,7 +1040,7 @@
               </div>
               <!------------------------->
             </section>
-            <section class="pers-cab__content" id="VIN-inquiries">
+            <section class="pers-cab__content" data-content="VIN-inquiries">
               <div class="title">Запросы по VIN</div>
             </section>
           </div>
@@ -1068,11 +1073,11 @@
               <div class="footer__top-menu-item">
                 <div class="footer__top-menu-item-title">Профиль</div>
                 <ul class="footer__top-menu-item-list">
-                  <li><a href="#">Вход</a></li>
-                  <li><a href="#">Регистрация</a></li>
-                  <li><a href="#">Мой гараж</a></li>
-                  <li><a href="#">Избранное</a></li>
-                  <li><a href="#">Корзина</a></li>
+                  <li><button data-modal-el="entrance">Вход</button></li>
+                  <li><button data-modal-el="entrance" id="reg-btn">Регистрация</button></li>
+                  <li><a href="./personal-cab-ent.html#my-garage">Мой гараж</a></li>
+                  <li><a href="./personal-cab-ent.html#favorites">Избранное</a></li>
+                  <li><a href="./basket-order.html">Корзина</a></li>
                 </ul>
               </div>
             </div>
@@ -1590,7 +1595,7 @@
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="./libs/js/swiper-bundle.js"></script>
+    <script src="./libs/swiper-bundle.js"></script>
     <script src="./js/swipers.js"></script>
     <script language="JavaScript" type="text/javascript" src="./js/jq-scripts.js"></script>
     <script src="./js/modal.js"></script>

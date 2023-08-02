@@ -19,7 +19,12 @@
               </a>
               <div class="header__top-search">
                 <form class="search" action="" method="get">
-                  <input name="#" placeholder="Поиск по VIN номеру, названию, OEM номеру, артикулу" type="search" />
+                  <input
+                    name="#"
+                    autocomplete="off"
+                    placeholder="Поиск по VIN номеру, названию, OEM номеру, артикулу"
+                    type="search"
+                  />
                   <button type="submit" name="#">
                     <img src="./img/icon/search.svg" alt="" />
                   </button>
@@ -443,11 +448,11 @@
               <div class="footer__top-menu-item">
                 <div class="footer__top-menu-item-title">Профиль</div>
                 <ul class="footer__top-menu-item-list">
-                  <li><a href="#">Вход</a></li>
-                  <li><a href="#">Регистрация</a></li>
-                  <li><a href="#">Мой гараж</a></li>
-                  <li><a href="#">Избранное</a></li>
-                  <li><a href="#">Корзина</a></li>
+                  <li><button data-modal-el="entrance">Вход</button></li>
+                  <li><button data-modal-el="entrance" id="reg-btn">Регистрация</button></li>
+                  <li><a href="./personal-cab-ent.html#my-garage">Мой гараж</a></li>
+                  <li><a href="./personal-cab-ent.html#favorites">Избранное</a></li>
+                  <li><a href="./basket-order.html">Корзина</a></li>
                 </ul>
               </div>
             </div>
@@ -965,7 +970,7 @@
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="./libs/js/swiper-bundle.js"></script>
+    <script src="./libs/swiper-bundle.js"></script>
     <script src="./js/swipers.js"></script>
     <script language="JavaScript" type="text/javascript" src="./js/jq-scripts.js"></script>
     <script src="./js/modal.js"></script>

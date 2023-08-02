@@ -3,7 +3,7 @@ input[type='email'],
 input[type='password'],
 input[type='phone'],
 textarea {
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 5rem 1.2rem 2rem;
   border: none;
   background: $white;
   color: $black;
@@ -14,9 +14,65 @@ textarea {
   resize: none;
   position: relative;
   width: 100%;
+  border: 0.2rem solid transparent;
 
   &::placeholder {
     color: $grey;
+  }
+
+  &:focus {
+    border: 0.2rem solid $mainColor;
+  }
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+input:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.input__block {
+  position: relative;
+  button {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    right: 2rem;
+    top: 1.8rem;
   }
 }
 
@@ -202,12 +258,12 @@ textarea {
   }
 
   &-checkbox input[type='checkbox']:checked + span:before {
-    border: none;
-    background-color: $mainColor;
+    border: 0.2rem solid $mainColor;
+    background-color: $white;
     background-position: 50% 50%;
-    background-size: 1.5rem 1.5rem;
+    background-size: 2.5rem 2.5rem;
     background-repeat: no-repeat;
-    background-image: url('../img/icon/check-white.svg');
+    background-image: url('../img/icon/check-blue.svg');
   }
 
   &-password {

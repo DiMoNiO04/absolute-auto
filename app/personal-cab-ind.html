@@ -16,10 +16,10 @@
         <div class="left-body__bg"></div>
         <div class="right-body__bg"></div>
         <div class="container">
-          <div class="pers-cab__container" id="tabs">
+          <div class="pers-cab__container">
             <ul class="menu-aside">
               <li>
-                <a href="#profile" class="menu-aside__btn">
+                <a href="#profile" data-open-content="profile" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@
                 </a>
               </li>
               <li>
-                <a href="#history-order" class="menu-aside__btn">
+                <a href="#history-order" data-open-content="history-order" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@
                 </a>
               </li>
               <li>
-                <a href="#my-garage" class="menu-aside__btn">
+                <a href="#my-garage" data-open-content="my-garage" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@
                 </a>
               </li>
               <li>
-                <a href="#favorites" class="menu-aside__btn">
+                <a href="#favorites" data-open-content="favorites" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@
                 </a>
               </li>
               <li>
-                <a href="#VIN-inquiries" class="menu-aside__btn">
+                <a href="#VIN-inquiries" data-open-content="VIN-inquiries" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@
                 </button>
               </li>
             </ul>
-            <section class="pers-cab__content" id="profile" style="display: block">
+            <section class="pers-cab__content" data-content="profile">
               <div class="title">Личные данные</div>
               <form action="#" method="#">
                 <fieldset>
@@ -286,7 +286,7 @@
                 </button>
               </form>
             </section>
-            <section class="pers-cab__content" id="history-order">
+            <section class="pers-cab__content" data-content="history-order">
               <div class="title">История заказов</div>
               <!--Нет заказов-->
               <div class="pers-cab__empty">
@@ -311,7 +311,7 @@
 
               <!---------------->
             </section>
-            <section class="pers-cab__content" id="my-garage">
+            <section class="pers-cab__content" data-content="my-garage">
               <div class="title">Мой гараж</div>
               <!--Нет машин в гараже-->
               <div class="pers-cab__empty" style="display: none">
@@ -421,7 +421,7 @@
               </div>
               <!------------------------->
             </section>
-            <section class="pers-cab__content" id="favorites">
+            <section class="pers-cab__content" data-content="favorites">
               <div class="title">Избранное</div>
               <!--Нет машин в гараже-->
               <div class="pers-cab__empty" style="display: none">
@@ -886,7 +886,7 @@
               </div>
               <!------------------------->
             </section>
-            <section class="pers-cab__content" id="VIN-inquiries">
+            <section class="pers-cab__content" data-content="VIN-inquiries">
               <div class="title">Запросы по VIN</div>
             </section>
           </div>

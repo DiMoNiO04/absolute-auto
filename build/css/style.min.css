@@ -898,7 +898,7 @@ input[type='password'],
 input[type='phone'],
 input[type='text'],
 textarea {
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 5rem 1.2rem 2rem;
   border: 0;
   background: #fff;
   color: #2c2a3b;
@@ -909,6 +909,7 @@ textarea {
   resize: none;
   position: relative;
   width: 100%;
+  border: 0.2rem solid transparent;
 }
 input[type='email']::-webkit-input-placeholder,
 input[type='password']::-webkit-input-placeholder,
@@ -944,6 +945,63 @@ input[type='phone']::placeholder,
 input[type='text']::placeholder,
 textarea::placeholder {
   color: #98a0b1;
+}
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='phone']:focus,
+input[type='text']:focus,
+textarea:focus {
+  border: 0.2rem solid #4ec1c1;
+}
+input::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+input:-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+input:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+input:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.input__block {
+  position: relative;
+}
+.input__block button {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  right: 2rem;
+  top: 1.8rem;
 }
 .input-address {
   -webkit-box-orient: vertical;
@@ -1143,12 +1201,12 @@ textarea::placeholder {
   background: 0 0;
 }
 .input-checkbox input[type='checkbox']:checked + span:before {
-  border: 0;
-  background-color: #4ec1c1;
+  border: 0.2rem solid #4ec1c1;
+  background-color: #fff;
   background-position: 50% 50%;
-  background-size: 1.5rem 1.5rem;
+  background-size: 2.5rem 2.5rem;
   background-repeat: no-repeat;
-  background-image: url(../img/icon/check-white.svg);
+  background-image: url(../img/icon/check-blue.svg);
 }
 .input-password {
   position: relative;
@@ -2955,6 +3013,9 @@ textarea::placeholder {
   display: none;
   width: 100%;
   position: relative;
+}
+.pers-cab__content.active {
+  display: block;
 }
 .pers-cab form {
   border: 0.2rem solid rgba(255, 255, 255, 0.8);
