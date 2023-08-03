@@ -510,6 +510,108 @@
 </div>
 <!------------------------------>
 
+<!--Модалка возврат товара-->
+<div class="modal close-x" data-modal="purchase-returns">
+  <div class="modal__inner">
+    <div class="modal__content modal__content-purchase-returns">
+      <div class="modal__content-close close-x">
+        <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+      </div>
+      <div class="modal__title">Возврат заказа</div>
+      <form action="#" name="#">
+        <div class="form__item">
+          <div class="subtitle">Адрес доставки</div>
+          <div class="input__block">
+            <input autocomplete="off" type="text" name="#" placeholder="Город" required />
+            <button type="button">
+              <img src="./img/icon/close-small.svg" alt="" />
+            </button>
+          </div>
+          <div class="input__block">
+            <input autocomplete="off" type="text" name="#" placeholder="Адрес" required />
+            <button type="button">
+              <img src="./img/icon/close-small.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="form__item">
+          <div class="input-radio__inp">
+            <input
+              class="input__slide-btn"
+              type="radio"
+              name="delivery_type"
+              id="return-to-card"
+              value="return-to-card"
+            />
+            <label for="return-to-card">Возврат на банковскую карту</label>
+          </div>
+        </div>
+        <div class="form__item">
+          <div class="subtitle">Получатель</div>
+          <div class="input__block">
+            <input autocomplete="off" type="text" name="#" placeholder="ФИО" required />
+            <button type="button">
+              <img src="./img/icon/close-small.svg" alt="" />
+            </button>
+          </div>
+          <div class="input__block">
+            <input autocomplete="off" type="phone" name="#" placeholder="Номер телефона" required />
+            <button type="button">
+              <img src="./img/icon/close-small.svg" alt="" />
+            </button>
+          </div>
+          <div class="input__block">
+            <input autocomplete="off" type="email" name="#" placeholder="E-mail" required />
+            <button type="button">
+              <img src="./img/icon/close-small.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="form__item">
+          <div class="modal__content-purchase-returns-p">
+            Прикрепите скан паспорта (страница с фото и регистрацией) и заявления на возврат.
+          </div>
+          <div class="drag-area">
+            <div class="drag-area__icon">
+              <img src="./img/icon/load-file.svg" alt="" />
+            </div>
+            <p>Формат документа jpeg, jpg, png, pdf. Размер каждого файла не более 2 мб.</p>
+            <button type="button" class="btn-arrows">
+              <div class="btn-arrows__title">Загрузить</div>
+              <div class="btn-arrows__img"></div>
+            </button>
+            <input type="file" hidden name="#" accept="image/png, image/jpeg, image/jpg, image/pdf, image/svg" />
+          </div>
+          <div class="modal__content-purchase-returns-files">
+            <!--Файл загружен полностью-->
+            <div class="modal__content-purchase-returns-files-file load-file">
+              <div class="modal__content-purchase-returns-files-file-desc">
+                <div class="modal__content-purchase-returns-files-file-desc-name">20221201_E1140_PAS_2.jpg</div>
+                <div class="modal__content-purchase-returns-files-file-desc-size">32 kb</div>
+              </div>
+              <button type="button" class="modal__content-purchase-returns-files-file-del"></button>
+            </div>
+
+            <!--Файл загружается-->
+            <div class="modal__content-purchase-returns-files-file upload-file">
+              <div class="modal__content-purchase-returns-files-file-desc">
+                <div class="modal__content-purchase-returns-files-file-desc-name">20221201_E1140_PAS_2.jpg</div>
+                <div class="modal__content-purchase-returns-files-file-desc-size">32 kb</div>
+              </div>
+              <button type="button" class="modal__content-purchase-returns-files-file-del"></button>
+            </div>
+          </div>
+        </div>
+        <button class="btn-form" type="submit" name="#">
+          <span>Оформить</span>
+          <img src="./img/icon/arrows-white.svg" alt="" />
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<!------------------------------>
+
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="./libs/swiper-bundle.js"></script>

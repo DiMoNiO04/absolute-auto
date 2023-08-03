@@ -216,3 +216,33 @@ $('.click-toggle').each(function () {
     $(this).toggleClass('active');
   });
 });
+
+$('.card__btn-buy').each(function () {
+  const modal = $(this).parent().parent().parent().parent().find('.card__modal');
+
+  modal.fadeOut(1000);
+
+  $(this).on('click', function () {
+    $(this).removeClass('active');
+    $(this).next().addClass('active');
+    modal.fadeIn(1000);
+  });
+});
+
+$('.number-plus').each(function () {
+  $(this).on('click', function () {
+    let count = Number($(this).prev().val());
+    count += 1;
+    $(this).prev().val(count);
+  });
+});
+
+$('.number-minus').each(function () {
+  $(this).on('click', function (event) {
+    let value = Number($(this).next().val());
+    if (value !== 0) {
+      value -= 1;
+      $(this).next().val(value);
+    }
+  });
+});

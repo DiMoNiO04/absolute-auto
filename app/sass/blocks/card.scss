@@ -1,14 +1,5 @@
 .card {
-  &-no-available {
-    .card__content-panel-status {
-      background-color: $black;
-    }
-
-    .card__content-panel {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
+  position: relative;
 
   &-available {
     .card__content-panel {
@@ -20,7 +11,7 @@
   &__content {
     padding: 2rem 2rem 3.2rem 2rem;
     background: $white;
-    max-width: 24.5rem;
+    max-width: 29.5rem;
     height: 100%;
     border: $border;
     border-color: transparent;
@@ -102,6 +93,8 @@
   &__btn-buy {
     column-gap: 1.2rem;
     justify-content: flex-start;
+    display: none;
+    height: 2.3rem;
     .btn-arrows__title {
       color: $black;
       font-family: Gilroy, sans-serif;
@@ -109,6 +102,59 @@
       font-weight: 700;
       line-height: 120%;
       text-transform: inherit;
+    }
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__modal {
+    position: absolute;
+    top: 11rem;
+    left: calc(50% - 20rem / 2);
+    z-index: 10;
+    display: none;
+  }
+
+  &__modal-content {
+    display: flex;
+    width: 20.3rem;
+    background: $mainColor;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.4rem;
+  }
+
+  &__modal-content-text {
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &__modal-content-icon {
+    width: 3rem;
+    height: 3rem;
+    background: $white;
+    flex-shrink: 0;
+  }
+
+  .input-count {
+    display: none;
+    input {
+      font-weight: 700;
+      border: 0;
+      height: 2.3rem;
+    }
+
+    .number-minus,
+    .number-plus {
+      width: 1.2rem;
+    }
+
+    &.active {
+      display: flex;
     }
   }
 }
