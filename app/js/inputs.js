@@ -17,7 +17,7 @@ function toggleButtonInput(elem) {
 $('.input__block').each(function () {
   const input = $(this).find('input');
   const button = $(this).find('button');
-  // toggleButtonInput(input)
+  toggleButtonInput(input);
 
   if (input.attr('type') === 'email' || input.attr('type') === 'text' || input.attr('type') === 'phone') {
     button.hide();

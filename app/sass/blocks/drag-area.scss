@@ -1,0 +1,41 @@
+.drag-area {
+  border-radius: 0.5rem;
+  border: 0.2rem dashed rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 2.4rem;
+
+  &.active {
+    border: 0.2rem dashed $mainColor;
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  p {
+    color: $grey;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 120%;
+    width: 30rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .btn-arrows {
+    background: transparent;
+  }
+
+  .btn-arrows__title {
+    font-family: Gilroy, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: initial;
+  }
+}

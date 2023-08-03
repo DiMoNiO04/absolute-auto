@@ -43,7 +43,7 @@
   }
 
   &__content {
-    margin: 0 auto;
+    margin: 5rem auto;
     border: $border;
     background: $background;
   }
@@ -53,7 +53,7 @@
     width: 2.4rem;
     height: 2.4rem;
     position: absolute;
-    top: 2.5rem;
+    top: 7.5rem;
     right: 2.5rem;
     z-index: 2;
     cursor: pointer;
@@ -259,7 +259,9 @@
   }
 }
 
-.modal__content-update-pass {
+.modal__content-update-pass,
+.modal__content-update-address,
+.modal__content-update-name-auto {
   display: flex;
   flex-direction: column;
   row-gap: 4.8rem;
@@ -278,10 +280,100 @@
   }
 }
 
-.modal__content-update-address {
-  display: flex;
-  flex-direction: column;
-  row-gap: 4.8rem;
-  width: 58rem;
-  padding: 6rem;
+.modal__content-purchase-returns {
+  padding: 6rem 6.5rem 4.4rem 6rem;
+  width: 61.5rem;
+
+  .subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    margin-top: 4.8rem;
+  }
+
+  .input__block:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+
+  .form__item {
+    margin-bottom: 3.2rem;
+  }
+
+  .btn-form {
+    margin-top: 4.8rem;
+    width: 100%;
+  }
+
+  .input-radio__inp {
+    background: transparent;
+    padding: 0;
+    border: 0;
+  }
+
+  &-p {
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 2rem;
+  }
+
+  &-files {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    margin-top: 3.2rem;
+  }
+
+  &-files-file {
+    padding: 1rem 2.4rem;
+    display: flex;
+    column-gap: 2.4rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-files-file-desc {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &-files-file-desc-name,
+  &-files-file-desc-size {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &-files-file-del {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .load-file {
+    background: $mainColor;
+    .modal__content-purchase-returns-files-file-desc-name,
+    .modal__content-purchase-returns-files-file-desc-size {
+      color: $white;
+    }
+    .modal__content-purchase-returns-files-file-del {
+      background: url('../img/icon/delete-white.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .upload-file {
+    background: $white;
+    .modal__content-purchase-returns-files-file-desc-name,
+    .modal__content-purchase-returns-files-file-desc-size {
+      color: $black;
+    }
+    .modal__content-purchase-returns-files-file-del {
+      background: url('../img/icon/load-grey.svg') no-repeat center;
+      background-size: contain;
+    }
+  }
 }

@@ -1239,6 +1239,62 @@
     </div>
     <!---------------------------->
 
+    <!--Модалка изменение адреса-->
+    <div class="modal close-x" data-modal="update-address">
+      <div class="modal__inner">
+        <div class="modal__content modal__content-update-address">
+          <div class="modal__content-close close-x">
+            <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+          </div>
+          <div class="modal__title">Изменить адрес доставки</div>
+          <form action="#" name="#">
+            <div class="input__block">
+              <input autocomplete="off" type="text" name="#" placeholder="Город" required />
+              <button type="button">
+                <img src="./img/icon/close-small.svg" alt="" />
+              </button>
+            </div>
+            <div class="input__block">
+              <input autocomplete="off" type="text" name="#" placeholder="Адрес" required />
+              <button type="button">
+                <img src="./img/icon/close-small.svg" alt="" />
+              </button>
+            </div>
+            <button class="btn-form" type="submit" name="#">
+              <span>Изменить адрес</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!------------------------------>
+
+    <!--Модалка изменение адреса-->
+    <div class="modal close-x" data-modal="update-name-auto">
+      <div class="modal__inner">
+        <div class="modal__content modal__content-update-name-auto">
+          <div class="modal__content-close close-x">
+            <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+          </div>
+          <div class="modal__title">Изменить название автомобиля</div>
+          <form action="#" name="#">
+            <div class="input__block">
+              <input autocomplete="off" type="text" name="#" placeholder="Навзание автомобиля" required />
+              <button type="button">
+                <img src="./img/icon/close-small.svg" alt="" />
+              </button>
+            </div>
+            <button class="btn-form" type="submit" name="#">
+              <span>Изменить</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!------------------------------>
+
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="./libs/swiper-bundle.js"></script>
@@ -1247,5 +1303,6 @@
     <script src="./js/modal.js"></script>
     <script src="./js/render-content.js"></script>
     <script src="./js/inputs.js"></script>
+    <script src="./js/drag-area.js"></script>
   </body>
 </html>

@@ -82,3 +82,9 @@ const modalUpdatePassword = document.querySelector('[data-modal="update-password
   ? new Modal('update-password')
   : null;
 const modalUpdateAddress = document.querySelector('[data-modal="update-address"]') ? new Modal('update-address') : null;
+const modalUpdateNameAuto = document.querySelector('[data-modal="update-name-auto"]')
+  ? new Modal('update-name-auto')
+  : null;
+const modalPurchaseReturns = document.querySelector('[data-modal="purchase-returns"]')
+  ? new Modal('purchase-returns')
+  : null;
