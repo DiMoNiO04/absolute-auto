@@ -2544,6 +2544,13 @@ input:focus:-ms-input-placeholder {
 }
 .main-category__container {
   padding: 15rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .main-category__top {
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
@@ -2658,16 +2665,11 @@ input:focus:-ms-input-placeholder {
   -moz-column-gap: 3rem;
   column-gap: 3rem;
 }
-.main-brands__swiper-slide,
-.main-brands__swiper-slide:hover {
-  width: calc(16.6666666667% - 30px);
-  height: 22rem;
-  -webkit-animation: a 1s;
-  animation: a 1s;
-}
 .main-brands__swiper-slide {
   border: 0.2rem solid rgba(255, 255, 255, 0.8);
   background: rgba(255, 255, 255, 0.35);
+  width: 24rem !important;
+  height: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2677,6 +2679,8 @@ input:focus:-ms-input-placeholder {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-animation: a 1s;
+  animation: a 1s;
 }
 .main-brands__swiper-slide img {
   width: 14rem;
@@ -2684,9 +2688,13 @@ input:focus:-ms-input-placeholder {
 }
 .main-brands__swiper-slide:hover {
   background: url(../img/brands/brands-hover-bg.svg) no-repeat center;
+  width: calc(16.6666666667% - 30px);
+  height: 22rem;
   border: 0;
   background-size: contain;
   cursor: pointer;
+  -webkit-animation: a 1s;
+  animation: a 1s;
 }
 .main-about {
   background-color: #eaebf0;
@@ -2698,13 +2706,29 @@ input:focus:-ms-input-placeholder {
   border-bottom: 0.1rem solid;
   border-color: rgba(255, 255, 255, 0.8);
 }
+.main-about__top-container,
+.main-about__top-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-about__top-desc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.main-about__top-desc .btn-arrows,
+.ordering .btn-arrows {
+  margin: initial;
+}
 .main-about__top-container {
   padding-bottom: 6rem;
   position: relative;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2958,6 +2982,9 @@ input:focus:-ms-input-placeholder {
 }
 .basket .title {
   font-size: 3.8rem;
+}
+.basket .btn-arrows {
+  margin: initial;
 }
 .basket__container {
   display: -webkit-box;
@@ -3218,8 +3245,7 @@ input:focus:-ms-input-placeholder {
 .entrance__form-reg {
   display: none;
 }
-.entrance__form-reg.active,
-.pers-cab__content.active {
+.entrance__form-reg.active {
   display: block;
 }
 .entrance__panel {
@@ -3311,6 +3337,9 @@ input:focus:-ms-input-placeholder {
 .pers-cab form {
   position: relative;
 }
+.pers-cab .btn-arrows {
+  margin: initial;
+}
 .pers-cab__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3324,6 +3353,9 @@ input:focus:-ms-input-placeholder {
   display: none;
   width: 100%;
   position: relative;
+}
+.pers-cab__content.active {
+  display: block;
 }
 .pers-cab form {
   border: 0.2rem solid rgba(255, 255, 255, 0.8);

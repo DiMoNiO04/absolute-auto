@@ -352,6 +352,8 @@
 
   &-category__container {
     padding: 15rem 0;
+    display: flex;
+    flex-direction: column;
   }
 
   &-category__top {
@@ -461,7 +463,7 @@
   &-brands__swiper-slide {
     border: 0.2rem solid rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.35);
-    width: calc((100% / 6) - 30px);
+    width: 24rem !important;
     height: 22rem;
     display: flex;
     align-items: center;
@@ -492,6 +494,15 @@
     padding-top: 10rem;
     border-bottom: 0.1rem solid;
     border-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &-about__top-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .btn-arrows {
+      margin: initial;
+    }
   }
 
   &-about__top-container {

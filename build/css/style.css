@@ -2853,6 +2853,13 @@ input:focus:-ms-input-placeholder {
 }
 .main-category__container {
   padding: 15rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .main-category__top {
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
@@ -2970,7 +2977,7 @@ input:focus:-ms-input-placeholder {
 .main-brands__swiper-slide {
   border: 0.2rem solid rgba(255, 255, 255, 0.8);
   background: rgba(255, 255, 255, 0.35);
-  width: calc(16.6666666667% - 30px);
+  width: 24rem !important;
   height: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3007,6 +3014,21 @@ input:focus:-ms-input-placeholder {
   padding-top: 10rem;
   border-bottom: 0.1rem solid;
   border-color: rgba(255, 255, 255, 0.8);
+}
+.main-about__top-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.main-about__top-desc .btn-arrows {
+  margin: initial;
 }
 .main-about__top-container {
   padding-bottom: 6rem;
@@ -3107,6 +3129,9 @@ input:focus:-ms-input-placeholder {
 }
 .ordering {
   position: relative;
+}
+.ordering .btn-arrows {
+  margin: initial;
 }
 .ordering__container {
   padding: 6rem 0;
@@ -3320,6 +3345,9 @@ input:focus:-ms-input-placeholder {
 }
 .basket .title {
   font-size: 3.8rem;
+}
+.basket .btn-arrows {
+  margin: initial;
 }
 .basket__container {
   display: -webkit-box;
@@ -3709,6 +3737,9 @@ input:focus:-ms-input-placeholder {
 
 .pers-cab {
   position: relative;
+}
+.pers-cab .btn-arrows {
+  margin: initial;
 }
 .pers-cab__container {
   display: -webkit-box;

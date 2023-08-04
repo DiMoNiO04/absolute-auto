@@ -17,12 +17,7 @@ function renderContentPage(elem) {
   $(`[data-open-content=${elem}]`).parent().addClass('active');
 }
 
-$(window).on('hashchange', () => {
-  const hash = window.location.hash.slice(1);
-  renderContentPage(hash);
-});
-
-$(document).ready(() => {
+function changeContent() {
   const locationArr = window.location.href.split('/');
   const page = locationArr[locationArr.length - 1];
 
@@ -34,4 +29,7 @@ $(document).ready(() => {
   } else if (page === PAGES.PERSONAL_CAB_IND || page === PAGES.PERSONAL_CAB_END) {
     renderContentPage(CONTENT.PROFILE);
   }
-});
+}
+
+$(window).on('hashchange', () => changeContent());
+$(document).ready(() => changeContent());

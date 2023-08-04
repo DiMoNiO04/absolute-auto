@@ -1,6 +1,10 @@
 .pers-cab {
   position: relative;
 
+  .btn-arrows {
+    margin: initial;
+  }
+
   &__container {
     display: flex;
     column-gap: 3rem;
