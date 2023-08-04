@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Контакты</title>
+  </head>
+
+  <body>
+    @@include('./template/header.html')
+
+    <main>
+      <div class="contacts">
+        <div class="left-body__bg"></div>
+        <div class="right-body__bg"></div>
+
+        <section class="contacts-address">
+          <div class="container">
+            <div class="contacts-address__top">
+              <div class="title">Как нас найти</div>
+              <div class="contacts-address__top-text">
+                <p>
+                  Если возникли трудности с возвратом товара, денег, изучите страницы об оплате, возврате денег и
+                  товара.
+                </p>
+                <p>
+                  Если не можете войти в личный кабинет или есть вопрос по работе сайта, напишите нам на
+                  <a href="mailto: example@mail.com">example@mail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="contacts-address__map">
+              <img src="./img/map.webp" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts-contacts">
+          <div class="container">
+            <div class="contacts-contacts__container">
+              <div class="title">Контакты</div>
+              <div class="contacts-contact__contact">
+                <div class="contacts-contact__contact-items">
+                  <div class="contacts-contact__contact-items-item">
+                    <div class="contacts-contact__contact-items-item-title">Телефон</div>
+                    <a href="tel: + 7 (800) 123-45-67" class="contacts-contact__contact-items-item-link">
+                      + 7 (800) 123-45-67
+                    </a>
+                    <div class="contacts-contact__contact-items-item-desc">
+                      <span>Часы работы</span>
+                      <br />
+                      <span>с 9:00 до 21:00</span>
+                    </div>
+                  </div>
+                  <div class="contacts-contact__contact-items-item">
+                    <div class="contacts-contact__contact-items-item-title">Почта</div>
+                    <a href="mailto: example@mail.com" class="contacts-contact__contact-items-item-link">
+                      example@mail.com
+                    </a>
+                    <div class="contacts-contact__contact-items-item-desc">
+                      <span>Отвечаем в рабочее время</span>
+                      <br />
+                      <span>с 9:00 до 21:00</span>
+                    </div>
+                  </div>
+                  <div class="contacts-contact__contact-items-item">
+                    <div class="contacts-contact__contact-items-item-title">Адрес</div>
+                    <div class="contacts-contact__contact-items-item-link">г. Москва, ул. 1905 года, д.476, 003</div>
+                    <div class="contacts-contact__contact-items-item-desc">
+                      <span>Магазин открыт</span>
+                      <br />
+                      <span>с 9:00 до 21:00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="contacts-contact__contact-info">
+                  <div class="title">Юридическая информация</div>
+                  <ul>
+                    <li>АО «Абсолют авто»</li>
+                    <li>ИНН 7734443270 / КПП 503101001</li>
+                    <li>
+                      142432, Московская область, городской округ Черноголовка, город Черноголовка, ул. Лесная, д.9,
+                      пом.9.
+                    </li>
+                    <li>ОГРН 1217700253671 от 31 мая 2021</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    @@include('./template/footer.html')
+  </body>
+</html>

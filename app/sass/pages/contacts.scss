@@ -1,0 +1,129 @@
+.contacts {
+  padding: 6rem 0 15rem 0;
+  position: relative;
+
+  &-address {
+    position: relative;
+    margin-bottom: 15rem;
+  }
+
+  &-address__top {
+    margin-bottom: 6rem;
+    display: flex;
+    column-gap: 36.3rem;
+    align-items: center;
+
+    .title {
+      flex-shrink: 0;
+    }
+
+    &-text {
+      width: 100%;
+      display: flex;
+      column-gap: 6rem;
+    }
+
+    p,
+    a {
+      color: $black;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 140%;
+    }
+
+    a:hover {
+      transition: all 0.2s ease-in-out;
+      color: $mainColor;
+    }
+  }
+
+  &-address__map {
+    width: 100%;
+    height: 43.2rem;
+  }
+
+  &-contacts__container {
+    display: flex;
+    column-gap: 24rem;
+  }
+
+  &-contact__contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-contact__contact-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+
+  &-contact__contact-items-item {
+    padding: 4rem 0;
+    border-bottom: $border;
+    display: flex;
+    align-items: flex-start;
+    // justify-content: space-between;
+    &:first-child {
+      border-top: $border;
+    }
+  }
+
+  &-contact__contact-items-item-title {
+    color: $black;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 140%;
+    width: 25%;
+  }
+
+  &-contact__contact-items-item-link {
+    color: $black;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 130%;
+    width: 52%;
+  }
+
+  &-contact__contact-items-item-desc {
+    color: $black;
+    font-size: 1, 8rem;
+    font-weight: 600;
+    line-height: 130%;
+    span {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+    width: 23%;
+  }
+
+  a:hover {
+    transition: all 0.2s ease-in-out;
+    color: $mainColor;
+  }
+
+  &-contact__contact-info {
+    .title {
+      font-size: 3.8rem;
+      margin-bottom: 4rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      width: 55rem;
+    }
+
+    li {
+      color: $black;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 140%;
+    }
+  }
+}
