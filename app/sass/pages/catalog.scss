@@ -1,0 +1,263 @@
+.catalog {
+  position: relative;
+  padding: 6rem 0 15rem;
+
+  &__container {
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  &__left {
+    width: 38.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  &__right {
+    width: 120rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__choice-car {
+    background: $white;
+    padding: 2rem;
+    display: flex;
+    column-gap: 1rem;
+
+    img {
+      width: 14rem;
+      height: 10.8rem;
+    }
+
+    button {
+      flex-direction: column;
+      row-gap: 1.6rem;
+      align-items: flex-start;
+    }
+  }
+
+  .btn-arrows__title {
+    color: $black;
+    font-family: Gilroy, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: inherit;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    margin-bottom: 7rem;
+  }
+
+  &__top-title {
+    color: $black;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  &__top-filter {
+    display: flex;
+    column-gap: 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .btn-reset {
+      padding: 0;
+    }
+  }
+
+  &__top-filter-block {
+    display: flex;
+    column-gap: 1rem;
+    border: $border;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 1.2rem;
+    align-items: center;
+    span {
+      color: $black;
+      font-family: Gilroy;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 130%;
+    }
+
+    button {
+      background: transparent;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+
+    .card__content {
+      max-width: 27.7rem;
+    }
+
+    .card__btn-buy {
+      margin: auto auto auto 0;
+    }
+
+    .card__swiper-slide {
+      height: 16.5rem;
+      width: 33.6rem;
+    }
+
+    .card__content-info-bottom {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  &__item-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1.6rem;
+    cursor: pointer;
+
+    span {
+      color: $black;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 140%;
+    }
+
+    img {
+      &:first-child {
+        width: 3rem;
+        height: 3rem;
+      }
+      &:last-child {
+        width: 1.4rem;
+        height: 1.4rem;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &.active {
+      img:last-child {
+        transform: rotate(180deg);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__item-form {
+    border: $border;
+    background: transparent;
+    display: none;
+  }
+
+  &__item-form-block {
+    padding: 2rem 3.2rem 0 3.2rem;
+    &:not(:last-child) {
+      border-bottom: $border;
+    }
+  }
+
+  &__item-form-block-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 2rem;
+    column-gap: 2rem;
+    span {
+      color: $black;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 140%;
+    }
+    img {
+      width: 1.4rem;
+      height: 1.4rem;
+      transition: all 0.2s ease-in-out;
+    }
+    &.active {
+      img {
+        transform: rotate(180deg);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &__item-form-block-content {
+    display: none;
+    padding-bottom: 2rem;
+    .input-checkbox {
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span::before {
+        top: 0;
+      }
+    }
+    .input-checkbox input[type='checkbox']:checked + span:before {
+      background-color: transparent;
+    }
+    ul {
+      padding-left: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.6rem;
+      margin-bottom: 1.6rem;
+      li {
+        cursor: pointer;
+        color: $black;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        &.active {
+          color: $mainColor;
+        }
+      }
+    }
+    .btn-arrows {
+      padding-left: 1.6rem;
+    }
+  }
+
+  &__item-form-block-reset {
+    padding: 2rem 3.2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item-form-title {
+    color: $black;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    padding: 3.2rem 3.2rem 0 3.2rem;
+  }
+
+  &__item-filter {
+    .catalog__item-form-block-inner span {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+}

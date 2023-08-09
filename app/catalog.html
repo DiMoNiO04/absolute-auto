@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/nouislider.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Каталог</title>
+  </head>
+
+  <body>
+    @@include('./template/header.html')
+
+    <main>
+      <div class="catalog">
+        <div class="left-body__bg"></div>
+        <div class="right-body__bg"></div>
+        <div class="container">
+          <div class="bread-crumbs">
+            <a href="./main.html">Главная</a>
+            <a href="./category-go.html">Двигатель</a>
+            <a href="#">Детали двигателя</a>
+            <a href="#">Маслосъемные колпачки</a>
+          </div>
+          <div class="catalog__container">
+            <div class="catalog__left">
+              <div class="catalog__choice-car">
+                <img src="./img/choice-auto.webp" alt="" />
+                <button class="btn-arrows">
+                  <div class="btn-arrows__title">Выберите свой автомобиль, чтобы подобрать запчасти</div>
+                  <div class="btn-arrows__img"></div>
+                </button>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__item-main">
+                  <img src="./img/icon/filter.svg" alt="" />
+                  <span>Фильтры</span>
+                  <img src="./img/icon/arrow-black.svg" alt="" />
+                </div>
+                <form action="#" method="#" id="filters" class="catalog__item-form">
+                  <fieldset class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Цена</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <div class="range__inputs">
+                        <div class="range__inputs-field">
+                          <input
+                            name="#"
+                            id="range__input-min"
+                            type="number"
+                            class="range__inputs-field-min"
+                            value="0"
+                          />
+                        </div>
+                        <div class="range__inputs-field">
+                          <input
+                            name="#"
+                            id="range__input-max"
+                            type="number"
+                            class="range__inputs-field-max"
+                            value="10000"
+                          />
+                        </div>
+                      </div>
+                      <div class="range__slider" id="range-slider"></div>
+                    </div>
+                  </fieldset>
+                  <fieldset class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Бренд</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>пластик</span>
+                      </label>
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>керамика</span>
+                      </label>
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>металл</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Диаметр</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>пластик</span>
+                      </label>
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>керамика</span>
+                      </label>
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>металл</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Толщина</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>пластик</span>
+                      </label>
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>керамика</span>
+                      </label>
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>металл</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <fieldset class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Материал</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>пластик</span>
+                      </label>
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>керамика</span>
+                      </label>
+                      <label class="input-checkbox">
+                        <input type="checkbox" name="#" />
+                        <span>металл</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                  <div class="catalog__filter-item-block catalog__item-form-block-reset">
+                    <button type="reset" form="filters" class="btn-arrows">
+                      <div class="btn-arrows__title">Сбросить</div>
+                      <div class="btn-arrows__img"></div>
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="catalog__item catalog__item-filter">
+                <div class="catalog__item-main">
+                  <img src="./img/icon/category-icon.svg" alt="" />
+                  <span>Категории</span>
+                  <img src="./img/icon/arrow-black.svg" alt="" />
+                </div>
+                <div class="catalog__item-form">
+                  <div class="catalog__item-form-title">Двигатель</div>
+                  <div class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Детали двигателя</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <ul>
+                        <li>Болты ГБЦ</li>
+                        <li>Вкладыши коренные</li>
+                        <li>Вкладыши шатунные</li>
+                        <li>Воздушный патрубок</li>
+                        <li>Гидрокомпенсаторы</li>
+                        <li>Клапан вентиляции картера</li>
+                        <li>Крышка маслозаливной горловины</li>
+                        <li class="active">Маслосъемные колпачки</li>
+                        <li>Масляный насос</li>
+                        <li>Масляный поддон</li>
+                        <li>Направляющие клапана</li>
+                      </ul>
+                      <button type="button" class="btn-arrows">
+                        <div class="btn-arrows__title">Показать еще</div>
+                        <div class="btn-arrows__img"></div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Прокладки двигателя</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <ul>
+                        <li>Болты ГБЦ</li>
+                        <li>Вкладыши коренные</li>
+                        <li>Вкладыши шатунные</li>
+                        <li>Воздушный патрубок</li>
+                        <li>Гидрокомпенсаторы</li>
+                        <li>Клапан вентиляции картера</li>
+                        <li>Крышка маслозаливной горловины</li>
+                        <li>Маслосъемные колпачки</li>
+                        <li>Масляный насос</li>
+                        <li>Масляный поддон</li>
+                        <li>Направляющие клапана</li>
+                      </ul>
+                      <button type="button" class="btn-arrows">
+                        <div class="btn-arrows__title">Показать еще</div>
+                        <div class="btn-arrows__img"></div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Система выпуска</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <ul>
+                        <li>Болты ГБЦ</li>
+                        <li>Вкладыши коренные</li>
+                        <li>Вкладыши шатунные</li>
+                        <li>Воздушный патрубок</li>
+                        <li>Гидрокомпенсаторы</li>
+                        <li>Клапан вентиляции картера</li>
+                        <li>Крышка маслозаливной горловины</li>
+                        <li>Маслосъемные колпачки</li>
+                        <li>Масляный насос</li>
+                        <li>Масляный поддон</li>
+                        <li>Направляющие клапана</li>
+                      </ul>
+                      <button type="button" class="btn-arrows">
+                        <div class="btn-arrows__title">Показать еще</div>
+                        <div class="btn-arrows__img"></div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Ремни, цепи и натяжители</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <ul>
+                        <li>Болты ГБЦ</li>
+                        <li>Вкладыши коренные</li>
+                        <li>Вкладыши шатунные</li>
+                        <li>Воздушный патрубок</li>
+                        <li>Гидрокомпенсаторы</li>
+                        <li>Клапан вентиляции картера</li>
+                        <li>Крышка маслозаливной горловины</li>
+                        <li>Маслосъемные колпачки</li>
+                        <li>Масляный насос</li>
+                        <li>Масляный поддон</li>
+                        <li>Направляющие клапана</li>
+                      </ul>
+                      <button type="button" class="btn-arrows">
+                        <div class="btn-arrows__title">Показать еще</div>
+                        <div class="btn-arrows__img"></div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Топливная система и управление двигателем</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <ul>
+                        <li>Болты ГБЦ</li>
+                        <li>Вкладыши коренные</li>
+                        <li>Вкладыши шатунные</li>
+                        <li>Воздушный патрубок</li>
+                        <li>Гидрокомпенсаторы</li>
+                        <li>Клапан вентиляции картера</li>
+                        <li>Крышка маслозаливной горловины</li>
+                        <li>Маслосъемные колпачки</li>
+                        <li>Масляный насос</li>
+                        <li>Масляный поддон</li>
+                        <li>Направляющие клапана</li>
+                      </ul>
+                      <button type="button" class="btn-arrows">
+                        <div class="btn-arrows__title">Показать еще</div>
+                        <div class="btn-arrows__img"></div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="catalog__item-form-block">
+                    <div class="catalog__item-form-block-inner">
+                      <span>Фильтры</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <div class="catalog__item-form-block-content">
+                      <ul>
+                        <li>Болты ГБЦ</li>
+                        <li>Вкладыши коренные</li>
+                        <li>Вкладыши шатунные</li>
+                        <li>Воздушный патрубок</li>
+                        <li>Гидрокомпенсаторы</li>
+                        <li>Клапан вентиляции картера</li>
+                        <li>Крышка маслозаливной горловины</li>
+                        <li>Маслосъемные колпачки</li>
+                        <li>Масляный насос</li>
+                        <li>Масляный поддон</li>
+                        <li>Направляющие клапана</li>
+                      </ul>
+                      <button type="button" class="btn-arrows">
+                        <div class="btn-arrows__title">Показать еще</div>
+                        <div class="btn-arrows__img"></div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__right">
+              <div class="catalog__top">
+                <div class="catalog__top-title">Маслосъемные колпачки</div>
+                <div class="catalog__top-filter">
+                  <div class="catalog__top-filter-block">
+                    <span>450 ₽ - 1000 ₽</span>
+                    <button type="button">
+                      <img src="./img/icon/close-small.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="catalog__top-filter-block">
+                    <span>керамика</span>
+                    <button type="button">
+                      <img src="./img/icon/close-small.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="catalog__top-filter-block">
+                    <span>BOSCH</span>
+                    <button type="button">
+                      <img src="./img/icon/close-small.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="catalog__top-filter-block">
+                    <span>Фильтр</span>
+                    <button type="button">
+                      <img src="./img/icon/close-small.svg" alt="" />
+                    </button>
+                  </div>
+                  <div class="catalog__top--reset btn-reset">Сбросить</div>
+                </div>
+                <select class="catalog__top-select">
+                  <option value="">По умолчанию</option>
+                  <option value="">По умолчанию</option>
+                  <option value="">По умолчанию</option>
+                  <option value="">По умолчанию</option>
+                </select>
+              </div>
+              <div class="catalog__cards">
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-available">
+                  <div class="card__content">
+                    <div class="card__content-top">
+                      <div class="card__content-panel">
+                        <div class="card__content-panel-status">В наличии: 2шт</div>
+                        <div class="card__content-panel-like click-toggle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2.4rem"
+                            height="2.4rem"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                              fill="#98A0B1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="card__slider">
+                        <div class="swiper card__swiper">
+                          <div class="card__swiper-wrapper swiper-wrapper">
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                            <div class="card__swiper-slide swiper-slide">
+                              <img src="./img/order/detail-2.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pagination card__pagination">
+                          <div class="pagination__bullets card__bullets"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card__content-info">
+                      <div class="price">13 549 ₽</div>
+                      <div class="card__content-info-bottom">
+                        <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                        <button type="button" class="card__btn-buy btn-arrows active">
+                          <div class="btn-arrows__title">Купить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                        <div class="input-count">
+                          <button class="number-minus" type="button">
+                            <img src="./img/icon/minus.svg" alt="" />
+                          </button>
+                          <input type="number" min="0" value="1" readonly />
+                          <button class="number-plus" type="button">
+                            <img src="./img/icon/plus.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__modal">
+                    <div class="card__modal-content">
+                      <div class="card__modal-content-icon">
+                        <img src="./img/icon/check-blue.svg" alt="" />
+                      </div>
+                      <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn-arrows">
+                <div class="btn-arrows__title">Загрузить еще</div>
+                <div class="btn-arrows__img"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @@include('./template/footer.html')
+  </body>
+</html>

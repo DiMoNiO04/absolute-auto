@@ -246,3 +246,24 @@ $('.number-minus').each(function () {
     }
   });
 });
+
+$('.catalog__item-form-block').each(function () {
+  const more = $(this).find('.catalog__item-form-block-inner');
+  const hide = $(this).find('.catalog__item-form-block-content');
+  hide.hide();
+  more.click(() => {
+    hide.slideToggle();
+    hide.toggleClass('active');
+    more.toggleClass('active');
+  });
+});
+
+$('.catalog__item').each(function () {
+  const more = $(this).find('.catalog__item-main');
+  const hide = $(this).find('.catalog__item-form');
+  hide.hide();
+  more.click(() => {
+    hide.slideToggle();
+    more.toggleClass('active');
+  });
+});
