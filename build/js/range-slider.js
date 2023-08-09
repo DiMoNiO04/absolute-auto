@@ -16,12 +16,12 @@ if (rangeSlider) {
   const inputMax = document.getElementById('range__input-max');
   const inputs = [inputMin, inputMax];
 
-  rangeSlider.noUiSlider.on('update', function (values, handle) {
+  rangeSlider.noUiSlider.on('update', (values, handle) => {
     inputs[handle].value = Math.round(values[handle]);
   });
 
   const setRangeSlider = (i, value) => {
-    let arr = [null, null];
+    const arr = [null, null];
     arr[i] = value;
 
     rangeSlider.noUiSlider.set(arr);

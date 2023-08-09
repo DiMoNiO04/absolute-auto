@@ -42,3 +42,26 @@ document.querySelectorAll('.card__slider').forEach((content) => {
     },
   });
 });
+
+const productTopSliderFirst = new Swiper('.product__slider-1', {
+  spaceBetween: 30,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+
+const productTopSliderSecond = new Swiper('.product__slider-2', {
+  spaceBetween: 30,
+  thumbs: {
+    swiper: productTopSliderFirst,
+  },
+});
+
+const productSliderAnalogues = new Swiper('#product__slider-3', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.product__analogues-top-arrows-next',
+    prevEl: '.product__analogues-top-arrows-prev',
+  },
+});

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/nouislider.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Товар</title>
+  </head>
+
+  <body>
+    @@include('./template/header.html')
+
+    <main>
+      <div class="product">
+        <div class="left-body__bg"></div>
+        <div class="right-body__bg"></div>
+        <div class="container">
+          <div class="bread-crumbs">
+            <a href="./main.html">Главная</a>
+            <a href="./category-go.html">Двигатель</a>
+            <a href="#">Детали двигателя</a>
+            <a href="#">Маслосъемные колпачки</a>
+          </div>
+          <div class="product__container">
+            <div class="product__title">
+              <div class="product__title-text">
+                Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR
+              </div>
+              <div class="product__title-img">
+                <img src="./img/brands/bosch.svg" alt="" />
+              </div>
+            </div>
+            <div class="product__wrapper">
+              <div class="product__slider">
+                <div class="swiper product__slider-2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product__slider-2-slide">
+                      <img src="./img/product/product-1.svg" />
+                    </div>
+                    <div class="swiper-slide product__slider-2-slide">
+                      <img src="./img/product/product-2.svg" />
+                    </div>
+                    <div class="swiper-slide product__slider-2-slide">
+                      <img src="./img/product/product-3.svg" />
+                    </div>
+                  </div>
+                </div>
+                <div thumbsSlider="" class="swiper product__slider-1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product__slider-1-slide">
+                      <img src="./img/product/product-1.svg" />
+                    </div>
+                    <div class="swiper-slide product__slider-1-slide">
+                      <img src="./img/product/product-2.svg" />
+                    </div>
+                    <div class="swiper-slide product__slider-1-slide">
+                      <img src="./img/product/product-3.svg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product__char">
+                <div class="title">Характеристики</div>
+                <div class="product__char-info">
+                  <p class="product__char-info-item">
+                    <span class="product__char-info-item-title"> Бренд </span>
+                    <span class="product__char-info-item-desc"> BOSCH </span>
+                  </p>
+                  <p class="product__char-info-item">
+                    <span class="product__char-info-item-title"> Высота [мм] </span>
+                    <span class="product__char-info-item-desc"> 9,7 </span>
+                  </p>
+                  <p class="product__char-info-item">
+                    <span class="product__char-info-item-title"> Цвет </span>
+                    <span class="product__char-info-item-desc"> зеленый </span>
+                  </p>
+                  <p class="product__char-info-item">
+                    <span class="product__char-info-item-title"> Материал </span>
+                    <span class="product__char-info-item-desc"> FPM (Fluor-Kautschuk) </span>
+                  </p>
+                  <p class="product__char-info-item">
+                    <span class="product__char-info-item-title"> Внутренний диаметр [мм] </span>
+                    <span class="product__char-info-item-desc"> 8,8 </span>
+                  </p>
+                  <p class="product__char-info-item">
+                    <span class="product__char-info-item-title">Наружный диаметр [мм] </span>
+                    <span class="product__char-info-item-desc"> 12,2 </span>
+                  </p>
+                  <p class="product__char-info-item">
+                    <span class="product__char-info-item-title">Диаметр стержня клапана [мм] </span>
+                    <span class="product__char-info-item-desc"> 6 </span>
+                  </p>
+                </div>
+                <div class="product__char-desc">
+                  <div class="price">13 549 ₽</div>
+                  <form action="#" method="#" class="product__char-desc-form" id="add-order-basket">
+                    <div class="input-count">
+                      <button class="number-minus" type="button">
+                        <img src="./img/icon/minus.svg" alt="" />
+                      </button>
+                      <input type="number" min="1" value="1" readonly />
+                      <button class="number-plus" type="button">
+                        <img src="./img/icon/plus.svg" alt="" />
+                      </button>
+                    </div>
+                    <button class="btn-form" type="submit" name="#" form="add-order-basket">
+                      <span>Добавить в корзину</span>
+                      <img src="./img/icon/arrows-white.svg" alt="" />
+                    </button>
+                  </form>
+                </div>
+                <div class="product__char-auto">
+                  <div class="product__char-auto-desc">
+                    <div class="product__char-auto-desc-icon"></div>
+                    <div class="product__char-auto-desc-name">
+                      Этот товар подходит для вашего автомобиля AUDI A4 B5 AVANT (8D5) 1.6 (74 KW / 100 HP) PETROL
+                    </div>
+                  </div>
+                  <button type="button" class="btn-arrows product__char-auto-desc-btn">
+                    <div class="btn-arrows__title">Изменить авто</div>
+                    <div class="btn-arrows__img"></div>
+                  </button>
+                </div>
+              </div>
+              <div class="product__desc">
+                <div class="product__desc-title">
+                  <div class="product__desc-title-text">В наличии: 2шт</div>
+                  <div class="product__desc-title-delivery">Доставка: 2 дн</div>
+                </div>
+                <div class="product__desc-btns">
+                  <button class="product__desc-btns-btn active" data-open-block="suitable-for-car">
+                    <div class="product__desc-btns-btn-top">
+                      <div class="product__desc-btns-btn-top-img">
+                        <img src="./img/icon/search-auto.svg" alt="" />
+                      </div>
+                      <div class="product__desc-btns-btn-top-title">Подходит для автомобилей</div>
+                    </div>
+                    <div class="product__desc-btns-btn-search-arrow">
+                      <img src="./img/icon/search-two-arrows.svg" alt="" />
+                    </div>
+                  </button>
+                  <button class="product__desc-btns-btn" data-open-block="original-spare-parts">
+                    <div class="product__desc-btns-btn-top">
+                      <div class="product__desc-btns-btn-top-img">
+                        <img src="./img/icon/details-auto.svg" alt="" />
+                      </div>
+                      <div class="product__desc-btns-btn-top-title">Оригинальные номера</div>
+                    </div>
+                    <div class="product__desc-btns-btn-search-arrow">
+                      <img src="./img/icon/search-two-arrows.svg" alt="" />
+                    </div>
+                  </button>
+                </div>
+                <div class="product__desc-text">
+                  <div class="product__desc-cont product__suitable active" data-block="suitable-for-car">
+                    <div class="product__suitable-block">
+                      <div class="product__suitable-block-inner">
+                        <span>ALPINA</span>
+                        <img src="./img/icon/arrow-black.svg" alt="" />
+                      </div>
+                      <div class="product__suitable-block-content product__subsuitable">
+                        <div class="product__subsuitable-block">
+                          <div class="product__subsuitable-block-inner">
+                            <span>Dbx</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="product__subsuitable-block-content">
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Модификация</div>
+                              <div class="product__subsuitable-block-content-item-desc">4.0 Кабриолет</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Объем двигателя</div>
+                              <div class="product__subsuitable-block-content-item-desc">3982 см</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Мощность, Л.С.</div>
+                              <div class="product__subsuitable-block-content-item-desc">510 л.с.</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Привод</div>
+                              <div class="product__subsuitable-block-content-item-desc">Привод на передние колеса</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Тип / Код двигателя</div>
+                              <div class="product__subsuitable-block-content-item-desc">
+                                Бензин / М 177.950, М177.980
+                              </div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Период выпуска</div>
+                              <div class="product__subsuitable-block-content-item-desc">2020 - 06.2023</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product__subsuitable-block">
+                          <div class="product__subsuitable-block-inner">
+                            <span>VANTAGE Roadster</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="product__subsuitable-block-content">
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Модификация</div>
+                              <div class="product__subsuitable-block-content-item-desc">4.0 Кабриолет</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Объем двигателя</div>
+                              <div class="product__subsuitable-block-content-item-desc">3982 см</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Мощность, Л.С.</div>
+                              <div class="product__subsuitable-block-content-item-desc">510 л.с.</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Привод</div>
+                              <div class="product__subsuitable-block-content-item-desc">Привод на передние колеса</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Тип / Код двигателя</div>
+                              <div class="product__subsuitable-block-content-item-desc">
+                                Бензин / М 177.950, М177.980
+                              </div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Период выпуска</div>
+                              <div class="product__subsuitable-block-content-item-desc">2020 - 06.2023</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__suitable-block">
+                      <div class="product__suitable-block-inner">
+                        <span>Aston Martin</span>
+                        <img src="./img/icon/arrow-black.svg" alt="" />
+                      </div>
+                      <div class="product__suitable-block-content product__subsuitable">
+                        <div class="product__subsuitable-block">
+                          <div class="product__subsuitable-block-inner">
+                            <span>Dbx</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="product__subsuitable-block-content">
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Модификация</div>
+                              <div class="product__subsuitable-block-content-item-desc">4.0 Кабриолет</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Объем двигателя</div>
+                              <div class="product__subsuitable-block-content-item-desc">3982 см</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Мощность, Л.С.</div>
+                              <div class="product__subsuitable-block-content-item-desc">510 л.с.</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Привод</div>
+                              <div class="product__subsuitable-block-content-item-desc">Привод на передние колеса</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Тип / Код двигателя</div>
+                              <div class="product__subsuitable-block-content-item-desc">
+                                Бензин / М 177.950, М177.980
+                              </div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Период выпуска</div>
+                              <div class="product__subsuitable-block-content-item-desc">2020 - 06.2023</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product__subsuitable-block">
+                          <div class="product__subsuitable-block-inner">
+                            <span>VANTAGE Roadster</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="product__subsuitable-block-content">
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Модификация</div>
+                              <div class="product__subsuitable-block-content-item-desc">4.0 Кабриолет</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Объем двигателя</div>
+                              <div class="product__subsuitable-block-content-item-desc">3982 см</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Мощность, Л.С.</div>
+                              <div class="product__subsuitable-block-content-item-desc">510 л.с.</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Привод</div>
+                              <div class="product__subsuitable-block-content-item-desc">Привод на передние колеса</div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Тип / Код двигателя</div>
+                              <div class="product__subsuitable-block-content-item-desc">
+                                Бензин / М 177.950, М177.980
+                              </div>
+                            </div>
+                            <div class="product__subsuitable-block-content-item">
+                              <div class="product__subsuitable-block-content-item-title">Период выпуска</div>
+                              <div class="product__subsuitable-block-content-item-desc">2020 - 06.2023</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product__desc-cont product__char-info" data-block="original-spare-parts">
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> ALPINA </span>
+                      <span class="product__char-info-item-desc"> 036109675 / 036109675A / 057109675 / 642533 </span>
+                    </p>
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> Aston Martin </span>
+                      <span class="product__char-info-item-desc"> 11341461679 / 11342245151 </span>
+                    </p>
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> Bentley </span>
+                      <span class="product__char-info-item-desc">
+                        05066775AA / 05184168AB / 5175438AA / 68001551AA / 68066168AA / K05184168AB
+                      </span>
+                    </p>
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> ALPINA </span>
+                      <span class="product__char-info-item-desc"> 036109675 / 036109675A / 057109675 / 642533 </span>
+                    </p>
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> Aston Martin </span>
+                      <span class="product__char-info-item-desc"> 11341461679 / 11342245151 </span>
+                    </p>
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> Bentley </span>
+                      <span class="product__char-info-item-desc">
+                        05066775AA / 05184168AB / 5175438AA / 68001551AA / 68066168AA / K05184168AB
+                      </span>
+                    </p>
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> ALPINA </span>
+                      <span class="product__char-info-item-desc"> 036109675 / 036109675A / 057109675 / 642533 </span>
+                    </p>
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> Aston Martin </span>
+                      <span class="product__char-info-item-desc"> 11341461679 / 11342245151 </span>
+                    </p>
+                    <p class="product__char-info-item">
+                      <span class="product__char-info-item-title"> Bentley </span>
+                      <span class="product__char-info-item-desc">
+                        05066775AA / 05184168AB / 5175438AA / 68001551AA / 68066168AA / K05184168AB
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="product__analogues">
+                <div class="product__analogues-top">
+                  <div class="title">аналоги и заменители</div>
+                  <div class="swiper__arrows">
+                    <button class="swiper__arrows-prev product__analogues-top-arrows-prev">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.1rem"
+                        height="1.8rem"
+                        viewBox="0 0 11 18"
+                        fill="none"
+                      >
+                        <path
+                          d="M9 16L2 9L9 2"
+                          stroke="white"
+                          stroke-width="2.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <button class="swiper__arrows-next product__analogues-top-arrows-next">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1.1rem"
+                        height="1.8rem"
+                        viewBox="0 0 11 18"
+                        fill="none"
+                      >
+                        <path
+                          d="M2 16L9 9L2 2"
+                          stroke="white"
+                          stroke-width="2.2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="product__analogues-slider">
+                  <div class="swiper" id="product__slider-3">
+                    <div class="product__analogues-slider-wrapper swiper-wrapper">
+                      <div class="swiper-slide card card-available">
+                        <div class="card__content">
+                          <div class="card__content-top">
+                            <div class="card__content-panel">
+                              <div class="card__content-panel-status">В наличии: 2шт</div>
+                              <div class="card__content-panel-like click-toggle">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="2.4rem"
+                                  height="2.4rem"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                                    fill="#98A0B1"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="card__slider">
+                              <div class="swiper card__swiper">
+                                <div class="card__swiper-wrapper swiper-wrapper">
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/order/detail-2.svg" alt="" />
+                                  </div>
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/order/detail-2.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="pagination card__pagination">
+                                <div class="pagination__bullets card__bullets"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card__content-info">
+                            <div class="price">13 549 ₽</div>
+                            <div class="card__content-info-bottom">
+                              <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                              <button type="button" class="card__btn-buy btn-arrows active">
+                                <div class="btn-arrows__title">Купить</div>
+                                <div class="btn-arrows__img"></div>
+                              </button>
+                              <div class="input-count">
+                                <button class="number-minus" type="button">
+                                  <img src="./img/icon/minus.svg" alt="" />
+                                </button>
+                                <input type="number" min="0" value="1" readonly />
+                                <button class="number-plus" type="button">
+                                  <img src="./img/icon/plus.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card__modal">
+                          <div class="card__modal-content">
+                            <div class="card__modal-content-icon">
+                              <img src="./img/icon/check-blue.svg" alt="" />
+                            </div>
+                            <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide card card-available">
+                        <div class="card__content">
+                          <div class="card__content-top">
+                            <div class="card__content-panel">
+                              <div class="card__content-panel-status">В наличии: 2шт</div>
+                              <div class="card__content-panel-like click-toggle">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="2.4rem"
+                                  height="2.4rem"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                                    fill="#98A0B1"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="card__slider">
+                              <div class="swiper card__swiper">
+                                <div class="card__swiper-wrapper swiper-wrapper">
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/order/detail-2.svg" alt="" />
+                                  </div>
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/order/detail-2.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="pagination card__pagination">
+                                <div class="pagination__bullets card__bullets"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card__content-info">
+                            <div class="price">13 549 ₽</div>
+                            <div class="card__content-info-bottom">
+                              <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                              <button type="button" class="card__btn-buy btn-arrows active">
+                                <div class="btn-arrows__title">Купить</div>
+                                <div class="btn-arrows__img"></div>
+                              </button>
+                              <div class="input-count">
+                                <button class="number-minus" type="button">
+                                  <img src="./img/icon/minus.svg" alt="" />
+                                </button>
+                                <input type="number" min="0" value="1" readonly />
+                                <button class="number-plus" type="button">
+                                  <img src="./img/icon/plus.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card__modal">
+                          <div class="card__modal-content">
+                            <div class="card__modal-content-icon">
+                              <img src="./img/icon/check-blue.svg" alt="" />
+                            </div>
+                            <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide card card-available">
+                        <div class="card__content">
+                          <div class="card__content-top">
+                            <div class="card__content-panel">
+                              <div class="card__content-panel-status">В наличии: 2шт</div>
+                              <div class="card__content-panel-like click-toggle">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="2.4rem"
+                                  height="2.4rem"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                                    fill="#98A0B1"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="card__slider">
+                              <div class="swiper card__swiper">
+                                <div class="card__swiper-wrapper swiper-wrapper">
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/order/detail-2.svg" alt="" />
+                                  </div>
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/order/detail-2.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="pagination card__pagination">
+                                <div class="pagination__bullets card__bullets"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card__content-info">
+                            <div class="price">13 549 ₽</div>
+                            <div class="card__content-info-bottom">
+                              <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                              <button type="button" class="card__btn-buy btn-arrows active">
+                                <div class="btn-arrows__title">Купить</div>
+                                <div class="btn-arrows__img"></div>
+                              </button>
+                              <div class="input-count">
+                                <button class="number-minus" type="button">
+                                  <img src="./img/icon/minus.svg" alt="" />
+                                </button>
+                                <input type="number" min="0" value="1" readonly />
+                                <button class="number-plus" type="button">
+                                  <img src="./img/icon/plus.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card__modal">
+                          <div class="card__modal-content">
+                            <div class="card__modal-content-icon">
+                              <img src="./img/icon/check-blue.svg" alt="" />
+                            </div>
+                            <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide card card-available">
+                        <div class="card__content">
+                          <div class="card__content-top">
+                            <div class="card__content-panel">
+                              <div class="card__content-panel-status">В наличии: 2шт</div>
+                              <div class="card__content-panel-like click-toggle">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="2.4rem"
+                                  height="2.4rem"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M16.44 3.09961C14.63 3.09961 13.01 3.97961 12 5.32961C10.99 3.97961 9.37 3.09961 7.56 3.09961C4.49 3.09961 2 5.59961 2 8.68961C2 9.87961 2.19 10.9796 2.52 11.9996C4.1 16.9996 8.97 19.9896 11.38 20.8096C11.72 20.9296 12.28 20.9296 12.62 20.8096C15.03 19.9896 19.9 16.9996 21.48 11.9996C21.81 10.9796 22 9.87961 22 8.68961C22 5.59961 19.51 3.09961 16.44 3.09961Z"
+                                    fill="#98A0B1"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="card__slider">
+                              <div class="swiper card__swiper">
+                                <div class="card__swiper-wrapper swiper-wrapper">
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/order/detail-2.svg" alt="" />
+                                  </div>
+                                  <div class="card__swiper-slide swiper-slide">
+                                    <img src="./img/order/detail-2.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="pagination card__pagination">
+                                <div class="pagination__bullets card__bullets"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card__content-info">
+                            <div class="price">13 549 ₽</div>
+                            <div class="card__content-info-bottom">
+                              <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                              <button type="button" class="card__btn-buy btn-arrows active">
+                                <div class="btn-arrows__title">Купить</div>
+                                <div class="btn-arrows__img"></div>
+                              </button>
+                              <div class="input-count">
+                                <button class="number-minus" type="button">
+                                  <img src="./img/icon/minus.svg" alt="" />
+                                </button>
+                                <input type="number" min="0" value="1" readonly />
+                                <button class="number-plus" type="button">
+                                  <img src="./img/icon/plus.svg" alt="" />
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card__modal">
+                          <div class="card__modal-content">
+                            <div class="card__modal-content-icon">
+                              <img src="./img/icon/check-blue.svg" alt="" />
+                            </div>
+                            <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pagination main__pagination">
+                    <div class="pagination__bullets product__analogues-top-bullets"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @@include('./template/footer.html')
+  </body>
+</html>

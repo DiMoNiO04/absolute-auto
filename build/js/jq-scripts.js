@@ -267,3 +267,23 @@ $('.catalog__item').each(function () {
     more.toggleClass('active');
   });
 });
+
+$('.product__suitable-block').each(function () {
+  const more = $(this).find('.product__suitable-block-inner');
+  const hide = $(this).find('.product__suitable-block-content');
+  hide.hide();
+  more.click(() => {
+    hide.slideToggle();
+    more.toggleClass('active');
+  });
+});
+
+$('.product__subsuitable-block').each(function () {
+  const more = $(this).find('.product__subsuitable-block-inner');
+  const hide = $(this).find('.product__subsuitable-block-content');
+  hide.hide();
+  more.click(() => {
+    hide.slideToggle();
+    more.toggleClass('active');
+  });
+});
