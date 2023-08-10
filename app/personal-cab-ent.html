@@ -369,6 +369,713 @@
             </section>
             <section class="pers-cab__content" data-content="history-order">
               <div class="title">История заказов</div>
+              <!--Нет заказов-->
+              <div class="pers-cab__empty" style="display: none">
+                <div class="pers-cab__empty-icons">
+                  <div class="pers-cab__empty-icons-img">
+                    <img src="./img/icon/shopping-cart-big.svg" alt="" />
+                  </div>
+                  <div class="pers-cab__empty-bg"></div>
+                </div>
+                <div class="pers-cab__empty-desc">
+                  <div class="subtitle">У вас пока нет заказов</div>
+                  <p>Более 1000 запчастей и более 100 брендов в наличии. Найдите вашу запчасть.</p>
+                  <a href="#" class="btn-form" type="submit" name="#">
+                    <span>Перейти в каталог</span>
+                    <img src="./img/icon/arrows-white.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!---------------->
+
+              <!--Есть заказы-->
+              <div class="pers-cab__fill">
+                <div class="pers-cab__fill-history">
+                  <div class="pers-cab__fill-history-top">
+                    <form class="search" action="" method="get">
+                      <input
+                        name="#"
+                        autocomplete="off"
+                        placeholder="Поиск по авто, VIN номеру, артикулу"
+                        type="text"
+                      />
+                      <button type="submit" name="#">
+                        <img src="./img/icon/search.svg" alt="" />
+                      </button>
+                    </form>
+                    <div class="sort">
+                      <div class="sort__icon"></div>
+                      <input
+                        readonly
+                        class="sort__input"
+                        autocomplete="off"
+                        role="combobox"
+                        list=""
+                        name="brands"
+                        value="По дате (сначала новые)"
+                      />
+                      <datalist class="sort__datalist" datalist role="listbox" style="display: none">
+                        <option value="По дате (сначала новые)" class="active">По дате (сначала новые)</option>
+                        <option value="По дате (сначала старые)">По дате (сначала старые)</option>
+                        <option value="По статусу">По статусу</option>
+                      </datalist>
+                      <div class="sort__arrow">
+                        <img src="./img/icon/arrow-left-blue.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pers-cab__fill-history-content">
+                    <div class="pers-cab__fill-history-content-header">
+                      <div>Номер заказа</div>
+                      <div>Дата покупки</div>
+                      <div>Способ доставки</div>
+                      <div>Сумма заказа</div>
+                      <div>Статус</div>
+                      <div>Детали заказа</div>
+                    </div>
+                    <div class="pers-cab__fill-history-content-item new">
+                      <div class="pers-cab__fill-history-content-item-inner">
+                        <div>№123456</div>
+                        <div>04.03.2023</div>
+                        <div>Самовывоз</div>
+                        <div>13 549 ₽</div>
+                        <div class="status">Новый</div>
+                        <div>
+                          <button type="button">
+                            <img src="./img/icon/arrow-left-blue.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pers-cab__fill-history-content-item-content history-order__content">
+                        <div class="history-order__content-title">
+                          <div class="history-order__content-title-text">Детали заказа</div>
+                          <button type="button" class="history-order__content-title-desc">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="2.4rem"
+                              height="2.4rem"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M7 5C7 3.34 8.34 2 10 2H14C15.66 2 17 3.34 17 5C17 5.55 16.55 6 16 6H8C7.45 6 7 5.55 7 5Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M17.75 15C17.75 15.41 17.41 15.75 17 15.75H16V19C16 20.66 14.66 22 13 22H11C9.34 22 8 20.66 8 19V15.75H7C6.59 15.75 6.25 15.41 6.25 15C6.25 14.59 6.59 14.25 7 14.25H17C17.41 14.25 17.75 14.59 17.75 15Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M18 7H6C4 7 3 8 3 10V15C3 17 4 18 6 18H6.375C6.72018 18 7 17.7202 7 17.375C7 17.0298 6.71131 16.7604 6.38841 16.6384C5.72619 16.3882 5.25 15.7453 5.25 15C5.25 14.04 6.04 13.25 7 13.25H17C17.96 13.25 18.75 14.04 18.75 15C18.75 15.7453 18.2738 16.3882 17.6116 16.6384C17.2887 16.7604 17 17.0298 17 17.375C17 17.7202 17.2798 18 17.625 18H18C20 18 21 17 21 15V10C21 8 20 7 18 7ZM10 11.75H7C6.59 11.75 6.25 11.41 6.25 11C6.25 10.59 6.59 10.25 7 10.25H10C10.41 10.25 10.75 10.59 10.75 11C10.75 11.41 10.41 11.75 10 11.75Z"
+                                fill="#98A0B1"
+                              />
+                            </svg>
+                            <span>Распечатать заказ</span>
+                          </button>
+                          <div class="history-order__content-title-block">
+                            <div class="history-order__content-title-block-item">Сохранить как Excel</div>
+                            <div class="history-order__content-title-block-item">Распечатать PDF</div>
+                          </div>
+                        </div>
+                        <div class="history-order__content-items">
+                          <div class="history-order__content-items-header">
+                            <div>Бренд</div>
+                            <div>Артикул</div>
+                            <div>Товар</div>
+                            <div>Стоимость ед.</div>
+                            <div>Кол-во</div>
+                            <div>Цена</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <button class="btn-arrows history-order__content-items-item-btn">
+                            <div class="btn-arrows__title">Развернуть еще</div>
+                            <div class="btn-arrows__img"></div>
+                          </button>
+                        </div>
+                        <div class="history-order__content-result">
+                          <div class="history-order__content-result-btns">
+                            <button class="btn-form" type="button" name="#">
+                              <span>Повторить заказ</span>
+                              <img src="./img/icon/arrows-white.svg" alt="" />
+                            </button>
+                            <button
+                              data-modal-el="purchase-returns"
+                              class="btn-arrows history-order__content-result-btns-btn"
+                            >
+                              <div class="btn-arrows__title">Возврат заказа</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                          </div>
+                          <div class="history-order__content-result-price">
+                            <div>Общая стоимость</div>
+                            <div>13 549 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pers-cab__fill-history-content-item proccess">
+                      <div class="pers-cab__fill-history-content-item-inner">
+                        <div>№123456</div>
+                        <div>04.03.2023</div>
+                        <div>Самовывоз</div>
+                        <div>13 549 ₽</div>
+                        <div class="status">Обрабатывается</div>
+                        <div>
+                          <button type="button">
+                            <img src="./img/icon/arrow-left-blue.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pers-cab__fill-history-content-item-content history-order__content">
+                        <div class="history-order__content-title">
+                          <div class="history-order__content-title-text">Детали заказа</div>
+                          <button type="button" class="history-order__content-title-desc">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="2.4rem"
+                              height="2.4rem"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M7 5C7 3.34 8.34 2 10 2H14C15.66 2 17 3.34 17 5C17 5.55 16.55 6 16 6H8C7.45 6 7 5.55 7 5Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M17.75 15C17.75 15.41 17.41 15.75 17 15.75H16V19C16 20.66 14.66 22 13 22H11C9.34 22 8 20.66 8 19V15.75H7C6.59 15.75 6.25 15.41 6.25 15C6.25 14.59 6.59 14.25 7 14.25H17C17.41 14.25 17.75 14.59 17.75 15Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M18 7H6C4 7 3 8 3 10V15C3 17 4 18 6 18H6.375C6.72018 18 7 17.7202 7 17.375C7 17.0298 6.71131 16.7604 6.38841 16.6384C5.72619 16.3882 5.25 15.7453 5.25 15C5.25 14.04 6.04 13.25 7 13.25H17C17.96 13.25 18.75 14.04 18.75 15C18.75 15.7453 18.2738 16.3882 17.6116 16.6384C17.2887 16.7604 17 17.0298 17 17.375C17 17.7202 17.2798 18 17.625 18H18C20 18 21 17 21 15V10C21 8 20 7 18 7ZM10 11.75H7C6.59 11.75 6.25 11.41 6.25 11C6.25 10.59 6.59 10.25 7 10.25H10C10.41 10.25 10.75 10.59 10.75 11C10.75 11.41 10.41 11.75 10 11.75Z"
+                                fill="#98A0B1"
+                              />
+                            </svg>
+                            <span>Распечатать заказ</span>
+                          </button>
+                          <div class="history-order__content-title-block">
+                            <div class="history-order__content-title-block-item">Сохранить как Excel</div>
+                            <div class="history-order__content-title-block-item">Распечатать PDF</div>
+                          </div>
+                        </div>
+                        <div class="history-order__content-items">
+                          <div class="history-order__content-items-header">
+                            <div>Бренд</div>
+                            <div>Артикул</div>
+                            <div>Товар</div>
+                            <div>Стоимость ед.</div>
+                            <div>Кол-во</div>
+                            <div>Цена</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <button class="btn-arrows history-order__content-items-item-btn">
+                            <div class="btn-arrows__title">Развернуть еще</div>
+                            <div class="btn-arrows__img"></div>
+                          </button>
+                        </div>
+                        <div class="history-order__content-result">
+                          <div class="history-order__content-result-btns">
+                            <button class="btn-form" type="button" name="#">
+                              <span>Повторить заказ</span>
+                              <img src="./img/icon/arrows-white.svg" alt="" />
+                            </button>
+                            <button
+                              data-modal-el="purchase-returns"
+                              class="btn-arrows history-order__content-result-btns-btn"
+                            >
+                              <div class="btn-arrows__title">Возврат заказа</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                          </div>
+                          <div class="history-order__content-result-price">
+                            <div>Общая стоимость</div>
+                            <div>13 549 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pers-cab__fill-history-content-item canceled">
+                      <div class="pers-cab__fill-history-content-item-inner">
+                        <div>№123456</div>
+                        <div>04.03.2023</div>
+                        <div>Самовывоз</div>
+                        <div>13 549 ₽</div>
+                        <div class="status">Отменен</div>
+                        <div>
+                          <button type="button">
+                            <img src="./img/icon/arrow-left-blue.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pers-cab__fill-history-content-item-content history-order__content">
+                        <div class="history-order__content-title">
+                          <div class="history-order__content-title-text">Детали заказа</div>
+                          <button type="button" class="history-order__content-title-desc">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="2.4rem"
+                              height="2.4rem"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M7 5C7 3.34 8.34 2 10 2H14C15.66 2 17 3.34 17 5C17 5.55 16.55 6 16 6H8C7.45 6 7 5.55 7 5Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M17.75 15C17.75 15.41 17.41 15.75 17 15.75H16V19C16 20.66 14.66 22 13 22H11C9.34 22 8 20.66 8 19V15.75H7C6.59 15.75 6.25 15.41 6.25 15C6.25 14.59 6.59 14.25 7 14.25H17C17.41 14.25 17.75 14.59 17.75 15Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M18 7H6C4 7 3 8 3 10V15C3 17 4 18 6 18H6.375C6.72018 18 7 17.7202 7 17.375C7 17.0298 6.71131 16.7604 6.38841 16.6384C5.72619 16.3882 5.25 15.7453 5.25 15C5.25 14.04 6.04 13.25 7 13.25H17C17.96 13.25 18.75 14.04 18.75 15C18.75 15.7453 18.2738 16.3882 17.6116 16.6384C17.2887 16.7604 17 17.0298 17 17.375C17 17.7202 17.2798 18 17.625 18H18C20 18 21 17 21 15V10C21 8 20 7 18 7ZM10 11.75H7C6.59 11.75 6.25 11.41 6.25 11C6.25 10.59 6.59 10.25 7 10.25H10C10.41 10.25 10.75 10.59 10.75 11C10.75 11.41 10.41 11.75 10 11.75Z"
+                                fill="#98A0B1"
+                              />
+                            </svg>
+                            <span>Распечатать заказ</span>
+                          </button>
+                          <div class="history-order__content-title-block">
+                            <div class="history-order__content-title-block-item">Сохранить как Excel</div>
+                            <div class="history-order__content-title-block-item">Распечатать PDF</div>
+                          </div>
+                        </div>
+                        <div class="history-order__content-items">
+                          <div class="history-order__content-items-header">
+                            <div>Бренд</div>
+                            <div>Артикул</div>
+                            <div>Товар</div>
+                            <div>Стоимость ед.</div>
+                            <div>Кол-во</div>
+                            <div>Цена</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <button class="btn-arrows history-order__content-items-item-btn">
+                            <div class="btn-arrows__title">Развернуть еще</div>
+                            <div class="btn-arrows__img"></div>
+                          </button>
+                        </div>
+                        <div class="history-order__content-result">
+                          <div class="history-order__content-result-btns">
+                            <button class="btn-form" type="button" name="#">
+                              <span>Повторить заказ</span>
+                              <img src="./img/icon/arrows-white.svg" alt="" />
+                            </button>
+                            <button
+                              data-modal-el="purchase-returns"
+                              class="btn-arrows history-order__content-result-btns-btn"
+                            >
+                              <div class="btn-arrows__title">Возврат заказа</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                          </div>
+                          <div class="history-order__content-result-price">
+                            <div>Общая стоимость</div>
+                            <div>13 549 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pers-cab__fill-history-content-item delivered">
+                      <div class="pers-cab__fill-history-content-item-inner">
+                        <div>№123456</div>
+                        <div>04.03.2023</div>
+                        <div>Самовывоз</div>
+                        <div>13 549 ₽</div>
+                        <div class="status">Доставлен</div>
+                        <div>
+                          <button type="button">
+                            <img src="./img/icon/arrow-left-blue.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pers-cab__fill-history-content-item-content history-order__content">
+                        <div class="history-order__content-title">
+                          <div class="history-order__content-title-text">Детали заказа</div>
+                          <button type="button" class="history-order__content-title-desc">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="2.4rem"
+                              height="2.4rem"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M7 5C7 3.34 8.34 2 10 2H14C15.66 2 17 3.34 17 5C17 5.55 16.55 6 16 6H8C7.45 6 7 5.55 7 5Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M17.75 15C17.75 15.41 17.41 15.75 17 15.75H16V19C16 20.66 14.66 22 13 22H11C9.34 22 8 20.66 8 19V15.75H7C6.59 15.75 6.25 15.41 6.25 15C6.25 14.59 6.59 14.25 7 14.25H17C17.41 14.25 17.75 14.59 17.75 15Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M18 7H6C4 7 3 8 3 10V15C3 17 4 18 6 18H6.375C6.72018 18 7 17.7202 7 17.375C7 17.0298 6.71131 16.7604 6.38841 16.6384C5.72619 16.3882 5.25 15.7453 5.25 15C5.25 14.04 6.04 13.25 7 13.25H17C17.96 13.25 18.75 14.04 18.75 15C18.75 15.7453 18.2738 16.3882 17.6116 16.6384C17.2887 16.7604 17 17.0298 17 17.375C17 17.7202 17.2798 18 17.625 18H18C20 18 21 17 21 15V10C21 8 20 7 18 7ZM10 11.75H7C6.59 11.75 6.25 11.41 6.25 11C6.25 10.59 6.59 10.25 7 10.25H10C10.41 10.25 10.75 10.59 10.75 11C10.75 11.41 10.41 11.75 10 11.75Z"
+                                fill="#98A0B1"
+                              />
+                            </svg>
+                            <span>Распечатать заказ</span>
+                          </button>
+                          <div class="history-order__content-title-block">
+                            <div class="history-order__content-title-block-item">Сохранить как Excel</div>
+                            <div class="history-order__content-title-block-item">Распечатать PDF</div>
+                          </div>
+                        </div>
+                        <div class="history-order__content-items">
+                          <div class="history-order__content-items-header">
+                            <div>Бренд</div>
+                            <div>Артикул</div>
+                            <div>Товар</div>
+                            <div>Стоимость ед.</div>
+                            <div>Кол-во</div>
+                            <div>Цена</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <button class="btn-arrows history-order__content-items-item-btn">
+                            <div class="btn-arrows__title">Развернуть еще</div>
+                            <div class="btn-arrows__img"></div>
+                          </button>
+                        </div>
+                        <div class="history-order__content-result">
+                          <div class="history-order__content-result-btns">
+                            <button class="btn-form" type="button" name="#">
+                              <span>Повторить заказ</span>
+                              <img src="./img/icon/arrows-white.svg" alt="" />
+                            </button>
+                            <button
+                              data-modal-el="purchase-returns"
+                              class="btn-arrows history-order__content-result-btns-btn"
+                            >
+                              <div class="btn-arrows__title">Возврат заказа</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                          </div>
+                          <div class="history-order__content-result-price">
+                            <div>Общая стоимость</div>
+                            <div>13 549 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pers-cab__fill-history-content-item available">
+                      <div class="pers-cab__fill-history-content-item-inner">
+                        <div>№123456</div>
+                        <div>04.03.2023</div>
+                        <div>Самовывоз</div>
+                        <div>13 549 ₽</div>
+                        <div class="status">Доступен счет</div>
+                        <div>
+                          <button type="button">
+                            <img src="./img/icon/arrow-left-blue.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="pers-cab__fill-history-content-item-content history-order__content">
+                        <div class="history-order__content-title">
+                          <div class="history-order__content-title-text">Детали заказа</div>
+                          <button type="button" class="history-order__content-title-desc">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="2.4rem"
+                              height="2.4rem"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M7 5C7 3.34 8.34 2 10 2H14C15.66 2 17 3.34 17 5C17 5.55 16.55 6 16 6H8C7.45 6 7 5.55 7 5Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M17.75 15C17.75 15.41 17.41 15.75 17 15.75H16V19C16 20.66 14.66 22 13 22H11C9.34 22 8 20.66 8 19V15.75H7C6.59 15.75 6.25 15.41 6.25 15C6.25 14.59 6.59 14.25 7 14.25H17C17.41 14.25 17.75 14.59 17.75 15Z"
+                                fill="#98A0B1"
+                              />
+                              <path
+                                d="M18 7H6C4 7 3 8 3 10V15C3 17 4 18 6 18H6.375C6.72018 18 7 17.7202 7 17.375C7 17.0298 6.71131 16.7604 6.38841 16.6384C5.72619 16.3882 5.25 15.7453 5.25 15C5.25 14.04 6.04 13.25 7 13.25H17C17.96 13.25 18.75 14.04 18.75 15C18.75 15.7453 18.2738 16.3882 17.6116 16.6384C17.2887 16.7604 17 17.0298 17 17.375C17 17.7202 17.2798 18 17.625 18H18C20 18 21 17 21 15V10C21 8 20 7 18 7ZM10 11.75H7C6.59 11.75 6.25 11.41 6.25 11C6.25 10.59 6.59 10.25 7 10.25H10C10.41 10.25 10.75 10.59 10.75 11C10.75 11.41 10.41 11.75 10 11.75Z"
+                                fill="#98A0B1"
+                              />
+                            </svg>
+                            <span>Распечатать заказ</span>
+                          </button>
+                          <div class="history-order__content-title-block">
+                            <div class="history-order__content-title-block-item">Сохранить как Excel</div>
+                            <div class="history-order__content-title-block-item">Распечатать PDF</div>
+                          </div>
+                        </div>
+                        <div class="history-order__content-items">
+                          <div class="history-order__content-items-header">
+                            <div>Бренд</div>
+                            <div>Артикул</div>
+                            <div>Товар</div>
+                            <div>Стоимость ед.</div>
+                            <div>Кол-во</div>
+                            <div>Цена</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>EUROREPAR</div>
+                            <div>1611455580</div>
+                            <div>Комплект тормозов барабанного тормозного механизма</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <div class="history-order__content-items-item">
+                            <div>FRENKIT</div>
+                            <div>950622</div>
+                            <div>Ремкомплект колодок ручника</div>
+                            <div>549 ₽</div>
+                            <div>1</div>
+                            <div>549 ₽</div>
+                          </div>
+                          <button class="btn-arrows history-order__content-items-item-btn">
+                            <div class="btn-arrows__title">Развернуть еще</div>
+                            <div class="btn-arrows__img"></div>
+                          </button>
+                        </div>
+                        <div class="history-order__content-result">
+                          <div class="history-order__content-result-btns">
+                            <button class="btn-form" type="button" name="#">
+                              <span>Повторить заказ</span>
+                              <img src="./img/icon/arrows-white.svg" alt="" />
+                            </button>
+                            <button
+                              data-modal-el="purchase-returns"
+                              class="btn-arrows history-order__content-result-btns-btn"
+                            >
+                              <div class="btn-arrows__title">Возврат заказа</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                          </div>
+                          <div class="history-order__content-result-price">
+                            <div>Общая стоимость</div>
+                            <div>13 549 ₽</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn-arrows pers-cab__fill-history-btn">
+                    <div class="btn-arrows__title">Показать еще</div>
+                    <div class="btn-arrows__img"></div>
+                  </button>
+                </div>
+              </div>
+              <!---------------->
             </section>
             <section class="pers-cab__content" data-content="my-garage">
               <div class="title">Мой гараж</div>

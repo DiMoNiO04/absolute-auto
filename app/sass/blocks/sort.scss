@@ -1,0 +1,91 @@
+.sort {
+  position: relative;
+  width: 33.5rem;
+  display: flex;
+  column-gap: 1.5rem;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background-color: #ffffff;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+
+  &.active {
+    .sort__arrow {
+      transform: rotate(-90deg);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .sort__arrow {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__icon {
+    width: 4.3rem;
+    height: 4.3rem;
+    background-color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/icon/sort.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  &__input {
+    border: 0;
+    height: 4.3rem;
+    width: 80%;
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &__datalist {
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    border-top: none;
+    font-family: sans-serif;
+    justify-content: space-between;
+    width: 100%;
+    top: 6.2rem;
+    left: 0;
+    padding: 0.6rem 2rem 0 1.5rem;
+    overflow-y: auto;
+    column-gap: 2rem;
+    z-index: 10;
+    display: flex;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $greyLight;
+      border: 0.4rem solid $greyLight;
+    }
+
+    option {
+      background-color: white;
+      color: $black;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 130%;
+      cursor: pointer;
+      padding-bottom: 0.8rem;
+
+      &:hover,
+      &.active {
+        color: $mainColor;
+        transition: all 0.2s;
+      }
+    }
+  }
+}

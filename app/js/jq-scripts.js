@@ -287,3 +287,40 @@ $('.product__subsuitable-block').each(function () {
     more.toggleClass('active');
   });
 });
+
+$('.pers-cab__fill-history-content-item').each(function () {
+  const more = $(this).find('.pers-cab__fill-history-content-item-inner');
+  const hide = $(this).find('.pers-cab__fill-history-content-item-content');
+  hide.hide();
+  more.click(() => {
+    hide.slideToggle();
+    more.toggleClass('active');
+  });
+});
+
+$('.history-order__content-title-desc').on('click', function () {
+  const hide = $(this).parent().find('.history-order__content-title-block');
+  hide.slideToggle();
+});
+
+$('.sort').each(function () {
+  $(this).click(() => {
+    $(this).find('.sort__datalist').slideToggle();
+    $(this).toggleClass('active');
+  });
+});
+
+$('.sort__datalist option').each(function () {
+  const datalist = $(this).parent();
+
+  $(this).on('click', function () {
+    $(this)
+      .parent()
+      .find('option')
+      .each(function () {
+        $(this).removeClass('active');
+      });
+    $(this).addClass('active');
+    $(this).parent().parent().find('input').val($(this).val());
+  });
+});
