@@ -88,3 +88,4 @@ const modalUpdateNameAuto = document.querySelector('[data-modal="update-name-aut
 const modalPurchaseReturns = document.querySelector('[data-modal="purchase-returns"]')
   ? new Modal('purchase-returns')
   : null;
+const modalChoiceCar = document.querySelector('[data-modal="choice-car"]') ? new Modal('choice-car') : null;

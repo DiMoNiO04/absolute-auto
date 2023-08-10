@@ -377,3 +377,49 @@
     }
   }
 }
+
+.modal__content-choice {
+  height: 60rem;
+  width: 116.5rem;
+  background: url('../../img/backgrounds/bg-modal-choice.svg');
+  border: none;
+  padding: 3.4rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $watermarkBackground;
+
+  &-img {
+    height: 50.3rem;
+    width: 66rem;
+    position: relative;
+    top: 3.4rem;
+  }
+
+  &-form {
+    background: $white;
+    flex-direction: column;
+    row-gap: 2rem;
+    display: flex;
+    width: 38.3rem;
+  }
+
+  &-form-title {
+    color: $black;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 140%;
+    padding: 3.2rem 3.2rem 0 3.2rem;
+  }
+
+  &-form-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 0 3.2rem 3.2rem 3.2rem;
+  }
+
+  &-form-select {
+  }
+}

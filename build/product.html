@@ -106,6 +106,53 @@
                       />
                     </svg>
                   </button>
+                  <div class="header__bottom-button-content">
+                    <!--нету-->
+                    <div class="header__bottom-button-content-empty" style="display: none">
+                      <div class="header__bottom-button-content-text">
+                        Добавляйте авто в гараж, так вы сможете быстрее найти нужные запчасти
+                      </div>
+                    </div>
+                    <!---------------->
+
+                    <!--есть-->
+                    <div class="header__bottom-button-content-fill content-history">
+                      <div class="content-history__title">
+                        <div class="content-history__title-text">История поиска</div>
+                        <button type="button" class="btn-reset">Очистить все</button>
+                      </div>
+                      <div class="content-history__items">
+                        <div class="content-history__items-item active">
+                          <div class="content-history__items-item-icon">
+                            <img src="../img/icon/arrow-white.svg" alt="" />
+                          </div>
+                          <div class="content-history__items-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
+                          <button type="button" class="content-history__items-item-btn">
+                            <img src="../img/icon/close-small.svg" alt="" />
+                          </button>
+                        </div>
+                        <div class="content-history__items-item">
+                          <div class="content-history__items-item-icon">
+                            <img src="../img/icon/arrow-white.svg" alt="" />
+                          </div>
+                          <div class="content-history__items-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
+                          <button type="button" class="content-history__items-item-btn">
+                            <img src="../img/icon/close-small.svg" alt="" />
+                          </button>
+                        </div>
+                        <div class="content-history__items-item">
+                          <div class="content-history__items-item-icon">
+                            <img src="../img/icon/arrow-white.svg" alt="" />
+                          </div>
+                          <div class="content-history__items-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
+                          <button type="button" class="content-history__items-item-btn">
+                            <img src="../img/icon/close-small.svg" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!---------------->
+                  </div>
                 </div>
                 <div class="header__bottom-button">
                   <button>
@@ -122,9 +169,30 @@
                       />
                     </svg>
                   </button>
+                  <div class="header__bottom-button-content">
+                    <!--нету-->
+                    <div class="header__bottom-button-content-empty" style="display: none">
+                      <div class="header__bottom-button-content-text">В избранном нет товаров</div>
+                      <a href="./catalog.html" class="btn-form" type="button">
+                        <span>Перейти в каталог</span>
+                        <img src="./img/icon/arrows-white.svg" alt="" />
+                      </a>
+                    </div>
+                    <!---------------->
+
+                    <!--есть-->
+                    <div class="header__bottom-button-content-fill">
+                      <div class="header__bottom-button-content-text">В избранном 3 товара</div>
+                      <a href="./personal-cab-ind.html#favorites" class="btn-form" type="button">
+                        <span>Перейти в избранное</span>
+                        <img src="./img/icon/arrows-white.svg" alt="" />
+                      </a>
+                    </div>
+                    <!---------------->
+                  </div>
                 </div>
                 <div class="header__bottom-button">
-                  <button data-modal-el="entrance">
+                  <button>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="2.4rem"
@@ -140,6 +208,91 @@
                       />
                     </svg>
                   </button>
+
+                  <div class="header__bottom-button-content">
+                    <!--нету-->
+                    <div class="header__bottom-button-content-empty" style="display: none">
+                      <div class="header__bottom-button-content-text">
+                        Войдите, чтобы делать покупки, отслеживать заказы
+                      </div>
+                      <button data-modal-el="entrance" class="btn-form" type="button">
+                        <span>Войти или зарегистрироваться</span>
+                        <img src="./img/icon/arrows-white.svg" alt="" />
+                      </button>
+                    </div>
+                    <!---------------->
+
+                    <!--есть-->
+                    <div class="header__bottom-button-content-fill content-acc">
+                      <a href="./personal-cab-ind.html#profile" class="content-acc-btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="2.1rem"
+                          height="2.1rem"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M14.6668 6.33329C14.6668 8.63448 12.8013 10.5 10.5002 10.5C8.19898 10.5 6.3335 8.63448 6.3335 6.33329C6.3335 4.03211 8.19898 2.16663 10.5002 2.16663C12.8013 2.16663 14.6668 4.03211 14.6668 6.33329ZM2.92529 18C2.92529 14.55 6.32529 12.5833 10.5003 12.5833C14.6753 12.5833 18.0753 14.55 18.0753 18C18.0753 18.9042 17.5835 19.25 16.8253 19.25H4.17529C3.8335 19.25 2.92529 19.25 2.92529 18Z"
+                            fill="#98A0B1"
+                          />
+                        </svg>
+                        <span>Профиль</span>
+                      </a>
+                      <a href="./personal-cab-ind.html#history-order" class="content-acc-btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="2.1rem"
+                          height="2.1rem"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.53317 3.78329L4.3665 5.82496C4.33317 6.21663 4.6415 6.54163 5.03317 6.54163H17.7915C18.1415 6.54163 18.4332 6.27496 18.4582 5.92496C18.5665 4.44996 17.4415 3.24996 15.9665 3.24996H5.72484C5.6415 2.88329 5.47484 2.53329 5.2165 2.24163C4.79984 1.79996 4.2165 1.54163 3.6165 1.54163H2.1665C1.82484 1.54163 1.5415 1.82496 1.5415 2.16663C1.5415 2.50829 1.82484 2.79163 2.1665 2.79163H3.6165C3.87484 2.79163 4.1165 2.89996 4.2915 3.08329C4.4665 3.27496 4.54984 3.52496 4.53317 3.78329ZM8.83317 17.7916C8.83317 18.597 8.18025 19.25 7.37484 19.25C6.56942 19.25 5.9165 18.597 5.9165 17.7916C5.9165 16.9862 6.56942 16.3333 7.37484 16.3333C8.18025 16.3333 8.83317 16.9862 8.83317 17.7916ZM15.4998 17.7916C15.4998 18.597 14.8469 19.25 14.0415 19.25C13.2361 19.25 12.5832 18.597 12.5832 17.7916C12.5832 16.9862 13.2361 16.3333 14.0415 16.3333C14.8469 16.3333 15.4998 16.9862 15.4998 17.7916ZM4.80821 7.79163H17.5915C17.9832 7.79163 18.2832 8.11663 18.2499 8.49996L17.9749 12.3916C17.8832 13.6416 16.7832 14.6666 15.5332 14.6666H6.26655C4.84155 14.6666 3.72488 13.45 3.84155 12.025L4.14155 8.39996C4.17488 8.05829 4.45821 7.79163 4.80821 7.79163Z"
+                            fill="#98A0B1"
+                          />
+                        </svg>
+                        <span>История заказов</span>
+                      </a>
+                      <button class="content-acc-btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="2.1rem"
+                          height="2.1rem"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.1665 2.1665H15.4998C15.9419 2.1665 16.3658 2.3421 16.6783 2.65466C16.9909 2.96722 17.1665 3.39114 17.1665 3.83317V15.4998C17.1665 15.9419 16.9909 16.3658 16.6783 16.6783C16.3658 16.9909 15.9419 17.1665 15.4998 17.1665H12.1665"
+                            stroke="#98A0B1"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M6.3335 13.8332L2.16683 9.66654L6.3335 5.49988"
+                            stroke="#98A0B1"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M12.1665 9.6665H2.1665"
+                            stroke="#98A0B1"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <span>Выход</span>
+                      </button>
+                    </div>
+                    <!---------------->
+                  </div>
                 </div>
                 <div class="header__bottom-button">
                   <button>
@@ -158,6 +311,87 @@
                       />
                     </svg>
                   </button>
+                  <div class="header__bottom-button-content">
+                    <!--нету-->
+                    <div class="header__bottom-button-content-empty" style="display: none">
+                      <div class="header__bottom-button-content-text">В корзине нет товаров</div>
+                      <a href="./catalog.html" class="btn-form" type="button">
+                        <span>Перейти в каталог</span>
+                        <img src="./img/icon/arrows-white.svg" alt="" />
+                      </a>
+                    </div>
+                    <!---------------->
+
+                    <!--есть-->
+                    <div class="header__bottom-button-content-fill content-basket">
+                      <div class="content-basket__title">
+                        <div class="content-basket__title-text">В корзине 3 товара</div>
+                        <button type="button" class="btn-reset">Очистить все</button>
+                      </div>
+                      <ul class="content-basket__items">
+                        <li class="content-basket__items-item">
+                          <img src="./img/detail-basket.svg" alt="" />
+                          <div class="content-basket__items-item-desc">
+                            <div class="content-basket__items-item-desc-top">
+                              <div class="content-basket__items-item-desc-top-title">
+                                Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR
+                              </div>
+                              <button type="button" class="content-basket__items-item-desc-top-close">
+                                <img src="../img/icon/close-small.svg" alt="" />
+                              </button>
+                            </div>
+                            <div class="content-basket__items-item-desc-bottom">
+                              <div>2 шт.</div>
+                              <div>49 ₽</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="content-basket__items-item">
+                          <img src="./img/detail-basket.svg" alt="" />
+                          <div class="content-basket__items-item-desc">
+                            <div class="content-basket__items-item-desc-top">
+                              <div class="content-basket__items-item-desc-top-title">
+                                Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR
+                              </div>
+                              <button type="button" class="content-basket__items-item-desc-top-close">
+                                <img src="../img/icon/close-small.svg" alt="" />
+                              </button>
+                            </div>
+                            <div class="content-basket__items-item-desc-bottom">
+                              <div>2 шт.</div>
+                              <div>49 ₽</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="content-basket__items-item">
+                          <img src="./img/detail-basket.svg" alt="" />
+                          <div class="content-basket__items-item-desc">
+                            <div class="content-basket__items-item-desc-top">
+                              <div class="content-basket__items-item-desc-top-title">
+                                Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR
+                              </div>
+                              <button type="button" class="content-basket__items-item-desc-top-close">
+                                <img src="../img/icon/close-small.svg" alt="" />
+                              </button>
+                            </div>
+                            <div class="content-basket__items-item-desc-bottom">
+                              <div>2 шт.</div>
+                              <div>49 ₽</div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="content-basket__result">
+                        <div>Итого</div>
+                        <div>13 549 ₽</div>
+                      </div>
+                      <a href="./basket-order.html" class="btn-form" type="button">
+                        <span>Перейти в корзину</span>
+                        <img src="./img/icon/arrows-white.svg" alt="" />
+                      </a>
+                    </div>
+                    <!---------------->
+                  </div>
                 </div>
               </div>
             </div>

@@ -127,6 +127,9 @@
       <li class="item">
         <div data-modal-el="purchase-returns">Возврат товара</div>
       </li>
+      <li class="item">
+        <div data-modal-el="choice-car">Выбор авто</div>
+      </li>
     </ul>
   </body>
 
@@ -722,10 +725,67 @@
   </div>
   <!------------------------------>
 
+  <!--Модалка выбор авто-->
+  <div class="modal close-x" data-modal="choice-car">
+    <div class="modal__inner">
+      <div class="modal__content modal__content-choice">
+        <!-- <div class="left-body__bg"></div> -->
+        <div class="modal__content-close close-x">
+          <img class="close-x" src="./img/icon/close-modal.svg" alt="" />
+        </div>
+        <form method="#" action="#" id="modal__content-choice-form" class="modal__content-choice-form">
+          <div class="modal__content-choice-form-title">Выберите свой автомобиль чтобы подобрать запчасти</div>
+
+          <div class="modal__content-choce-form-select" data-checked="off">
+            <div class="main-main__search-form-select-count">01</div>
+            <input
+              class="main-main__search-form-select-input"
+              autocomplete="off"
+              role="combobox"
+              list=""
+              name="brands"
+              placeholder="Марка"
+            />
+            <datalist class="main-main__search-form-select-datalist" datalist role="listbox" style="display: none">
+              <button class="main-main__search-form-select-reset">Марка</button>
+              <option value="Acura">Acura</option>
+              <option value="Audi">Audi</option>
+              <option value="Alfa Romeo">Alfa Romeo</option>
+              <option value="Bentley">Bentley</option>
+              <option value="BMW">BMW</option>
+              <option value="Cadilac">Cadilac</option>
+              <option value="Chery">Chery</option>
+              <option value="Lada">Lada</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Mazda">Mazda</option>
+              <option value="Lamborgini">Lamborgini</option>
+              <option value="Bentley">Bentley</option>
+              <option value="Volkswagen">Volkswagen</option>
+            </datalist>
+          </div>
+
+          <div class="modal__content-choice-form-btns">
+            <button class="btn-form" form="modal__content-choice-form" type="submit" name="#">
+              <span>Перейти в каталог</span>
+              <img src="./img/icon/arrows-white.svg" alt="" />
+            </button>
+            <button type="reset" class="btn-reset">Сбросить</button>
+          </div>
+        </form>
+        <div class="modal__content-choice-img">
+          <img src="./img/main-porshe.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------>
+
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="./libs/swiper-bundle.js"></script>
+  <script src="./libs/nouislider.min.js"></script>
   <script src="./js/swipers.js"></script>
+  <script src="./js/nouislider.min.js"></script>
   <script language="JavaScript" type="text/javascript" src="./js/jq-scripts.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/render-content.js"></script>

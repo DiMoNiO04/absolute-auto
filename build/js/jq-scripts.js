@@ -311,7 +311,7 @@ $('.sort').each(function () {
 });
 
 $('.sort__datalist option').each(function () {
-  let datalist = $(this).parent();
+  const datalist = $(this).parent();
 
   $(this).on('click', function () {
     $(this)
@@ -323,4 +323,17 @@ $('.sort__datalist option').each(function () {
     $(this).addClass('active');
     $(this).parent().parent().find('input').val($(this).val());
   });
+});
+
+$('.header__bottom-button > button').click(function (event) {
+  if (event.currentTarget.classList.value !== 'active') {
+    $('.header__bottom-button button').not($(this)).removeClass('active');
+    $(this).addClass('active');
+
+    $('.header__bottom-button-content').not($(this).siblings('.header__bottom-button-content')).slideUp(200);
+    $(this).siblings('.header__bottom-button-content').slideDown(500);
+  } else {
+    $(this).removeClass('active');
+    $(this).next().slideUp(250);
+  }
 });
