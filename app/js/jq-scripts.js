@@ -337,3 +337,15 @@ $('.header__bottom-button > button').click(function (event) {
     $(this).next().slideUp(250);
   }
 });
+
+$('.header__bottom-items button').click(function () {
+  $('.header__bottom-menu').fadeIn();
+  $('.header__bottom-items button').not($(this)).removeClass('active');
+  $(this).addClass('active');
+  $('.main-overlay').addClass('active');
+});
+
+$('.header__bottom-menu-close').click(() => {
+  $('.header__bottom-menu').fadeOut();
+  $('.main-overlay').removeClass('active');
+});
