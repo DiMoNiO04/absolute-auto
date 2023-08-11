@@ -19,6 +19,14 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    .btn-arrows__yet {
+      flex-direction: column;
+      row-gap: 1.5rem;
+      .btn-arrows__img {
+        transform: rotate(90deg);
+      }
+    }
   }
 
   &__choice-car {
@@ -259,5 +267,53 @@
       font-size: 1.8rem;
       font-weight: 600;
     }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 26rem;
+    justify-content: flex-end;
+    .btn-arrows {
+      margin: inherit;
+    }
+  }
+
+  &__btns-pagination {
+    display: flex;
+    align-items: baseline;
+    column-gap: 1.6rem;
+    width: 27rem;
+    justify-content: flex-end;
+
+    button,
+    div {
+      color: $black;
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 120%;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  &__btns-pagination-number {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    &.active {
+      border-bottom: $border;
+      border-color: $mainColor;
+    }
+  }
+
+  &__btns-pagination-prev {
+    transform: rotate(90deg);
+  }
+
+  &__btns-pagination-next {
+    transform: rotate(-90deg);
   }
 }

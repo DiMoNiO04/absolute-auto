@@ -399,7 +399,6 @@
   &-form {
     background: $white;
     flex-direction: column;
-    row-gap: 2rem;
     display: flex;
     width: 38.3rem;
   }
@@ -409,7 +408,7 @@
     font-size: 2rem;
     font-weight: 700;
     line-height: 140%;
-    padding: 3.2rem 3.2rem 0 3.2rem;
+    padding: 3.2rem 3.2rem 2rem 3.2rem;
   }
 
   &-form-btns {
@@ -417,9 +416,27 @@
     flex-direction: column;
     align-items: center;
     row-gap: 2rem;
-    padding: 0 3.2rem 3.2rem 3.2rem;
+    padding: 2rem 3.2rem 3.2rem 3.2rem;
+    .btn-form {
+      width: 32rem;
+    }
   }
 
-  &-form-select {
+  .input__block,
+  .input-datalist-form {
+    margin-bottom: 0;
+    border-bottom: $border;
+    border-color: $background;
+  }
+
+  .input__block {
+    border-top: $border;
+    border-color: $background;
+  }
+
+  .input-datalist-form__block,
+  .main-main__search-form-vin {
+    margin-bottom: 0;
+    padding: 1.2rem 3.2rem;
   }
 }

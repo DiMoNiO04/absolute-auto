@@ -44,3 +44,117 @@ $('.input__block').each(function () {
     });
   }
 });
+
+// ---------input datalis------------//
+function changeDisableButton(inputBlock, formRes, formBtn) {
+  let isFormBtn = true;
+  let isFormRes = false;
+  const inputs = inputBlock.parent().find('.input-datalist-form__block-input');
+
+  for (let i = 0; i < inputs.length; i += 1) {
+    if (inputs[i].value === '') {
+      isFormBtn = false;
+    } else {
+      isFormRes = true;
+    }
+  }
+
+  if (isFormRes) {
+    formRes.removeAttr('disabled');
+  } else {
+    formRes.attr('disabled', 'disabled');
+  }
+
+  if (isFormBtn) {
+    formBtn.removeAttr('disabled');
+  } else {
+    formBtn.attr('disabled', 'disabled');
+  }
+}
+
+$('.input-datalist-form').each(function () {
+  const inputBlock = $(this);
+  const datalist = $(this).find('.input-datalist-form__list');
+  const input = $(this).find('input');
+  const inputReset = $(this).find('.input-datalist-form__list-reset');
+  const inputMainBlock = $(this).find('.input-datalist-form__block');
+  const option = $(this).find('option');
+  const formBtn = $(this).parent().find('.btn-form');
+  const formRes = $(this).parent().find('.form-btn-reset');
+
+  $(this)
+    .find('.input-datalist-form__block')
+    .on('click', function (event) {
+      if (event.currentTarget.classList.value !== 'input-datalist-form__block active') {
+        $('.input-datalist-form__list').not($(this)).slideUp(200);
+        $('.input-datalist-form__block').not($(this)).removeClass('active');
+        inputMainBlock.addClass('active');
+        datalist.slideDown(500);
+      } else {
+        $('.input-datalist-form__list').not($(this)).slideUp(200);
+        $('.input-datalist-form__block').removeClass('active');
+        datalist.slideUp(500);
+      }
+    });
+
+  datalist.find('option').each(function () {
+    $(this).on('click', function () {
+      datalist.slideUp(200);
+      input.val($(this).val());
+      inputBlock.addClass('checked');
+      inputMainBlock.removeClass('active');
+      $(this).addClass('active');
+
+      if (inputBlock.parent()[0].classList[0] === 'main-main__search-form') {
+        inputBlock.next().fadeIn(1000);
+      }
+      changeDisableButton(inputBlock, formRes, formBtn);
+
+      option.not($(this)).removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+
+  inputReset.click((event) => {
+    event.preventDefault();
+    input.val('');
+    inputBlock.removeClass('checked');
+    inputMainBlock.removeClass('active');
+    option.removeClass('active');
+
+    if (inputBlock.parent()[0].classList[0] === 'main-main__search-form') {
+      changeDisableButton(inputBlock, formRes, formBtn);
+    }
+  });
+
+  input.on('input', function () {
+    const text = $(this).val().toUpperCase();
+    datalist.find('option').each(function () {
+      if ($(this).val().toUpperCase().indexOf(text) > -1) {
+        $(this).css('display', 'block');
+      } else {
+        $(this).css('display', 'none');
+      }
+    });
+  });
+
+  formRes.click(() => {
+    input.val('');
+    inputBlock.removeClass('checked');
+    inputMainBlock.removeClass('active');
+    option.removeClass('active');
+    datalist.slideUp(200);
+
+    changeDisableButton(inputBlock, formRes, formBtn);
+
+    if (inputBlock.parent()[0].classList[0] === 'main-main__search-form') {
+      inputBlock
+        .parent()
+        .find('.input-datalist-form:not(:first)')
+        .each(function () {
+          $(this).not().slideUp();
+        });
+    }
+  });
+});
+// ---------------------------------//

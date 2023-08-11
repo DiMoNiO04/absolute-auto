@@ -318,3 +318,141 @@ input:focus:-ms-input-placeholder {
     background-image: url('../img/icon/check-blue.svg');
   }
 }
+
+.input-datalist-form {
+  position: relative;
+  &__block {
+    position: relative;
+    width: 100%;
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.9rem 1.2rem;
+    background-color: $white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    &.active {
+      .input-datalist-form__block-arrow {
+        transform: rotate(-90deg);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &.checked {
+    .input-datalist-form__block-icon {
+      transition: all 0.5s;
+      color: $white;
+      background: $mainColor;
+    }
+  }
+
+  &__block-arrow {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    transition: all 0.2s ease-in-out;
+    img {
+      width: 100%;
+      height: 100%;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__block-input {
+    border: 0;
+    height: 4.3rem;
+    width: 100%;
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+
+    &::placeholder {
+      color: $grey;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+
+  &__block-icon {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 1.4rem;
+    background: $greyLight;
+    color: $grey;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &__list {
+    position: absolute;
+    background-color: $white;
+    border-top: none;
+    font-family: sans-serif;
+    justify-content: space-between;
+    width: 100%;
+    top: 6.2rem;
+    left: 0;
+    padding: 1rem 2rem 1rem 1.5rem;
+    column-gap: 2rem;
+    z-index: 10;
+  }
+
+  &__list-datalist {
+    max-height: 20rem;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    display: flex;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $greyLight;
+      border: 0.4rem solid $greyLight;
+      position: relative;
+      left: -1rem;
+    }
+
+    option {
+      background-color: $white;
+      color: $black;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 130%;
+      cursor: pointer;
+      padding-bottom: 0.8rem;
+      width: calc(50% - 2rem);
+      overflow-x: hidden;
+
+      &:hover,
+      &.active {
+        color: $mainColor;
+        transition: all 0.2s;
+      }
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__list-reset {
+    color: $grey;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 0.8rem;
+    width: 100%;
+  }
+}
