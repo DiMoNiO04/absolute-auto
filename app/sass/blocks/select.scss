@@ -1,0 +1,88 @@
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  max-width: 17.6rem;
+  justify-content: flex-end;
+  width: 100%;
+
+  img {
+    width: 1.3rem;
+  }
+}
+
+.select__head {
+  cursor: pointer;
+  color: $black;
+  font-family: Gilroy, sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.select__head.open::after {
+  transform: translateY(50%) rotate(180deg);
+}
+
+.select__head::after {
+  width: 2.3rem;
+  height: 1rem;
+  background: url('../img/icon/arrow-black.svg') no-repeat center;
+  right: 2rem;
+  bottom: 50%;
+  transform: translateY(25%);
+  content: '';
+  display: block;
+  transition: 0.2s ease-in;
+}
+
+.select__list {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: $white;
+  margin-top: 0.5rem;
+  max-height: 20rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  margin-top: 1rem;
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-family: Gilroy, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  scrollbar-color: dark;
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+  padding: 1rem;
+}
+
+.select__list .select__item {
+  position: relative;
+  border-bottom: $border;
+  border-color: $greyLight;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style-type: none;
+
+  &:first-child {
+    border-top: $border;
+    border-color: $greyLight;
+  }
+}
+
+.select__list .select__item:hover {
+  background-color: rgba(224, 229, 231, 0.5);
+}

@@ -1,28 +1,25 @@
-const PAGES = {
+'use strict';
+
+var PAGES = {
   SHIPING_PAYMENT: 'shiping-payment.html',
   PERSONAL_CAB_IND: 'personal-cab-ind.html',
   PERSONAL_CAB_END: 'personal-cab-ent.html',
 };
-
-const CONTENT = {
+var CONTENT = {
   PAYMENT: 'payment',
   PROFILE: 'profile',
 };
-
 function renderContentPage(elem) {
   $('[data-content]').removeClass('active');
-  $(`[data-content=${elem}]`).addClass('active');
-
+  $('[data-content='.concat(elem, ']')).addClass('active');
   $('[data-open-content]').parent().removeClass('active');
-  $(`[data-open-content=${elem}]`).parent().addClass('active');
+  $('[data-open-content='.concat(elem, ']')).parent().addClass('active');
 }
-
 function changeContent() {
-  const locationArr = window.location.href.split('/');
-  const page = locationArr[locationArr.length - 1];
-
+  var locationArr = window.location.href.split('/');
+  var page = locationArr[locationArr.length - 1];
   if (window.location.hash) {
-    const hash = window.location.hash.slice(1);
+    var hash = window.location.hash.slice(1);
     renderContentPage(hash);
   } else if (page === PAGES.SHIPING_PAYMENT) {
     renderContentPage(CONTENT.PAYMENT);
@@ -30,6 +27,9 @@ function changeContent() {
     renderContentPage(CONTENT.PROFILE);
   }
 }
-
-$(window).on('hashchange', () => changeContent());
-$(document).ready(() => changeContent());
+$(window).on('hashchange', function () {
+  return changeContent();
+});
+$(document).ready(function () {
+  return changeContent();
+});

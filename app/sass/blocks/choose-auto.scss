@@ -1,0 +1,148 @@
+.choose-auto {
+  padding: 2rem 3.2rem;
+  background: rgba(255, 255, 255, 0.35);
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  position: relative;
+  border: $border;
+
+  .input-datalist-form {
+    width: 36rem;
+
+    .input-datalist-form__block {
+      margin-bottom: 0;
+    }
+  }
+
+  &__change {
+    padding: 1rem 2rem;
+    background: $mainColor;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    width: 29.6rem;
+  }
+
+  &__change-icon {
+    width: 4.3rem;
+    height: 4.3rem;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+  &__change-text {
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 130%;
+  }
+
+  &__btn {
+    padding: 0;
+    margin: 0;
+    background: none;
+    width: fit-content;
+    height: fit-content;
+    transition: all 0.2s ease-in-out;
+
+    span {
+      color: $black;
+    }
+
+    img:nth-child(2) {
+      display: block;
+    }
+
+    img:nth-child(3) {
+      display: none;
+    }
+
+    &:not(:disabled) {
+      &:hover {
+        background: none;
+        transition: all 0.2s ease-in-out;
+
+        span {
+          color: $mainColor;
+        }
+
+        img:nth-child(3) {
+          display: block;
+        }
+
+        img:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__history {
+    position: absolute;
+    background: $white;
+    top: 9rem;
+    z-index: 10;
+    padding: 2rem;
+    display: none;
+  }
+
+  &__history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    border-bottom: $border;
+    border-color: $greyLight;
+    column-gap: 1.5rem;
+
+    &:first-child {
+      border-top: $border;
+      border-color: $greyLight;
+    }
+
+    &.active .choose-auto__history-item-icon {
+      display: flex;
+    }
+  }
+
+  &__history-item-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    background: $mainColor;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  &__history-item-text {
+    color: $black;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 120%;
+    width: 30rem;
+  }
+
+  &__history-item-btn {
+    width: 1.6rem;
+    height: 1.6rem;
+    flex-shrink: 0;
+    width: fit-content !important;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

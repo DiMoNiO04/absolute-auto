@@ -121,10 +121,9 @@ $('.input-datalist-form').each(function () {
     inputBlock.removeClass('checked');
     inputMainBlock.removeClass('active');
     option.removeClass('active');
+    datalist.slideUp(200);
 
-    if (inputBlock.parent()[0].classList[0] === 'main-main__search-form') {
-      changeDisableButton(inputBlock, formRes, formBtn);
-    }
+    changeDisableButton(inputBlock, formRes, formBtn);
   });
 
   input.on('input', function () {

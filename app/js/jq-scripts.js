@@ -193,3 +193,19 @@ $('.header__bottom-category-close').click(() => {
   $('.header__bottom-btn').removeClass('active');
   $('.header').css('z-index', '');
 });
+
+$('.your-order')
+  .find('.btn-form')
+  .each(function () {
+    if ($(this).attr('disabled') === 'disabled') {
+      $(this).next().fadeOut();
+    } else {
+      $(this).next().fadeIn();
+    }
+  });
+
+$('.choose-auto__change').each(function () {
+  $(this).click(function () {
+    $(this).next().slideToggle();
+  });
+});
