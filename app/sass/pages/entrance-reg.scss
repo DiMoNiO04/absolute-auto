@@ -48,7 +48,7 @@
   &__panel {
     display: flex;
     column-gap: 4rem;
-    li button {
+    button {
       display: flex;
       align-items: center;
       column-gap: 1.5rem;
@@ -141,32 +141,143 @@
   }
 }
 
+.entrance__recovery-email {
+  p {
+    color: $black;
+  }
+}
+
+//Ошибка в востановление
+.entrance__recovery-error {
+  padding: 0.5rem 2rem;
+  display: none;
+
+  p {
+    color: #df3030;
+    font-size: 1.8rem;
+  }
+
+  div {
+    color: $black;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 140%;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      color: $mainColor;
+    }
+  }
+}
+
 @media screen and (max-width: 48em) {
   .entrance {
     row-gap: 9.2vw;
+
     &__title {
-      font-size: 3.8vw;
+      font-size: 4.27vw;
     }
 
-    &-btns {
-      row-gap: 3vw;
+    &__form {
+      .input__block,
+      .input__block-pass {
+        margin-bottom: 4.27vw;
+      }
+
+      .btn-form {
+        width: 100%;
+        margin-top: 8.5vw;
+      }
+    }
+
+    &__btns {
+      row-gap: 4.8vw;
     }
 
     &__btn {
       font-size: 3.25vw;
+      line-height: 140%;
+    }
+
+    &__panel {
+      column-gap: 3.2vw;
+
+      button {
+        column-gap: 3.2vw;
+
+        div {
+          width: 11.7vw;
+          height: 11.7vw;
+          flex-shrink: 0;
+          svg {
+            width: 5.3vw;
+            height: 5.3vw;
+          }
+        }
+
+        span {
+          font-size: 3.75vw;
+          line-height: 130%;
+          display: none;
+        }
+      }
+    }
+
+    &__panel-btn {
+      &.active {
+        span {
+          display: block;
+        }
+        order: 1;
+      }
+    }
+  }
+
+  .entrance__activate {
+    p,
+    a {
+      font-size: 3.75vw;
+      line-height: 130%;
+    }
+    p:not(:last-child) {
+      margin-bottom: 3.2vw;
+    }
+  }
+
+  .entrance__success {
+    row-gap: 8.5vw;
+
+    &-img {
+      width: 10.7vw;
+      height: 10.7vw;
+
+      img {
+        width: 5.4vw;
+        height: 5.3vw;
+      }
+    }
+
+    &-text {
+      font-size: 4.27vw;
       line-height: 110%;
     }
+  }
 
-    &__form .btn-form {
-      margin-top: 8.5vw;
+  .entrance__recovery,
+  .entrance__recovery-email {
+    row-gap: 8.5vw;
+    p {
+      font-size: 3.75vw;
+      line-height: 130%;
     }
+  }
 
-    &__form .input__block {
-      margin-bottom: 4.27vw;
-    }
+  .entrance__recovery-error {
+    padding: 0.5rem 2rem;
 
-    &__btns {
-      row-gap: 6.4vw;
+    div {
+      font-size: 3.75vw;
+      line-height: 130%;
     }
   }
 }

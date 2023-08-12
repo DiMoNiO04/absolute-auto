@@ -97,6 +97,10 @@ input:focus:-ms-input-placeholder {
         border-color: $red;
       }
     }
+
+    .entrance__recovery-error {
+      display: block;
+    }
   }
 
   &-pass {
@@ -463,8 +467,8 @@ input:focus:-ms-input-placeholder {
   input[type='password'],
   input[type='phone'],
   textarea {
-    padding: 3.3vw 4.27vw;
-    font-size: 3.2vw;
+    padding: 3.2vw 4.27vw;
+    font-size: 3.4vw;
   }
 
   .input__block {
@@ -480,6 +484,27 @@ input:focus:-ms-input-placeholder {
       width: 5.3vw;
       height: 5.3vw;
       top: 3vw;
+    }
+  }
+
+  .input-checkbox {
+    display: block;
+    margin: 0 0 5rem 0;
+
+    span {
+      padding: 0 0 0 8vw;
+      font-size: 3.75vw;
+      line-height: 130%;
+
+      &::before {
+        width: 5.3vw;
+        height: 5.3vw;
+        top: 0.5rem;
+      }
+    }
+
+    input[type='checkbox']:checked + span:before {
+      background-size: 4.27vw 4.27vw;
     }
   }
 }
