@@ -456,3 +456,30 @@ input:focus:-ms-input-placeholder {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 48em) {
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  input[type='phone'],
+  textarea {
+    padding: 3.3vw 4.27vw;
+    font-size: 3.2vw;
+  }
+
+  .input__block {
+    margin-bottom: 4.27vw;
+    button {
+      display: block;
+      width: 4.27vw;
+      height: 4.27vw;
+      right: 4.27vw;
+      top: 3.2vw;
+    }
+    &-pass button {
+      width: 5.3vw;
+      height: 5.3vw;
+      top: 3vw;
+    }
+  }
+}

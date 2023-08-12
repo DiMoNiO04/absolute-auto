@@ -440,3 +440,22 @@
     padding: 1.2rem 3.2rem;
   }
 }
+
+@media screen and (max-width: 48em) {
+  .modal {
+    &__content-close {
+      width: 5.3vw;
+      height: 5.3vw;
+      top: 15.9vw;
+      right: 5.3vw;
+    }
+
+    &__content-entrance {
+      padding: 16vw 5.3vw 11.7vw 5.3vw;
+    }
+  }
+
+  .modal__content-entrance {
+    width: 94.5vw;
+  }
+}

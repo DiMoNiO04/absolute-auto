@@ -21,29 +21,67 @@ html {
 }
 
 .search {
-  position: relative;
-  input {
-    padding: 1.7rem 7rem 1.7rem 2rem !important;
-  }
-  input::placeholder {
-    color: #98a0b1;
-  }
-  input:focus {
-    border: 0.2rem solid #4ec1c1;
-  }
-  button {
-    background: #4ec1c1;
-    width: 4.4rem;
-    height: 4.4rem;
-    top: 1rem;
-    right: 1rem;
-    position: absolute;
-    img {
-      width: 2.4rem;
-      height: 2.4rem;
-      margin: 0 auto;
-    }
-  }
+	padding: 1rem 2rem;
+	background: $white;
+	display: flex;
+	column-gap: 2rem;
+	position: relative;
+
+	input {
+		padding: 0  !important;
+		border: none !important;
+	}
+
+		input::placeholder {
+			    color: #98a0b1;
+			  }
+			  input:focus {
+			    border: 0.2rem solid #4ec1c1;
+			  }
+			  button {
+			    background: #4ec1c1;
+			    width: 4.4rem;
+			    height: 4.4rem;
+			    flex-shrink: 0;
+			    img {
+			      width: 2.4rem;
+			      height: 2.4rem;
+			      margin: 0 auto;
+			    }
+			  }
+}
+
+
+@media screen and (max-width: 48rem) {
+	.search {
+			padding: 3vw 4vw;
+			background: $white;
+			display: flex;
+			column-gap: 2rem;
+			position: relative;
+
+			input {
+				font-size: 3.6vw !important;
+			}
+	
+			input::placeholder {
+				color: #98a0b1;
+			}
+	
+			input:focus {
+				border: 0.2rem solid #4ec1c1;
+			}
+	
+			button {
+				width: 10.6vw;
+				height: 10.1vw;
+	
+				img {
+					width: 5.3vw;
+					height: 5.3vw;
+				}
+			}
+		}
 }
 
 body {

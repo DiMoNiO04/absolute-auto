@@ -140,3 +140,33 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 48em) {
+  .entrance {
+    row-gap: 9.2vw;
+    &__title {
+      font-size: 3.8vw;
+    }
+
+    &-btns {
+      row-gap: 3vw;
+    }
+
+    &__btn {
+      font-size: 3.25vw;
+      line-height: 110%;
+    }
+
+    &__form .btn-form {
+      margin-top: 8.5vw;
+    }
+
+    &__form .input__block {
+      margin-bottom: 4.27vw;
+    }
+
+    &__btns {
+      row-gap: 6.4vw;
+    }
+  }
+}

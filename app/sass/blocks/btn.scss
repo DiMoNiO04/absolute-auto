@@ -103,3 +103,19 @@
 .number-plus {
   width: 1.4rem;
 }
+
+@media screen and (max-width: 48em) {
+  .btn {
+    &-form {
+      padding: 5.7vw;
+      span {
+        font-size: 3.8vw;
+      }
+
+      img {
+        width: 6.2vw;
+        height: 2.7vw;
+      }
+    }
+  }
+}
