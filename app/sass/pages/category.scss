@@ -6,6 +6,11 @@
     margin-bottom: 6rem;
   }
 
+  .input-datalist-form__blocks {
+    display: flex;
+    column-gap: 2rem;
+  }
+
   &-top {
     position: relative;
     margin-bottom: 6rem;

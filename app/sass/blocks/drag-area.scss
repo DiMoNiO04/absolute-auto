@@ -39,3 +39,26 @@
     text-transform: initial;
   }
 }
+
+@media screen and (max-width: 48em) {
+  .drag-area {
+    padding: 5.3vw 6.4vw;
+
+    &__icon {
+      width: 5.3vw;
+      height: 5.3vw;
+    }
+
+    p {
+      font-size: 3.2vw;
+      line-height: 130%;
+      width: 100vw;
+      margin-bottom: 4.27vw;
+    }
+
+    .btn-arrows__title {
+      font-size: 3.75vw;
+      line-height: 110%;
+    }
+  }
+}

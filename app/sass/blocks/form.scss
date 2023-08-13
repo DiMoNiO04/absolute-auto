@@ -37,3 +37,29 @@
     }
   }
 }
+
+@media screen and (max-width: 48em) {
+  .form {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 6.4vw;
+      }
+
+      legend {
+        margin-bottom: 3.2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 130%;
+        max-width: 58rem;
+        margin-top: 2rem;
+      }
+    }
+
+    &-btn-reset {
+      font-size: 1.8rem;
+      line-height: 130%;
+    }
+  }
+}

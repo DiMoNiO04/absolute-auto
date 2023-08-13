@@ -28,18 +28,20 @@ const cardsSwiper = new Swiper('#cards-swiper', {
   },
 });
 
-document.querySelectorAll('.card__slider').forEach((content) => {
-  const slider = content.querySelector('.card__swiper');
-  const pagination = content.querySelector('.card__bullets');
+document.querySelectorAll('.cards').forEach((cards) => {
+  cards.querySelectorAll('.card__slider').forEach((content) => {
+    const slider = content.querySelector('.card__swiper');
+    const pagination = content.querySelector('.card__bullets');
 
-  const cardSwiper = new Swiper(slider, {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    allowTouchMove: true,
-    pagination: {
-      el: pagination,
-      clickable: true,
-    },
+    const cardSwiper = new Swiper(slider, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      allowTouchMove: true,
+      pagination: {
+        el: pagination,
+        clickable: true,
+      },
+    });
   });
 });
 

@@ -467,31 +467,107 @@ input:focus:-ms-input-placeholder {
   input[type='password'],
   input[type='phone'],
   textarea {
-    padding: 3.2vw 4.27vw;
-    font-size: 3.4vw;
+    padding: 3vw 11vw 3vw 4.27vw;
+    font-size: 3.76vw;
   }
 
   .input__block {
-    margin-bottom: 4.27vw;
     button {
-      display: block;
-      width: 4.27vw;
-      height: 4.27vw;
-      right: 4.27vw;
-      top: 3.2vw;
-    }
-    &-pass button {
       width: 5.3vw;
       height: 5.3vw;
-      top: 3vw;
+      top: calc(50% - 5.3vw / 2);
     }
   }
 
-  .input-checkbox {
-    display: block;
-    margin: 0 0 5rem 0;
+  .input {
+    &-address {
+      row-gap: 2rem;
+      margin-top: 2.4rem;
 
-    span {
+      &__inputs {
+        column-gap: 2.4rem;
+      }
+
+      .input__block {
+        width: 50%;
+      }
+
+      .btn-arrows {
+        .btn-arrows__title {
+          font-size: 1.8rem;
+          font-weight: 700;
+          line-height: 120%;
+        }
+      }
+
+      &__text {
+        span {
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 130%;
+        }
+      }
+    }
+
+    &-radio {
+      margin-bottom: 2rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1.2rem;
+      }
+
+      &__inp {
+        column-gap: 3.2vw;
+        padding: 1rem 2.4rem;
+
+        input:checked {
+          & ~ label::after {
+            width: 30rem;
+            height: 50rem;
+            right: 10rem;
+            top: -12rem;
+          }
+        }
+
+        label {
+          font-size: 4.2vw;
+          line-height: 130%;
+          column-gap: 3.2vw;
+
+          &:before {
+            height: 5.3vw;
+            width: 5.3vw;
+          }
+        }
+      }
+
+      &__panel {
+        column-gap: 2rem;
+        padding: 1.5rem 0;
+
+        a svg {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+    }
+
+    &-count {
+      column-gap: 1.2rem;
+
+      input {
+        font-size: 1.8rem;
+        line-height: 140%;
+        width: 4.3rem;
+        height: 4.3rem;
+      }
+    }
+
+    &-checkbox {
+      margin: 0 0 5rem 0;
+    }
+
+    &-checkbox span {
       padding: 0 0 0 8vw;
       font-size: 3.75vw;
       line-height: 130%;
@@ -499,12 +575,66 @@ input:focus:-ms-input-placeholder {
       &::before {
         width: 5.3vw;
         height: 5.3vw;
-        top: 0.5rem;
       }
     }
 
-    input[type='checkbox']:checked + span:before {
+    &-checkbox input[type='checkbox']:checked + span:before {
       background-size: 4.27vw 4.27vw;
+    }
+  }
+
+  .input-datalist-form {
+    padding: 2vw 0;
+    &__block {
+      column-gap: 4vw;
+      padding: 4vw 5.33vw 3.5vw 4vw;
+      margin-bottom: 1rem;
+    }
+
+    &__block-arrow {
+      width: 5.3vw;
+      height: 5.3vw;
+    }
+
+    &__block-input {
+      height: 4.3rem;
+      width: 100%;
+      font-size: 4.27vw;
+      line-height: 130%;
+
+      &::placeholder {
+        font-size: 4.27vw;
+        font-weight: 600;
+        line-height: 130%;
+      }
+    }
+
+    &__block-icon {
+      font-size: 3.75vw;
+      line-height: 130%;
+      padding: 2.6vw;
+    }
+
+    &__list {
+      top: 17vw;
+      padding: 1rem 2rem 1rem 1.5rem;
+      column-gap: 2rem;
+    }
+
+    &__list-datalist {
+      max-height: 35vw;
+    }
+
+    option {
+      font-size: 4vw;
+      line-height: 130%;
+      padding-bottom: 2.1vw;
+      width: calc(50% - 2rem);
+    }
+
+    &__list-reset {
+      font-size: 4.2vw;
+      margin-bottom: 2.1vw;
     }
   }
 }
