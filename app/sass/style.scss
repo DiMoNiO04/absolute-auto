@@ -30,3 +30,21 @@
 @import './pages/contacts.scss';
 @import './pages/catalog.scss';
 @import './pages/product.scss';
+
+.desc {
+  display: flex;
+}
+
+.mob {
+  display: none;
+}
+
+@media screen and (max-width: 48em) {
+  .desc {
+    display: none;
+  }
+
+  .mob {
+    display: flex;
+  }
+}

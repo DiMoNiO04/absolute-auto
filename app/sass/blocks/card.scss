@@ -158,3 +158,94 @@
     }
   }
 }
+
+@media screen and (max-width: 48em) {
+  .card {
+    &__content {
+      padding: 2.8vw 2.8vw 5vw 2.8vw;
+      max-width: 46vw;
+      height: 100%;
+    }
+
+    &__content-panel {
+      margin-bottom: 0;
+      align-items: center;
+    }
+
+    &__content-panel-status {
+      padding: 1.6vw 1.1vw;
+      font-size: 3.4vw;
+    }
+
+    &__content-panel-like svg {
+      width: 5.3vw;
+      height: 5.3vw;
+    }
+
+    &__swiper {
+      margin-bottom: 1rem;
+    }
+
+    &__slider {
+      margin-bottom: 5.3vw;
+    }
+
+    &__swiper-slide {
+      height: 28vw;
+    }
+
+    &__content-info {
+      row-gap: 2.2vw;
+
+      p {
+        font-size: 3.2vw;
+      }
+
+      &-bottom {
+        row-gap: 1.2rem;
+      }
+    }
+
+    &__btn-buy {
+      column-gap: 3.2vw;
+
+      .btn-arrows__title {
+        font-size: 4vw;
+        line-height: 110%;
+      }
+    }
+
+    &__modal {
+      top: 20vw;
+      left: calc(50% - 20vw);
+    }
+
+    &__modal-content {
+      width: 40vw;
+      padding: 2.2vw;
+      column-gap: 4vw;
+    }
+
+    &__modal-content-text {
+      font-size: 3.2vw;
+    }
+
+    &__modal-content-icon {
+      width: 5.3vw;
+      height: 5.3vw;
+    }
+
+    .input-count {
+      input {
+        font-weight: 700;
+        border: 0;
+        height: 2.3rem;
+      }
+
+      .number-minus,
+      .number-plus {
+        width: 2.8vw;
+      }
+    }
+  }
+}

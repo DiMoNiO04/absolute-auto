@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 38.3rem;
-  height: 100%;
+  height: fit-content;
 
   li {
     &:not(:last-child) {
@@ -56,5 +56,88 @@
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 130%;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .menu-aside {
+    width: 100%;
+
+    &__btn {
+      padding: 4.2vw 3.2vw;
+      column-gap: 4vw;
+    }
+
+    &__btn-icon {
+      width: 11.5vw;
+      height: 11.5vw;
+      svg {
+        width: 5.3vw;
+        height: 5.3vw;
+      }
+    }
+
+    &-mob-btn {
+      display: flex;
+      column-gap: 4vw;
+      padding: 4.27vw 2.8vw;
+      width: 100%;
+      border: $border;
+      background: rgba(255, 255, 255, 0.35);
+      align-items: center;
+      position: relative;
+
+      .menu-aside__btn-icon {
+        background: $mainColor;
+        img {
+          width: 5.3vw;
+          height: 5.3vw;
+        }
+      }
+    }
+
+    &__btn-name,
+    &-mob__btn-name {
+      font-size: 4.27vw;
+      line-height: 130%;
+      color: $black;
+      font-weight: 600;
+    }
+
+    &-mob {
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      padding: 8.5vw 2.8vw;
+      position: fixed;
+      background: $background;
+      flex-direction: column;
+      overflow: scroll;
+      transform: translateX(-100%);
+      transition: 0.3s all linear;
+
+      &.active {
+        transform: translateX(0);
+      }
+    }
+
+    &-mob-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 8.5vw;
+      border-bottom: $border;
+    }
+
+    &-mob-title_text {
+      color: $black;
+      font-family: Good Timing, sans-serif;
+      font-size: 6.8vw;
+      font-weight: 700;
+      line-height: 130%;
+      text-transform: uppercase;
+    }
   }
 }

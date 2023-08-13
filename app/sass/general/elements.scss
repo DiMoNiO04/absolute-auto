@@ -26,6 +26,7 @@ html {
   display: flex;
   column-gap: 2rem;
   position: relative;
+	width: 100%;
 
   input {
     padding: 0 !important;
@@ -157,15 +158,6 @@ main {
   line-height: 130%;
 }
 
-@media screen and (max-width: 48em) {
-  .count {
-    font-size: 3.2vw;
-  }
-  .price {
-    font-size: 4vw;
-  }
-}
-
 .pagination__bullets {
   display: flex;
   justify-content: center;
@@ -201,5 +193,31 @@ main {
   background: $greyLight;
   svg path {
     stroke: $grey;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .count {
+    font-size: 3.2vw;
+  }
+
+  .price {
+    font-size: 4vw;
+  }
+
+  .right-body__bg {
+    top: auto;
+    bottom: 0;
+  }
+
+  .subtitle {
+    font-size: 4.27vw;
+    line-height: 110%;
+  }
+
+  .pagination__bullets {
+    span {
+      height: 0.5vw;
+    }
   }
 }

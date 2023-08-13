@@ -473,9 +473,12 @@ input:focus:-ms-input-placeholder {
 
   .input__block {
     button {
-      width: 5.3vw;
-      height: 5.3vw;
-      top: calc(50% - 5.3vw / 2);
+      width: 4.2vw;
+      height: 4.2vw;
+      top: calc(50% - 4.2vw / 2);
+    }
+    span {
+      font-size: 4.27vw;
     }
   }
 
@@ -485,11 +488,12 @@ input:focus:-ms-input-placeholder {
       margin-top: 2.4rem;
 
       &__inputs {
-        column-gap: 2.4rem;
+        flex-direction: column;
+        row-gap: 2.8vw;
       }
 
       .input__block {
-        width: 50%;
+        width: 100%;
       }
 
       .btn-arrows {
@@ -502,9 +506,7 @@ input:focus:-ms-input-placeholder {
 
       &__text {
         span {
-          font-size: 1.6rem;
-          font-weight: 600;
-          line-height: 130%;
+          font-size: 4vw;
         }
       }
     }
@@ -513,18 +515,18 @@ input:focus:-ms-input-placeholder {
       margin-bottom: 2rem;
 
       &:not(:last-child) {
-        margin-bottom: 1.2rem;
+        margin-bottom: 5.3vw;
       }
 
       &__inp {
         column-gap: 3.2vw;
-        padding: 1rem 2.4rem;
+        padding: 3.6vw 2.8vw;
 
         input:checked {
           & ~ label::after {
             width: 30rem;
             height: 50rem;
-            right: 10rem;
+            right: 0;
             top: -12rem;
           }
         }
@@ -537,26 +539,34 @@ input:focus:-ms-input-placeholder {
           &:before {
             height: 5.3vw;
             width: 5.3vw;
+            flex-shrink: 0;
           }
         }
       }
 
       &__panel {
-        column-gap: 2rem;
-        padding: 1.5rem 0;
+        justify-content: space-between;
+        padding: 0;
+        flex-direction: column-reverse;
+        row-gap: 4vw;
 
         a svg {
           width: 2.4rem;
           height: 2.4rem;
         }
+
+        button svg {
+          width: 5.3vw;
+          height: 5.3vw;
+        }
       }
     }
 
     &-count {
-      column-gap: 1.2rem;
+      column-gap: 2.8vw;
 
       input {
-        font-size: 1.8rem;
+        font-size: 4.27vw;
         line-height: 140%;
         width: 4.3rem;
         height: 4.3rem;

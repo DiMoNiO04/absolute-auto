@@ -18,7 +18,165 @@
         <div class="right-body__bg"></div>
         <div class="container">
           <div class="pers-cab__container">
-            <ul class="menu-aside">
+            <div class="menu-aside-mob mob">
+              <div class="menu-aside-mob-title">
+                <div class="menu-aside-mob-title_text">Мой профиль</div>
+                <button class="menu-aside-mob-title__btn">
+                  <img src="./img/icon/close-black.svg" alt="" />
+                </button>
+              </div>
+              <ul class="menu-aside mob">
+                <li>
+                  <a href="#profile" data-open-content="profile" class="menu-aside__btn">
+                    <div class="menu-aside__btn-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2.5rem"
+                        height="2.5rem"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M17.5 7.5C17.5 10.2614 15.2614 12.5 12.5 12.5C9.73858 12.5 7.5 10.2614 7.5 7.5C7.5 4.73858 9.73858 2.5 12.5 2.5C15.2614 2.5 17.5 4.73858 17.5 7.5ZM3.41016 21.5C3.41016 17.36 7.49016 15 12.5002 15C17.5102 15 21.5902 17.36 21.5902 21.5C21.5902 22.585 21 23 20.0902 23H4.91016C4.5 23 3.41016 23 3.41016 21.5Z"
+                          fill="#98A0B1"
+                        />
+                      </svg>
+                    </div>
+                    <div class="menu-aside__btn-name">Профиль</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#history-order" data-open-content="history-order" class="menu-aside__btn">
+                    <div class="menu-aside__btn-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2.5rem"
+                        height="2.5rem"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5.34 4.44L5.14 6.89C5.1 7.36 5.47 7.75 5.94 7.75H21.25C21.67 7.75 22.02 7.43 22.05 7.01C22.18 5.24 20.83 3.8 19.06 3.8H6.77C6.67 3.36 6.47 2.94 6.16 2.59C5.66 2.06 4.96 1.75 4.24 1.75H2.5C2.09 1.75 1.75 2.09 1.75 2.5C1.75 2.91 2.09 3.25 2.5 3.25H4.24C4.55 3.25 4.84 3.38 5.05 3.6C5.26 3.83 5.36 4.13 5.34 4.44ZM10.5 21.25C10.5 22.2165 9.7165 23 8.75 23C7.7835 23 7 22.2165 7 21.25C7 20.2835 7.7835 19.5 8.75 19.5C9.7165 19.5 10.5 20.2835 10.5 21.25ZM18.5 21.25C18.5 22.2165 17.7165 23 16.75 23C15.7835 23 15 22.2165 15 21.25C15 20.2835 15.7835 19.5 16.75 19.5C17.7165 19.5 18.5 20.2835 18.5 21.25ZM5.67005 9.25H21.0101C21.4801 9.25 21.8401 9.64 21.8001 10.1L21.4701 14.77C21.3601 16.27 20.0401 17.5 18.5401 17.5H7.42005C5.71005 17.5 4.37005 16.04 4.51005 14.33L4.87005 9.98C4.91005 9.57 5.25005 9.25 5.67005 9.25Z"
+                          fill="#98A0B1"
+                        />
+                      </svg>
+                    </div>
+                    <div class="menu-aside__btn-name">История заказов</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#my-garage" data-open-content="my-garage" class="menu-aside__btn">
+                    <div class="menu-aside__btn-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2.5rem"
+                        height="2.5rem"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M20.5 6.94215C20.5 7.25207 20.2173 7.5 19.8894 7.5H5.1106C4.77138 7.5 4.5 7.24174 4.5 6.94215C4.5 6.63223 4.78269 6.3843 5.1106 6.3843H5.94735L6.26396 5.03099C6.55795 3.70868 7.16855 2.5 9.61095 2.5H15.3664C17.8088 2.5 18.4307 3.70868 18.7247 5.02066L19.0413 6.37397H19.8781C20.2173 6.37397 20.5 6.63223 20.5 6.94215ZM11.7812 20.2088C11.7812 20.5993 12.1051 20.9231 12.4956 20.9231C12.8861 20.9231 13.2099 20.5993 13.2099 20.2088V19.2563C13.2099 18.8658 12.8861 18.542 12.4956 18.542C12.1051 18.542 11.7812 18.8658 11.7812 19.2563V20.2088ZM11.7812 24.0184C11.7812 24.4089 12.1051 24.7327 12.4956 24.7327C12.8861 24.7327 13.2099 24.4089 13.2099 24.0184V23.0659C13.2099 22.6754 12.8861 22.3516 12.4956 22.3516C12.1051 22.3516 11.7812 22.6754 11.7812 23.0659V24.0184ZM2.97021 24.733C2.91307 24.733 2.85593 24.7235 2.7988 24.714L2.79876 24.714C2.41778 24.6188 2.17966 24.2282 2.27491 23.8473L3.22737 20.0374C3.32262 19.6564 3.7036 19.4183 4.09411 19.5136C4.4751 19.6088 4.71321 19.9993 4.61797 20.3803L3.6655 24.1901C3.57978 24.514 3.29404 24.733 2.97021 24.733ZM21.0893 23.9545C21.175 24.2783 21.4607 24.4974 21.7845 24.4974C21.8417 24.4974 21.8988 24.4879 21.956 24.4784L21.956 24.4783C22.3465 24.3831 22.5751 23.9926 22.4798 23.6116L21.5274 19.8018C21.4321 19.4112 21.0416 19.1827 20.6606 19.2779C20.2701 19.3731 20.0415 19.7637 20.1368 20.1446L21.0893 23.9545ZM17.8459 8.5C20.5333 8.5 20.9023 9.7602 21.0292 10.9509L21.4906 15.3368C21.5482 15.8826 21.3406 16.4383 20.9023 16.8451C20.4525 17.2619 19.8182 17.5 19.1607 17.5H17.5921C16.2427 17.5 15.9774 16.8352 15.816 16.3886L15.6429 15.952L15.6388 15.9416C15.4235 15.4054 15.3959 15.3368 14.651 15.3368H10.3605C9.61172 15.3368 9.56478 15.4556 9.36931 15.9502L9.36859 15.952L9.19558 16.3886L9.19412 16.3924C9.02114 16.8389 8.76502 17.5 7.40785 17.5H5.83926C5.17031 17.5 4.54748 17.2619 4.09767 16.8451C3.65939 16.4283 3.45178 15.8826 3.50945 15.3368L3.98233 10.9509C4.12074 9.77012 4.47828 8.5 7.16564 8.5H17.8459ZM7.48859 12.4592H9.99141C10.3374 12.4592 10.6258 12.2111 10.6258 11.9234C10.6258 11.6356 10.349 11.3875 10.0029 11.3875H7.48859C7.15411 11.3875 6.86577 11.6356 6.86577 11.9234C6.86577 12.2111 7.14258 12.4592 7.48859 12.4592ZM15.0086 12.4592H17.5229C17.869 12.4592 18.1458 12.2111 18.1458 11.9234C18.1458 11.6356 17.869 11.3875 17.5229 11.3875H15.0086C14.6741 11.3875 14.3858 11.6356 14.3858 11.9234C14.3858 12.2111 14.6626 12.4592 15.0086 12.4592Z"
+                          fill="#98A0B1"
+                        />
+                      </svg>
+                    </div>
+                    <div class="menu-aside__btn-name">Мой гараж</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#favorites" data-open-content="favorites" class="menu-aside__btn">
+                    <div class="menu-aside__btn-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2.5rem"
+                        height="2.5rem"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M16.94 3.60156C15.13 3.60156 13.51 4.48156 12.5 5.83156C11.49 4.48156 9.87 3.60156 8.06 3.60156C4.99 3.60156 2.5 6.10156 2.5 9.19156C2.5 10.3816 2.69 11.4816 3.02 12.5016C4.6 17.5016 9.47 20.4916 11.88 21.3116C12.22 21.4316 12.78 21.4316 13.12 21.3116C15.53 20.4916 20.4 17.5016 21.98 12.5016C22.31 11.4816 22.5 10.3816 22.5 9.19156C22.5 6.10156 20.01 3.60156 16.94 3.60156Z"
+                          fill="#98A0B1"
+                        />
+                      </svg>
+                    </div>
+                    <div class="menu-aside__btn-name">Избранное</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#VIN-inquiries" data-open-content="VIN-inquiries" class="menu-aside__btn">
+                    <div class="menu-aside__btn-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="3.1rem"
+                        height="2.5rem"
+                        viewBox="0 0 31 25"
+                        fill="none"
+                      >
+                        <path
+                          d="M8.51295 19.5H5.13804L0.5 5.5H3.46045L6.83536 16.26L10.1905 5.5H13.1707L8.51295 19.5Z"
+                          fill="#98A0B1"
+                        />
+                        <path d="M14.5022 19.5V5.5H17.2258V19.5H14.5022Z" fill="#98A0B1" />
+                        <path
+                          d="M27.7764 14.04V5.5H30.5V19.5H28.4277L22.5068 10.94V19.5H19.7832V5.5H21.8555L27.7764 14.04Z"
+                          fill="#98A0B1"
+                        />
+                      </svg>
+                    </div>
+                    <div class="menu-aside__btn-name">Запросы по VIN</div>
+                  </a>
+                </li>
+                <li>
+                  <button class="menu-aside__btn">
+                    <div class="menu-aside__btn-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2.5rem"
+                        height="2.4rem"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M14.5 2.5H18.5C19.0304 2.5 19.5391 2.71071 19.9142 3.08579C20.2893 3.46086 20.5 3.96957 20.5 4.5V18.5C20.5 19.0304 20.2893 19.5391 19.9142 19.9142C19.5391 20.2893 19.0304 20.5 18.5 20.5H14.5"
+                          stroke="#98A0B1"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7.5 16.5L2.5 11.5L7.5 6.5"
+                          stroke="#98A0B1"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M14.5 11.5H2.5"
+                          stroke="#98A0B1"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="menu-aside__btn-name">Выход</div>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <button class="menu-aside-mob-btn mob">
+              <div class="menu-aside__btn-icon">
+                <img src="./img/icon/menu-burger-white.svg" alt="" />
+              </div>
+              <div class="menu-aside-mob__btn-name"></div>
+            </button>
+            <ul class="menu-aside desc">
               <li>
                 <a href="#profile" data-open-content="profile" class="menu-aside__btn">
                   <div class="menu-aside__btn-icon">
@@ -371,7 +529,7 @@
             <section class="pers-cab__content" data-content="history-order">
               <div class="title">История заказов</div>
               <!--Нет заказов-->
-              <div class="pers-cab__empty" style="display: none">
+              <div class="pers-cab__empty">
                 <div class="pers-cab__empty-icons">
                   <div class="pers-cab__empty-icons-img">
                     <img src="./img/icon/shopping-cart-big.svg" alt="" />
@@ -390,7 +548,7 @@
               <!---------------->
 
               <!--Есть заказы-->
-              <div class="pers-cab__fill">
+              <div class="pers-cab__fill" style="display: none">
                 <div class="pers-cab__fill-history">
                   <div class="pers-cab__fill-history-top">
                     <form class="search" action="" method="get">
@@ -1080,9 +1238,722 @@
             </section>
             <section class="pers-cab__content" data-content="my-garage">
               <div class="title">Мой гараж</div>
+              <!--Нет машин в гараже-->
+              <div class="pers-cab__empty">
+                <div class="pers-cab__empty-icons">
+                  <div class="pers-cab__empty-icons-img">
+                    <img src="./img/icon/driving-big.svg" alt="" />
+                  </div>
+                  <div class="pers-cab__empty-bg"></div>
+                </div>
+                <div class="pers-cab__empty-desc">
+                  <div class="subtitle">В гараже пока нет машин</div>
+                  <p>Добавляйте автомобили в гараж, так вы сможете быстрее находить нужные для вас детали.</p>
+                  <a href="#" class="btn-form" type="submit" name="#">
+                    <span>Добавить авто в гараж</span>
+                    <img src="./img/icon/arrows-white.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!----------------------->
+
+              <!--Есть машины в гараже-->
+              <div class="pers-cab__fill" style="display: none">
+                <div class="pers-cab__fill-garage">
+                  <div class="pers-cab__fill-garage-left">
+                    <div class="pers-cab__fill-garage-logo">
+                      <img src="./img/logo-auto/bmw.svg" alt="" />
+                    </div>
+                    <div class="pers-cab__fill-garage-desc">
+                      <div class="pers-cab__fill-garage-desc-titles">
+                        <div class="pers-cab__fill-garage-desc-titles-title">
+                          BMW X6 (E71, E72) sDrive 35 i бензин 306 л.с.
+                        </div>
+                        <div class="pers-cab__fill-garage-desc-titles-btn" data-modal-el="update-name-auto">
+                          <img src="./img/icon/edit-blue.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="pers-cab__fill-garage-desc-vin">VIN: 5YJSA1DG9DFP14705</div>
+                      <div class="pers-cab__fill-garage-desc-year">2013 г.</div>
+                    </div>
+                  </div>
+                  <div class="pers-cab__fill-garage-btns">
+                    <a href="#" class="btn-form" type="submit" name="#">
+                      <span>В каталог</span>
+                      <img src="./img/icon/arrows-white.svg" alt="" />
+                    </a>
+                    <button class="pers-cab__fill-garage-btns-del">
+                      <img src="./img/icon/delete-blue.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="pers-cab__fill-garage">
+                  <div class="pers-cab__fill-garage-left">
+                    <div class="pers-cab__fill-garage-logo">
+                      <img src="./img/logo-auto/bmw.svg" alt="" />
+                    </div>
+                    <div class="pers-cab__fill-garage-desc">
+                      <div class="pers-cab__fill-garage-desc-titles">
+                        <div class="pers-cab__fill-garage-desc-titles-title">
+                          BMW X6 (E71, E72) sDrive 35 i бензин 306 л.с.
+                        </div>
+                        <div class="pers-cab__fill-garage-desc-titles-btn" data-modal-el="update-name-auto">
+                          <img src="./img/icon/edit-blue.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="pers-cab__fill-garage-desc-vin">VIN: 5YJSA1DG9DFP14705</div>
+                      <div class="pers-cab__fill-garage-desc-year">2013 г.</div>
+                    </div>
+                  </div>
+                  <div class="pers-cab__fill-garage-btns">
+                    <a href="#" class="btn-form" type="submit" name="#">
+                      <span>В каталог</span>
+                      <img src="./img/icon/arrows-white.svg" alt="" />
+                    </a>
+                    <button class="pers-cab__fill-garage-btns-del">
+                      <img src="./img/icon/delete-blue.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="pers-cab__fill-garage">
+                  <div class="pers-cab__fill-garage-left">
+                    <div class="pers-cab__fill-garage-logo">
+                      <img src="./img/logo-auto/audi.svg" alt="" />
+                    </div>
+                    <div class="pers-cab__fill-garage-desc">
+                      <div class="pers-cab__fill-garage-desc-titles">
+                        <div class="pers-cab__fill-garage-desc-titles-title">
+                          AUDI A4 B5 AVANT (8D5) 1.6 (74 KW / 100 HP) PETROL
+                        </div>
+                        <div class="pers-cab__fill-garage-desc-titles-btn" data-modal-el="update-name-auto">
+                          <img src="./img/icon/edit-blue.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="pers-cab__fill-garage-desc-vin">VIN: 5YJSA1DG9DFP14705</div>
+                      <div class="pers-cab__fill-garage-desc-year">2013 г.</div>
+                    </div>
+                  </div>
+                  <div class="pers-cab__fill-garage-btns">
+                    <a href="#" class="btn-form" type="submit" name="#">
+                      <span>В каталог</span>
+                      <img src="./img/icon/arrows-white.svg" alt="" />
+                    </a>
+                    <button class="pers-cab__fill-garage-btns-del">
+                      <img src="./img/icon/delete-blue.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!------------------------->
             </section>
             <section class="pers-cab__content" data-content="favorites">
               <div class="title">Избранное</div>
+              <!--Нет машин в гараже-->
+              <div class="pers-cab__empty">
+                <div class="pers-cab__empty-icons">
+                  <div class="pers-cab__empty-icons-img">
+                    <img src="./img/icon/heart-big.svg" alt="" />
+                  </div>
+                  <div class="pers-cab__empty-bg"></div>
+                </div>
+                <div class="pers-cab__empty-desc">
+                  <div class="subtitle">В избранном пока ничего нет</div>
+                  <p>Добавляйте товары в избранное с помощью ❤️</p>
+                  <a href="#" class="btn-form" type="submit" name="#">
+                    <span>Перейти в каталог</span>
+                    <img src="./img/icon/arrows-white.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <!----------------------->
+
+              <!--Есть машины в гараже-->
+              <div class="pers-cab__fill" style="display: none">
+                <div class="pers-cab__fill-fav">
+                  <div class="pers-cab__fill-fav-top">
+                    <div class="subtitle">тормоза</div>
+                    <button class="btn-reset">Удалить все</button>
+                  </div>
+                  <div class="pers-cab__fill-fav-items cards">
+                    <div class="card card-available">
+                      <div class="card__content">
+                        <div class="card__content-top">
+                          <div class="card__content-panel">
+                            <div class="card__content-panel-status">В наличии: 2шт</div>
+                            <div class="card__content-panel-like">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2.4rem"
+                                height="2.4rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M21.0697 5.23C19.4597 5.07 17.8497 4.95 16.2297 4.86V4.85L16.0097 3.55C15.8597 2.63 15.6397 1.25 13.2997 1.25H10.6797C8.34967 1.25 8.12967 2.57 7.96967 3.54L7.75967 4.82C6.82967 4.88 5.89967 4.94 4.96967 5.03L2.92967 5.23C2.50967 5.27 2.20967 5.64 2.24967 6.05C2.28967 6.46 2.64967 6.76 3.06967 6.72L5.10967 6.52C10.3497 6 15.6297 6.2 20.9297 6.73C20.9597 6.73 20.9797 6.73 21.0097 6.73C21.3897 6.73 21.7197 6.44 21.7597 6.05C21.7897 5.64 21.4897 5.27 21.0697 5.23Z"
+                                  fill="#98A0B1"
+                                />
+                                <path
+                                  d="M19.2297 8.14C18.9897 7.89 18.6597 7.75 18.3197 7.75H5.67975C5.33975 7.75 4.99975 7.89 4.76975 8.14C4.53975 8.39 4.40975 8.73 4.42975 9.08L5.04975 19.34C5.15975 20.86 5.29975 22.76 8.78975 22.76H15.2097C18.6997 22.76 18.8398 20.87 18.9497 19.34L19.5697 9.09C19.5897 8.73 19.4597 8.39 19.2297 8.14ZM13.6597 17.75H10.3297C9.91975 17.75 9.57975 17.41 9.57975 17C9.57975 16.59 9.91975 16.25 10.3297 16.25H13.6597C14.0697 16.25 14.4097 16.59 14.4097 17C14.4097 17.41 14.0697 17.75 13.6597 17.75ZM14.4997 13.75H9.49975C9.08975 13.75 8.74975 13.41 8.74975 13C8.74975 12.59 9.08975 12.25 9.49975 12.25H14.4997C14.9097 12.25 15.2497 12.59 15.2497 13C15.2497 13.41 14.9097 13.75 14.4997 13.75Z"
+                                  fill="#98A0B1"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="card__slider">
+                            <div class="swiper card__swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pagination card__pagination">
+                              <div class="pagination__bullets card__bullets"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__content-info">
+                          <div class="price">13 549 ₽</div>
+                          <div class="card__content-info-bottom">
+                            <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                            <button type="button" class="card__btn-buy btn-arrows active">
+                              <div class="btn-arrows__title">Купить</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                            <div class="input-count">
+                              <button class="number-minus" type="button">
+                                <img src="./img/icon/minus.svg" alt="" />
+                              </button>
+                              <input type="number" min="0" value="1" readonly />
+                              <button class="number-plus" type="button">
+                                <img src="./img/icon/plus.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__modal">
+                        <div class="card__modal-content">
+                          <div class="card__modal-content-icon">
+                            <img src="./img/icon/check-blue.svg" alt="" />
+                          </div>
+                          <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-available">
+                      <div class="card__content">
+                        <div class="card__content-top">
+                          <div class="card__content-panel">
+                            <div class="card__content-panel-status">В наличии: 2шт</div>
+                            <div class="card__content-panel-like">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2.4rem"
+                                height="2.4rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M21.0697 5.23C19.4597 5.07 17.8497 4.95 16.2297 4.86V4.85L16.0097 3.55C15.8597 2.63 15.6397 1.25 13.2997 1.25H10.6797C8.34967 1.25 8.12967 2.57 7.96967 3.54L7.75967 4.82C6.82967 4.88 5.89967 4.94 4.96967 5.03L2.92967 5.23C2.50967 5.27 2.20967 5.64 2.24967 6.05C2.28967 6.46 2.64967 6.76 3.06967 6.72L5.10967 6.52C10.3497 6 15.6297 6.2 20.9297 6.73C20.9597 6.73 20.9797 6.73 21.0097 6.73C21.3897 6.73 21.7197 6.44 21.7597 6.05C21.7897 5.64 21.4897 5.27 21.0697 5.23Z"
+                                  fill="#98A0B1"
+                                />
+                                <path
+                                  d="M19.2297 8.14C18.9897 7.89 18.6597 7.75 18.3197 7.75H5.67975C5.33975 7.75 4.99975 7.89 4.76975 8.14C4.53975 8.39 4.40975 8.73 4.42975 9.08L5.04975 19.34C5.15975 20.86 5.29975 22.76 8.78975 22.76H15.2097C18.6997 22.76 18.8398 20.87 18.9497 19.34L19.5697 9.09C19.5897 8.73 19.4597 8.39 19.2297 8.14ZM13.6597 17.75H10.3297C9.91975 17.75 9.57975 17.41 9.57975 17C9.57975 16.59 9.91975 16.25 10.3297 16.25H13.6597C14.0697 16.25 14.4097 16.59 14.4097 17C14.4097 17.41 14.0697 17.75 13.6597 17.75ZM14.4997 13.75H9.49975C9.08975 13.75 8.74975 13.41 8.74975 13C8.74975 12.59 9.08975 12.25 9.49975 12.25H14.4997C14.9097 12.25 15.2497 12.59 15.2497 13C15.2497 13.41 14.9097 13.75 14.4997 13.75Z"
+                                  fill="#98A0B1"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="card__slider">
+                            <div class="swiper card__swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pagination card__pagination">
+                              <div class="pagination__bullets card__bullets"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__content-info">
+                          <div class="price">13 549 ₽</div>
+                          <div class="card__content-info-bottom">
+                            <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                            <button type="button" class="card__btn-buy btn-arrows active">
+                              <div class="btn-arrows__title">Купить</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                            <div class="input-count">
+                              <button class="number-minus" type="button">
+                                <img src="./img/icon/minus.svg" alt="" />
+                              </button>
+                              <input type="number" min="0" value="1" readonly />
+                              <button class="number-plus" type="button">
+                                <img src="./img/icon/plus.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__modal">
+                        <div class="card__modal-content">
+                          <div class="card__modal-content-icon">
+                            <img src="./img/icon/check-blue.svg" alt="" />
+                          </div>
+                          <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-available">
+                      <div class="card__content">
+                        <div class="card__content-top">
+                          <div class="card__content-panel">
+                            <div class="card__content-panel-status">В наличии: 2шт</div>
+                            <div class="card__content-panel-like">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2.4rem"
+                                height="2.4rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M21.0697 5.23C19.4597 5.07 17.8497 4.95 16.2297 4.86V4.85L16.0097 3.55C15.8597 2.63 15.6397 1.25 13.2997 1.25H10.6797C8.34967 1.25 8.12967 2.57 7.96967 3.54L7.75967 4.82C6.82967 4.88 5.89967 4.94 4.96967 5.03L2.92967 5.23C2.50967 5.27 2.20967 5.64 2.24967 6.05C2.28967 6.46 2.64967 6.76 3.06967 6.72L5.10967 6.52C10.3497 6 15.6297 6.2 20.9297 6.73C20.9597 6.73 20.9797 6.73 21.0097 6.73C21.3897 6.73 21.7197 6.44 21.7597 6.05C21.7897 5.64 21.4897 5.27 21.0697 5.23Z"
+                                  fill="#98A0B1"
+                                />
+                                <path
+                                  d="M19.2297 8.14C18.9897 7.89 18.6597 7.75 18.3197 7.75H5.67975C5.33975 7.75 4.99975 7.89 4.76975 8.14C4.53975 8.39 4.40975 8.73 4.42975 9.08L5.04975 19.34C5.15975 20.86 5.29975 22.76 8.78975 22.76H15.2097C18.6997 22.76 18.8398 20.87 18.9497 19.34L19.5697 9.09C19.5897 8.73 19.4597 8.39 19.2297 8.14ZM13.6597 17.75H10.3297C9.91975 17.75 9.57975 17.41 9.57975 17C9.57975 16.59 9.91975 16.25 10.3297 16.25H13.6597C14.0697 16.25 14.4097 16.59 14.4097 17C14.4097 17.41 14.0697 17.75 13.6597 17.75ZM14.4997 13.75H9.49975C9.08975 13.75 8.74975 13.41 8.74975 13C8.74975 12.59 9.08975 12.25 9.49975 12.25H14.4997C14.9097 12.25 15.2497 12.59 15.2497 13C15.2497 13.41 14.9097 13.75 14.4997 13.75Z"
+                                  fill="#98A0B1"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="card__slider">
+                            <div class="swiper card__swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pagination card__pagination">
+                              <div class="pagination__bullets card__bullets"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__content-info">
+                          <div class="price">13 549 ₽</div>
+                          <div class="card__content-info-bottom">
+                            <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                            <button type="button" class="card__btn-buy btn-arrows active">
+                              <div class="btn-arrows__title">Купить</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                            <div class="input-count">
+                              <button class="number-minus" type="button">
+                                <img src="./img/icon/minus.svg" alt="" />
+                              </button>
+                              <input type="number" min="0" value="1" readonly />
+                              <button class="number-plus" type="button">
+                                <img src="./img/icon/plus.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__modal">
+                        <div class="card__modal-content">
+                          <div class="card__modal-content-icon">
+                            <img src="./img/icon/check-blue.svg" alt="" />
+                          </div>
+                          <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-available">
+                      <div class="card__content">
+                        <div class="card__content-top">
+                          <div class="card__content-panel">
+                            <div class="card__content-panel-status">В наличии: 2шт</div>
+                            <div class="card__content-panel-like">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2.4rem"
+                                height="2.4rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M21.0697 5.23C19.4597 5.07 17.8497 4.95 16.2297 4.86V4.85L16.0097 3.55C15.8597 2.63 15.6397 1.25 13.2997 1.25H10.6797C8.34967 1.25 8.12967 2.57 7.96967 3.54L7.75967 4.82C6.82967 4.88 5.89967 4.94 4.96967 5.03L2.92967 5.23C2.50967 5.27 2.20967 5.64 2.24967 6.05C2.28967 6.46 2.64967 6.76 3.06967 6.72L5.10967 6.52C10.3497 6 15.6297 6.2 20.9297 6.73C20.9597 6.73 20.9797 6.73 21.0097 6.73C21.3897 6.73 21.7197 6.44 21.7597 6.05C21.7897 5.64 21.4897 5.27 21.0697 5.23Z"
+                                  fill="#98A0B1"
+                                />
+                                <path
+                                  d="M19.2297 8.14C18.9897 7.89 18.6597 7.75 18.3197 7.75H5.67975C5.33975 7.75 4.99975 7.89 4.76975 8.14C4.53975 8.39 4.40975 8.73 4.42975 9.08L5.04975 19.34C5.15975 20.86 5.29975 22.76 8.78975 22.76H15.2097C18.6997 22.76 18.8398 20.87 18.9497 19.34L19.5697 9.09C19.5897 8.73 19.4597 8.39 19.2297 8.14ZM13.6597 17.75H10.3297C9.91975 17.75 9.57975 17.41 9.57975 17C9.57975 16.59 9.91975 16.25 10.3297 16.25H13.6597C14.0697 16.25 14.4097 16.59 14.4097 17C14.4097 17.41 14.0697 17.75 13.6597 17.75ZM14.4997 13.75H9.49975C9.08975 13.75 8.74975 13.41 8.74975 13C8.74975 12.59 9.08975 12.25 9.49975 12.25H14.4997C14.9097 12.25 15.2497 12.59 15.2497 13C15.2497 13.41 14.9097 13.75 14.4997 13.75Z"
+                                  fill="#98A0B1"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="card__slider">
+                            <div class="swiper card__swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pagination card__pagination">
+                              <div class="pagination__bullets card__bullets"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__content-info">
+                          <div class="price">13 549 ₽</div>
+                          <div class="card__content-info-bottom">
+                            <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                            <button type="button" class="card__btn-buy btn-arrows active">
+                              <div class="btn-arrows__title">Купить</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                            <div class="input-count">
+                              <button class="number-minus" type="button">
+                                <img src="./img/icon/minus.svg" alt="" />
+                              </button>
+                              <input type="number" min="0" value="1" readonly />
+                              <button class="number-plus" type="button">
+                                <img src="./img/icon/plus.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__modal">
+                        <div class="card__modal-content">
+                          <div class="card__modal-content-icon">
+                            <img src="./img/icon/check-blue.svg" alt="" />
+                          </div>
+                          <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pers-cab__fill-fav">
+                  <div class="pers-cab__fill-fav-top">
+                    <div class="subtitle">Фильтры</div>
+                    <button class="btn-reset">Удалить все</button>
+                  </div>
+                  <div class="pers-cab__fill-fav-items cards">
+                    <div class="card card-available">
+                      <div class="card__content">
+                        <div class="card__content-top">
+                          <div class="card__content-panel">
+                            <div class="card__content-panel-status">В наличии: 2шт</div>
+                            <div class="card__content-panel-like">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2.4rem"
+                                height="2.4rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M21.0697 5.23C19.4597 5.07 17.8497 4.95 16.2297 4.86V4.85L16.0097 3.55C15.8597 2.63 15.6397 1.25 13.2997 1.25H10.6797C8.34967 1.25 8.12967 2.57 7.96967 3.54L7.75967 4.82C6.82967 4.88 5.89967 4.94 4.96967 5.03L2.92967 5.23C2.50967 5.27 2.20967 5.64 2.24967 6.05C2.28967 6.46 2.64967 6.76 3.06967 6.72L5.10967 6.52C10.3497 6 15.6297 6.2 20.9297 6.73C20.9597 6.73 20.9797 6.73 21.0097 6.73C21.3897 6.73 21.7197 6.44 21.7597 6.05C21.7897 5.64 21.4897 5.27 21.0697 5.23Z"
+                                  fill="#98A0B1"
+                                />
+                                <path
+                                  d="M19.2297 8.14C18.9897 7.89 18.6597 7.75 18.3197 7.75H5.67975C5.33975 7.75 4.99975 7.89 4.76975 8.14C4.53975 8.39 4.40975 8.73 4.42975 9.08L5.04975 19.34C5.15975 20.86 5.29975 22.76 8.78975 22.76H15.2097C18.6997 22.76 18.8398 20.87 18.9497 19.34L19.5697 9.09C19.5897 8.73 19.4597 8.39 19.2297 8.14ZM13.6597 17.75H10.3297C9.91975 17.75 9.57975 17.41 9.57975 17C9.57975 16.59 9.91975 16.25 10.3297 16.25H13.6597C14.0697 16.25 14.4097 16.59 14.4097 17C14.4097 17.41 14.0697 17.75 13.6597 17.75ZM14.4997 13.75H9.49975C9.08975 13.75 8.74975 13.41 8.74975 13C8.74975 12.59 9.08975 12.25 9.49975 12.25H14.4997C14.9097 12.25 15.2497 12.59 15.2497 13C15.2497 13.41 14.9097 13.75 14.4997 13.75Z"
+                                  fill="#98A0B1"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="card__slider">
+                            <div class="swiper card__swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pagination card__pagination">
+                              <div class="pagination__bullets card__bullets"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__content-info">
+                          <div class="price">13 549 ₽</div>
+                          <div class="card__content-info-bottom">
+                            <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                            <button type="button" class="card__btn-buy btn-arrows active">
+                              <div class="btn-arrows__title">Купить</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                            <div class="input-count">
+                              <button class="number-minus" type="button">
+                                <img src="./img/icon/minus.svg" alt="" />
+                              </button>
+                              <input type="number" min="0" value="1" readonly />
+                              <button class="number-plus" type="button">
+                                <img src="./img/icon/plus.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__modal">
+                        <div class="card__modal-content">
+                          <div class="card__modal-content-icon">
+                            <img src="./img/icon/check-blue.svg" alt="" />
+                          </div>
+                          <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-available">
+                      <div class="card__content">
+                        <div class="card__content-top">
+                          <div class="card__content-panel">
+                            <div class="card__content-panel-status">В наличии: 2шт</div>
+                            <div class="card__content-panel-like">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2.4rem"
+                                height="2.4rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M21.0697 5.23C19.4597 5.07 17.8497 4.95 16.2297 4.86V4.85L16.0097 3.55C15.8597 2.63 15.6397 1.25 13.2997 1.25H10.6797C8.34967 1.25 8.12967 2.57 7.96967 3.54L7.75967 4.82C6.82967 4.88 5.89967 4.94 4.96967 5.03L2.92967 5.23C2.50967 5.27 2.20967 5.64 2.24967 6.05C2.28967 6.46 2.64967 6.76 3.06967 6.72L5.10967 6.52C10.3497 6 15.6297 6.2 20.9297 6.73C20.9597 6.73 20.9797 6.73 21.0097 6.73C21.3897 6.73 21.7197 6.44 21.7597 6.05C21.7897 5.64 21.4897 5.27 21.0697 5.23Z"
+                                  fill="#98A0B1"
+                                />
+                                <path
+                                  d="M19.2297 8.14C18.9897 7.89 18.6597 7.75 18.3197 7.75H5.67975C5.33975 7.75 4.99975 7.89 4.76975 8.14C4.53975 8.39 4.40975 8.73 4.42975 9.08L5.04975 19.34C5.15975 20.86 5.29975 22.76 8.78975 22.76H15.2097C18.6997 22.76 18.8398 20.87 18.9497 19.34L19.5697 9.09C19.5897 8.73 19.4597 8.39 19.2297 8.14ZM13.6597 17.75H10.3297C9.91975 17.75 9.57975 17.41 9.57975 17C9.57975 16.59 9.91975 16.25 10.3297 16.25H13.6597C14.0697 16.25 14.4097 16.59 14.4097 17C14.4097 17.41 14.0697 17.75 13.6597 17.75ZM14.4997 13.75H9.49975C9.08975 13.75 8.74975 13.41 8.74975 13C8.74975 12.59 9.08975 12.25 9.49975 12.25H14.4997C14.9097 12.25 15.2497 12.59 15.2497 13C15.2497 13.41 14.9097 13.75 14.4997 13.75Z"
+                                  fill="#98A0B1"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="card__slider">
+                            <div class="swiper card__swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pagination card__pagination">
+                              <div class="pagination__bullets card__bullets"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__content-info">
+                          <div class="price">13 549 ₽</div>
+                          <div class="card__content-info-bottom">
+                            <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                            <button type="button" class="card__btn-buy btn-arrows active">
+                              <div class="btn-arrows__title">Купить</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                            <div class="input-count">
+                              <button class="number-minus" type="button">
+                                <img src="./img/icon/minus.svg" alt="" />
+                              </button>
+                              <input type="number" min="0" value="1" readonly />
+                              <button class="number-plus" type="button">
+                                <img src="./img/icon/plus.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__modal">
+                        <div class="card__modal-content">
+                          <div class="card__modal-content-icon">
+                            <img src="./img/icon/check-blue.svg" alt="" />
+                          </div>
+                          <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-available">
+                      <div class="card__content">
+                        <div class="card__content-top">
+                          <div class="card__content-panel">
+                            <div class="card__content-panel-status">В наличии: 2шт</div>
+                            <div class="card__content-panel-like">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2.4rem"
+                                height="2.4rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M21.0697 5.23C19.4597 5.07 17.8497 4.95 16.2297 4.86V4.85L16.0097 3.55C15.8597 2.63 15.6397 1.25 13.2997 1.25H10.6797C8.34967 1.25 8.12967 2.57 7.96967 3.54L7.75967 4.82C6.82967 4.88 5.89967 4.94 4.96967 5.03L2.92967 5.23C2.50967 5.27 2.20967 5.64 2.24967 6.05C2.28967 6.46 2.64967 6.76 3.06967 6.72L5.10967 6.52C10.3497 6 15.6297 6.2 20.9297 6.73C20.9597 6.73 20.9797 6.73 21.0097 6.73C21.3897 6.73 21.7197 6.44 21.7597 6.05C21.7897 5.64 21.4897 5.27 21.0697 5.23Z"
+                                  fill="#98A0B1"
+                                />
+                                <path
+                                  d="M19.2297 8.14C18.9897 7.89 18.6597 7.75 18.3197 7.75H5.67975C5.33975 7.75 4.99975 7.89 4.76975 8.14C4.53975 8.39 4.40975 8.73 4.42975 9.08L5.04975 19.34C5.15975 20.86 5.29975 22.76 8.78975 22.76H15.2097C18.6997 22.76 18.8398 20.87 18.9497 19.34L19.5697 9.09C19.5897 8.73 19.4597 8.39 19.2297 8.14ZM13.6597 17.75H10.3297C9.91975 17.75 9.57975 17.41 9.57975 17C9.57975 16.59 9.91975 16.25 10.3297 16.25H13.6597C14.0697 16.25 14.4097 16.59 14.4097 17C14.4097 17.41 14.0697 17.75 13.6597 17.75ZM14.4997 13.75H9.49975C9.08975 13.75 8.74975 13.41 8.74975 13C8.74975 12.59 9.08975 12.25 9.49975 12.25H14.4997C14.9097 12.25 15.2497 12.59 15.2497 13C15.2497 13.41 14.9097 13.75 14.4997 13.75Z"
+                                  fill="#98A0B1"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="card__slider">
+                            <div class="swiper card__swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pagination card__pagination">
+                              <div class="pagination__bullets card__bullets"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__content-info">
+                          <div class="price">13 549 ₽</div>
+                          <div class="card__content-info-bottom">
+                            <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                            <button type="button" class="card__btn-buy btn-arrows active">
+                              <div class="btn-arrows__title">Купить</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                            <div class="input-count">
+                              <button class="number-minus" type="button">
+                                <img src="./img/icon/minus.svg" alt="" />
+                              </button>
+                              <input type="number" min="0" value="1" readonly />
+                              <button class="number-plus" type="button">
+                                <img src="./img/icon/plus.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__modal">
+                        <div class="card__modal-content">
+                          <div class="card__modal-content-icon">
+                            <img src="./img/icon/check-blue.svg" alt="" />
+                          </div>
+                          <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-available">
+                      <div class="card__content">
+                        <div class="card__content-top">
+                          <div class="card__content-panel">
+                            <div class="card__content-panel-status">В наличии: 2шт</div>
+                            <div class="card__content-panel-like">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2.4rem"
+                                height="2.4rem"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M21.0697 5.23C19.4597 5.07 17.8497 4.95 16.2297 4.86V4.85L16.0097 3.55C15.8597 2.63 15.6397 1.25 13.2997 1.25H10.6797C8.34967 1.25 8.12967 2.57 7.96967 3.54L7.75967 4.82C6.82967 4.88 5.89967 4.94 4.96967 5.03L2.92967 5.23C2.50967 5.27 2.20967 5.64 2.24967 6.05C2.28967 6.46 2.64967 6.76 3.06967 6.72L5.10967 6.52C10.3497 6 15.6297 6.2 20.9297 6.73C20.9597 6.73 20.9797 6.73 21.0097 6.73C21.3897 6.73 21.7197 6.44 21.7597 6.05C21.7897 5.64 21.4897 5.27 21.0697 5.23Z"
+                                  fill="#98A0B1"
+                                />
+                                <path
+                                  d="M19.2297 8.14C18.9897 7.89 18.6597 7.75 18.3197 7.75H5.67975C5.33975 7.75 4.99975 7.89 4.76975 8.14C4.53975 8.39 4.40975 8.73 4.42975 9.08L5.04975 19.34C5.15975 20.86 5.29975 22.76 8.78975 22.76H15.2097C18.6997 22.76 18.8398 20.87 18.9497 19.34L19.5697 9.09C19.5897 8.73 19.4597 8.39 19.2297 8.14ZM13.6597 17.75H10.3297C9.91975 17.75 9.57975 17.41 9.57975 17C9.57975 16.59 9.91975 16.25 10.3297 16.25H13.6597C14.0697 16.25 14.4097 16.59 14.4097 17C14.4097 17.41 14.0697 17.75 13.6597 17.75ZM14.4997 13.75H9.49975C9.08975 13.75 8.74975 13.41 8.74975 13C8.74975 12.59 9.08975 12.25 9.49975 12.25H14.4997C14.9097 12.25 15.2497 12.59 15.2497 13C15.2497 13.41 14.9097 13.75 14.4997 13.75Z"
+                                  fill="#98A0B1"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="card__slider">
+                            <div class="swiper card__swiper">
+                              <div class="card__swiper-wrapper swiper-wrapper">
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                                <div class="card__swiper-slide swiper-slide">
+                                  <img src="./img/order/detail-2.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="pagination card__pagination">
+                              <div class="pagination__bullets card__bullets"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card__content-info">
+                          <div class="price">13 549 ₽</div>
+                          <div class="card__content-info-bottom">
+                            <p>Комплект тормозов барабанного тормозного механизма 1611455580 EUROREPAR</p>
+                            <button type="button" class="card__btn-buy btn-arrows active">
+                              <div class="btn-arrows__title">Купить</div>
+                              <div class="btn-arrows__img"></div>
+                            </button>
+                            <div class="input-count">
+                              <button class="number-minus" type="button">
+                                <img src="./img/icon/minus.svg" alt="" />
+                              </button>
+                              <input type="number" min="0" value="1" readonly />
+                              <button class="number-plus" type="button">
+                                <img src="./img/icon/plus.svg" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card__modal">
+                        <div class="card__modal-content">
+                          <div class="card__modal-content-icon">
+                            <img src="./img/icon/check-blue.svg" alt="" />
+                          </div>
+                          <div class="card__modal-content-text">Товар добавлен в корзину</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!------------------------->
             </section>
             <section class="pers-cab__content" data-content="VIN-inquiries">
               <div class="title">Запросы по VIN</div>

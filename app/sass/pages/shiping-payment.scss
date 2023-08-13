@@ -76,3 +76,64 @@
     line-height: 140%;
   }
 }
+
+@media screen and (max-width: 48em) {
+  .shiping {
+    &__container {
+      row-gap: 8.5vw;
+      padding: 5.3vw 0 17vw 0;
+      flex-direction: column;
+    }
+
+    .title {
+      margin-bottom: 7.5vw;
+    }
+
+    &__content-wrap {
+      row-gap: 10.7vw;
+
+      p {
+        max-width: 100%;
+      }
+
+      p,
+      li,
+      address {
+        font-size: 3.8vw;
+        line-height: 130%;
+      }
+
+      ul {
+        row-gap: 3.2vw;
+        max-width: 96%;
+      }
+
+      li {
+        column-gap: 2.1vw;
+        align-items: center;
+        flex-shrink: 0;
+
+        &::before {
+          content: '';
+          width: 5.3vw;
+          height: 5.3vw;
+          background-size: contain;
+        }
+
+        img {
+          width: 5.3vw;
+          height: 5.3vw;
+        }
+      }
+    }
+
+    &__content-block {
+      row-gap: 2.2vw;
+    }
+
+    &__content-block-title {
+      font-size: 4.8vw;
+      line-height: 130%;
+    }
+  }
+}
