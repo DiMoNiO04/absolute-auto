@@ -160,7 +160,12 @@ $('.choose-auto__change').each(function () {
 });
 
 if (window.innerWidth <= 768) {
-  $('.pers-cab__fill-garage-item').click(function () {
+  $('.pers-cab__fill-garage-item').on('touchstart', function () {
     $(this).toggleClass('active');
+  });
+  $('.basket__main-basket-item').on('touchstart', function (event) {
+    if ($(event.target).parent()[0].tagName !== 'BUTTON') {
+      $(this).toggleClass('active');
+    }
   });
 }

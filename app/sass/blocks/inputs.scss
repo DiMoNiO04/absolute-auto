@@ -498,13 +498,12 @@ input:focus:-ms-input-placeholder {
 
       .btn-arrows {
         .btn-arrows__title {
-          font-size: 1.8rem;
-          font-weight: 700;
-          line-height: 120%;
+          font-size: 4vw;
         }
       }
 
       &__text {
+        max-width: 68vw;
         span {
           font-size: 4vw;
         }
@@ -568,8 +567,8 @@ input:focus:-ms-input-placeholder {
       input {
         font-size: 4.27vw;
         line-height: 140%;
-        width: 4.3rem;
-        height: 4.3rem;
+        width: 7.5vw;
+        height: 7.5vw;
       }
     }
 

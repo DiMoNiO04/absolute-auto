@@ -15,16 +15,31 @@ const brandsSwiper = new Swiper('#brands-swiper', {
 });
 
 const cardsSwiper = new Swiper('#cards-swiper', {
-  slidesPerView: 6,
-  spaceBetween: 20,
-  allowTouchMove: false,
-  navigation: {
-    nextEl: '.cards__arrows-next',
-    prevEl: '.cards__arrows-prev',
-  },
-  pagination: {
-    el: '.basket__main-relevant__bullets',
-    clickable: true,
+  breakpoints: {
+    300: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      grid: {
+        rows: 2,
+      },
+      pagination: {
+        el: '.basket__main-relevant__bullets',
+        clickable: true,
+      },
+    },
+    769: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+      allowTouchMove: false,
+      navigation: {
+        nextEl: '.cards__arrows-next',
+        prevEl: '.cards__arrows-prev',
+      },
+      pagination: {
+        el: '.basket__main-relevant__bullets',
+        clickable: true,
+      },
+    },
   },
 });
 

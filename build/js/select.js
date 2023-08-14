@@ -1,3 +1,5 @@
+'use strict';
+
 $('.select').on('click', '.select__head', function () {
   if ($(this).hasClass('open')) {
     $(this).removeClass('open');
@@ -9,15 +11,13 @@ $('.select').on('click', '.select__head', function () {
     $(this).next().fadeIn();
   }
 });
-
 $('.select').on('click', '.select__item', function () {
   $('.select__head').removeClass('open');
   $(this).parent().fadeOut();
   $(this).parent().prev().text($(this).text());
   $(this).parent().prev().prev().val($(this).text());
 });
-
-$(document).click((e) => {
+$(document).click(function (e) {
   if (!$(e.target).closest('.select').length) {
     $('.select__head').removeClass('open');
     $('.select__list').fadeOut();
