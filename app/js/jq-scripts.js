@@ -14,14 +14,16 @@ $('[data-block-entrance-btn').on('click', function () {
   $(`[data-block-entrance="${$(this).data('block-entrance-btn')}"`).fadeIn(1000);
 });
 
-$('.your-order__list-item-main-desc-title').text(function (i, text) {
-  let txt = text;
-  if (txt.length >= 25) {
-    txt = txt.substring(0, 37);
-    txt = `${txt.substring(0, 37)}...`;
-  }
-  $(this).text(txt);
-});
+if (window.innerWidth >= 768) {
+  $('.your-order__list-item-main-desc-title').text(function (i, text) {
+    let txt = text;
+    if (txt.length >= 30) {
+      txt = txt.substring(0, 50);
+      txt = `${txt.substring(0, 50)}...`;
+    }
+    $(this).text(txt);
+  });
+}
 
 $('.click-toggle').each(function () {
   $(this).on('click', function () {

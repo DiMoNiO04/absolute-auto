@@ -175,3 +175,87 @@
     top: 3rem;
   }
 }
+
+@media screen and (max-width: 48em) {
+  .your-order {
+    width: 100%;
+    padding: 6.4vw 2.8vw;
+    top: 0;
+    position: relative;
+    row-gap: 8.5vw;
+    margin-top: 16vw;
+
+    &__list {
+      row-gap: 6.4vw;
+    }
+
+    &__list-item {
+      &-main {
+        column-gap: 3.2vw;
+      }
+
+      &-main-img {
+        width: 13.3vw;
+        height: 13.3vw;
+        flex-shrink: 0;
+      }
+
+      &-main-desc {
+        &-number {
+          font-size: 4vw;
+        }
+
+        &-title {
+          font-size: 3.2vw;
+          line-height: 130%;
+        }
+      }
+    }
+
+    &__title {
+      p {
+        font-size: 5.3vw;
+      }
+
+      .your-order__title-count {
+        font-size: 4vw;
+        line-height: 130%;
+      }
+    }
+
+    &__delivery,
+    &__result {
+      p:first-child {
+        font-size: 4vw;
+      }
+    }
+
+    &__result {
+      &::before {
+        height: 2px;
+        top: -4vw;
+      }
+    }
+
+    &__basket {
+      top: 0;
+    }
+
+    &__notification {
+      bottom: -20vw;
+    }
+
+    &__notification-block {
+      font-size: 3.8vw;
+      line-height: 140%;
+      padding: 3.2vw;
+      width: 75%;
+    }
+
+    &__notification-triagle {
+      width: 5vw;
+      height: 5vw;
+      top: 4vw;
+    }
+  }
+}

@@ -19,7 +19,7 @@ function renderContentPage(elem) {
 
 function changeContent() {
   const locationArr = window.location.href.split('/');
-  const page = locationArr[3];
+  const page = locationArr[4];
 
   if (window.location.hash) {
     const hash = window.location.hash.slice(1);
@@ -37,7 +37,7 @@ $(document).ready(() => changeContent());
 
 document.addEventListener('DOMContentLoaded', () => {
   const locationArr = window.location.href.split('/');
-  const page = locationArr[3].split('#')[0];
+  const page = locationArr[4].split('#')[0];
 
   if (page === PAGES.SHIPING_PAYMENT) {
     $('.menu-aside-mob__btn-name').text($('.shiping__content.active').find('.title').text());

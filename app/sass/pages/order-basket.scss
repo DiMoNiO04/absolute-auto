@@ -209,3 +209,151 @@
     margin-top: 4.2rem;
   }
 }
+
+@media screen and (max-width: 48em) {
+  .basket {
+    padding: 11vw 0 18vw 0;
+
+    .title {
+      font-size: 7.5vw;
+    }
+
+    .btn-reset {
+      display: none;
+    }
+
+    &__container {
+      margin-top: 12vw;
+      flex-direction: column;
+    }
+
+    &__main {
+      width: 107rem;
+    }
+
+    &__main-basket,
+    &__main-calculation {
+      margin-bottom: 24vw;
+    }
+
+    &__main-basket-header {
+      display: none;
+    }
+
+    &__main-basket-title {
+      margin-bottom: 7.5vw;
+    }
+
+    &__main-basket-item {
+      margin-top: 2.8vw;
+      padding: 2rem 2.4rem;
+
+      .count {
+        width: 15%;
+        padding-right: 1rem;
+      }
+
+      .input-count {
+        width: 16%;
+        padding-right: 1rem;
+      }
+
+      .price {
+        width: 14%;
+        padding-right: 1rem;
+      }
+    }
+
+    &__main-basket-item-img {
+      width: 40vw;
+      margin-right: 2.4rem;
+      height: 40vw;
+      flex-shrink: 0;
+    }
+
+    &__main-basket-item-desc {
+      width: 36%;
+      padding-right: 1rem;
+    }
+
+    &__main-basket-item-desc-link {
+      font-size: 2rem;
+      line-height: 140%;
+    }
+
+    &__main-basket-item-desc-title {
+      font-size: 1.8rem;
+      line-height: 140%;
+    }
+
+    &__main-basket-item-del {
+      width: 7%;
+
+      button {
+        margin: auto 0 auto auto;
+      }
+    }
+
+    &__main-calculation {
+      row-gap: 8.5vw;
+
+      .title {
+        font-size: 7.5vw;
+      }
+
+      .form__item {
+        margin-bottom: 0;
+
+        .input-radio:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .btn-form {
+        width: 100%;
+      }
+    }
+
+    &__main-calculation-info {
+      padding: 4rem;
+      row-gap: 2rem;
+      width: 100%;
+    }
+
+    &__main-calculation-info-item {
+      &::after {
+        top: 0.6rem;
+      }
+
+      span:first-of-type {
+        margin-right: 10px;
+      }
+
+      span:last-of-type {
+        margin-left: 10px;
+      }
+    }
+
+    &__main-calculation-info-item-title {
+      font-size: 1.8rem;
+      line-height: 130%;
+    }
+
+    &__main-calculation-info-item-desc {
+      font-size: 1.8rem;
+      line-height: 130%;
+    }
+
+    &__main-relevant {
+      row-gap: 6rem;
+
+      .card__content {
+        max-width: 24.5rem;
+      }
+    }
+
+    &__main-relevant__pagination {
+      margin-top: 4.2rem;
+    }
+  }
+}
