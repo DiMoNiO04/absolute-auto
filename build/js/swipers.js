@@ -1,6 +1,4 @@
-'use strict';
-
-var brandsSwiper = new Swiper('#brands-swiper', {
+const brandsSwiper = new Swiper('#brands-swiper', {
   slidesPerView: 6,
   slidesPerColumn: 2,
   grid: {
@@ -15,7 +13,8 @@ var brandsSwiper = new Swiper('#brands-swiper', {
     clickable: true,
   },
 });
-var cardsSwiper = new Swiper('#cards-swiper', {
+
+const cardsSwiper = new Swiper('#cards-swiper', {
   slidesPerView: 6,
   spaceBetween: 20,
   allowTouchMove: false,
@@ -28,11 +27,13 @@ var cardsSwiper = new Swiper('#cards-swiper', {
     clickable: true,
   },
 });
-document.querySelectorAll('.cards').forEach(function (cards) {
-  cards.querySelectorAll('.card__slider').forEach(function (content) {
-    var slider = content.querySelector('.card__swiper');
-    var pagination = content.querySelector('.card__bullets');
-    var cardSwiper = new Swiper(slider, {
+
+document.querySelectorAll('.cards').forEach((cards) => {
+  cards.querySelectorAll('.card__slider').forEach((content) => {
+    const slider = content.querySelector('.card__swiper');
+    const pagination = content.querySelector('.card__bullets');
+
+    const cardSwiper = new Swiper(slider, {
       slidesPerView: 1,
       spaceBetween: 20,
       allowTouchMove: true,
@@ -43,19 +44,22 @@ document.querySelectorAll('.cards').forEach(function (cards) {
     });
   });
 });
-var productTopSliderFirst = new Swiper('.product__slider-1', {
+
+const productTopSliderFirst = new Swiper('.product__slider-1', {
   spaceBetween: 30,
   slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
 });
-var productTopSliderSecond = new Swiper('.product__slider-2', {
+
+const productTopSliderSecond = new Swiper('.product__slider-2', {
   spaceBetween: 30,
   thumbs: {
     swiper: productTopSliderFirst,
   },
 });
-var productSliderAnalogues = new Swiper('#product__slider-3', {
+
+const productSliderAnalogues = new Swiper('#product__slider-3', {
   slidesPerView: 2,
   spaceBetween: 30,
   navigation: {
