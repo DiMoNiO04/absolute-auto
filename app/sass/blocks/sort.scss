@@ -89,3 +89,40 @@
     }
   }
 }
+
+@media screen and (max-width: 48em) {
+  .sort {
+    width: min-content;
+    column-gap: 0;
+    padding: 3.2vw;
+    margin-bottom: 0;
+
+    &__icon {
+      width: 10.6vw;
+      height: 10.6vw;
+    }
+
+    &__arrow {
+      display: none;
+    }
+
+    &__input {
+      width: 0%;
+    }
+
+    &__datalist {
+      top: 18vw;
+      left: -40vw;
+      width: fit-content;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+      padding: 2.8vw;
+
+      option {
+        font-size: 4vw;
+        line-height: 130%;
+        padding-bottom: 2.1vw;
+        width: calc(50% - 2rem);
+      }
+    }
+  }
+}
