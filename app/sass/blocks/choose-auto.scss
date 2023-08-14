@@ -146,3 +146,90 @@
     }
   }
 }
+
+@media screen and (max-width: 48em) {
+  .choose-auto {
+    padding: 6.4vw 2.8vw;
+    flex-direction: column;
+    row-gap: 2.8vw;
+
+    .input-datalist-form {
+      width: 100%;
+      &__blocks {
+        flex-direction: column;
+        width: 100%;
+      }
+      .input-datalist-form {
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      align-items: end;
+      span {
+        font-size: 4.27vw;
+      }
+      img {
+        width: 6.4vw;
+        height: 4.2vw;
+      }
+    }
+
+    &__change {
+      padding: 2.8vw;
+      column-gap: 3.2vw;
+      width: 100%;
+    }
+
+    &__change-icon {
+      width: 9vw;
+      height: 9vw;
+
+      img {
+        width: 5.3vw;
+        height: 5.3vw;
+      }
+    }
+
+    &__change-text {
+      font-size: 3.8vw;
+      line-height: 130%;
+    }
+
+    &__history {
+      top: 9rem;
+      padding: 2rem;
+    }
+
+    &__history-item {
+      padding: 1.2rem 0;
+      column-gap: 1.5rem;
+    }
+
+    &__history-item-icon {
+      width: 2.3rem;
+      height: 2.3rem;
+
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+
+    &__history-item-text {
+      font-size: 1.4rem;
+      line-height: 120%;
+      width: 30rem;
+    }
+
+    &__history-item-btn {
+      width: 1.6rem;
+      height: 1.6rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
