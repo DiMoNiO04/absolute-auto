@@ -208,6 +208,7 @@
 
     &__btn-buy {
       column-gap: 3.2vw;
+      height: 3.2vw;
 
       .btn-arrows__title {
         font-size: 4vw;
@@ -217,7 +218,7 @@
 
     &__modal {
       top: 20vw;
-      left: calc(50% - 20vw);
+      left: calc(50% - 21vw);
     }
 
     &__modal-content {
@@ -239,7 +240,7 @@
       input {
         font-weight: 700;
         border: 0;
-        height: 2.3rem;
+        height: 3.2vw;
       }
 
       .number-minus,

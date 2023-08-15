@@ -1,16 +1,31 @@
 const brandsSwiper = new Swiper('#brands-swiper', {
-  slidesPerView: 6,
-  slidesPerColumn: 2,
-  grid: {
-    rows: 2,
-  },
-  navigation: {
-    nextEl: '.main-brands__arrows-next',
-    prevEl: '.main-brands__arrows-prev',
-  },
-  pagination: {
-    el: '.main-brands__bullets',
-    clickable: true,
+  breakpoints: {
+    300: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      grid: {
+        rows: 2,
+      },
+      pagination: {
+        el: '.main-brands__bullets',
+        clickable: true,
+      },
+    },
+    768: {
+      slidesPerView: 6,
+      slidesPerColumn: 2,
+      grid: {
+        rows: 2,
+      },
+      navigation: {
+        nextEl: '.main-brands__arrows-next',
+        prevEl: '.main-brands__arrows-prev',
+      },
+      pagination: {
+        el: '.main-brands__bullets',
+        clickable: true,
+      },
+    },
   },
 });
 
@@ -19,6 +34,7 @@ const cardsSwiper = new Swiper('#cards-swiper', {
     300: {
       slidesPerView: 2,
       slidesPerColumn: 2,
+      watchSlidesProgress: true,
       grid: {
         rows: 2,
       },
@@ -79,6 +95,7 @@ const productSliderAnalogues = new Swiper('#product__slider-3', {
     300: {
       slidesPerView: 2,
       slidesPerColumn: 2,
+      watchSlidesProgress: true,
       grid: {
         rows: 2,
       },
