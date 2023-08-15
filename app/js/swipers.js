@@ -75,10 +75,30 @@ const productTopSliderSecond = new Swiper('.product__slider-2', {
 });
 
 const productSliderAnalogues = new Swiper('#product__slider-3', {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: '.product__analogues-top-arrows-next',
-    prevEl: '.product__analogues-top-arrows-prev',
+  breakpoints: {
+    300: {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      grid: {
+        rows: 2,
+      },
+      pagination: {
+        el: '.product__analogues-top-bullets',
+        clickable: true,
+      },
+    },
+    769: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      // allowTouchMove: false,
+      navigation: {
+        nextEl: '.product__analogues-top-arrows-next',
+        prevEl: '.product__analogues-top-arrows-prev',
+      },
+      pagination: {
+        el: '.product__analogues-top-bullets',
+        clickable: true,
+      },
+    },
   },
 });

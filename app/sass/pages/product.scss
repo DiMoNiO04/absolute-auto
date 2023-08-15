@@ -27,6 +27,11 @@
   &__title-img {
     width: 25rem;
     height: 5rem;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__wrapper {
@@ -168,7 +173,7 @@
       align-items: center;
       input {
         background: transparent;
-        border: 0;
+        // border: 0;
         font-weight: 700;
       }
     }
@@ -460,6 +465,342 @@
       font-size: 1.8rem;
       font-weight: 500;
       line-height: 140%;
+    }
+  }
+
+  .main__pagination {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .product {
+    padding: 11vw 0 18vw 0;
+
+    .btn-back {
+      margin: initial;
+      margin-bottom: 10.6vw;
+    }
+
+    &__container {
+      row-gap: 7.5vw;
+    }
+
+    &__title-text {
+      font-size: 5.3vw;
+    }
+
+    &__wrapper {
+      row-gap: 0;
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 50%;
+    }
+
+    &__slider {
+      width: 100%;
+      order: -1;
+      flex-direction: row;
+      column-gap: 3.2vw;
+      margin-bottom: 5.3vw;
+    }
+
+    &__slider-2 {
+      width: 71vw !important;
+      flex-shrink: 0;
+    }
+
+    &__slider-1 .swiper-wrapper {
+      flex-direction: column;
+      row-gap: inherit;
+      justify-content: space-between;
+    }
+
+    &__slider-1-slide {
+      width: 20vw !important;
+      height: 20vw;
+
+      img {
+        width: 17vw;
+        height: 14vw;
+      }
+    }
+
+    &__char {
+      width: 100%;
+      margin-bottom: 16vw;
+
+      .title {
+        font-size: 5.3vw;
+        margin-bottom: 6.4vw;
+      }
+    }
+
+    &__char-info {
+      row-gap: 4.27vw;
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    &__char-info-item {
+      &::after {
+        top: 0.6rem;
+      }
+
+      span:first-of-type {
+        margin-right: 1rem;
+      }
+
+      span:last-of-type {
+        margin-left: 1rem;
+      }
+    }
+
+    &__char-info-item-title {
+      font-size: 3.8vw;
+      line-height: 130%;
+    }
+
+    &__char-info-item-desc {
+      font-size: 3.8vw;
+      line-height: 130%;
+    }
+
+    &__char-desc {
+      column-gap: 17.5rem;
+      margin-bottom: 3rem;
+      padding: 5.3vw 0;
+      border-top: $border;
+      border-bottom: $border;
+
+      .price {
+        font-size: 3.8rem;
+        line-height: 130%;
+      }
+    }
+
+    &__char-desc-form {
+      column-gap: 3.2vw;
+      width: 100%;
+      .input-count {
+        justify-content: center;
+        border: $border;
+        width: 29vw;
+        flex-shrink: 0;
+        .input {
+          border: $border;
+          border-color: $mainColor;
+        }
+      }
+      .btn-form {
+        width: 100%;
+      }
+    }
+
+    &__char-auto {
+      padding: 3.2vw 4.27vw;
+      flex-direction: column;
+      row-gap: 3.2vw;
+    }
+
+    &__char-auto-desc {
+      column-gap: 4vw;
+    }
+
+    &__char-auto-desc-icon {
+      width: 11vw;
+      height: 10vw;
+    }
+
+    &__char-auto-desc-name {
+      font-size: 3vw;
+      line-height: 130%;
+      width: 100%;
+    }
+
+    &__char-auto-desc-btn {
+      .btn-arrows__title {
+        font-size: 4vw;
+      }
+    }
+
+    &__analogues {
+      width: 100%;
+      row-gap: 5.3vw;
+
+      .title {
+        font-size: 5.3vw;
+      }
+
+      .swiper__arrows {
+        display: none;
+      }
+    }
+
+    &__analogues-slider-wrapper {
+      row-gap: 3.2vw;
+      height: 152vw;
+    }
+
+    &__desc {
+      width: 100%;
+      order: -1;
+      margin-bottom: 16vw;
+    }
+
+    &__desc-btns {
+      width: 100%;
+      padding: 5.3vw 2.8vw;
+      border: none;
+    }
+
+    &__desc-btns-btn {
+      row-gap: 0;
+      width: 50%;
+
+      &:first-child {
+        padding-right: 0;
+      }
+
+      &.active {
+        .product__desc-btns-btn-top-title {
+          font-size: 4.8vw;
+        }
+      }
+    }
+
+    &__desc-btns-btn-search-arrow {
+      width: 4.27vw;
+      height: 4vw;
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__desc-btns-btn-top {
+      column-gap: 2.8vw;
+      align-items: flex-start;
+    }
+
+    &__desc-btns-btn-top-title {
+      font-size: 4.8vw;
+    }
+
+    &__desc-btns-btn-top-img {
+      width: 7vw;
+      height: 5.3vw;
+      flex-shrink: 0;
+      position: relative;
+      top: 1.4vw;
+    }
+
+    &__desc-text {
+      padding: 0 2.8vw 5.3vw 2.8vw;
+    }
+
+    &__desc-cont {
+      margin-bottom: 0;
+      height: 69vw;
+      width: 100%;
+    }
+
+    &__suitable-block-inner,
+    &__subsuitable-block-inner {
+      span {
+        font-size: 3.8vw;
+        line-height: 130%;
+      }
+
+      img {
+        width: 3.2vw;
+        height: 3.2vw;
+      }
+    }
+
+    &__subsuitable-block-content-item {
+      width: 49%;
+      row-gap: 0.5vw;
+
+      &:not(:last-child) {
+        margin-bottom: 2.8vw;
+      }
+
+      &-title {
+        font-size: 3.2vw;
+        line-height: 130%;
+      }
+
+      &-desc {
+        font-size: 3.2vw;
+        line-height: 130%;
+      }
+    }
+    &__desc-mob {
+      order: -1;
+      margin-bottom: 16vw;
+      flex-direction: column;
+    }
+
+    &__desc-mob-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 5.3vw;
+
+      .price {
+        color: $black;
+        font-size: 5.3vw;
+        font-weight: 700;
+        line-height: 130%;
+        font-family: Good Timing, sans-serif;
+      }
+    }
+
+    &__desc-mob-info-left {
+      display: flex;
+      column-gap: 2.8vw;
+      align-items: center;
+    }
+
+    &__desc-mob-info-left-brand {
+      width: 24vw;
+      height: 5.3vw;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__desc-mob-info-left-count {
+      display: flex;
+      align-items: center;
+      column-gap: 1.4vw;
+      div {
+        &:first-child {
+          color: $black;
+          font-size: 3.2vw;
+          font-weight: 500;
+          line-height: 130%;
+        }
+        &:last-child {
+          color: $black;
+          font-size: 4vw;
+          font-weight: 600;
+          line-height: 130%;
+        }
+      }
+    }
+  }
+
+  .main__pagination {
+    margin-top: 6.4vw;
+    span {
+      width: 8vw;
     }
   }
 }
