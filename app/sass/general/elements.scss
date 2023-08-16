@@ -7,6 +7,14 @@
   text-transform: uppercase;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
+.index {
+  z-index: 10;
+}
+
 .subtitle {
   color: $black;
   font-family: Good Timing, sans-serif;

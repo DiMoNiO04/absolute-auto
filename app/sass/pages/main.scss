@@ -183,9 +183,6 @@
 
   &-autos__item {
     img {
-      object-fit: cover;
-      width: auto;
-      height: 100%;
       &:first-child {
         display: block;
       }
@@ -759,6 +756,14 @@
       border-radius: 50%;
       bottom: 0;
       right: 24vw;
+    }
+
+    &-autos__item {
+      img {
+        object-fit: cover;
+        width: auto;
+        height: 7.5vw;
+      }
     }
   }
 }
