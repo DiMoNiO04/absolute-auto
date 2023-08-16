@@ -444,19 +444,12 @@
 
 @media screen and (max-width: 48em) {
   .main {
-    &-main__bg-2 {
-      width: 48rem;
-      height: 48rem;
-      left: -50rem;
-    }
-
     &-main__bg-1 {
       display: none;
     }
 
     &-main__search {
       width: 100%;
-      min-height: 85.3rem;
     }
 
     &-main__search-top {
@@ -482,15 +475,6 @@
     }
 
     &-main__search-btn {
-      &:first-child {
-        padding-right: 2.4rem;
-        border-width: 2px;
-      }
-
-      &:last-child {
-        margin-left: 2.4rem;
-      }
-
       &.active {
         .main-main__search-btn-title {
           font-size: 4vw;
@@ -527,7 +511,6 @@
       width: 4.27vw;
       height: 4vw;
       position: relative;
-      left: 1rem;
       img {
         height: 100%;
         width: 100%;
@@ -542,14 +525,6 @@
       .btn-form {
         width: 100%;
       }
-    }
-
-    &-main__search-form-vin {
-      padding: 1.2rem 2rem;
-      width: 100%;
-      font-size: 1.8rem;
-      line-height: 140%;
-      margin-bottom: 1.2rem;
     }
 
     &-main__container {

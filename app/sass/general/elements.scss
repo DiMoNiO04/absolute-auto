@@ -11,10 +11,6 @@
   overflow: hidden;
 }
 
-.index {
-  z-index: 10;
-}
-
 .subtitle {
   color: $black;
   font-family: Good Timing, sans-serif;
@@ -57,46 +53,6 @@ html {
       height: 2.4rem;
       margin: 0 auto;
     }
-  }
-}
-
-@media screen and (max-width: 48rem) {
-  .search {
-    padding: 3vw 4vw;
-    background: $white;
-    display: flex;
-    column-gap: 2rem;
-    position: relative;
-
-    input {
-      font-size: 3.6vw !important;
-    }
-
-    input::placeholder {
-      color: #98a0b1;
-    }
-
-    input:focus {
-      border: 0.2rem solid #4ec1c1;
-    }
-
-    button {
-      width: 10.6vw;
-      height: 10.1vw;
-
-      img {
-        width: 5.3vw;
-        height: 5.3vw;
-      }
-    }
-  }
-
-  .count {
-    font-size: 3vw;
-  }
-
-  .title {
-    font-size: 7.1vw;
   }
 }
 
@@ -209,7 +165,9 @@ main {
   }
 }
 
-@media screen and (max-width: 48em) {
+
+@media screen and (max-width: 48rem) {
+
   .count {
     font-size: 3.2vw;
   }
@@ -232,5 +190,42 @@ main {
     span {
       height: 0.5vw;
     }
+  }
+  .search {
+    padding: 3vw 4vw;
+    background: $white;
+    display: flex;
+    column-gap: 2rem;
+    position: relative;
+
+    input {
+      font-size: 3.6vw !important;
+    }
+
+    input::placeholder {
+      color: #98a0b1;
+    }
+
+    input:focus {
+      border: 0.2rem solid #4ec1c1;
+    }
+
+    button {
+      width: 10.6vw;
+      height: 10.1vw;
+
+      img {
+        width: 5.3vw;
+        height: 5.3vw;
+      }
+    }
+  }
+
+  .count {
+    font-size: 3vw;
+  }
+
+  .title {
+    font-size: 7.1vw;
   }
 }

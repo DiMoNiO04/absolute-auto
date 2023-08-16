@@ -675,12 +675,7 @@
       height: 16vw;
     }
 
-    &-desc {
-      row-gap: 0.8rem;
-    }
-
     &-desc-titles {
-      column-gap: 2.4rem;
       align-items: flex-start;
     }
 
@@ -746,18 +741,12 @@
     form {
       padding: 3vw 4vw;
       margin-top: 0 !important;
-      width: 66rem;
     }
 
     &-top {
       column-gap: 2.8vw;
-      margin-bottom: 6rem;
       width: 100%;
       align-items: flex-start;
-    }
-
-    &-content {
-      row-gap: 2rem;
     }
 
     &-content-header {
@@ -871,7 +860,6 @@
 
       &-items-item,
       &-items-header {
-        font-size: 1.8rem;
         line-height: 130%;
 
         div {

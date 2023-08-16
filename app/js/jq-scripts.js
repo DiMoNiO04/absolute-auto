@@ -213,7 +213,3 @@ $('.header__top-items-btns-btn-burger').click(function () {
   $('.main-overlay').toggleClass('active');
   $('.header').toggleClass('active');
 });
-
-// $('.header__top-items-btns-btn-burger').click(() => {
-//   $('.header__menu-mob').removeClass('active');
-// });

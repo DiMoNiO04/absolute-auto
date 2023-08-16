@@ -705,7 +705,6 @@
     }
 
     &-form-btns {
-      row-gap: 2rem;
       padding: 5.33vw 4vw 6.4vw 4vw;
 
       .btn-form {
@@ -729,12 +728,6 @@
       &:focus {
         border-color: transparent;
       }
-    }
-
-    .input-datalist-form__block,
-    .main-main__search-form-vin {
-      margin-bottom: 0;
-      padding: 1.2rem 3.2rem;
     }
   }
 }

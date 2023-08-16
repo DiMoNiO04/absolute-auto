@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var button = $('.drag-area').find('button');
 var input = $('.drag-area').find('input');

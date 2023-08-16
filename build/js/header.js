@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $('.menu-aside-mob-btn').click(function () {
   $('.menu-aside-mob').addClass('active');

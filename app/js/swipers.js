@@ -107,7 +107,6 @@ const productSliderAnalogues = new Swiper('#product__slider-3', {
     769: {
       slidesPerView: 2,
       spaceBetween: 20,
-      // allowTouchMove: false,
       navigation: {
         nextEl: '.product__analogues-top-arrows-next',
         prevEl: '.product__analogues-top-arrows-prev',

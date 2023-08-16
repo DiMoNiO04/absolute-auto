@@ -1,23 +1,23 @@
-'use strict';
+"use strict";
 
 var PAGES = {
   SHIPING_PAYMENT: 'shiping-payment.html',
   PERSONAL_CAB_IND: 'personal-cab-ind.html',
-  PERSONAL_CAB_END: 'personal-cab-ent.html',
+  PERSONAL_CAB_END: 'personal-cab-ent.html'
 };
 var CONTENT = {
   PAYMENT: 'payment',
-  PROFILE: 'profile',
+  PROFILE: 'profile'
 };
 function renderContentPage(elem) {
   $('[data-content]').removeClass('active');
-  $('[data-content='.concat(elem, ']')).addClass('active');
+  $("[data-content=".concat(elem, "]")).addClass('active');
   $('[data-open-content]').parent().removeClass('active');
-  $('[data-open-content='.concat(elem, ']')).parent().addClass('active');
+  $("[data-open-content=".concat(elem, "]")).parent().addClass('active');
 }
 function changeContent() {
   var locationArr = window.location.href.split('/');
-  var page = locationArr[4];
+  var page = locationArr[5];
   if (window.location.hash) {
     var hash = window.location.hash.slice(1);
     renderContentPage(hash);
@@ -36,7 +36,7 @@ $(document).ready(function () {
 });
 document.addEventListener('DOMContentLoaded', function () {
   var locationArr = window.location.href.split('/');
-  var page = locationArr[4].split('#')[0];
+  var page = locationArr[5].split('#')[0];
   if (page === PAGES.SHIPING_PAYMENT) {
     $('.menu-aside-mob__btn-name').text($('.shiping__content.active').find('.title').text());
   }

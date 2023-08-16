@@ -31,20 +31,20 @@
 @import './pages/catalog.scss';
 @import './pages/product.scss';
 
-.desc {
+.--desc {
   display: flex;
 }
 
-.mob {
+.--mob {
   display: none;
 }
 
 @media screen and (max-width: 48em) {
-  .desc {
+  .--desc {
     display: none;
   }
 
-  .mob {
+  .--mob {
     display: flex;
   }
 }

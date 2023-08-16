@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $('.input__slide-btn').change(function () {
   if ($(this).parent().find('.input__slide-toggle').is(':checked')) {
@@ -17,8 +17,6 @@ function toggleButtonInput(elem) {
 $('.input__block').each(function () {
   var input = $(this).find('input');
   var button = $(this).find('button');
-  // toggleButtonInput(input);
-
   if (input.attr('type') === 'email' || input.attr('type') === 'text' || input.attr('type') === 'phone') {
     button.hide();
     input.on('input', function () {
@@ -77,13 +75,10 @@ $('.input-datalist-form__blocks').on('click', function (event) {
     var option = targetContainer.find('option');
     var formBtn = targetContainer.parent().parent().find('.btn-form');
     var formRes = targetContainer.parent().parent().find('.form-btn-reset');
-    targetContainer
-      .parent()
-      .find('.input-datalist-form')
-      .each(function () {
-        $(this).find('.input-datalist-form__list').not(datalist).slideUp();
-        $(this).find('.input-datalist-form__block').not(inputMainBlock).removeClass('active');
-      });
+    targetContainer.parent().find('.input-datalist-form').each(function () {
+      $(this).find('.input-datalist-form__list').not(datalist).slideUp();
+      $(this).find('.input-datalist-form__block').not(inputMainBlock).removeClass('active');
+    });
     datalist.slideToggle();
     inputMainBlock.toggleClass('active');
     datalist.find('option').each(function () {
@@ -123,12 +118,9 @@ $('.input-datalist-form__blocks').on('click', function (event) {
       datalist.slideUp(200);
       changeDisableButton(inputBlock, formRes, formBtn);
       if (inputBlock.parent().parent()[0].classList[0] === 'main-main__search-form') {
-        inputBlock
-          .parent()
-          .find('.input-datalist-form:not(:first)')
-          .each(function () {
-            $(this).not().slideUp();
-          });
+        inputBlock.parent().find('.input-datalist-form:not(:first)').each(function () {
+          $(this).not().slideUp();
+        });
       }
     });
   }

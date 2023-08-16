@@ -10,10 +10,6 @@
     margin: initial;
   }
 
-  // .card__btn-buy {
-  // 	display: flex;
-  // }
-
   &__container {
     display: flex;
     justify-content: space-between;
@@ -280,49 +276,20 @@
 
     &__main-basket-item {
       margin-top: 2.8vw;
-      padding: 2rem 2.4rem;
-
-      .count {
-        width: 15%;
-        padding-right: 1rem;
-      }
-
-      .input-count {
-        width: 16%;
-        padding-right: 1rem;
-      }
-
-      .price {
-        width: 14%;
-        padding-right: 1rem;
-      }
     }
 
     &__main-basket-item-img {
       width: 40vw;
-      margin-right: 2.4rem;
       height: 40vw;
       flex-shrink: 0;
     }
 
     &__main-basket-item-desc {
       width: 36%;
-      padding-right: 1rem;
-    }
-
-    &__main-basket-item-desc-link {
-      font-size: 2rem;
-      line-height: 140%;
-    }
-
-    &__main-basket-item-desc-title {
-      font-size: 1.8rem;
-      line-height: 140%;
     }
 
     &__main-basket-item-del {
       width: 7%;
-
       button {
         margin: auto 0 auto auto;
       }

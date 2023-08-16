@@ -484,9 +484,6 @@ input:focus:-ms-input-placeholder {
 
   .input {
     &-address {
-      row-gap: 2rem;
-      margin-top: 2.4rem;
-
       &__inputs {
         flex-direction: column;
         row-gap: 2.8vw;
@@ -511,8 +508,6 @@ input:focus:-ms-input-placeholder {
     }
 
     &-radio {
-      margin-bottom: 2rem;
-
       &:not(:last-child) {
         margin-bottom: 5.3vw;
       }
@@ -520,15 +515,6 @@ input:focus:-ms-input-placeholder {
       &__inp {
         column-gap: 3.2vw;
         padding: 3.6vw 2.8vw;
-
-        input:checked {
-          & ~ label::after {
-            width: 30rem;
-            height: 50rem;
-            right: 0;
-            top: -12rem;
-          }
-        }
 
         label {
           font-size: 4.2vw;
@@ -549,11 +535,6 @@ input:focus:-ms-input-placeholder {
         flex-direction: column-reverse;
         row-gap: 4vw;
 
-        a svg {
-          width: 2.4rem;
-          height: 2.4rem;
-        }
-
         button svg {
           width: 5.3vw;
           height: 5.3vw;
@@ -570,10 +551,6 @@ input:focus:-ms-input-placeholder {
         width: 7.5vw;
         height: 7.5vw;
       }
-    }
-
-    &-checkbox {
-      margin: 0 0 5rem 0;
     }
 
     &-checkbox span {
@@ -597,7 +574,6 @@ input:focus:-ms-input-placeholder {
     &__block {
       column-gap: 4vw;
       padding: 3.2vw 5.33vw 3.2vw 4vw;
-      margin-bottom: 1rem;
     }
 
     &__block-arrow {
@@ -606,7 +582,6 @@ input:focus:-ms-input-placeholder {
     }
 
     &__block-input {
-      height: 4.3rem;
       width: 100%;
       font-size: 4.27vw;
       line-height: 130%;
@@ -626,8 +601,6 @@ input:focus:-ms-input-placeholder {
 
     &__list {
       top: 17vw;
-      padding: 1rem 2rem 1rem 1.5rem;
-      column-gap: 2rem;
     }
 
     &__list-datalist {
