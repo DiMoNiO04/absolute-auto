@@ -81,6 +81,7 @@
     padding: 2rem 4rem;
     &-icon {
       background: url('../img/icon/catalog-btn.svg') no-repeat center;
+      background-size: cover;
       width: 2.4rem;
       height: 2.4rem;
     }
@@ -97,6 +98,7 @@
     &.active {
       .header__bottom-btn-icon {
         background: url('../img/icon/close-white.svg') no-repeat center;
+        background-size: cover;
       }
     }
   }
@@ -401,8 +403,9 @@
   position: absolute;
   left: 0;
   background: $background;
-  top: 12rem;
+  top: 10rem;
   display: none;
+  z-index: 10;
 
   &-btn {
     position: absolute;
@@ -422,6 +425,11 @@
     padding-right: 2rem;
     border-right: $border;
     width: fit-content;
+  }
+
+  &-btn {
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
   &-menu-btn {
@@ -466,6 +474,11 @@
 
   &-menu-btn-arrow {
     transform: rotate(-90deg);
+    width: 2.4rem;
+    height: 2.4rem;
+    img {
+      object-fit: cover;
+    }
   }
 
   &-content-title {
@@ -528,7 +541,7 @@
   padding: 4.8rem 18rem 4.8rem 16rem;
   &-items {
     display: flex;
-    column-gap: 2.5rem;
+    column-gap: 2rem;
     row-gap: 2.5rem;
     flex-wrap: wrap;
   }
@@ -545,6 +558,9 @@
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 130%;
+    img {
+      display: none;
+    }
   }
 
   &-items-item-list {
@@ -849,7 +865,6 @@
     }
 
     &-items-item {
-      row-gap: 6.4vw;
       width: 100%;
     }
 
@@ -863,6 +878,7 @@
         width: 4.8vw;
         height: 4.8vw;
         transition: all 0.2s ease-in-out;
+        display: block;
       }
       &.active {
         img {
@@ -873,6 +889,7 @@
     }
 
     &-items-item-list {
+      padding-top: 6.4vw;
       row-gap: 4.27vw;
       max-height: 80vw;
 
@@ -899,8 +916,8 @@
   .header__menu-mob {
     background: $background;
     width: 100%;
-    height: calc(100% - 31vw);
-    top: 31vw;
+    height: calc(100% - 22rem);
+    top: 22rem;
     left: 0;
     position: fixed;
     z-index: 10;
@@ -913,6 +930,20 @@
 
     &.active {
       transform: translateX(0);
+    }
+
+    &-btns {
+      display: flex;
+      -webkit-column-gap: 5.3vw;
+      column-gap: 5.3vw;
+      width: 100%;
+      // overflow-x: scroll;
+      button {
+        font-size: 4vw;
+        line-height: 130%;
+        color: $black;
+        font-weight: 600;
+      }
     }
 
     &-ul {
@@ -942,7 +973,7 @@
       &.active {
         border: $border;
         background: rgba(255, 255, 255, 0.35);
-        .header__menu-mob-item-inner-arrow {
+        .header__menu-mob-item-inner-arrow img {
           transform: rotate(180deg);
           transition: all 0.2s ease-in-out;
         }
@@ -977,6 +1008,9 @@
       height: 4vw;
       flex-shrink: 0;
       transition: all 0.2s ease-in-out;
+      img {
+        transition: all 0.2s ease-in-out;
+      }
     }
 
     &-item-content {

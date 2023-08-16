@@ -570,7 +570,10 @@ input:focus:-ms-input-placeholder {
   }
 
   .input-datalist-form {
-    padding: 2vw 0;
+    padding: 0 0 2vw 0;
+    &:first-child {
+      padding-top: 2vw;
+    }
     &__block {
       column-gap: 4vw;
       padding: 3.2vw 5.33vw 3.2vw 4vw;

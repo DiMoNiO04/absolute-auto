@@ -165,9 +165,15 @@ main {
   }
 }
 
+button,
+a,
+label,
+input {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
 
 @media screen and (max-width: 48rem) {
-
   .count {
     font-size: 3.2vw;
   }
