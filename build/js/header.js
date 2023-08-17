@@ -1,7 +1,4 @@
-"use strict";
-
-var _this = void 0;
-$(document).ready(function () {
+$(document).ready(() => {
   // Клик на кнопки в меню выбора детелей
   $('.details-buttons button').click(function () {
     $('.details-content').fadeIn(500);
@@ -9,16 +6,19 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.main-overlay').addClass('active');
     $('.header').addClass('active');
+
     $('.catalog-desc-content').fadeOut(200);
     $('.catalog-open-desc').removeClass('active');
+
     $('.header__menu-mob').removeClass('active');
     $('.burger-open').removeClass('active');
+
     $('.panel-button-mob-content').fadeOut(200);
     $('.panel-button-mob button').removeClass('active');
   });
 
   // Клик на закрытие меню выбора деталей
-  $('.close-details').click(function () {
+  $('.close-details').click(() => {
     $('.details-content').fadeOut();
     $('.main-overlay').removeClass('active');
     $('.header').removeClass('active');
@@ -32,12 +32,13 @@ $(document).ready(function () {
     $('.main-overlay').addClass('active');
     $('.header').addClass('active');
     $('.catalog-desc-content').addClass('active');
+
     $('.details-content').fadeOut(200);
     $('.details-buttons button').removeClass('active');
   });
 
   // Клик на кнопку закрытия категории
-  $('.header__bottom-category-close').click(function () {
+  $('.header__bottom-category-close').click(() => {
     $('.catalog-desc-content').fadeToggle();
     $('.catalog-open-desc').toggleClass('active');
     $('.main-overlay').toggleClass('active');
@@ -50,6 +51,7 @@ $(document).ready(function () {
     if (event.currentTarget.classList.value !== 'active') {
       $('.panel-button-desc button').not($(this)).removeClass('active');
       $(this).addClass('active');
+
       $('.panel-button-desc-content').not($(this).siblings('.panel-button-desc-content')).fadeOut(200);
       $(this).siblings('.panel-button-desc-content').fadeIn(500);
     } else {
@@ -57,12 +59,15 @@ $(document).ready(function () {
       $(this).next().fadeOut(250);
     }
   });
-  $('body').click(function (event) {
+
+  $('body').click((event) => {
     if (event.target.classList.value === 'main-overlay active') {
       $('.catalog-desc-content').fadeOut(200);
       $('.catalog-open-desc').removeClass('active');
+
       $('.details-content').fadeOut(200);
       $('.details-buttons button').removeClass('active');
+
       $('.main-overlay').removeClass('active');
       $('.header').removeClass('active');
     }
@@ -79,12 +84,12 @@ $(document).ready(function () {
   });
 
   // Открыть каталог в моб
-  $('.catalog-open-mob').click(function () {
+  $('.catalog-open-mob').click(() => {
     $('.catalog-open-mob-content').addClass('active');
   });
 
   // Закрыть каталог в моб
-  $('.catalog-close-mob').click(function () {
+  $('.catalog-close-mob').click(() => {
     $('.catalog-open-mob-content').removeClass('active');
   });
 
@@ -93,32 +98,36 @@ $(document).ready(function () {
     if (event.currentTarget.classList.value !== 'active') {
       $('.panel-button-mob button').not($(this)).removeClass('active');
       $(this).addClass('active');
+
       $('.panel-button-mob-content').not($(this).siblings('.panel-button-mob-content')).fadeOut(200);
       $(this).siblings('.panel-button-mob-content').fadeIn(500);
     } else {
       $(this).removeClass('active');
       $(this).next().fadeOut(200);
     }
+
     $('.details-content').fadeOut(200);
     $('.details-buttons button').removeClass('active');
     $('.main-overlay').removeClass('active');
     $('.header').removeClass('active');
   });
+
   if (window.innerWidth <= 768) {
     $('.header__bottom-menu-items-item').each(function () {
-      var more = $(this).find('.header__bottom-menu-items-item-title');
-      var hide = $(this).find('.header__bottom-menu-items-item-list');
+      const more = $(this).find('.header__bottom-menu-items-item-title');
+      const hide = $(this).find('.header__bottom-menu-items-item-list');
       hide.hide();
-      more.click(function () {
+      more.click(() => {
         hide.slideToggle();
         more.toggleClass('active');
       });
     });
   }
-  $(window).resize(function () {
+
+  $(window).resize(() => {
     if (window.innerWidth >= 768 && $('.header__menu-mob').hasClass('active')) {
       $(document.body).removeClass('hidden');
-      $(_this).removeClass('active');
+      $(this).removeClass('active');
       $('.header__menu-mob').removeClass('active');
       $('.burger-open').removeClass('active');
       $('.main-overlay').removeClass('active');
