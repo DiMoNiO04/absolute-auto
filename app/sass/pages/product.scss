@@ -2,6 +2,10 @@
   position: relative;
   padding: 6rem 0 15rem;
 
+  .toggle-block-content {
+    display: block;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -467,6 +471,26 @@
     }
   }
 
+  &__like {
+    width: 4.4rem;
+    height: 4.4rem;
+    background: $mainColor;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    top: 3rem;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.active {
+      background: $white;
+      svg path {
+        fill: $mainColor;
+      }
+    }
+  }
+
   .main__pagination {
     margin-top: 4rem;
   }
@@ -479,6 +503,18 @@
     .btn-back {
       margin: initial;
       margin-bottom: 10.6vw;
+    }
+
+    &__like {
+      background: transparent;
+      top: 4.27vw;
+      left: inherit;
+      right: 4.27vw;
+      &.active {
+        svg path {
+          fill: $mainColor;
+        }
+      }
     }
 
     &__container {

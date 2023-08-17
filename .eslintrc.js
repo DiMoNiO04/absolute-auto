@@ -16,5 +16,6 @@ module.exports = {
     'consistent-return': 'off',
     'no-unused-vars': 'off',
     'prefer-destructuring': 'off',
+    'no-restricted-globals': 'off',
   },
 };

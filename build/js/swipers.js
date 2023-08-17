@@ -7,6 +7,7 @@ $(document).ready(function () {
         300: {
           slidesPerView: 2,
           slidesPerColumn: 2,
+          watchSlidesProgress: true,
           grid: {
             rows: 2,
           },
@@ -18,6 +19,7 @@ $(document).ready(function () {
         768: {
           slidesPerView: 6,
           slidesPerColumn: 2,
+          watchSlidesProgress: true,
           grid: {
             rows: 2,
           },
@@ -51,6 +53,7 @@ $(document).ready(function () {
         769: {
           slidesPerView: 2,
           spaceBetween: 20,
+          watchSlidesProgress: true,
           navigation: {
             nextEl: '.product__analogues-top-arrows-next',
             prevEl: '.product__analogues-top-arrows-prev',

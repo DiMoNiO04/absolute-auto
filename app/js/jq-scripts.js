@@ -15,45 +15,6 @@ $(document).ready(() => {
     $(`[data-block-entrance="${$(this).data('block-entrance-btn')}"`).fadeIn(1000);
   });
 
-  if (window.innerWidth >= 768) {
-    $('.your-order__list-item-main-desc-title').text(function (i, text) {
-      let txt = text;
-      if (txt.length >= 30) {
-        txt = txt.substring(0, 50);
-        txt = `${txt.substring(0, 50)}...`;
-      }
-      $(this).text(txt);
-    });
-
-    $('.search input').text(function (i, text) {
-      let txt = $(this).attr('placeholder');
-      if (txt.length >= 30) {
-        txt = txt.substring(0, 35);
-        txt = `${txt.substring(0, 35)}...`;
-      }
-      console.log(txt);
-      $(this).attr('placeholder', txt);
-    });
-  }
-
-  $('.click-toggle').each(function () {
-    $(this).on('click', function () {
-      $(this).toggleClass('active');
-    });
-  });
-
-  $('.card__btn-buy').each(function () {
-    const modal = $(this).parent().parent().parent().parent().find('.card__modal');
-
-    modal.fadeOut(1000);
-
-    $(this).on('click', function () {
-      $(this).removeClass('active');
-      $(this).next().addClass('active');
-      modal.fadeIn(1000);
-    });
-  });
-
   $('.number-plus').each(function () {
     $(this).on('click', function () {
       let count = Number($(this).prev().val());
@@ -69,17 +30,6 @@ $(document).ready(() => {
         value -= 1;
         $(this).next().val(value);
       }
-    });
-  });
-
-  $('.catalog__item-form-block').each(function () {
-    const more = $(this).find('.catalog__item-form-block-inner');
-    const hide = $(this).find('.catalog__item-form-block-content');
-    hide.hide();
-    more.click(() => {
-      hide.slideToggle();
-      hide.toggleClass('active');
-      more.toggleClass('active');
     });
   });
 
@@ -103,16 +53,6 @@ $(document).ready(() => {
     });
   });
 
-  $('.product__subsuitable-block').each(function () {
-    const more = $(this).find('.product__subsuitable-block-inner');
-    const hide = $(this).find('.product__subsuitable-block-content');
-    hide.hide();
-    more.click(() => {
-      hide.slideToggle();
-      more.toggleClass('active');
-    });
-  });
-
   $('.pers-cab__fill-history-content').each(function () {
     $(this)
       .find($('.pers-cab__fill-history-content-item'))
@@ -125,6 +65,40 @@ $(document).ready(() => {
           more.toggleClass('active');
         });
       });
+  });
+
+  $('.click-toggle').each(function () {
+    $(this).on('click', function () {
+      $(this).toggleClass('active');
+    });
+  });
+
+  $('.toggle-block').each(function () {
+    const more = $(this).find('.toggle-block-inner');
+    const hide = $(this).find('.toggle-block-content');
+    hide.hide();
+    more.click(() => {
+      hide.slideToggle();
+      more.toggleClass('active');
+    });
+  });
+
+  $('.card__btn-buy').each(function () {
+    const modal = $(this).parent().parent().parent().parent().find('.card__modal');
+
+    modal.fadeOut(1000);
+
+    $(this).on('click', function () {
+      $(this).removeClass('active');
+      $(this).next().addClass('active');
+      modal.fadeIn(1000);
+    });
+  });
+
+  $('.choose-auto__change').each(function () {
+    $(this).click(function () {
+      $(this).next().slideToggle();
+    });
   });
 
   $('.history-order__content-title-desc').on('click', function () {
@@ -164,56 +138,66 @@ $(document).ready(() => {
       }
     });
 
-  $('.choose-auto__change').each(function () {
-    $(this).click(function () {
-      $(this).next().slideToggle();
-    });
-  });
+  function setPlaceholderInput() {
+    const defaultPlaceholder = 'Поиск по VIN номеру, названию, OEM номеру, артикулу';
 
-  if (window.innerWidth <= 768) {
-    $('.pers-cab__fill-garage-item').on('touchstart', function () {
-      $(this).toggleClass('active');
-    });
-    $('.basket__main-basket-item').on('touchstart', function (event) {
-      if ($(event.target).parent()[0].tagName !== 'BUTTON') {
-        $(this).toggleClass('active');
+    $('.search input').text(function (i, text) {
+      if (window.innerWidth <= 768) {
+        let placeholder = $(this).attr('placeholder');
+        if (placeholder.length >= 30) {
+          placeholder = placeholder.substring(0, 35);
+          placeholder = `${placeholder.substring(0, 35)}...`;
+          $(this).attr('placeholder', placeholder);
+        }
+      } else {
+        $(this).attr('placeholder', defaultPlaceholder);
       }
     });
   }
 
-  if (window.innerWidth <= 768) {
-    $('.header__bottom-menu-items-item').each(function () {
-      const more = $(this).find('.header__bottom-menu-items-item-title');
-      const hide = $(this).find('.header__bottom-menu-items-item-list');
-      hide.hide();
-      more.click(() => {
-        hide.slideToggle();
-        more.toggleClass('active');
-      });
+  function setTextOrderCard() {
+    $('.your-order__list-item-main-desc-title').text(function (i, text) {
+      let txt = text;
+      if (txt.length >= 30) {
+        txt = txt.substring(0, 50);
+        txt = `${txt.substring(0, 50)}...`;
+      }
+      $(this).text(txt);
     });
   }
 
-  $(window).resize(() => {
-    if (window.innerWidth <= 768) {
-      $('.header__bottom-menu-items-item').each(function () {
-        const more = $(this).find('.header__bottom-menu-items-item-title');
-        const hide = $(this).find('.header__bottom-menu-items-item-list');
-        hide.hide();
-        more.click(() => {
-          hide.slideToggle();
-          more.toggleClass('active');
-        });
-      });
-    } else {
-      $('.header__bottom-menu-items-item').each(function () {
-        const more = $(this).find('.header__bottom-menu-items-item-title');
-        const hide = $(this).find('.header__bottom-menu-items-item-list');
-        hide.show();
-        more.off('click', () => {
-          hide.slideToggle();
-          more.toggleClass('active');
-        });
-      });
+  function touchstartBasketCard() {
+    if ($(event.target).parent()[0].tagName !== 'BUTTON') {
+      $(this).toggleClass('active');
     }
+  }
+
+  function touchstartGarageCard() {
+    if (
+      $(event.target).parent()[0].tagName !== 'A' &&
+      $(event.target).parent()[0].className !== 'pers-cab__fill-garage-btns' &&
+      $(event.target).parent()[0].tagName !== 'BUTTON'
+    ) {
+      $(this).toggleClass('active');
+    }
+  }
+
+  function resizeFuncs() {
+    if (window.innerWidth <= 768) {
+      $('.pers-cab__fill-garage-item').on('touchstart', touchstartGarageCard);
+      $('.basket__main-basket-item').on('touchstart', touchstartBasketCard);
+    } else {
+      $('.pers-cab__fill-garage-item').off('touchstart', touchstartGarageCard);
+      $('.basket__main-basket-item').off('touchstart', touchstartBasketCard);
+      setTextOrderCard();
+    }
+  }
+
+  setPlaceholderInput();
+  resizeFuncs();
+
+  $(window).resize(() => {
+    setPlaceholderInput();
+    resizeFuncs();
   });
 });

@@ -16,8 +16,14 @@
     }
   }
 
-  .sort__arrow {
+  &__arrow {
     transition: all 0.2s ease-in-out;
+    width: 2.4rem;
+    height: 2.4rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__icon {
@@ -28,6 +34,7 @@
     align-items: center;
     justify-content: center;
     background-image: url('../img/icon/sort.svg');
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;

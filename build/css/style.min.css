@@ -307,6 +307,11 @@ input[type='number'] {
   line-height: 130%;
   text-transform: uppercase;
 }
+.toggle-block-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .hidden {
   overflow: hidden;
 }
@@ -4288,9 +4293,7 @@ input:focus:-ms-input-placeholder {
   border: 0.2rem dashed #4ec1c1;
   background: rgba(255, 255, 255, 0.75);
 }
-.choose-auto__change-icon img,
-.drag-area__icon,
-.shiping__content-wrap li img {
+.drag-area__icon {
   width: 2.4rem;
   height: 2.4rem;
 }
@@ -4460,43 +4463,55 @@ input:focus:-ms-input-placeholder {
   top: -0.9rem;
   right: -1rem;
 }
-.sort,
+.sort {
+  position: relative;
+  width: 33.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.2rem;
+  background-color: #fff;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+.sort.active .sort__arrow,
+.sort__arrow {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.sort.active .sort__arrow {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.sort__arrow {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.sort__arrow img {
+  width: 100%;
+  height: 100%;
+}
 .sort__icon {
+  width: 4.3rem;
+  height: 4.3rem;
+  background-color: #4ec1c1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-.sort {
-  position: relative;
-  width: 33.5rem;
-  -webkit-column-gap: 1.5rem;
-  -moz-column-gap: 1.5rem;
-  column-gap: 1.5rem;
-  padding: 1.2rem;
-  background-color: #fff;
-  margin-bottom: 1.2rem;
-  cursor: pointer;
-}
-.sort.active .sort__arrow {
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-.sort .sort__arrow,
-.sort.active .sort__arrow {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.sort__icon {
-  width: 4.3rem;
-  height: 4.3rem;
-  background-color: #4ec1c1;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-image: url(../img/icon/sort.svg);
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -4632,6 +4647,11 @@ input:focus:-ms-input-placeholder {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.choose-auto__change-icon img,
+.shiping__content-wrap li img {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 .choose-auto__change-text {
   color: #fff;
@@ -5463,6 +5483,7 @@ input:focus:-ms-input-placeholder {
     width: 4.27vw;
     height: 4vw;
     position: relative;
+    left: 1.2vw;
   }
   .main-main__search-arrow img {
     height: 100%;
@@ -7120,6 +7141,12 @@ input:focus:-ms-input-placeholder {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin: auto 0 auto auto;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.pers-cab__fill-history-content-item-inner div:nth-child(6) button img {
+  width: 100%;
+  height: 100%;
 }
 .pers-cab__fill-history-btn {
   margin-top: 4rem !important;
@@ -7427,6 +7454,8 @@ input:focus:-ms-input-placeholder {
   .pers-cab__fill-garage-desc-titles-btn {
     width: 4.27vw;
     height: 4.27vw;
+    position: relative;
+    z-index: 10;
   }
   .pers-cab__fill-garage-desc-titles-title {
     font-size: 4vw;
@@ -8444,6 +8473,9 @@ input:focus:-ms-input-placeholder {
   position: relative;
   padding: 6rem 0 15rem;
 }
+.product .toggle-block-content {
+  display: block;
+}
 .product__container,
 .product__title {
   display: -webkit-box;
@@ -8950,6 +8982,31 @@ input:focus:-ms-input-placeholder {
   font-weight: 500;
   line-height: 140%;
 }
+.product__like {
+  width: 4.4rem;
+  height: 4.4rem;
+  background: #4ec1c1;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  top: 3rem;
+  left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.product__like.active {
+  background: #fff;
+}
+.product__like.active svg path {
+  fill: #4ec1c1;
+}
 .product .main__pagination {
   margin-top: 4rem;
 }
@@ -8960,6 +9017,15 @@ input:focus:-ms-input-placeholder {
   .product .btn-back {
     margin: initial;
     margin-bottom: 10.6vw;
+  }
+  .product__like {
+    background: 0 0;
+    top: 4.27vw;
+    left: inherit;
+    right: 4.27vw;
+  }
+  .product__like.active svg path {
+    fill: #4ec1c1;
   }
   .product__container {
     row-gap: 7.5vw;
