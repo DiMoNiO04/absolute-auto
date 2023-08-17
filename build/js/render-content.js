@@ -1,19 +1,19 @@
-'use strict';
+"use strict";
 
 var PAGES = {
   SHIPING_PAYMENT: 'shiping-payment.html',
   PERSONAL_CAB_IND: 'personal-cab-ind.html',
-  PERSONAL_CAB_END: 'personal-cab-ent.html',
+  PERSONAL_CAB_END: 'personal-cab-ent.html'
 };
 var CONTENT = {
   PAYMENT: 'payment',
-  PROFILE: 'profile',
+  PROFILE: 'profile'
 };
 function renderContentPage(elem) {
   $('[data-content]').removeClass('active');
-  $('[data-content='.concat(elem, ']')).addClass('active');
+  $("[data-content=".concat(elem, "]")).addClass('active');
   $('[data-open-content]').parent().removeClass('active');
-  $('[data-open-content='.concat(elem, ']')).parent().addClass('active');
+  $("[data-open-content=".concat(elem, "]")).parent().addClass('active');
 }
 function changeContent() {
   var locationArr = window.location.href.split('/');

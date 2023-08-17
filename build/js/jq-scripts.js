@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   $('[data-open-block]').on('click', function () {
     $('[data-open-block]').removeClass('active');
-    $('[data-open-block="'.concat($(this).data('open-block'), '"')).addClass('active');
+    $("[data-open-block=\"".concat($(this).data('open-block'), "\"")).addClass('active');
     $('[data-block]').removeClass('active');
-    $('[data-block="'.concat($(this).data('open-block'), '"')).addClass('active');
+    $("[data-block=\"".concat($(this).data('open-block'), "\"")).addClass('active');
   });
   $('[data-block-entrance-btn').on('click', function () {
     $('[data-block-entrance-btn]').removeClass('active');
-    $('[data-block-entrance-btn="'.concat($(this).data('block-entrance-btn'), '"')).addClass('active');
+    $("[data-block-entrance-btn=\"".concat($(this).data('block-entrance-btn'), "\"")).addClass('active');
     $('[data-block-entrance]').hide();
-    $('[data-block-entrance="'.concat($(this).data('block-entrance-btn'), '"')).fadeIn(1000);
+    $("[data-block-entrance=\"".concat($(this).data('block-entrance-btn'), "\"")).fadeIn(1000);
   });
   $('.number-plus').each(function () {
     $(this).on('click', function () {
@@ -48,17 +48,15 @@ $(document).ready(function () {
     });
   });
   $('.pers-cab__fill-history-content').each(function () {
-    $(this)
-      .find($('.pers-cab__fill-history-content-item'))
-      .each(function () {
-        var more = $(this).find('.pers-cab__fill-history-content-item-inner');
-        var hide = $(this).find('.pers-cab__fill-history-content-item-content');
-        hide.hide();
-        more.click(function () {
-          hide.slideToggle();
-          more.toggleClass('active');
-        });
+    $(this).find($('.pers-cab__fill-history-content-item')).each(function () {
+      var more = $(this).find('.pers-cab__fill-history-content-item-inner');
+      var hide = $(this).find('.pers-cab__fill-history-content-item-content');
+      hide.hide();
+      more.click(function () {
+        hide.slideToggle();
+        more.toggleClass('active');
       });
+    });
   });
   $('.click-toggle').each(function () {
     $(this).on('click', function () {
@@ -107,25 +105,20 @@ $(document).ready(function () {
   $('.sort__datalist option').each(function () {
     var datalist = $(this).parent();
     $(this).on('click', function () {
-      $(this)
-        .parent()
-        .find('option')
-        .each(function () {
-          $(this).removeClass('active');
-        });
+      $(this).parent().find('option').each(function () {
+        $(this).removeClass('active');
+      });
       $(this).addClass('active');
       $(this).parent().parent().find('input').val($(this).val());
     });
   });
-  $('.your-order')
-    .find('.btn-form')
-    .each(function () {
-      if ($(this).attr('disabled') === 'disabled') {
-        $(this).next().fadeOut();
-      } else {
-        $(this).next().fadeIn();
-      }
-    });
+  $('.your-order').find('.btn-form').each(function () {
+    if ($(this).attr('disabled') === 'disabled') {
+      $(this).next().fadeOut();
+    } else {
+      $(this).next().fadeIn();
+    }
+  });
   function setPlaceholderInput() {
     var defaultPlaceholder = 'Поиск по VIN номеру, названию, OEM номеру, артикулу';
     $('.search input').text(function (i, text) {
@@ -133,7 +126,7 @@ $(document).ready(function () {
         var placeholder = $(this).attr('placeholder');
         if (placeholder.length >= 30) {
           placeholder = placeholder.substring(0, 35);
-          placeholder = ''.concat(placeholder.substring(0, 35), '...');
+          placeholder = "".concat(placeholder.substring(0, 35), "...");
           $(this).attr('placeholder', placeholder);
         }
       } else {
@@ -146,7 +139,7 @@ $(document).ready(function () {
       var txt = text;
       if (txt.length >= 30) {
         txt = txt.substring(0, 50);
-        txt = ''.concat(txt.substring(0, 50), '...');
+        txt = "".concat(txt.substring(0, 50), "...");
       }
       $(this).text(txt);
     });
@@ -157,11 +150,7 @@ $(document).ready(function () {
     }
   }
   function touchstartGarageCard() {
-    if (
-      $(event.target).parent()[0].tagName !== 'A' &&
-      $(event.target).parent()[0].className !== 'pers-cab__fill-garage-btns' &&
-      $(event.target).parent()[0].tagName !== 'BUTTON'
-    ) {
+    if ($(event.target).parent()[0].tagName !== 'A' && $(event.target).parent()[0].className !== 'pers-cab__fill-garage-btns' && $(event.target).parent()[0].tagName !== 'BUTTON') {
       $(this).toggleClass('active');
     }
   }
