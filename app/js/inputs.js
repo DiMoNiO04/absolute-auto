@@ -95,6 +95,7 @@ $(document).ready(() => {
 
       datalist.slideToggle();
       inputMainBlock.toggleClass('active');
+      $('.choose-auto__history').slideUp();
 
       datalist.find('option').each(function () {
         $(this).on('click', function () {

@@ -1477,13 +1477,13 @@ label {
     border-right: 2px solid rgba(255, 255, 255, 0.8);
     border-color: #f0f1f5;
   }
-  .header__top-items-btns-btn-burger div {
+  .header .burger-open div {
     background: url(../img/icon/burger-blue.svg) no-repeat center;
     width: 5.3vw;
     height: 5.3vw;
     background-size: cover;
   }
-  .header__top-items-btns-btn-burger.active div {
+  .header .burger-open.active div {
     background: url(../img/icon/close-blue.svg);
     width: 5.3vw;
     height: 5.3vw;

@@ -84,8 +84,13 @@ $(document).ready(function () {
     });
   });
   $('.choose-auto__change').each(function () {
-    $(this).click(function () {
+    $(this).click(function (event) {
+      if (event.currentTarget.className !== 'choose-auto__change .active') {
+        $('.input-datalist-form__list').slideUp();
+        $('.input-datalist-form__block').removeClass('active');
+      }
       $(this).next().slideToggle();
+      $(this).toggleClass('active');
     });
   });
   $('.history-order__content-title-desc').on('click', function () {
