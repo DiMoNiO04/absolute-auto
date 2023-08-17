@@ -973,7 +973,22 @@ input {
 
 .number-minus,
 .number-plus {
-  width: 1.4rem;
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.number-minus img,
+.number-plus img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media screen and (max-width: 48em) {
@@ -1006,7 +1021,13 @@ input {
   }
   .number-minus,
   .number-plus {
-    width: 2.8vw;
+    width: 8vw;
+    height: 8vw;
+  }
+  .number-minus img,
+  .number-plus img {
+    width: 3vw;
+    height: 3vw;
   }
 }
 .header {
@@ -2813,12 +2834,14 @@ input:focus:-ms-input-placeholder {
   display: none;
 }
 .input-count {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 1.2rem;
-     -moz-column-gap: 1.2rem;
-          column-gap: 1.2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: -1rem;
 }
 .input-count input {
   border: 2px solid rgba(255, 255, 255, 0.8);
@@ -3117,11 +3140,6 @@ input:focus:-ms-input-placeholder {
   .input-radio__panel button svg {
     width: 5.3vw;
     height: 5.3vw;
-  }
-  .input-count {
-    -webkit-column-gap: 2.8vw;
-       -moz-column-gap: 2.8vw;
-            column-gap: 2.8vw;
   }
   .input-count input {
     font-size: 4.27vw;
@@ -4251,7 +4269,7 @@ input:focus:-ms-input-placeholder {
           justify-content: space-between;
 }
 .card__content {
-  padding: 2rem 2rem 3.2rem 2rem;
+  padding: 2rem;
   background: #ffffff;
   max-width: 29.5rem;
   height: 100%;
@@ -4347,7 +4365,7 @@ input:focus:-ms-input-placeholder {
       -ms-flex-pack: start;
           justify-content: flex-start;
   display: none;
-  height: 2.3rem;
+  height: 4rem;
 }
 .card__btn-buy .btn-arrows__title {
   color: #2c2a3b;
@@ -4404,10 +4422,6 @@ input:focus:-ms-input-placeholder {
   font-weight: 700;
   border: 0;
   height: 2.3rem;
-}
-.card .input-count .number-minus,
-.card .input-count .number-plus {
-  width: 1.2rem;
 }
 .card .input-count.active {
   display: -webkit-box;
@@ -5105,7 +5119,7 @@ input:focus:-ms-input-placeholder {
   position: absolute;
   background: #ffffff;
   top: 9rem;
-  z-index: 10;
+  z-index: 2;
   padding: 2rem;
   display: none;
 }

@@ -9,7 +9,7 @@
   }
 
   &__content {
-    padding: 2rem 2rem 3.2rem 2rem;
+    padding: 2rem;
     background: $white;
     max-width: 29.5rem;
     height: 100%;
@@ -94,7 +94,7 @@
     column-gap: 1.2rem;
     justify-content: flex-start;
     display: none;
-    height: 2.3rem;
+    height: 4rem;
     .btn-arrows__title {
       color: $black;
       font-family: Gilroy, sans-serif;
@@ -146,11 +146,6 @@
       font-weight: 700;
       border: 0;
       height: 2.3rem;
-    }
-
-    .number-minus,
-    .number-plus {
-      width: 1.2rem;
     }
 
     &.active {

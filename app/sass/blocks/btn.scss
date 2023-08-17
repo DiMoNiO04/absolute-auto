@@ -101,7 +101,15 @@
 
 .number-minus,
 .number-plus {
-  width: 1.4rem;
+  width: 4rem;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 48em) {
@@ -141,6 +149,11 @@
 
   .number-minus,
   .number-plus {
-    width: 2.8vw;
+    width: 8vw;
+		height: 8vw;
+		img {
+			width: 3vw;
+			height: 3vw;
+		}
   }
 }
