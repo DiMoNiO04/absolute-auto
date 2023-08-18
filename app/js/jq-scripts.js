@@ -205,4 +205,12 @@ $(document).ready(() => {
     setPlaceholderInput();
     resizeFuncs();
   });
+
+  $('.choose-auto-open').click(() => {
+    $('.choose__auto-mob').addClass('active');
+  });
+
+  $('.choose__auto-mob-close').click(() => {
+    $('.choose__auto-mob').removeClass('active');
+  });
 });

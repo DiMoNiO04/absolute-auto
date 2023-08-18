@@ -112,7 +112,7 @@
     position: absolute;
     top: 11rem;
     left: calc(50% - 20rem / 2);
-    z-index: 10;
+    z-index: 2;
     display: none;
   }
 
@@ -212,8 +212,8 @@
     }
 
     &__modal {
-      top: 20vw;
-      left: calc(50% - 21vw);
+      top: 16vw;
+      left: calc(50% - 20vw);
     }
 
     &__modal-content {
@@ -236,11 +236,6 @@
         font-weight: 700;
         border: 0;
         height: 3.2vw;
-      }
-
-      .number-minus,
-      .number-plus {
-        width: 2.8vw;
       }
     }
   }

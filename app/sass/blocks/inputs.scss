@@ -570,7 +570,7 @@ input:focus:-ms-input-placeholder {
   }
 
   .input-datalist-form {
-    padding: 0 0 2vw 0;
+    padding: 2vw 0 2vw 0;
     &:first-child {
       padding-top: 2vw;
     }
@@ -604,6 +604,7 @@ input:focus:-ms-input-placeholder {
 
     &__list {
       top: 17vw;
+      padding: 2.8vw 5.3vw;
     }
 
     &__list-datalist {
