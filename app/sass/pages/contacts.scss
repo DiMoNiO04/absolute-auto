@@ -77,6 +77,16 @@
     font-weight: 700;
     line-height: 140%;
     width: 25%;
+    flex-shrink: 0;
+  }
+
+  .phone {
+    color: $mainColor;
+    &:hover {
+      color: $black;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
   }
 
   &-contact__contact-items-item-link {
@@ -89,7 +99,7 @@
 
   &-contact__contact-items-item-desc {
     color: $black;
-    font-size: 1, 8rem;
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 130%;
     span {
@@ -97,7 +107,13 @@
         margin-bottom: 1rem;
       }
     }
-    width: 23%;
+    width: 30%;
+  }
+
+  &-contact__contact-items-item-info {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
   }
 
   a:hover {
@@ -123,6 +139,105 @@
       font-size: 1.8rem;
       font-weight: 500;
       line-height: 140%;
+    }
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .contacts {
+    padding: 10.6vw 0 24vw 0;
+
+    &-address {
+      margin-bottom: 24vw;
+    }
+
+    &-address__top {
+      flex-direction: column;
+      margin-bottom: 10.6vw;
+      row-gap: 7.5vw;
+      align-items: flex-start;
+
+      &-text {
+        row-gap: 7.5vw;
+        flex-direction: column;
+      }
+
+      p,
+      a {
+        font-size: 3.8vw;
+        line-height: 140%;
+      }
+    }
+
+    &-address__map {
+      width: 100%;
+      height: 132vw;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-contacts__container {
+      flex-direction: column;
+      row-gap: 7.5vw;
+    }
+
+    &-contact__contact {
+      width: 100%;
+    }
+
+    &-contact__contact-items {
+      margin-bottom: 16vw;
+    }
+
+    &-contact__contact-items-item {
+      padding: 3.2vw 0;
+      column-gap: 8vw;
+    }
+
+    &-contact__contact-items-item-info {
+      flex-direction: column;
+      row-gap: 7.5vw;
+    }
+
+    &-contact__contact-items-item-title {
+      font-size: 4.27vw;
+      width: 18%;
+    }
+
+    &-contact__contact-items-item-link {
+      font-size: 4.27vw;
+      width: 100%;
+    }
+
+    &-contact__contact-items-item-desc {
+      font-size: 4.27vw;
+
+      span {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      width: 100%;
+    }
+
+    &-contact__contact-info {
+      .title {
+        font-size: 5.3vw;
+        margin-bottom: 5.3vw;
+      }
+
+      ul {
+        row-gap: 4vw;
+        width: 100%;
+      }
+
+      li {
+        font-size: 4vw;
+        line-height: 130%;
+      }
     }
   }
 }
