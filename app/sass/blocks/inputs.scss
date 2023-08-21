@@ -268,6 +268,7 @@ input:focus:-ms-input-placeholder {
     input {
       border: $border;
       border-color: $mainColor;
+			border-width: 0.2rem;
       color: $black;
       text-align: center;
       font-size: 1.8rem;

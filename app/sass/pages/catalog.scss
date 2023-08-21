@@ -284,6 +284,12 @@
     }
   }
 
+				    &__btns-pagination-next,
+				    &__btns-pagination-prev {
+				    	width: 2.4rem;
+				    	height: 2.4rem;
+				    }
+
   &__btns-pagination-number {
     width: 3rem;
     display: flex;

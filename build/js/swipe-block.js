@@ -1,22 +1,21 @@
-const swipeBlocks = document.querySelectorAll('.swipe-block');
-let startX;
-let endX;
+"use strict";
 
-swipeBlocks.forEach((swipeBlock) => {
-  swipeBlock.addEventListener('touchstart', (event) => {
+var swipeBlocks = document.querySelectorAll('.swipe-block');
+var startX;
+var endX;
+swipeBlocks.forEach(function (swipeBlock) {
+  swipeBlock.addEventListener('touchstart', function (event) {
     startX = event.touches[0].clientX;
   });
-
-  swipeBlock.addEventListener('touchmove', (event) => {
+  swipeBlock.addEventListener('touchmove', function (event) {
     endX = event.touches[0].clientX;
-    const diff = startX - endX;
+    var diff = startX - endX;
     if (diff > 0) {
-      swipeBlock.style.left = `-${diff}px`;
+      swipeBlock.style.left = "-".concat(diff, "px");
     }
   });
-
-  swipeBlock.addEventListener('touchend', () => {
-    const diff = startX - endX;
+  swipeBlock.addEventListener('touchend', function () {
+    var diff = startX - endX;
     if (diff > 100) {
       swipeBlock.style.left = '-27vw';
     } else {
