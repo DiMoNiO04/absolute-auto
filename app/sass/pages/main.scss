@@ -1,8 +1,18 @@
+#swipe-block {
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease-out;
+  width: 100px;
+  height: 100px;
+  background: black;
+  /* добавляем плавный переход при изменении свойства left */
+}
+
 .main {
   &-main {
     position: relative;
     border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
-    z-index: 2;
+    z-index: 3;
   }
 
   &-main__bg-2 {
@@ -19,15 +29,16 @@
     z-index: 0;
     overflow: hidden;
     left: 0rem;
-    height: 127%;
+    height: calc(100% + 23rem);
     top: -23rem;
-    opacity: 0.5;
+    opacity: 0.6;
     width: 100%;
+    background-image: url('../img/backgrounds/main.svg');
+    background-size: cover;
   }
 
   &-main__search {
-    width: 66rem;
-    min-height: 85.3rem;
+    width: 60rem;
     background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(5rem);
   }
@@ -141,7 +152,7 @@
   }
 
   &-main__right {
-    margin: auto auto 0 auto;
+    margin: 8rem auto 0 auto;
     position: relative;
   }
 
@@ -165,6 +176,8 @@
 
   &-autos {
     position: relative;
+    z-index: 1;
+    background: $background;
   }
 
   &-autos__container {
@@ -178,7 +191,7 @@
     padding: 4rem 0;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 6;
   }
 
   &-autos__item {
@@ -298,6 +311,7 @@
     filter: blur(25rem);
     right: 0;
     top: -10rem;
+    z-index: 1;
   }
 
   &-brands__container {
@@ -313,15 +327,13 @@
   }
 
   &-brands__swiper-wrapper {
-    height: 52rem;
-    row-gap: 3rem;
-    column-gap: 3rem;
+    height: 55rem;
   }
 
   &-brands__swiper-slide {
     border: 0.2rem solid rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.35);
-    width: 24rem !important;
+    width: auto;
     height: 22rem;
     display: flex;
     align-items: center;
@@ -647,13 +659,11 @@
     }
 
     &-brands__swiper-wrapper {
-      height: 79vw;
-      row-gap: 2.8vw;
-      column-gap: 2.8vw;
+      height: 83vw;
     }
 
     &-brands__swiper-slide {
-      width: 45vw !important;
+      width: auto !important;
       height: 38vw;
       animation: a 1s;
 

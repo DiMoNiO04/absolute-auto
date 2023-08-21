@@ -6,6 +6,7 @@ $(document).ready(() => {
           slidesPerView: 2,
           slidesPerColumn: 2,
           watchSlidesProgress: true,
+          spaceBetween: 10,
           grid: {
             rows: 2,
           },
@@ -18,6 +19,7 @@ $(document).ready(() => {
           slidesPerView: 6,
           slidesPerColumn: 2,
           watchSlidesProgress: true,
+          spaceBetween: 30,
           grid: {
             rows: 2,
           },

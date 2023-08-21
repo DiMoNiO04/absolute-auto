@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -3039,6 +3040,7 @@ input:focus:-ms-input-placeholder {
   border: 0.4rem solid #f0f1f5;
   position: relative;
   left: -1rem;
+  border-radius: 4px;
 }
 .input-datalist-form__list-datalist option {
   background-color: #ffffff;
@@ -5741,10 +5743,21 @@ input:focus:-ms-input-placeholder {
     border-bottom: none;
   }
 }
+#swipe-block {
+  position: relative;
+  left: 0;
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+  width: 100px;
+  height: 100px;
+  background: black;
+  /* добавляем плавный переход при изменении свойства left */
+}
+
 .main-main {
   position: relative;
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
-  z-index: 2;
+  z-index: 3;
 }
 .main-main__bg-2 {
   width: 48rem;
@@ -5760,14 +5773,15 @@ input:focus:-ms-input-placeholder {
   z-index: 0;
   overflow: hidden;
   left: 0rem;
-  height: 127%;
+  height: calc(100% + 23rem);
   top: -23rem;
-  opacity: 0.5;
+  opacity: 0.6;
   width: 100%;
+  background-image: url("../img/backgrounds/main.svg");
+  background-size: cover;
 }
 .main-main__search {
-  width: 66rem;
-  min-height: 85.3rem;
+  width: 60rem;
   background: rgba(255, 255, 255, 0.35);
   -webkit-backdrop-filter: blur(5rem);
           backdrop-filter: blur(5rem);
@@ -5900,7 +5914,7 @@ input:focus:-ms-input-placeholder {
   color: #98a0b1;
 }
 .main-main__right {
-  margin: auto auto 0 auto;
+  margin: 8rem auto 0 auto;
   position: relative;
 }
 .main-main__container {
@@ -5924,6 +5938,8 @@ input:focus:-ms-input-placeholder {
 }
 .main-autos {
   position: relative;
+  z-index: 1;
+  background: #eaebf0;
 }
 .main-autos__container {
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
@@ -5943,7 +5959,7 @@ input:focus:-ms-input-placeholder {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 6;
 }
 .main-autos__item img:first-child {
   display: block;
@@ -6058,6 +6074,7 @@ input:focus:-ms-input-placeholder {
   filter: blur(25rem);
   right: 0;
   top: -10rem;
+  z-index: 1;
 }
 .main-brands__container {
   display: -webkit-box;
@@ -6079,16 +6096,12 @@ input:focus:-ms-input-placeholder {
           justify-content: space-between;
 }
 .main-brands__swiper-wrapper {
-  height: 52rem;
-  row-gap: 3rem;
-  -webkit-column-gap: 3rem;
-     -moz-column-gap: 3rem;
-          column-gap: 3rem;
+  height: 55rem;
 }
 .main-brands__swiper-slide {
   border: 0.2rem solid rgba(255, 255, 255, 0.8);
   background: rgba(255, 255, 255, 0.35);
-  width: 24rem !important;
+  width: auto;
   height: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6422,14 +6435,10 @@ input:focus:-ms-input-placeholder {
     display: none;
   }
   .main-brands__swiper-wrapper {
-    height: 79vw;
-    row-gap: 2.8vw;
-    -webkit-column-gap: 2.8vw;
-       -moz-column-gap: 2.8vw;
-            column-gap: 2.8vw;
+    height: 83vw;
   }
   .main-brands__swiper-slide {
-    width: 45vw !important;
+    width: auto !important;
     height: 38vw;
     -webkit-animation: a 1s;
             animation: a 1s;

@@ -17,5 +17,6 @@ module.exports = {
     'no-unused-vars': 'off',
     'prefer-destructuring': 'off',
     'no-restricted-globals': 'off',
+    'no-param-reassign': 'off',
   },
 };

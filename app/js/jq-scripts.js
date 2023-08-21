@@ -139,29 +139,8 @@ $(document).ready(() => {
     });
   }
 
-  function touchstartBasketCard() {
-    if ($(event.target).parent()[0].tagName !== 'BUTTON') {
-      $(this).toggleClass('active');
-    }
-  }
-
-  function touchstartGarageCard() {
-    if (
-      $(event.target).parent()[0].tagName !== 'A' &&
-      $(event.target).parent()[0].className !== 'pers-cab__fill-garage-btns' &&
-      $(event.target).parent()[0].tagName !== 'BUTTON'
-    ) {
-      $(this).toggleClass('active');
-    }
-  }
-
   function resizeFuncs() {
-    if (window.innerWidth <= 768) {
-      $('.pers-cab__fill-garage-item').on('touchstart', touchstartGarageCard);
-      $('.basket__main-basket-item').on('touchstart', touchstartBasketCard);
-    } else {
-      $('.pers-cab__fill-garage-item').off('touchstart', touchstartGarageCard);
-      $('.basket__main-basket-item').off('touchstart', touchstartBasketCard);
+    if (window.innerWidth >= 768) {
       setTextOrderCard();
     }
   }
