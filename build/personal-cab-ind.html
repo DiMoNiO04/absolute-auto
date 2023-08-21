@@ -2047,22 +2047,34 @@
                         <img src="./img/icon/search.svg" alt="" />
                       </button>
                     </form>
-                    <div class="sort">
+                    <div class="select-sort">
+                      <div class="sort__icon --desc"></div>
+                      <input class="select-sort__input" type="hidden" value="Популярные" name="" />
+                      <div class="select-sort__head --desc">
+                        <span>По умолчанию</span>
+                      </div>
+                      <ul class="select-sort__list --desc" style="display: none">
+                        <li class="select-sort__item active">Популярные</li>
+                        <li class="select-sort__item">Новинки</li>
+                        <li class="select-sort__item">Самые дешевые</li>
+                        <li class="select-sort__item">Самые дорогие</li>
+                      </ul>
+                      <ul class="select-sort__list --mob">
+                        <li class="select-sort__item active">Популярные</li>
+                        <li class="select-sort__item">Новинки</li>
+                        <li class="select-sort__item">Самые дешевые</li>
+                        <li class="select-sort__item">Самые дорогие</li>
+                      </ul>
+                      <button type="button" class="select-sort__close --mob">
+                        <img src="./img/icon/close-black.svg" alt="" />
+                      </button>
+                      <div class="sort__arrow --desc">
+                        <img src="./img/icon/arrow-left-blue.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="sort --mob">
                       <div class="sort__icon"></div>
-                      <input
-                        readonly
-                        class="sort__input"
-                        autocomplete="off"
-                        role="combobox"
-                        list=""
-                        name="brands"
-                        value="По дате (сначала новые)"
-                      />
-                      <datalist class="sort__datalist" datalist role="listbox" style="display: none">
-                        <option value="По дате (сначала новые)" class="active">По дате (сначала новые)</option>
-                        <option value="По дате (сначала старые)">По дате (сначала старые)</option>
-                        <option value="По статусу">По статусу</option>
-                      </datalist>
                       <div class="sort__arrow">
                         <img src="./img/icon/arrow-left-blue.svg" alt="" />
                       </div>

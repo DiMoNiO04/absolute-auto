@@ -5,6 +5,35 @@
     margin: initial;
   }
 
+  .select-sort {
+    column-gap: 2rem;
+    max-width: 33.5rem;
+    background: $white;
+    padding: 1rem 1.2rem;
+    &.active {
+      .sort__arrow {
+        transform: rotate(-90deg);
+        transition: all 0.2;
+      }
+      img {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  .sort__arrow {
+    transition: all 0.2;
+  }
+
+  .select-sort__head {
+    width: 100%;
+  }
+
+  .sort__icon,
+  .sort__arrow {
+    flex-shrink: 0;
+  }
+
   &__container {
     display: flex;
     column-gap: 3rem;
@@ -568,6 +597,11 @@
       row-gap: 8.5vw;
       padding: 5.3vw 0 24vw 0;
       flex-direction: column;
+    }
+
+    .select-sort {
+      max-width: 100%;
+      background: $background;
     }
 
     form {

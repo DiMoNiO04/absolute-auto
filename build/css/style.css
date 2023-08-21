@@ -7710,6 +7710,36 @@ input:focus:-ms-input-placeholder {
 .pers-cab .btn-arrows {
   margin: initial;
 }
+.pers-cab .select-sort {
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  max-width: 33.5rem;
+  background: #ffffff;
+  padding: 1rem 1.2rem;
+}
+.pers-cab .select-sort.active .sort__arrow {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: all 0.2;
+  transition: all 0.2;
+}
+.pers-cab .select-sort.active img {
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+.pers-cab .sort__arrow {
+  -webkit-transition: all 0.2;
+  transition: all 0.2;
+}
+.pers-cab .select-sort__head {
+  width: 100%;
+}
+.pers-cab .sort__icon,
+.pers-cab .sort__arrow {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
 .pers-cab__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8346,6 +8376,10 @@ input:focus:-ms-input-placeholder {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .pers-cab .select-sort {
+    max-width: 100%;
+    background: #eaebf0;
   }
   .pers-cab form {
     margin-top: 7.5vw;
