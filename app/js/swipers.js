@@ -83,7 +83,6 @@ $(document).ready(() => {
         },
         769: {
           slidesPerView: 6,
-          spaceBetween: 20,
           allowTouchMove: false,
           watchSlidesProgress: true,
           navigation: {

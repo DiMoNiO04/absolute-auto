@@ -1,18 +1,27 @@
 .choose-auto {
-  padding: 2rem 3.2rem;
-  background: rgba(255, 255, 255, 0.35);
-  display: flex;
-  align-items: center;
-  column-gap: 2rem;
-  position: relative;
-  border: $border;
+  &__form {
+    padding: 2rem 3.2rem;
+    background: rgba(255, 255, 255, 0.35);
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    position: relative;
+    border: $border;
 
-  .input-datalist-form {
-    width: 36rem;
+    .input-datalist-form {
+      width: 36rem;
 
-    .input-datalist-form__block {
-      margin-bottom: 0;
+      .input-datalist-form__block {
+        margin-bottom: 0;
+      }
     }
+  }
+
+  &__form-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.6rem;
   }
 
   &__change-arrow {
@@ -25,7 +34,7 @@
     }
   }
 
-  &__change {
+  &__form-change-btn {
     padding: 1rem 2rem;
     background: $mainColor;
     display: flex;
@@ -34,7 +43,7 @@
     width: 29.6rem;
   }
 
-  &__change-icon {
+  &__form-change-btn-icon {
     width: 4.3rem;
     height: 4.3rem;
     background: $white;
@@ -47,7 +56,7 @@
       height: 2.4rem;
     }
   }
-  &__change-text {
+  &__form-change-btn-text {
     color: $white;
     font-size: 1.6rem;
     font-weight: 600;
@@ -159,9 +168,25 @@
 
 @media screen and (max-width: 48em) {
   .choose-auto {
-    padding: 6.4vw 2.8vw;
+    background: $background;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    padding: 0 2.8vw 10.6vw 2.8vw;
     flex-direction: column;
-    row-gap: 2.8vw;
+    row-gap: 6.4vw;
+    overflow: scroll;
+    transform: translateX(100%);
+    justify-content: space-between;
+    transition: 0.2s all linear;
+    margin: 0;
+
+    &.active {
+      transform: translateX(0);
+    }
 
     .input-datalist-form {
       width: 100%;
@@ -172,6 +197,11 @@
       .input-datalist-form {
         width: 100%;
       }
+    }
+
+    &__inputs {
+      flex-direction: column;
+      width: 100%;
     }
 
     &__btn {
@@ -185,13 +215,61 @@
       }
     }
 
-    &__change {
-      padding: 2.8vw;
-      column-gap: 3.2vw;
+    &__close {
+      width: 5.3vw;
+      height: 5.3vw;
+      position: absolute;
+      top: 5.3vw;
+      right: 5.3vw;
+    }
+
+    &__form {
+      margin-top: 16vw;
+      display: flex;
+      flex-direction: column;
+      min-height: 90%;
+      height: fit-content;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+      border: 0;
+      padding: 0;
+      background: none;
+      row-gap: 8vw;
+    }
+
+    &__form-inputs {
+      flex-direction: column;
       width: 100%;
     }
 
-    &__change-icon {
+    &__form-change {
+      width: 100%;
+    }
+
+    &__form-change-btn {
+      padding: 2.8vw;
+      column-gap: 3.2vw;
+      width: 100%;
+      &.active {
+        .choose-auto__form-change-btn-arrow {
+          transform: rotate(270deg);
+        }
+      }
+    }
+
+    &__form-change-btn-arrow {
+      width: 5.3vw;
+      height: 5.3vw;
+      transition: all 0.2s ease-in-out;
+      transform: rotate(90deg);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__form-change-btn-icon {
       width: 9vw;
       height: 9vw;
 
@@ -201,16 +279,21 @@
       }
     }
 
-    &__change-text {
+    &__form-change-btn-text {
       font-size: 3.8vw;
       line-height: 130%;
+      width: 75%;
+    }
+
+    &__change-btn {
+      width: 100%;
     }
 
     &__history {
-      top: 22vw;
-      left: 3vw;
-      padding: 2.8vw;
-      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+      position: relative;
+      top: 0;
+      left: 0;
+      box-shadow: none;
     }
 
     &__history-item {
@@ -228,6 +311,11 @@
       }
     }
 
+    .input-datalist-form__list {
+      position: relative;
+      top: 0;
+    }
+
     &__history-item-text {
       font-size: 3.6vw;
       line-height: 120%;
@@ -240,6 +328,59 @@
 
       img {
         object-fit: cover;
+      }
+    }
+
+    &__btns {
+      display: flex;
+      column-gap: 2.8vw;
+      width: 100%;
+    }
+
+    &__btns-reset,
+    &__btns-submit {
+      padding: 7.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 5.3vw;
+      width: 46vw;
+
+      span {
+        font-family: Gilroy, sans-serif;
+        font-size: 4vw;
+        font-weight: 700;
+        line-height: 110%;
+      }
+
+      img {
+        width: 6.5vw;
+      }
+
+      &:disabled {
+        opacity: 0.4;
+        cursor: auto;
+      }
+    }
+
+    &__btns-reset {
+      background: $white;
+      span {
+        color: $black;
+      }
+    }
+
+    &__btns-submit {
+      background: $mainColor;
+      span {
+        color: $white;
+      }
+    }
+
+    .input-datalist-form {
+      padding-top: 0;
+      &:first-child {
+        padding-top: 2.8vw;
       }
     }
   }

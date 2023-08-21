@@ -1,27 +1,20 @@
-$(document).ready(() => {
-  $('.select').on('click', '.select__head', function () {
-    if ($(this).hasClass('open')) {
-      $(this).removeClass('open');
-      $(this).next().fadeOut();
-    } else {
-      $('.select__head').removeClass('open');
-      $('.select__list').fadeOut();
-      $(this).addClass('open');
-      $(this).next().fadeIn();
-    }
-  });
+///-------------------
+$('.select-sort__close').on('click', () => {
+  $('.select-sort').removeClass('active');
+});
 
-  $('.select').on('click', '.select__item', function () {
-    $('.select__head').removeClass('open');
-    $(this).parent().fadeOut();
-    $(this).parent().prev().text($(this).text());
-    $(this).parent().prev().prev().val($(this).text());
-  });
+$('.select-sort__head').on('click', () => {
+  $('.select-sort__list.--desc').slideToggle();
+  $('.select-sort').toggleClass('active');
+});
 
-  $(document).click((e) => {
-    if (!$(e.target).closest('.select').length) {
-      $('.select__head').removeClass('open');
-      $('.select__list').fadeOut();
-    }
-  });
+$('.select-sort__item').on('click', function () {
+  $('.select-sort.--mob').toggleClass('active');
+  $('.select-sort__list.--desc').slideUp();
+
+  $('.select-sort__item').not($(this)).removeClass('active');
+  $(this).addClass('active');
+  $('.select-sort__head span').html($(this).text());
+  $('.select-sort__input').val($(this).text());
+  $('.select-sort').toggleClass('active');
 });

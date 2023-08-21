@@ -148,7 +148,6 @@
           color: $mainColor;
           &::before {
             content: '';
-            position: absolute;
             background: url('../img/icon/arrow-blue.svg');
             background-size: cover;
             width: 1rem;
@@ -172,10 +171,6 @@
 
     .btn-back {
       margin: auto auto 10.6vw 0;
-    }
-
-    .choose-auto {
-      display: none;
     }
 
     padding: 5.3vw 0 24vw 0;

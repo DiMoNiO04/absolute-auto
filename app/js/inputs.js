@@ -82,8 +82,8 @@ $(document).ready(() => {
       const inputReset = targetContainer.find('.input-datalist-form__list-reset');
       const inputMainBlock = targetContainer.find('.input-datalist-form__block');
       const option = targetContainer.find('option');
-      const formBtn = targetContainer.parent().parent().find('.btn-form');
-      const formRes = targetContainer.parent().parent().find('.form-btn-reset');
+      const formBtn = targetContainer.parent().parent().parent().find('.btn-form');
+      const formRes = targetContainer.parent().parent().parent().find('.form-btn-reset');
 
       targetContainer
         .parent()
@@ -102,7 +102,7 @@ $(document).ready(() => {
         $(this).on('click', function () {
           input.val($(this).html());
           inputBlock.addClass('checked');
-          if (inputBlock.parent().parent()[0].classList[0] === 'main-main__search-form') {
+          if (inputBlock.parent().parent()[0].classList[0] === 'main-main__search-form-inputs') {
             inputBlock.next().fadeIn(1000);
           }
 
@@ -142,7 +142,7 @@ $(document).ready(() => {
 
         changeDisableButton(inputBlock, formRes, formBtn);
 
-        if (inputBlock.parent().parent()[0].classList[0] === 'main-main__search-form') {
+        if (inputBlock.parent().parent()[0].classList[0] === 'main-main__search-form-inputs') {
           inputBlock
             .parent()
             .find('.input-datalist-form:not(:first)')

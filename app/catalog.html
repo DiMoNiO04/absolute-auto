@@ -18,157 +18,174 @@
         <div class="left-body__bg"></div>
         <div class="right-body__bg"></div>
         <div class="container">
-          <div class="bread-crumbs --desc">
+          <div class="bread-crumbs">
             <a href="./main.html">Главная</a>
             <a href="./category-go.html">Двигатель</a>
             <a href="#">Детали двигателя</a>
             <a href="#">Маслосъемные колпачки</a>
           </div>
-          <a href="#" class="btn-back btn-arrows --mob">
-            <div class="btn-arrows__title">Вернуться назад</div>
-            <div class="btn-arrows__img"></div>
-          </a>
-          <form method="#" action="#" id="choose-car" class="choose-auto">
-            <button type="button" class="choose-auto__change">
-              <div class="choose-auto__change-icon">
-                <img src="./img/icon/driving.svg" alt="" />
-              </div>
-              <span class="choose-auto__change-text"> Ваш гараж </span>
+          <div class="choose-auto">
+            <button type="button" class="choose-auto__close --mob">
+              <img src="./img/icon/close-blue.svg" alt="" />
             </button>
+            <form method="#" action="#" id="choose-car" class="choose-auto__form">
+              <div class="choose-auto__form-inputs">
+                <div class="choose-auto__form-change">
+                  <button type="button" class="choose-auto__form-change-btn">
+                    <div class="choose-auto__form-change-btn-icon">
+                      <img src="./img/icon/driving.svg" alt="" />
+                    </div>
+                    <span class="choose-auto__form-change-btn-text"> Ваш гараж </span>
+                    <div class="choose-auto__form-change-btn-arrow --mob">
+                      <img src="./img/icon/arrow-white.svg" alt="" />
+                    </div>
+                  </button>
 
-            <div class="choose-auto__history">
-              <div class="choose-auto__history-item active">
-                <button type="button" class="choose-auto__history-item-icon">
-                  <img src="./img/icon/arrow-white.svg" alt="" />
-                </button>
-                <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                <button type="button" class="choose-auto__history-item-btn">
-                  <img src="./img/icon/close-small.svg" alt="" />
-                </button>
-              </div>
-              <div class="choose-auto__history-item">
-                <button type="button" class="choose-auto__history-item-icon">
-                  <img src="./img/icon/arrow-white.svg" alt="" />
-                </button>
-                <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                <button type="button" class="choose-auto__history-item-btn">
-                  <img src="./img/icon/close-small.svg" alt="" />
-                </button>
-              </div>
-              <div class="choose-auto__history-item">
-                <button type="button" class="choose-auto__history-item-icon">
-                  <img src="./img/icon/arrow-white.svg" alt="" />
-                </button>
-                <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                <button type="button" class="choose-auto__history-item-btn">
-                  <img src="./img/icon/close-small.svg" alt="" />
-                </button>
-              </div>
-            </div>
-
-            <div class="input-datalist-form__blocks">
-              <div class="input-datalist-form">
-                <div class="input-datalist-form__block">
-                  <div class="input-datalist-form__block-icon">01</div>
-                  <input
-                    class="input-datalist-form__block-input"
-                    autocomplete="off"
-                    role="combobox"
-                    list=""
-                    name="brands"
-                    placeholder="Марка"
-                  />
-                  <div class="input-datalist-form__block-arrow">
-                    <img src="./img/icon/arrow-blue.svg" alt="" />
+                  <div class="choose-auto__history">
+                    <div class="choose-auto__history-item active">
+                      <button type="button" class="choose-auto__history-item-icon">
+                        <img src="./img/icon/arrow-white.svg" alt="" />
+                      </button>
+                      <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
+                      <button type="button" class="choose-auto__history-item-btn">
+                        <img src="./img/icon/close-small.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="choose-auto__history-item">
+                      <button type="button" class="choose-auto__history-item-icon">
+                        <img src="./img/icon/arrow-white.svg" alt="" />
+                      </button>
+                      <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
+                      <button type="button" class="choose-auto__history-item-btn">
+                        <img src="./img/icon/close-small.svg" alt="" />
+                      </button>
+                    </div>
+                    <div class="choose-auto__history-item">
+                      <button type="button" class="choose-auto__history-item-icon">
+                        <img src="./img/icon/arrow-white.svg" alt="" />
+                      </button>
+                      <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
+                      <button type="button" class="choose-auto__history-item-btn">
+                        <img src="./img/icon/close-small.svg" alt="" />
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <div class="input-datalist-form__list" style="display: none">
-                  <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                    <button type="button" class="input-datalist-form__list-reset">Марка</button>
-                    <option value="Acura">Acura</option>
-                    <option value="Audi">Audi</option>
-                    <option value="Alfa Romeo">Alfa Romeo</option>
-                    <option value="Bentley">Bentley</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Cadilac">Cadilac</option>
-                    <option value="Chery">Chery</option>
-                    <option value="Lada">Lada</option>
-                    <option value="Porsche">Porsche</option>
-                    <option value="Mazda">Mazda</option>
-                    <option value="Lamborgini">Lamborgini</option>
-                    <option value="Bentley">Bentley</option>
-                    <option value="Volkswagen">Volkswagen</option>
-                  </datalist>
-                </div>
-              </div>
 
-              <div class="input-datalist-form">
-                <div class="input-datalist-form__block">
-                  <div class="input-datalist-form__block-icon">02</div>
-                  <input
-                    class="input-datalist-form__block-input"
-                    autocomplete="off"
-                    role="combobox"
-                    list=""
-                    name="models"
-                    placeholder="Модель"
-                  />
-                  <div class="input-datalist-form__block-arrow">
-                    <img src="./img/icon/arrow-blue.svg" alt="" />
+                <div class="input-datalist-form__blocks">
+                  <div class="input-datalist-form">
+                    <div class="input-datalist-form__block">
+                      <div class="input-datalist-form__block-icon">01</div>
+                      <input
+                        class="input-datalist-form__block-input"
+                        autocomplete="off"
+                        role="combobox"
+                        list=""
+                        name="brands"
+                        placeholder="Марка"
+                      />
+                      <div class="input-datalist-form__block-arrow">
+                        <img src="./img/icon/arrow-blue.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="input-datalist-form__list" style="display: none">
+                      <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                        <button type="button" class="input-datalist-form__list-reset">Марка</button>
+                        <option value="Acura">Acura</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Bentley">Bentley</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Cadilac">Cadilac</option>
+                        <option value="Chery">Chery</option>
+                        <option value="Lada">Lada</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Lamborgini">Lamborgini</option>
+                        <option value="Bentley">Bentley</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                      </datalist>
+                    </div>
+                  </div>
+
+                  <div class="input-datalist-form">
+                    <div class="input-datalist-form__block">
+                      <div class="input-datalist-form__block-icon">02</div>
+                      <input
+                        class="input-datalist-form__block-input"
+                        autocomplete="off"
+                        role="combobox"
+                        list=""
+                        name="models"
+                        placeholder="Модель"
+                      />
+                      <div class="input-datalist-form__block-arrow">
+                        <img src="./img/icon/arrow-blue.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="input-datalist-form__list" style="display: none">
+                      <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                        <button type="button" class="input-datalist-form__list-reset">Модель</button>
+                        <option value="A3">A3</option>
+                        <option value="A4">A4</option>
+                        <option value="A6">A6</option>
+                        <option value="A8">A8</option>
+                        <option value="Q5">Q5</option>
+                        <option value="Q7">Q7</option>
+                        <option value="RS6">RS6</option>
+                        <option value="RS6C6">RS6C6</option>
+                      </datalist>
+                    </div>
+                  </div>
+
+                  <div class="input-datalist-form">
+                    <div class="input-datalist-form__block">
+                      <div class="input-datalist-form__block-icon">03</div>
+                      <input
+                        class="input-datalist-form__block-input"
+                        autocomplete="off"
+                        role="combobox"
+                        list=""
+                        name="engine"
+                        placeholder="Двигатель"
+                      />
+                      <div class="input-datalist-form__block-arrow">
+                        <img src="./img/icon/arrow-blue.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="input-datalist-form__list" style="display: none">
+                      <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                        <button class="input-datalist-form__list-reset">Двигатель</button>
+                        <option value="1.6 Дизель">1.6 Дизель</option>
+                        <option value="2.0 Бензин">2.0 Бензин</option>
+                        <option value="1.9 Безин">1.9 Безин</option>
+                        <option value="1.6 Бензин">1.6 Бензин</option>
+                        <option value="1.6 Дизель">1.6 Дизель</option>
+                        <option value="2.0 Бензин">2.0 Бензин</option>
+                        <option value="1.9 Безин">1.9 Безин</option>
+                        <option value="1.6 Бензин">1.6 Бензин</option>
+                      </datalist>
+                    </div>
                   </div>
                 </div>
-                <div class="input-datalist-form__list" style="display: none">
-                  <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                    <button type="button" class="input-datalist-form__list-reset">Модель</button>
-                    <option value="A3">A3</option>
-                    <option value="A4">A4</option>
-                    <option value="A6">A6</option>
-                    <option value="A8">A8</option>
-                    <option value="Q5">Q5</option>
-                    <option value="Q7">Q7</option>
-                    <option value="RS6">RS6</option>
-                    <option value="RS6C6">RS6C6</option>
-                  </datalist>
-                </div>
               </div>
-
-              <div class="input-datalist-form">
-                <div class="input-datalist-form__block">
-                  <div class="input-datalist-form__block-icon">03</div>
-                  <input
-                    class="input-datalist-form__block-input"
-                    autocomplete="off"
-                    role="combobox"
-                    list=""
-                    name="engine"
-                    placeholder="Двигатель"
-                  />
-                  <div class="input-datalist-form__block-arrow">
-                    <img src="./img/icon/arrow-blue.svg" alt="" />
-                  </div>
-                </div>
-                <div class="input-datalist-form__list" style="display: none">
-                  <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                    <button class="input-datalist-form__list-reset">Двигатель</button>
-                    <option value="1.6 Дизель">1.6 Дизель</option>
-                    <option value="2.0 Бензин">2.0 Бензин</option>
-                    <option value="1.9 Безин">1.9 Безин</option>
-                    <option value="1.6 Бензин">1.6 Бензин</option>
-                    <option value="1.6 Дизель">1.6 Дизель</option>
-                    <option value="2.0 Бензин">2.0 Бензин</option>
-                    <option value="1.9 Безин">1.9 Безин</option>
-                    <option value="1.6 Бензин">1.6 Бензин</option>
-                  </datalist>
-                </div>
+              <button disabled class="btn-form choose-auto__btn --desc" type="submit" name="#">
+                <span>Поиск</span>
+                <img src="./img/icon/arrows-black.svg" alt="" />
+                <img src="./img/icon/arrows-blue.svg" alt="" />
+              </button>
+              <div class="choose-auto__btns --mob">
+                <button disabled form="choose-car-mob" type="reset" class="choose-auto__btns-reset form-btn-reset">
+                  <span>Очистить</span>
+                  <img src="./img/icon/arrows-black.svg" alt="" />
+                </button>
+                <button disabled form="choose-car-mob" type="submit" class="choose-auto__btns-submit btn-form">
+                  <span>Применить</span>
+                  <img src="./img/icon/arrows-white.svg" alt="" />
+                </button>
               </div>
-            </div>
-
-            <button disabled class="btn-form choose-auto__btn" type="submit" name="#">
-              <span>Поиск</span>
-              <img src="./img/icon/arrows-black.svg" alt="" />
-              <img src="./img/icon/arrows-blue.svg" alt="" />
-            </button>
-          </form>
+            </form>
+          </div>
 
           <!--Если автомобиль выбран-->
           <div class="select__choose-auto --mob">
@@ -176,16 +193,16 @@
               <img src="./img/icon/bmw-logo.svg" alt="" />
             </div>
             <div class="select__choose-auto-name">BMW Z4 Roadster (E89) sDrive 35 i бензин 306 л.с.</div>
-            <button class="btn-arrows__img choose-auto-open"></button>
+            <button class="btn-arrows__img choose-auto__open"></button>
           </div>
 
           <!--Если автомобиля не выбран-->
-          <div class="catalog__choose-auto --mob" style="display: none">
-            <div class="catalog__choose-auto-icon">
+          <div class="select__choose-auto --mob" style="display: none">
+            <div class="select__choose-auto-icon">
               <img src="./img/icon/search-auto.svg" alt="" />
             </div>
-            <div class="catalog__choose-auto-name">Выберите свой автомобиль</div>
-            <button class="btn-arrows__img choose-auto-open"></button>
+            <div class="select__choose-auto-name">Выберите свой автомобиль</div>
+            <button class="btn-arrows__img choose-auto__open"></button>
           </div>
 
           <div class="catalog-title">
@@ -197,39 +214,37 @@
             <!--Если автомобиль не выбран-->
             <div class="catalog-title__text" style="display: none">Маслосъемные колпачки на</div>
 
-            <!--Сортировка в десктопной версии-->
-            <div class="select --desc">
-              <input class="select__input" type="hidden" value="По умолчанию" name="" />
-              <div class="select__head">По умолчанию</div>
-              <ul class="select__list" style="display: none">
-                <li class="select__item">По умолчанию</li>
-                <li class="select__item">По дате</li>
-                <li class="select__item">По цене</li>
+            <div class="select-sort">
+              <input class="select-sort__input" type="hidden" value="Популярные" name="" />
+              <div class="select-sort__head --desc">
+                <span>По умолчанию</span>
+                <img src="./img/icon/arrow-black.svg" alt="" />
+              </div>
+              <ul class="select-sort__list --desc" style="display: none">
+                <li class="select-sort__item active">Популярные</li>
+                <li class="select-sort__item">Новинки</li>
+                <li class="select-sort__item">Самые дешевые</li>
+                <li class="select-sort__item">Самые дорогие</li>
               </ul>
+              <ul class="select-sort__list --mob">
+                <li class="select-sort__item active">Популярные</li>
+                <li class="select-sort__item">Новинки</li>
+                <li class="select-sort__item">Самые дешевые</li>
+                <li class="select-sort__item">Самые дорогие</li>
+              </ul>
+              <button type="button" class="select-sort__close --mob">
+                <img src="./img/icon/close-black.svg" alt="" />
+              </button>
             </div>
 
             <!--Кнопки фильтра и сортировки моб-->
             <div class="catalog__title-btns --mob">
-              <div class="catalog__title-btns-filter">
+              <div class="catalog__title-btns-filter catalog-filter-open">
                 <img src="./img/icon/filter-white.svg" alt="" />
                 <span>Фильтр</span>
               </div>
               <div class="sort">
                 <div class="sort__icon"></div>
-                <input
-                  readonly
-                  class="sort__input"
-                  autocomplete="off"
-                  role="combobox"
-                  list=""
-                  name="brands"
-                  value="По дате (сначала новые)"
-                />
-                <datalist class="sort__datalist" datalist role="listbox" style="display: none">
-                  <option value="По дате (сначала новые)" class="active">По дате (сначала новые)</option>
-                  <option value="По дате (сначала старые)">По дате (сначала старые)</option>
-                  <option value="По статусу">По статусу</option>
-                </datalist>
                 <div class="sort__arrow">
                   <img src="./img/icon/arrow-left-blue.svg" alt="" />
                 </div>
@@ -237,294 +252,148 @@
             </div>
           </div>
 
-          <!--Выбор автомобиля боковая панель моб версия-->
-          <div class="choose__auto-mob --mob">
-            <button type="button" class="choose__auto-mob-close">
-              <img src="./img/icon/close-blue.svg" alt="" />
-            </button>
-            <form method="#" action="#" id="choose-car-mob" class="choose__auto-mob-form">
-              <div class="choose-auto__change-btn">
-                <button type="button" class="choose-auto__change">
-                  <div class="choose-auto__change-icon">
-                    <img src="./img/icon/driving.svg" alt="" />
-                  </div>
-                  <span class="choose-auto__change-text"> Ваш гараж </span>
-                  <div class="choose-auto__change-arrow">
-                    <img src="./img/icon/arrow-white.svg" alt="" />
-                  </div>
-                </button>
-                <div class="choose-auto__history">
-                  <div class="choose-auto__history-item active">
-                    <button type="button" class="choose-auto__history-item-icon">
-                      <img src="./img/icon/arrow-white.svg" alt="" />
-                    </button>
-                    <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                    <button type="button" class="choose-auto__history-item-btn">
-                      <img src="./img/icon/close-small.svg" alt="" />
-                    </button>
-                  </div>
-                  <div class="choose-auto__history-item">
-                    <button type="button" class="choose-auto__history-item-icon">
-                      <img src="./img/icon/arrow-white.svg" alt="" />
-                    </button>
-                    <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                    <button type="button" class="choose-auto__history-item-btn">
-                      <img src="./img/icon/close-small.svg" alt="" />
-                    </button>
-                  </div>
-                  <div class="choose-auto__history-item">
-                    <button type="button" class="choose-auto__history-item-icon">
-                      <img src="./img/icon/arrow-white.svg" alt="" />
-                    </button>
-                    <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                    <button type="button" class="choose-auto__history-item-btn">
-                      <img src="./img/icon/close-small.svg" alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="input-datalist-form__blocks">
-                <div class="input-datalist-form">
-                  <div class="input-datalist-form__block">
-                    <div class="input-datalist-form__block-icon">01</div>
-                    <input
-                      class="input-datalist-form__block-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="brands"
-                      placeholder="Марка"
-                    />
-                    <div class="input-datalist-form__block-arrow">
-                      <img src="./img/icon/arrow-blue.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="input-datalist-form__list" style="display: none">
-                    <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                      <button type="button" class="input-datalist-form__list-reset">Марка</button>
-                      <option value="Acura">Acura</option>
-                      <option value="Audi">Audi</option>
-                      <option value="Alfa Romeo">Alfa Romeo</option>
-                      <option value="Bentley">Bentley</option>
-                      <option value="BMW">BMW</option>
-                      <option value="Cadilac">Cadilac</option>
-                      <option value="Chery">Chery</option>
-                      <option value="Lada">Lada</option>
-                      <option value="Porsche">Porsche</option>
-                      <option value="Mazda">Mazda</option>
-                      <option value="Lamborgini">Lamborgini</option>
-                      <option value="Bentley">Bentley</option>
-                      <option value="Volkswagen">Volkswagen</option>
-                    </datalist>
-                  </div>
-                </div>
-
-                <div class="input-datalist-form">
-                  <div class="input-datalist-form__block">
-                    <div class="input-datalist-form__block-icon">02</div>
-                    <input
-                      class="input-datalist-form__block-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="models"
-                      placeholder="Модель"
-                    />
-                    <div class="input-datalist-form__block-arrow">
-                      <img src="./img/icon/arrow-blue.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="input-datalist-form__list" style="display: none">
-                    <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                      <button type="button" class="input-datalist-form__list-reset">Модель</button>
-                      <option value="A3">A3</option>
-                      <option value="A4">A4</option>
-                      <option value="A6">A6</option>
-                      <option value="A8">A8</option>
-                      <option value="Q5">Q5</option>
-                      <option value="Q7">Q7</option>
-                      <option value="RS6">RS6</option>
-                      <option value="RS6C6">RS6C6</option>
-                    </datalist>
-                  </div>
-                </div>
-
-                <div class="input-datalist-form">
-                  <div class="input-datalist-form__block">
-                    <div class="input-datalist-form__block-icon">03</div>
-                    <input
-                      class="input-datalist-form__block-input"
-                      autocomplete="off"
-                      role="combobox"
-                      list=""
-                      name="engine"
-                      placeholder="Двигатель"
-                    />
-                    <div class="input-datalist-form__block-arrow">
-                      <img src="./img/icon/arrow-blue.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="input-datalist-form__list" style="display: none">
-                    <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                      <button class="input-datalist-form__list-reset">Двигатель</button>
-                      <option value="1.6 Дизель">1.6 Дизель</option>
-                      <option value="2.0 Бензин">2.0 Бензин</option>
-                      <option value="1.9 Безин">1.9 Безин</option>
-                      <option value="1.6 Бензин">1.6 Бензин</option>
-                      <option value="1.6 Дизель">1.6 Дизель</option>
-                      <option value="2.0 Бензин">2.0 Бензин</option>
-                      <option value="1.9 Безин">1.9 Безин</option>
-                      <option value="1.6 Бензин">1.6 Бензин</option>
-                    </datalist>
-                  </div>
-                </div>
-              </div>
-              <div class="choose__auto-mob-btns">
-                <button disabled form="choose-car-mob" type="reset" class="choose__auto-mob-btns-reset form-btn-reset">
-                  <span>Очистить</span>
-                  <img src="./img/icon/arrows-black.svg" alt="" />
-                </button>
-                <button form="choose-car-mob" type="submit" class="choose__auto-mob-btns-submit">
-                  <span>Применить</span>
-                  <img src="./img/icon/arrows-white.svg" alt="" />
-                </button>
-              </div>
-            </form>
-          </div>
-
           <div class="catalog__container">
             <div class="catalog__left">
-              <div class="catalog__item">
+              <div class="catalog__item catalog__filter-mob">
                 <div class="catalog__item-main">
                   <img src="./img/icon/filter.svg" alt="" />
                   <span>Фильтры</span>
                   <img src="./img/icon/arrow-black.svg" alt="" />
                 </div>
-                <form action="#" method="#" id="filters" class="catalog__item-form --desc">
-                  <fieldset class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Цена</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <div class="range__inputs">
-                        <div class="range__inputs-field">
-                          <input
-                            name="#"
-                            id="range__input-min"
-                            type="number"
-                            class="range__inputs-field-min"
-                            value="0"
-                          />
-                        </div>
-                        <div class="range__inputs-field">
-                          <input
-                            name="#"
-                            id="range__input-max"
-                            type="number"
-                            class="range__inputs-field-max"
-                            value="10000"
-                          />
-                        </div>
+                <button type="button" class="catalog__filter-mob-close --mob">
+                  <img src="./img/icon/close-black.svg" alt="" />
+                </button>
+                <form action="#" name="filter" method="#" id="filters" class="catalog__item-form">
+                  <div>
+                    <fieldset class="catalog__item-form-block toggle-block">
+                      <div class="catalog__item-form-block-inner toggle-block-inner">
+                        <span>Цена</span>
+                        <img src="./img/icon/arrow-black.svg" alt="" />
                       </div>
-                      <div class="range__slider" id="range-slider"></div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Бренд</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>пластик</span>
-                      </label>
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>керамика</span>
-                      </label>
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>металл</span>
-                      </label>
-                    </div>
-                  </fieldset>
-                  <fieldset class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Диаметр</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>пластик</span>
-                      </label>
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>керамика</span>
-                      </label>
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>металл</span>
-                      </label>
-                    </div>
-                  </fieldset>
-                  <fieldset class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Толщина</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>пластик</span>
-                      </label>
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>керамика</span>
-                      </label>
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>металл</span>
-                      </label>
-                    </div>
-                  </fieldset>
-                  <fieldset class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Материал</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>пластик</span>
-                      </label>
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>керамика</span>
-                      </label>
-                      <label class="input-checkbox">
-                        <input type="checkbox" name="#" />
-                        <span>металл</span>
-                      </label>
-                    </div>
-                  </fieldset>
+                      <div class="catalog__item-form-block-content toggle-block-content">
+                        <div class="range__inputs">
+                          <div class="range__inputs-field">
+                            <input
+                              name="#"
+                              id="range__input-min"
+                              type="number"
+                              class="range__inputs-field-min"
+                              value="0"
+                            />
+                          </div>
+                          <div class="range__inputs-field">
+                            <input
+                              name="#"
+                              id="range__input-max"
+                              type="number"
+                              class="range__inputs-field-max"
+                              value="10000"
+                            />
+                          </div>
+                        </div>
+                        <div class="range__slider" id="range-slider"></div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="catalog__item-form-block toggle-block">
+                      <div class="catalog__item-form-block-inner toggle-block-inner">
+                        <span>Бренд</span>
+                        <img src="./img/icon/arrow-black.svg" alt="" />
+                      </div>
+                      <div class="catalog__item-form-block-content toggle-block-content">
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>пластик</span>
+                        </label>
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>керамика</span>
+                        </label>
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>металл</span>
+                        </label>
+                      </div>
+                    </fieldset>
+                    <fieldset class="catalog__item-form-block toggle-block">
+                      <div class="catalog__item-form-block-inner toggle-block-inner">
+                        <span>Диаметр</span>
+                        <img src="./img/icon/arrow-black.svg" alt="" />
+                      </div>
+                      <div class="catalog__item-form-block-content toggle-block-content">
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>пластик</span>
+                        </label>
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>керамика</span>
+                        </label>
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>металл</span>
+                        </label>
+                      </div>
+                    </fieldset>
+                    <fieldset class="catalog__item-form-block toggle-block">
+                      <div class="catalog__item-form-block-inner toggle-block-inner">
+                        <span>Толщина</span>
+                        <img src="./img/icon/arrow-black.svg" alt="" />
+                      </div>
+                      <div class="catalog__item-form-block-content toggle-block-content">
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>пластик</span>
+                        </label>
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>керамика</span>
+                        </label>
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>металл</span>
+                        </label>
+                      </div>
+                    </fieldset>
+                    <fieldset class="catalog__item-form-block toggle-block">
+                      <div class="catalog__item-form-block-inner toggle-block-inner">
+                        <span>Материал</span>
+                        <img src="./img/icon/arrow-black.svg" alt="" />
+                      </div>
+                      <div class="catalog__item-form-block-content toggle-block-content">
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>пластик</span>
+                        </label>
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>керамика</span>
+                        </label>
+                        <label class="input-checkbox">
+                          <input type="checkbox" name="#" />
+                          <span>металл</span>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
                   <div class="catalog__filter-item-block catalog__item-form-block-reset">
-                    <button type="reset" form="filters" class="btn-arrows">
+                    <button type="reset" form="filters" class="btn-arrows --desc">
                       <div class="btn-arrows__title">Сбросить</div>
                       <div class="btn-arrows__img"></div>
+                    </button>
+                    <button form="filters" type="reset" class="catalog__item-form-block-reset-btn form-btn-reset --mob">
+                      <span>Очистить</span>
+                      <img src="./img/icon/arrows-black.svg" alt="" />
                     </button>
                   </div>
                 </form>
               </div>
-              <div class="catalog__item catalog__item-filter">
+              <div class="catalog__item catalog__item-filter --desc">
                 <div class="catalog__item-main">
                   <img src="./img/icon/category-icon.svg" alt="" />
                   <span>Категории</span>
                   <img src="./img/icon/arrow-black.svg" alt="" />
                 </div>
-                <div class="catalog__item-form">
+                <div class="catalog__item-form --desc" style="display: none">
                   <div class="catalog__item-form-title">Двигатель</div>
                   <div class="catalog__item-form-block toggle-block">
                     <div class="catalog__item-form-block-inner toggle-block-inner">
@@ -679,6 +548,7 @@
                 </div>
               </div>
             </div>
+
             <div class="catalog__right">
               <div class="catalog__cards cards">
                 <div class="card card-available">

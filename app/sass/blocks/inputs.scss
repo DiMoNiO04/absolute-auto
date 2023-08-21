@@ -316,7 +316,7 @@ input:focus:-ms-input-placeholder {
   }
 
   &-checkbox input[type='checkbox']:checked + span:before {
-    border: 0.2rem solid $mainColor;
+    border: 2px solid $mainColor;
     background-color: $white;
     background-position: 50% 50%;
     background-size: 2.5rem 2.5rem;

@@ -324,6 +324,15 @@
     }
   }
 
+  &__desc-btns-btn-search-arrow {
+    width: 3.2rem;
+    height: 3rem;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   &__desc-btns-btn-top {
     display: flex;
     align-items: center;

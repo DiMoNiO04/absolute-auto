@@ -106,3 +106,63 @@
   top: -0.9rem;
   right: -1rem;
 }
+
+@media screen and (max-width: 48em) {
+  .range {
+    &__inputs-field {
+      width: 100%;
+
+      input {
+        padding: 3.2vw 2.8vw;
+        font-size: 4vw;
+      }
+    }
+
+    &__slider {
+      height: 2px;
+      top: -2px;
+      border-radius: 2px;
+    }
+
+    &__slider-progress {
+      height: 0.4rem;
+      border-radius: 0.4rem;
+      left: 0%;
+      right: 0%;
+    }
+
+    &__range {
+      input {
+        top: -0.6rem;
+        height: 0.4rem;
+        width: 100%;
+
+        &::-webkit-slider-thumb {
+          height: 3.6rem;
+          width: 3.6rem;
+        }
+
+        &::-moz-range-thumb {
+          height: 3.6rem;
+          width: 3.6rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .noUi-target {
+    height: 0.4rem;
+  }
+
+  .noUi-handle {
+    border-radius: 50%;
+  }
+
+  .noUi-horizontal .noUi-handle {
+    width: 3.6rem;
+    height: 3.6rem;
+    top: -1.8rem;
+    right: -2rem;
+  }
+}

@@ -85,7 +85,7 @@
 
     .card__swiper-slide {
       height: 16.5rem;
-      width: 33.6rem;
+      width: 22rem;
     }
 
     .card__content-info-bottom {
@@ -309,7 +309,7 @@
     padding: 5.3vw 0 24vw 0;
 
     &__container {
-      column-gap: 3rem;
+      column-gap: 0;
     }
 
     .right-body__bg,
@@ -332,13 +332,8 @@
       column-gap: 2rem;
     }
 
-    .choose-auto {
-      margin: 16vw 0 0 0;
-      display: none;
-    }
-
     &__left {
-      display: none;
+      width: 0;
     }
 
     &__right {
@@ -366,17 +361,42 @@
       }
     }
 
-    &__choice-car {
-      padding: 2rem;
-      column-gap: 1rem;
+    &__item-main {
+      display: none;
+    }
 
-      img {
-        width: 14rem;
-        height: 10.8rem;
+    &__item {
+      background: $background;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 10;
+      padding: 2.8vw 0 10.6vw 0;
+      row-gap: 6.4vw;
+      overflow: scroll;
+      transform: translateX(100%);
+      transition: 0.2s all linear;
+
+      &.active {
+        transform: translateX(0%);
       }
+    }
 
-      button {
-        row-gap: 1.6rem;
+    &__item-form {
+      width: 100%;
+      margin-top: 16vw;
+      min-height: 90%;
+      height: fit-content;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 8vw;
+      border: none;
+      & > div {
+        width: 100%;
       }
     }
 
@@ -406,35 +426,11 @@
       }
     }
 
-    &__item {
-      row-gap: 2rem;
-    }
-
-    &__item-main {
-      column-gap: 1.6rem;
-
-      span {
-        font-size: 2rem;
-      }
-
-      img {
-        &:first-child {
-          width: 3rem;
-          height: 3rem;
-        }
-        &:last-child {
-          width: 1.4rem;
-          height: 1.4rem;
-        }
-      }
-    }
-
     &__item-form-block {
-      padding: 2rem 3.2rem 0 3.2rem;
       &:first-child {
         .catalog__item-form-block-content {
-          padding-left: 0.7rem;
-          padding-right: 1rem;
+          padding-left: 3.2vw;
+          padding-right: 3.2vw;
         }
       }
     }
@@ -448,54 +444,6 @@
     &-title__text {
       font-size: 4.8vw;
       line-height: 130%;
-    }
-
-    &__item-form-block-inner {
-      padding-bottom: 2rem;
-      column-gap: 2rem;
-      span {
-        font-size: 2rem;
-        line-height: 140%;
-      }
-      img {
-        width: 1.4rem;
-        height: 1.4rem;
-      }
-    }
-
-    &__item-form-block-content {
-      padding-bottom: 2rem;
-      .input-checkbox {
-        &:not(:last-child) {
-          margin-bottom: 1.6rem;
-        }
-      }
-      ul {
-        padding-left: 1.6rem;
-        row-gap: 1.6rem;
-        margin-bottom: 1.6rem;
-        li {
-          font-size: 1.8rem;
-        }
-      }
-      .btn-arrows {
-        padding-left: 1.6rem;
-      }
-    }
-
-    &__item-form-block-reset {
-      padding: 2rem 3.2rem;
-    }
-
-    &__item-form-title {
-      font-size: 2rem;
-      padding: 3.2rem 3.2rem 0 3.2rem;
-    }
-
-    &__item-filter {
-      .catalog__item-form-block-inner span {
-        font-size: 1.8rem;
-      }
     }
 
     &__btns {
@@ -552,6 +500,69 @@
         font-size: 4vw;
         font-weight: 700;
         line-height: 110%;
+      }
+    }
+
+    &__filter-mob-close {
+      width: 5.3vw;
+      height: 5.3vw;
+      position: absolute;
+      top: 5.3vw;
+      right: 3vw;
+    }
+
+    &__item-form-block-inner {
+      span {
+        font-size: 4vw;
+      }
+      img {
+        width: 4.8vw;
+        height: 4.8vw;
+      }
+    }
+
+    &__item-form-block {
+      padding: 4.27vw 2.8vw 0 2.8vw;
+      &:first-child {
+        border-top: $border;
+      }
+      &:last-child {
+        border-bottom: $border;
+      }
+    }
+
+    &__item-form-block-inner {
+      padding-bottom: 4.27vw;
+    }
+
+    &__item-form-block-content {
+      padding-bottom: 4.27vw;
+      padding-left: 5.3vw;
+    }
+
+    &__item-form-block-content .input-checkbox:not(:last-child) {
+      margin-bottom: 5.3vw;
+    }
+
+    &__item-form-block-reset-btn {
+      background: $white;
+      padding: 7.5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 5.3vw;
+      width: 46vw;
+
+      span {
+        color: $black;
+        font-family: Gilroy, sans-serif;
+        font-size: 4vw;
+        font-weight: 700;
+        line-height: 110%;
+      }
+
+      img {
+        width: 6.5vw;
       }
     }
   }

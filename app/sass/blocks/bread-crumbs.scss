@@ -30,3 +30,22 @@
     }
   }
 }
+
+@media screen and (max-width: 48em) {
+  .bread-crumbs {
+    column-gap: 2.8vw;
+    margin-bottom: 10.6vw;
+    row-gap: 2.2vw;
+
+    a {
+      font-size: 4vw;
+      line-height: 130%;
+      column-gap: 2.2vw;
+
+      &:not(:last-child)::after {
+        width: 2vw;
+        height: 3.2vw;
+      }
+    }
+  }
+}

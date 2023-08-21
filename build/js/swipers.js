@@ -1,6 +1,8 @@
-$(document).ready(() => {
+'use strict';
+
+$(document).ready(function () {
   function createBrandsSwiper() {
-    const brandsSwiper = new Swiper('#brands-swiper', {
+    var brandsSwiper = new Swiper('#brands-swiper', {
       breakpoints: {
         300: {
           slidesPerView: 2,
@@ -33,9 +35,8 @@ $(document).ready(() => {
       },
     });
   }
-
   function createProductSliderAnalogues() {
-    const productSliderAnalogues = new Swiper('#product__slider-3', {
+    var productSliderAnalogues = new Swiper('#product__slider-3', {
       breakpoints: {
         300: {
           slidesPerView: 2,
@@ -65,9 +66,8 @@ $(document).ready(() => {
       },
     });
   }
-
   function createCardsSwiper() {
-    const cardsSwiper = new Swiper('#cards-swiper', {
+    var cardsSwiper = new Swiper('#cards-swiper', {
       breakpoints: {
         300: {
           slidesPerView: 2,
@@ -83,7 +83,6 @@ $(document).ready(() => {
         },
         769: {
           slidesPerView: 6,
-          spaceBetween: 20,
           allowTouchMove: false,
           watchSlidesProgress: true,
           navigation: {
@@ -98,34 +97,29 @@ $(document).ready(() => {
       },
     });
   }
-
-  const productTopSliderFirst = new Swiper('.product__slider-1', {
+  var productTopSliderFirst = new Swiper('.product__slider-1', {
     spaceBetween: 30,
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
-
-  const productTopSliderSecond = new Swiper('.product__slider-2', {
+  var productTopSliderSecond = new Swiper('.product__slider-2', {
     spaceBetween: 30,
     thumbs: {
       swiper: productTopSliderFirst,
     },
   });
-
-  const productTopSliderSeconds = new Swiper('.header__menu-mob-btns', {
+  var productTopSliderSeconds = new Swiper('.header__menu-mob-btns', {
     spaceBetween: 30,
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
-
-  document.querySelectorAll('.cards').forEach((cards) => {
-    cards.querySelectorAll('.card__slider').forEach((content) => {
-      const slider = content.querySelector('.card__swiper');
-      const pagination = content.querySelector('.card__bullets');
-
-      const cardSwiper = new Swiper(slider, {
+  document.querySelectorAll('.cards').forEach(function (cards) {
+    cards.querySelectorAll('.card__slider').forEach(function (content) {
+      var slider = content.querySelector('.card__swiper');
+      var pagination = content.querySelector('.card__bullets');
+      var cardSwiper = new Swiper(slider, {
         slidesPerView: 1,
         spaceBetween: 20,
         allowTouchMove: true,
@@ -136,12 +130,10 @@ $(document).ready(() => {
       });
     });
   });
-
   createProductSliderAnalogues();
   createCardsSwiper();
   createBrandsSwiper();
-
-  $(window).resize(() => {
+  $(window).resize(function () {
     createProductSliderAnalogues();
     createCardsSwiper();
     createBrandsSwiper();
