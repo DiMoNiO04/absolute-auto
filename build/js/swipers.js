@@ -1,8 +1,6 @@
-'use strict';
-
-$(document).ready(function () {
+$(document).ready(() => {
   function createBrandsSwiper() {
-    var brandsSwiper = new Swiper('#brands-swiper', {
+    const brandsSwiper = new Swiper('#brands-swiper', {
       breakpoints: {
         300: {
           slidesPerView: 2,
@@ -35,13 +33,15 @@ $(document).ready(function () {
       },
     });
   }
+
   function createProductSliderAnalogues() {
-    var productSliderAnalogues = new Swiper('#product__slider-3', {
+    const productSliderAnalogues = new Swiper('#product__slider-3', {
       breakpoints: {
         300: {
           slidesPerView: 2,
           slidesPerColumn: 2,
           watchSlidesProgress: true,
+          spaceBetween: 10,
           grid: {
             rows: 2,
           },
@@ -52,8 +52,9 @@ $(document).ready(function () {
         },
         769: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          allowTouchMove: false,
           watchSlidesProgress: true,
+          spaceBetween: 30,
           navigation: {
             nextEl: '.product__analogues-top-arrows-next',
             prevEl: '.product__analogues-top-arrows-prev',
@@ -66,13 +67,15 @@ $(document).ready(function () {
       },
     });
   }
+
   function createCardsSwiper() {
-    var cardsSwiper = new Swiper('#cards-swiper', {
+    const cardsSwiper = new Swiper('#cards-swiper', {
       breakpoints: {
         300: {
           slidesPerView: 2,
           slidesPerColumn: 2,
           watchSlidesProgress: true,
+          spaceBetween: 10,
           grid: {
             rows: 2,
           },
@@ -85,6 +88,7 @@ $(document).ready(function () {
           slidesPerView: 6,
           allowTouchMove: false,
           watchSlidesProgress: true,
+          spaceBetween: 10,
           navigation: {
             nextEl: '.cards__arrows-next',
             prevEl: '.cards__arrows-prev',
@@ -97,29 +101,34 @@ $(document).ready(function () {
       },
     });
   }
-  var productTopSliderFirst = new Swiper('.product__slider-1', {
+
+  const productTopSliderFirst = new Swiper('.product__slider-1', {
     spaceBetween: 30,
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
-  var productTopSliderSecond = new Swiper('.product__slider-2', {
+
+  const productTopSliderSecond = new Swiper('.product__slider-2', {
     spaceBetween: 30,
     thumbs: {
       swiper: productTopSliderFirst,
     },
   });
-  var productTopSliderSeconds = new Swiper('.header__menu-mob-btns', {
+
+  const productTopSliderSeconds = new Swiper('.header__menu-mob-btns', {
     spaceBetween: 30,
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
   });
-  document.querySelectorAll('.cards').forEach(function (cards) {
-    cards.querySelectorAll('.card__slider').forEach(function (content) {
-      var slider = content.querySelector('.card__swiper');
-      var pagination = content.querySelector('.card__bullets');
-      var cardSwiper = new Swiper(slider, {
+
+  document.querySelectorAll('.cards').forEach((cards) => {
+    cards.querySelectorAll('.card__slider').forEach((content) => {
+      const slider = content.querySelector('.card__swiper');
+      const pagination = content.querySelector('.card__bullets');
+
+      const cardSwiper = new Swiper(slider, {
         slidesPerView: 1,
         spaceBetween: 20,
         allowTouchMove: true,
@@ -130,10 +139,12 @@ $(document).ready(function () {
       });
     });
   });
+
   createProductSliderAnalogues();
   createCardsSwiper();
   createBrandsSwiper();
-  $(window).resize(function () {
+
+  $(window).resize(() => {
     createProductSliderAnalogues();
     createCardsSwiper();
     createBrandsSwiper();

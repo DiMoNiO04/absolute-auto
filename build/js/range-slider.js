@@ -1,7 +1,6 @@
-'use strict';
+$(document).ready(() => {
+  const rangeSlider = document.getElementById('range-slider');
 
-$(document).ready(function () {
-  var rangeSlider = document.getElementById('range-slider');
   if (rangeSlider) {
     noUiSlider.create(rangeSlider, {
       start: [0, 10000],
@@ -13,19 +12,24 @@ $(document).ready(function () {
         max: [10000],
       },
     });
-    var inputMin = document.getElementById('range__input-min');
-    var inputMax = document.getElementById('range__input-max');
-    var inputs = [inputMin, inputMax];
-    rangeSlider.noUiSlider.on('update', function (values, handle) {
+
+    const inputMin = document.getElementById('range__input-min');
+    const inputMax = document.getElementById('range__input-max');
+    const inputs = [inputMin, inputMax];
+
+    rangeSlider.noUiSlider.on('update', (values, handle) => {
       inputs[handle].value = Math.round(values[handle]);
     });
-    var setRangeSlider = function setRangeSlider(i, value) {
-      var arr = [null, null];
+
+    const setRangeSlider = (i, value) => {
+      const arr = [null, null];
       arr[i] = value;
+
       rangeSlider.noUiSlider.set(arr);
     };
-    inputs.forEach(function (el, index) {
-      el.addEventListener('change', function (e) {
+
+    inputs.forEach((el, index) => {
+      el.addEventListener('change', (e) => {
         setRangeSlider(index, e.currentTarget.value);
       });
     });

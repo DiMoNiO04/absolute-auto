@@ -200,7 +200,7 @@
     height: 4.4rem;
     background-color: #4ec1c1;
     background-image: url('../img/icon/check-white.svg');
-    background-size: auto;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -239,6 +239,10 @@
     .title {
       font-size: 3.8rem;
     }
+
+    .swiper-slide {
+      height: fit-content;
+    }
   }
 
   &__analogues-top {
@@ -252,7 +256,7 @@
       height: auto;
     }
     .card__content {
-      max-width: 39.2rem;
+      max-width: 100%;
     }
     .card__swiper-slide {
       height: 16.5rem;
@@ -486,6 +490,7 @@
     background: $mainColor;
     position: absolute;
     top: 0;
+    cursor: pointer;
     z-index: 10;
     top: 3rem;
     left: 3rem;
@@ -512,6 +517,11 @@
     .btn-back {
       margin: initial;
       margin-bottom: 10.6vw;
+    }
+
+    .card__swiper-slide {
+      height: 28vw;
+      width: 40vw;
     }
 
     &__like {
@@ -617,6 +627,7 @@
     &__char-desc-form {
       column-gap: 3.2vw;
       width: 100%;
+      justify-content: space-between;
       .input-count {
         justify-content: center;
         border: $border;
@@ -628,7 +639,7 @@
         }
       }
       .btn-form {
-        width: 100%;
+        width: 65%;
       }
     }
 
@@ -673,8 +684,7 @@
     }
 
     &__analogues-slider-wrapper {
-      row-gap: 3.2vw;
-      height: 153vw;
+      height: 176vw;
     }
 
     &__desc {

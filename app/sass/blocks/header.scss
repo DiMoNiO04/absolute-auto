@@ -2,6 +2,10 @@
   background: $background;
   position: relative;
 
+			&.active {
+					z-index: 10;
+				}
+
   &__top,
   &__bottom {
     border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
@@ -610,9 +614,6 @@
 
 @media screen and (max-width: 48em) {
   .header {
-    &.active {
-      z-index: 10;
-    }
 
     &__top {
       border: 0;

@@ -41,6 +41,7 @@ $(document).ready(() => {
           slidesPerView: 2,
           slidesPerColumn: 2,
           watchSlidesProgress: true,
+          spaceBetween: 10,
           grid: {
             rows: 2,
           },
@@ -51,8 +52,9 @@ $(document).ready(() => {
         },
         769: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          allowTouchMove: false,
           watchSlidesProgress: true,
+          spaceBetween: 30,
           navigation: {
             nextEl: '.product__analogues-top-arrows-next',
             prevEl: '.product__analogues-top-arrows-prev',
@@ -73,6 +75,7 @@ $(document).ready(() => {
           slidesPerView: 2,
           slidesPerColumn: 2,
           watchSlidesProgress: true,
+          spaceBetween: 10,
           grid: {
             rows: 2,
           },
@@ -85,6 +88,7 @@ $(document).ready(() => {
           slidesPerView: 6,
           allowTouchMove: false,
           watchSlidesProgress: true,
+          spaceBetween: 10,
           navigation: {
             nextEl: '.cards__arrows-next',
             prevEl: '.cards__arrows-prev',

@@ -142,6 +142,7 @@
 
   .input-count {
     display: none;
+    width: fit-content;
     input {
       font-weight: 700;
       border: 0;
@@ -149,7 +150,7 @@
     }
 
     &.active {
-      display: flex;
+      display: inline-flex;
     }
   }
 }
@@ -157,7 +158,7 @@
 @media screen and (max-width: 48em) {
   .card {
     &__content {
-      padding: 2.8vw 2.8vw 5vw 2.8vw;
+      padding: 2.8vw 2.8vw 3.2vw 2.8vw;
       max-width: 46vw;
       height: 100%;
     }
@@ -187,6 +188,7 @@
 
     &__swiper-slide {
       height: 28vw;
+      width: 40vw;
     }
 
     &__content-info {
@@ -197,13 +199,13 @@
       }
 
       &-bottom {
-        row-gap: 4.27vw;
+        row-gap: 3.2vw;
       }
     }
 
     &__btn-buy {
       column-gap: 3.2vw;
-      height: 3.2vw;
+      height: 8vw;
 
       .btn-arrows__title {
         font-size: 4vw;
@@ -212,7 +214,7 @@
     }
 
     &__modal {
-      top: 16vw;
+      top: 20vw;
       left: calc(50% - 20vw);
     }
 
@@ -235,7 +237,7 @@
       input {
         font-weight: 700;
         border: 0;
-        height: 3.2vw;
+        height: 8vw;
       }
     }
   }

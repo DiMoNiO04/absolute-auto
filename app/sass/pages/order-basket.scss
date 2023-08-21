@@ -131,7 +131,7 @@
     flex-direction: column;
     row-gap: 6rem;
     .card__content {
-      max-width: 24.5rem;
+      max-width: 100%;
     }
   }
 
@@ -365,11 +365,8 @@
     }
 
     &__main-relevant-wrapper {
-      height: 168vw;
-      row-gap: 2.8vw;
-      column-gap: 2.8vw;
+      height: 172vw;
       & > .swiper-slide {
-        width: 45vw !important;
         height: fit-content;
       }
     }
