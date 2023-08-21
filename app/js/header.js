@@ -21,14 +21,14 @@ $(document).ready(() => {
   $('.close-details').click(() => {
     $('.details-content').fadeOut();
     $('.main-overlay').removeClass('active');
-		$(document.body).toggleClass('hidden');
+    $(document.body).toggleClass('hidden');
     $('.header').removeClass('active');
     $('.details-buttons button').removeClass('active');
   });
 
   // Клик на кнопку раскрытия категории
   $('.catalog-open-desc').click(function () {
-		$(document.body).toggleClass('hidden');
+    $(document.body).toggleClass('hidden');
     $('.catalog-desc-content').fadeIn(500);
     $(this).addClass('active');
     $('.main-overlay').addClass('active');
@@ -41,7 +41,7 @@ $(document).ready(() => {
 
   // Клик на кнопку закрытия категории
   $('.header__bottom-category-close').click(() => {
-		$(document.body).toggleClass('hidden');
+    $(document.body).toggleClass('hidden');
     $('.catalog-desc-content').fadeToggle();
     $('.catalog-open-desc').toggleClass('active');
     $('.main-overlay').toggleClass('active');
@@ -68,7 +68,7 @@ $(document).ready(() => {
       $('.catalog-desc-content').fadeOut(200);
       $('.catalog-open-desc').removeClass('active');
 
-			$(document.body).removeClass('hidden');
+      $(document.body).removeClass('hidden');
 
       $('.details-content').fadeOut(200);
       $('.details-buttons button').removeClass('active');
@@ -84,8 +84,8 @@ $(document).ready(() => {
     $(document.body).toggleClass('hidden');
     $(this).toggleClass('active');
     $('.header__menu-mob').toggleClass('active');
-		 $('.details-content').fadeOut();
-		  $('.details-buttons button').removeClass('active');
+    $('.details-content').fadeOut();
+    $('.details-buttons button').removeClass('active');
     $('.main-overlay').removeClass('active');
     $('.header').toggleClass('active');
   });

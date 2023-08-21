@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 ///-------------------
 $('.select-sort__close').on('click', function () {

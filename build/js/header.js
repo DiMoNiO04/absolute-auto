@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 $(document).ready(function () {
   // Клик на кнопки в меню выбора детелей

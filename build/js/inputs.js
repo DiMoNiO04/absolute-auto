@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 $(document).ready(function () {
   $('.input__slide-btn').change(function () {
@@ -76,10 +76,13 @@ $(document).ready(function () {
       var option = targetContainer.find('option');
       var formBtn = targetContainer.parent().parent().parent().find('.btn-form');
       var formRes = targetContainer.parent().parent().parent().find('.form-btn-reset');
-      targetContainer.parent().find('.input-datalist-form').each(function () {
-        $(this).find('.input-datalist-form__list').not(datalist).slideUp();
-        $(this).find('.input-datalist-form__block').not(inputMainBlock).removeClass('active');
-      });
+      targetContainer
+        .parent()
+        .find('.input-datalist-form')
+        .each(function () {
+          $(this).find('.input-datalist-form__list').not(datalist).slideUp();
+          $(this).find('.input-datalist-form__block').not(inputMainBlock).removeClass('active');
+        });
       datalist.slideToggle();
       inputMainBlock.toggleClass('active');
       $('.choose-auto__history').slideUp();
@@ -121,9 +124,12 @@ $(document).ready(function () {
         datalist.slideUp(200);
         changeDisableButton(inputBlock, formRes, formBtn);
         if (inputBlock.parent().parent()[0].classList[0] === 'main-main__search-form-inputs') {
-          inputBlock.parent().find('.input-datalist-form:not(:first)').each(function () {
-            $(this).not().slideUp();
-          });
+          inputBlock
+            .parent()
+            .find('.input-datalist-form:not(:first)')
+            .each(function () {
+              $(this).not().slideUp();
+            });
         }
       });
     }

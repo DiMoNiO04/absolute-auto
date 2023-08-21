@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 $(document).ready(function () {
   $('.menu-aside-mob-btn').click(function () {

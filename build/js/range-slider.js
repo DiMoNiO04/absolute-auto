@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 $(document).ready(function () {
   var rangeSlider = document.getElementById('range-slider');
@@ -10,8 +10,8 @@ $(document).ready(function () {
       margin: 500,
       range: {
         min: [0],
-        max: [10000]
-      }
+        max: [10000],
+      },
     });
     var inputMin = document.getElementById('range__input-min');
     var inputMax = document.getElementById('range__input-max');
