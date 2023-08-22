@@ -1,21 +1,22 @@
-'use strict';
+const swipeBlocks = document.querySelectorAll('.swipe-block');
+let startX;
+let endX;
 
-var swipeBlocks = document.querySelectorAll('.swipe-block');
-var startX;
-var endX;
-swipeBlocks.forEach(function (swipeBlock) {
-  swipeBlock.addEventListener('touchstart', function (event) {
+swipeBlocks.forEach((swipeBlock) => {
+  swipeBlock.addEventListener('touchstart', (event) => {
     startX = event.touches[0].clientX;
   });
-  swipeBlock.addEventListener('touchmove', function (event) {
+
+  swipeBlock.addEventListener('touchmove', (event) => {
     endX = event.touches[0].clientX;
-    var diff = startX - endX;
+    const diff = startX - endX;
     if (diff > 0) {
-      swipeBlock.style.left = '-'.concat(diff, 'px');
+      swipeBlock.style.left = `-${diff}px`;
     }
   });
-  swipeBlock.addEventListener('touchend', function () {
-    var diff = startX - endX;
+
+  swipeBlock.addEventListener('touchend', () => {
+    const diff = startX - endX;
     if (diff > 100) {
       swipeBlock.style.left = '-27vw';
     } else {
