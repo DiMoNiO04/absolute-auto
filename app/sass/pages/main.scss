@@ -185,23 +185,28 @@
   }
 
   &-autos__item {
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
     img {
-      &:first-child {
-        display: block;
-      }
-      &:last-child {
-        display: none;
-      }
-    }
-    &:hover {
-      cursor: pointer;
-      img {
-        &:last-child {
-          display: block;
-        }
+      position: relative;
+      left: 0;
+      top: 0;
+      transition: opacity 0.5s ease-in-out;
 
-        &:first-child {
-          display: none;
+      &:first-child {
+        position: relative;
+        &:hover {
+          opacity: 0;
+        }
+      }
+
+      &:last-child {
+        z-index: -1;
+        position: absolute;
+
+        &:hover {
+          opacity: 1;
         }
       }
     }
@@ -322,25 +327,23 @@
 
   &-brands__swiper-slide {
     border: 0.2rem solid rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.35);
     width: auto;
     height: 22rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: a 1s;
     img {
       width: 14rem;
       height: 6rem;
     }
     &:hover {
       background: url('../img/brands/brands-hover-bg.svg') no-repeat center;
-      width: calc((100% / 6) - 30px);
-      height: 22rem;
+      background-color: none;
       border: 0;
+      border-color: $white;
       background-size: contain;
       cursor: pointer;
-      animation: a 1s;
     }
   }
 

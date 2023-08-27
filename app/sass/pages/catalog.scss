@@ -122,14 +122,14 @@
       &:last-child {
         width: 1.4rem;
         height: 1.4rem;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
 
     &.active {
       img:last-child {
         transform: rotate(180deg);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
@@ -183,12 +183,12 @@
     img {
       width: 1.4rem;
       height: 1.4rem;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
     &.active {
       img {
         transform: rotate(180deg);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
@@ -383,7 +383,7 @@
       row-gap: 6.4vw;
       overflow: scroll;
       transform: translateX(100%);
-      transition: 0.2s all linear;
+      transition: 0.5s all linear;
 
       &.active {
         transform: translateX(0%);

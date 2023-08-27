@@ -69,7 +69,7 @@
     background: none;
     width: fit-content;
     height: fit-content;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     span {
       color: $black;
@@ -86,7 +86,7 @@
     &:not(:disabled) {
       &:hover {
         background: none;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         span {
           color: $mainColor;
@@ -181,7 +181,7 @@
     overflow: scroll;
     transform: translateX(100%);
     justify-content: space-between;
-    transition: 0.2s all linear;
+    transition: 0.5s all linear;
     margin: 0;
 
     &.active {
@@ -261,7 +261,7 @@
     &__form-change-btn-arrow {
       width: 5.3vw;
       height: 5.3vw;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
       transform: rotate(90deg);
       img {
         width: 100%;

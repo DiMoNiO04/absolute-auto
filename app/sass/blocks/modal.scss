@@ -211,7 +211,7 @@
     line-height: 130%;
     &:hover {
       color: $mainColor;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -293,6 +293,24 @@
   }
 }
 
+.modal__content-update-address {
+  .input-address__inputs {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  .input-address {
+    row-gap: 0;
+    margin: 0;
+  }
+  .input-datalist-form__block {
+    margin: 0;
+  }
+
+  .input-datalist-form {
+    width: 100%;
+  }
+}
+
 .modal__content-purchase-returns {
   padding: 6rem 6.5rem 4.4rem 6rem;
   width: 61.5rem;
@@ -302,6 +320,14 @@
     margin-bottom: 2rem;
     font-family: 'Gilroy', sans-serif;
     font-weight: 600;
+  }
+
+  .input-address__inputs {
+    flex-direction: column;
+    row-gap: 1.2rem;
+    .input-datalist-form {
+      width: 100%;
+    }
   }
 
   form {
@@ -603,6 +629,12 @@
     &-reg {
       font-size: 4.27vw;
       line-height: 110%;
+    }
+  }
+
+  .modal__content-update-address {
+    .input-address__inputs {
+      row-gap: 4.27vw;
     }
   }
 

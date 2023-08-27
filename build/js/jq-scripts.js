@@ -199,3 +199,5 @@ $(document).ready(() => {
     $('.select-sort').addClass('active');
   });
 });
+
+$('input[type="phone"]').mask('+7(999)-999-99-99');

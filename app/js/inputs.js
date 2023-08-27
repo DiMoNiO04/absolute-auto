@@ -46,15 +46,12 @@ $(document).ready(() => {
   });
 
   // ---------input datalis------------//
-  function changeDisableButton(inputBlock, formRes, formBtn) {
-    let isFormBtn = true;
+  function changeDisableButton(inputBlock, formRes) {
     let isFormRes = false;
     const inputs = inputBlock.parent().parent().find('.input-datalist-form__block-input');
 
     for (let i = 0; i < inputs.length; i += 1) {
-      if (inputs[i].value === '') {
-        isFormBtn = false;
-      } else {
+      if (inputs[i].value !== '') {
         isFormRes = true;
       }
     }
@@ -64,15 +61,9 @@ $(document).ready(() => {
     } else {
       formRes.attr('disabled', 'disabled');
     }
-
-    if (isFormBtn) {
-      formBtn.removeAttr('disabled');
-    } else {
-      formBtn.attr('disabled', 'disabled');
-    }
   }
 
-  $('.input-datalist-form__blocks').on('click', (event) => {
+  function inputDatalist(event) {
     const targetContainer = $(event.target).closest('.input-datalist-form');
 
     if (targetContainer) {
@@ -82,7 +73,6 @@ $(document).ready(() => {
       const inputReset = targetContainer.find('.input-datalist-form__list-reset');
       const inputMainBlock = targetContainer.find('.input-datalist-form__block');
       const option = targetContainer.find('option');
-      const formBtn = targetContainer.parent().parent().parent().find('.btn-form');
       const formRes = targetContainer.parent().parent().parent().find('.form-btn-reset');
 
       targetContainer
@@ -106,7 +96,7 @@ $(document).ready(() => {
             inputBlock.next().fadeIn(1000);
           }
 
-          changeDisableButton(inputBlock, formRes, formBtn);
+          changeDisableButton(inputBlock, formRes);
 
           option.not($(this)).removeClass('active');
           $(this).addClass('active');
@@ -119,7 +109,7 @@ $(document).ready(() => {
         inputBlock.removeClass('checked');
         option.removeClass('active');
 
-        changeDisableButton(inputBlock, formRes, formBtn);
+        changeDisableButton(inputBlock, formRes);
       });
 
       input.on('input', function () {
@@ -140,7 +130,7 @@ $(document).ready(() => {
         option.removeClass('active');
         datalist.slideUp(200);
 
-        changeDisableButton(inputBlock, formRes, formBtn);
+        changeDisableButton(inputBlock, formRes);
 
         if (inputBlock.parent().parent()[0].classList[0] === 'main-main__search-form-inputs') {
           inputBlock
@@ -152,6 +142,14 @@ $(document).ready(() => {
         }
       });
     }
+  }
+
+  $('.input-datalist-form__blocks').on('click', (event) => {
+    inputDatalist(event);
+  });
+
+  $('.input-address__inputs').on('click', (event) => {
+    inputDatalist(event);
   });
   // ---------------------------------//
 });

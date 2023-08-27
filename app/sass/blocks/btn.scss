@@ -10,13 +10,13 @@
     &:hover {
       .btn-arrows__title {
         color: #4ec1c1;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
 
       .btn-arrows__img {
         background: url(../img/icon/arrows-blue.svg) no-repeat center;
         background-size: cover;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
@@ -38,7 +38,7 @@
     cursor: pointer;
     &:hover {
       color: $black;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -86,7 +86,7 @@
 
     &:not([disabled]):hover {
       background: $black;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 

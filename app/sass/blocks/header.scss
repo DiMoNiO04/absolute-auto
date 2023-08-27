@@ -61,7 +61,7 @@
       }
       &:hover {
         color: $mainColor;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.4s ease-in-out;
       }
     }
   }
@@ -93,7 +93,7 @@
     }
     &:hover {
       background: $black;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.4s ease-in-out;
     }
     &.active {
       .header__bottom-btn-icon {
@@ -114,7 +114,7 @@
       line-height: 130%;
       &:hover {
         color: $mainColor;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.4s ease-in-out;
       }
       &.active {
         color: $mainColor;
@@ -212,7 +212,7 @@
 
     &:nth-child(1):hover,
     &:nth-child(2):hover {
-      transition: all 0.2s ease-in;
+      transition: all 0.4s ease-in-out;
 
       span {
         color: $mainColor;
@@ -224,7 +224,7 @@
     }
 
     &:nth-child(3):hover {
-      transition: all 0.2s ease-in;
+      transition: all 0.4s ease-in-out;
 
       span {
         color: $mainColor;
@@ -588,7 +588,7 @@
 
       &:hover {
         cursor: pointer;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.4s ease-in-out;
         color: $mainColor;
       }
     }
@@ -886,13 +886,13 @@
       img {
         width: 4.8vw;
         height: 4.8vw;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.4s ease-in-out;
         display: block;
       }
       &.active {
         img {
           transform: rotate(180deg);
-          transition: all 0.2s ease-in-out;
+          transition: all 0.4s ease-in-out;
         }
       }
     }
@@ -935,7 +935,7 @@
     row-gap: 6.4vw;
     overflow: scroll;
     transform: translateX(100%);
-    transition: 0.2s all linear;
+    transition: 0.4s all ease-in-out;
 
     &.active {
       transform: translateX(0);
@@ -984,7 +984,7 @@
         background: rgba(255, 255, 255, 0.35);
         .header__menu-mob-item-inner-arrow img {
           transform: rotate(180deg);
-          transition: all 0.2s ease-in-out;
+          transition: all 0.4s ease-in-out;
         }
       }
     }
@@ -1016,9 +1016,9 @@
       width: 4vw;
       height: 4vw;
       flex-shrink: 0;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.4s ease-in-out;
       img {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.4s ease-in-out;
       }
     }
 
@@ -1086,7 +1086,7 @@
         font-weight: 600;
         line-height: 130%;
         &:hover {
-          transition: all 0.2s ease-in-out;
+          transition: all 0.4s ease-in-out;
           color: $mainColor;
         }
       }
@@ -1106,7 +1106,7 @@
     row-gap: 6.4vw;
     overflow: scroll;
     transform: translateX(100%);
-    transition: 0.2s all linear;
+    transition: 0.4s all ease-in-out;
 
     &.active {
       transform: translateX(0);

@@ -59,6 +59,8 @@ $(document).ready(function () {
 
           if (event.target.id === 'reg-btn') {
             showEntranceModalContent('reg');
+          } else if (event.target.id === 'reccovery-pass-success') {
+            showEntranceModalContent('reccovery-pass-success');
           } else if ($(this)[0].name === 'entrance') {
             showEntranceModalContent('entrance');
           }

@@ -150,7 +150,7 @@
       height: 24rem;
       background: rgba(78, 193, 193, 0.5);
       filter: blur(25rem);
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
       top: 0;
       left: 0;
     }
@@ -342,7 +342,7 @@
       border-left: $border;
       border-color: $mainColor;
       button {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
         transform: rotate(-90deg);
       }
     }
@@ -391,7 +391,7 @@
         width: 10.7%;
         display: flex;
         button {
-          transition: all 0.2s ease-in-out;
+          transition: all 0.5s ease-in-out;
           margin: auto 0 auto auto;
           width: 2.4rem;
           height: 2.4rem;
@@ -580,7 +580,7 @@
     &:hover {
       color: $mainColor;
       cursor: pointer;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 }

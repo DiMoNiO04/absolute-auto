@@ -1543,6 +1543,7 @@
                         <label for="sdek">Служба доставки СДЭК</label>
                       </div>
                       <div class="ordering__order-form-item-block input__slide-content">
+                        <div class="input-radio__backg"></div>
                         <div class="input-radio">
                           <div class="input-radio__inp">
                             <input type="radio" name="address" id="address-1" value="address-1" />
@@ -1556,8 +1557,8 @@
                               <button class="btn-edit-addres" type="button" data-modal-el="update-address">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
+                                  width="2.4rem"
+                                  height="2.4rem"
                                   viewBox="0 0 24 24"
                                   fill="none"
                                 >
@@ -1572,8 +1573,8 @@
                               <button type="button">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
+                                  width="2.4rem"
+                                  height="2.4rem"
                                   viewBox="0 0 24 24"
                                   fill="none"
                                 >
@@ -1607,8 +1608,8 @@
                               <button type="button">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
+                                  width="2.4rem"
+                                  height="2.4rem"
                                   viewBox="0 0 24 24"
                                   fill="none"
                                 >
@@ -1623,8 +1624,8 @@
                               <button type="button">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
+                                  width="2.4rem"
+                                  height="2.4rem"
                                   viewBox="0 0 24 24"
                                   fill="none"
                                 >
@@ -1650,26 +1651,84 @@
                         </div>
                         <fieldset class="input-address">
                           <div class="input-address__inputs">
-                            <div class="input__block">
-                              <input autocomplete="off" type="text" name="#" placeholder="Город" />
-                              <button type="button">
-                                <img src="./img/icon/close-small.svg" alt="" />
-                              </button>
-                              <span></span>
+                            <div class="input-datalist-form">
+                              <div class="input-datalist-form__block">
+                                <input
+                                  class="input-datalist-form__block-input"
+                                  autocomplete="off"
+                                  role="combobox"
+                                  list=""
+                                  name="town"
+                                  placeholder="Город"
+                                />
+                                <div class="input-datalist-form__block-arrow">
+                                  <img src="./img/icon/arrow-blue.svg" alt="" />
+                                </div>
+                              </div>
+                              <div class="input-datalist-form__list" style="display: none">
+                                <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                                  <button type="button" class="input-datalist-form__list-reset">Город</button>
+                                  <option value="Москва">Москва</option>
+                                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                  <option value="Анапа">Анапа</option>
+                                  <option value="Сочи">Сочи</option>
+                                  <option value="Геленджик">Геленджик</option>
+                                  <option value="Воронеж">Воронеж</option>
+                                  <option value="Саратов">Саратов</option>
+                                  <option value="Тула">Тула</option>
+                                  <option value="Владивосток">Владивосток</option>
+                                  <option value="Орел">Орел</option>
+                                  <option value="Смоленск">Смоленск</option>
+                                  <option value="Брянск">Брянск</option>
+                                  <option value="Екатеринбург">Екатеринбург</option>
+                                  <option value="Самара">Самара</option>
+                                  <option value="Ростов">Ростов</option>
+                                  <option value="Мурманск">Мурманск</option>
+                                </datalist>
+                              </div>
                             </div>
-                            <div class="input__block">
-                              <input autocomplete="off" type="text" name="#" placeholder="Адрес доставки" />
-                              <button type="button">
-                                <img src="./img/icon/close-small.svg" alt="" />
-                              </button>
-                              <span></span>
+
+                            <div class="input-datalist-form">
+                              <div class="input-datalist-form__block">
+                                <input
+                                  class="input-datalist-form__block-input"
+                                  autocomplete="off"
+                                  role="combobox"
+                                  list=""
+                                  name="address"
+                                  placeholder="Адрес доставки"
+                                />
+                                <div class="input-datalist-form__block-arrow">
+                                  <img src="./img/icon/arrow-blue.svg" alt="" />
+                                </div>
+                              </div>
+                              <div class="input-datalist-form__list" style="display: none">
+                                <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                                  <button type="button" class="input-datalist-form__list-reset">Адрес доставки</button>
+                                  <option value="Москва">Москва</option>
+                                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                  <option value="Анапа">Анапа</option>
+                                  <option value="Сочи">Сочи</option>
+                                  <option value="Геленджик">Геленджик</option>
+                                  <option value="Воронеж">Воронеж</option>
+                                  <option value="Саратов">Саратов</option>
+                                  <option value="Тула">Тула</option>
+                                  <option value="Владивосток">Владивосток</option>
+                                  <option value="Орел">Орел</option>
+                                  <option value="Смоленск">Смоленск</option>
+                                  <option value="Брянск">Брянск</option>
+                                  <option value="Екатеринбург">Екатеринбург</option>
+                                  <option value="Самара">Самара</option>
+                                  <option value="Ростов">Ростов</option>
+                                  <option value="Мурманск">Мурманск</option>
+                                </datalist>
+                              </div>
                             </div>
                           </div>
-                          <button href="#" type="" class="btn-arrows">
+                          <button type="" class="btn-arrows">
                             <div class="btn-arrows__title">Сохранить адрес</div>
                             <div class="btn-arrows__img"></div>
                           </button>
-                          <span></span>
                         </fieldset>
                       </div>
                     </div>
@@ -1697,6 +1756,7 @@
                     <legend class="subtitle">Получатель</legend>
                     <div class="ordering__order-form-item-title">Введите данные получателя</div>
                     <div class="ordering__order-form-item-block ordering__order-form-item-inputs">
+                      <div class="input-radio__backg"></div>
                       <div class="input__block">
                         <input type="text" name="#" autocomplete="off" placeholder="ФИО" />
                         <button type="button">
@@ -2179,6 +2239,16 @@
         </div>
       </div>
 
+      <!--Контент успешно изменен пароль-->
+      <div class="entrance" data-block-entrance="reg-success">
+        <div class="entrance__success">
+          <div class="entrance__success-img">
+            <img src="./img/icon/check-white.svg" alt="" />
+          </div>
+          <div class="entrance__success-text">Пароль успешно изменен!</div>
+        </div>
+      </div>
+
       <!--Контент восстановление пароля (email)-->
       <div class="entrance entrance__recovery" data-block-entrance="reccovery-pass">
         <div class="entrance__title">Восстановление пароля</div>
@@ -2293,22 +2363,87 @@
       </div>
       <div class="modal__title">Изменить адрес доставки</div>
       <form action="#" name="#">
-        <div class="input__block">
-          <input autocomplete="off" type="text" name="#" placeholder="Город" required />
-          <button type="button">
-            <img src="./img/icon/close-small.svg" alt="" />
+        <div class="input-address">
+          <div class="input-address__inputs">
+            <div class="input-datalist-form">
+              <div class="input-datalist-form__block">
+                <input
+                  class="input-datalist-form__block-input"
+                  autocomplete="off"
+                  role="combobox"
+                  list=""
+                  name="town"
+                  placeholder="Город"
+                />
+                <div class="input-datalist-form__block-arrow">
+                  <img src="./img/icon/arrow-blue.svg" alt="" />
+                </div>
+              </div>
+              <div class="input-datalist-form__list" style="display: none">
+                <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                  <button type="button" class="input-datalist-form__list-reset">Город</button>
+                  <option value="Москва">Москва</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Анапа">Анапа</option>
+                  <option value="Сочи">Сочи</option>
+                  <option value="Геленджик">Геленджик</option>
+                  <option value="Воронеж">Воронеж</option>
+                  <option value="Саратов">Саратов</option>
+                  <option value="Тула">Тула</option>
+                  <option value="Владивосток">Владивосток</option>
+                  <option value="Орел">Орел</option>
+                  <option value="Смоленск">Смоленск</option>
+                  <option value="Брянск">Брянск</option>
+                  <option value="Екатеринбург">Екатеринбург</option>
+                  <option value="Самара">Самара</option>
+                  <option value="Ростов">Ростов</option>
+                  <option value="Мурманск">Мурманск</option>
+                </datalist>
+              </div>
+            </div>
+
+            <div class="input-datalist-form">
+              <div class="input-datalist-form__block">
+                <input
+                  class="input-datalist-form__block-input"
+                  autocomplete="off"
+                  role="combobox"
+                  list=""
+                  name="address"
+                  placeholder="Адрес доставки"
+                />
+                <div class="input-datalist-form__block-arrow">
+                  <img src="./img/icon/arrow-blue.svg" alt="" />
+                </div>
+              </div>
+              <div class="input-datalist-form__list" style="display: none">
+                <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                  <button type="button" class="input-datalist-form__list-reset">Адрес доставки</button>
+                  <option value="Москва">Москва</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Анапа">Анапа</option>
+                  <option value="Сочи">Сочи</option>
+                  <option value="Геленджик">Геленджик</option>
+                  <option value="Воронеж">Воронеж</option>
+                  <option value="Саратов">Саратов</option>
+                  <option value="Тула">Тула</option>
+                  <option value="Владивосток">Владивосток</option>
+                  <option value="Орел">Орел</option>
+                  <option value="Смоленск">Смоленск</option>
+                  <option value="Брянск">Брянск</option>
+                  <option value="Екатеринбург">Екатеринбург</option>
+                  <option value="Самара">Самара</option>
+                  <option value="Ростов">Ростов</option>
+                  <option value="Мурманск">Мурманск</option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+          <button class="btn-form" type="submit" name="#">
+            <span>Изменить адрес</span>
+            <img src="./img/icon/arrows-white.svg" alt="" />
           </button>
         </div>
-        <div class="input__block">
-          <input autocomplete="off" type="text" name="#" placeholder="Адрес" required />
-          <button type="button">
-            <img src="./img/icon/close-small.svg" alt="" />
-          </button>
-        </div>
-        <button class="btn-form" type="submit" name="#">
-          <span>Изменить адрес</span>
-          <img src="./img/icon/arrows-white.svg" alt="" />
-        </button>
       </form>
     </div>
   </div>
@@ -2351,17 +2486,82 @@
       <form action="#" name="#">
         <div class="form__item">
           <div class="subtitle">Адрес доставки</div>
-          <div class="input__block">
-            <input autocomplete="off" type="text" name="#" placeholder="Город" required />
-            <button type="button">
-              <img src="./img/icon/close-small.svg" alt="" />
-            </button>
-          </div>
-          <div class="input__block">
-            <input autocomplete="off" type="text" name="#" placeholder="Адрес" required />
-            <button type="button">
-              <img src="./img/icon/close-small.svg" alt="" />
-            </button>
+          <div class="input-address">
+            <div class="input-address__inputs">
+              <div class="input-datalist-form">
+                <div class="input-datalist-form__block">
+                  <input
+                    class="input-datalist-form__block-input"
+                    autocomplete="off"
+                    role="combobox"
+                    list=""
+                    name="town"
+                    placeholder="Город"
+                  />
+                  <div class="input-datalist-form__block-arrow">
+                    <img src="./img/icon/arrow-blue.svg" alt="" />
+                  </div>
+                </div>
+                <div class="input-datalist-form__list" style="display: none">
+                  <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                    <button type="button" class="input-datalist-form__list-reset">Город</button>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Анапа">Анапа</option>
+                    <option value="Сочи">Сочи</option>
+                    <option value="Геленджик">Геленджик</option>
+                    <option value="Воронеж">Воронеж</option>
+                    <option value="Саратов">Саратов</option>
+                    <option value="Тула">Тула</option>
+                    <option value="Владивосток">Владивосток</option>
+                    <option value="Орел">Орел</option>
+                    <option value="Смоленск">Смоленск</option>
+                    <option value="Брянск">Брянск</option>
+                    <option value="Екатеринбург">Екатеринбург</option>
+                    <option value="Самара">Самара</option>
+                    <option value="Ростов">Ростов</option>
+                    <option value="Мурманск">Мурманск</option>
+                  </datalist>
+                </div>
+              </div>
+
+              <div class="input-datalist-form">
+                <div class="input-datalist-form__block">
+                  <input
+                    class="input-datalist-form__block-input"
+                    autocomplete="off"
+                    role="combobox"
+                    list=""
+                    name="address"
+                    placeholder="Адрес доставки"
+                  />
+                  <div class="input-datalist-form__block-arrow">
+                    <img src="./img/icon/arrow-blue.svg" alt="" />
+                  </div>
+                </div>
+                <div class="input-datalist-form__list" style="display: none">
+                  <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                    <button type="button" class="input-datalist-form__list-reset">Адрес доставки</button>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Анапа">Анапа</option>
+                    <option value="Сочи">Сочи</option>
+                    <option value="Геленджик">Геленджик</option>
+                    <option value="Воронеж">Воронеж</option>
+                    <option value="Саратов">Саратов</option>
+                    <option value="Тула">Тула</option>
+                    <option value="Владивосток">Владивосток</option>
+                    <option value="Орел">Орел</option>
+                    <option value="Смоленск">Смоленск</option>
+                    <option value="Брянск">Брянск</option>
+                    <option value="Екатеринбург">Екатеринбург</option>
+                    <option value="Самара">Самара</option>
+                    <option value="Ростов">Ростов</option>
+                    <option value="Мурманск">Мурманск</option>
+                  </datalist>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="form__item">
@@ -2572,6 +2772,7 @@
 
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="./js/jquery.maskedinput.js"></script>
 <script src="./libs/swiper-bundle.js"></script>
 <script src="./js/swipers.js"></script>
 <script src="./libs/nouislider.min.js"></script>

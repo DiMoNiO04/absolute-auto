@@ -447,13 +447,13 @@
     img {
       width: 1.4rem;
       height: 1.4rem;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
 
     &.active {
       img {
         transform: rotate(180deg);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
   }

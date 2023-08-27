@@ -140,8 +140,29 @@ input:focus:-ms-input-placeholder {
       column-gap: 2.4rem;
     }
 
-    .input__block {
+    .input-datalist-form {
       width: 50%;
+    }
+
+    .input-datalist-form__block {
+      padding: 1.2rem 2rem;
+      margin: 0;
+    }
+
+    .input-datalist-form__block-input::placeholder,
+    .input-datalist-form__block-input {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 140%;
+      height: auto;
+    }
+
+    .input-datalist-form__list {
+      top: 4.8rem;
+    }
+
+    .input-datalist-form__block-input::placeholder {
+      color: $grey;
     }
 
     .btn-arrows {
@@ -249,7 +270,7 @@ input:focus:-ms-input-placeholder {
 
         &:hover path {
           fill: $mainColor;
-          transition: all 0.2s ease-in-out;
+          transition: all 0.5s ease-in-out;
         }
       }
     }
@@ -326,6 +347,30 @@ input:focus:-ms-input-placeholder {
   }
 }
 
+.input-radio__backg {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  position: absolute;
+
+  &::after {
+    content: '';
+    width: 30rem;
+    height: 50rem;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+    background: rgba(78, 193, 193, 0.5);
+    filter: blur(25rem);
+    position: absolute;
+    right: 10rem;
+    top: -12rem;
+    display: block;
+    z-index: -1;
+  }
+}
+
 .input-datalist-form {
   position: relative;
   &__block {
@@ -343,7 +388,7 @@ input:focus:-ms-input-placeholder {
     &.active {
       .input-datalist-form__block-arrow {
         transform: rotate(-90deg);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
@@ -360,7 +405,7 @@ input:focus:-ms-input-placeholder {
     width: 2rem;
     height: 2rem;
     flex-shrink: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     img {
       width: 100%;
       height: 100%;
@@ -446,7 +491,7 @@ input:focus:-ms-input-placeholder {
       &:hover,
       &.active {
         color: $mainColor;
-        transition: all 0.2s;
+        transition: all 0.5s;
       }
     }
 
@@ -475,6 +520,13 @@ input:focus:-ms-input-placeholder {
     font-size: 3.76vw;
   }
 
+  .input-radio__backg::after {
+    width: 65vw;
+    height: 65vw;
+    top: 5vw;
+    right: -40vw;
+  }
+
   .input__block {
     button {
       width: 4.2vw;
@@ -488,13 +540,36 @@ input:focus:-ms-input-placeholder {
 
   .input {
     &-address {
+      row-gap: 5.3vw;
       &__inputs {
         flex-direction: column;
         row-gap: 2.8vw;
       }
 
-      .input__block {
+      .input-datalist-form {
         width: 100%;
+        padding: 0;
+      }
+
+      .input-datalist-form:first-child {
+        padding-top: 0;
+      }
+
+      .input-datalist-form__block {
+        padding: 3.2vw 4.27vw;
+      }
+
+      .input-datalist-form__block-input::placeholder,
+      .input-datalist-form__block-input {
+        font-size: 3.8vw;
+      }
+
+      .input-datalist-form__list {
+        top: 11.5vw;
+      }
+
+      .input-datalist-form__block-input::placeholder {
+        color: $grey;
       }
 
       .btn-arrows {

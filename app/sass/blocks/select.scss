@@ -10,7 +10,7 @@
 
     &.active {
       img {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
         transform: rotate(180deg);
       }
     }
@@ -33,7 +33,7 @@
     column-gap: 1.5rem;
 
     img {
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -139,7 +139,7 @@
     overflow: scroll;
     transform: translateX(100%);
     justify-content: space-between;
-    transition: 0.2s all linear;
+    transition: 0.5s all linear;
     margin: 0;
 
     &.active {

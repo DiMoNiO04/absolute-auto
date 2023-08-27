@@ -12,12 +12,12 @@
   &.active {
     .sort__arrow {
       transform: rotate(-90deg);
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 
   &__arrow {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     width: 2.4rem;
     height: 2.4rem;
     img {
@@ -90,7 +90,7 @@
       &:hover,
       &.active {
         color: $mainColor;
-        transition: all 0.2s;
+        transition: all 0.5s;
       }
     }
   }
@@ -141,7 +141,7 @@
       row-gap: 6.4vw;
       overflow: scroll;
       transform: translateX(100%);
-      transition: 0.2s all linear;
+      transition: 0.5s all linear;
       margin: 0;
 
       &.active {

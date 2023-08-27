@@ -92,7 +92,7 @@
       div {
         color: $mainColor;
       }
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
   }
 
@@ -141,10 +141,10 @@
         position: relative;
         display: flex;
         align-items: center;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         &:hover {
-          transition: all 0.2s ease-in-out;
+          transition: all 0.5s ease-in-out;
           color: $mainColor;
           &::before {
             content: '';
@@ -155,7 +155,7 @@
             display: block;
             position: absolute;
             left: -3rem;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.5s ease-in-out;
           }
         }
       }
