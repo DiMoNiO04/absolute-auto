@@ -526,7 +526,7 @@ html {
 }
 
 .search {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem 1rem 2rem;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1825,8 +1825,8 @@ input {
   .header__bottom-buttons {
     padding: 2.8vw 3.2vw;
     position: fixed;
-    width: 95%;
-    bottom: 10vw;
+    width: 95.4%;
+    bottom: 3.75vw;
     z-index: 10;
     -webkit-column-gap: 2vw;
        -moz-column-gap: 2vw;
@@ -4453,6 +4453,12 @@ input:focus:-ms-input-placeholder {
 }
 .card__content-panel {
   margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .card__content-panel-status {
   padding: 0.4rem 0.8rem;
@@ -6834,8 +6840,8 @@ input:focus:-ms-input-placeholder {
   }
   .ordering__order-form-item-inputs, .ordering__order-form-item-bank {
     gap: 4.27vw;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     padding: 3.2vw 2.8vw 6.4vw 2.8vw;
   }
   .ordering__order-form-item-inputs .input__block:nth-child(3), .ordering__order-form-item-bank .input__block:nth-child(3) {
@@ -6843,6 +6849,9 @@ input:focus:-ms-input-placeholder {
   }
   .ordering__order-form-item-inputs .input__block:nth-child(4), .ordering__order-form-item-bank .input__block:nth-child(4) {
     grid-area: auto;
+  }
+  .ordering__order-form-item-bank .input__block:nth-child(10) {
+    grid-area: auto !important;
   }
 }
 .shiping__container {
@@ -8001,8 +8010,8 @@ input:focus:-ms-input-placeholder {
           align-items: center;
 }
 .pers-cab__fill-garage-desc-titles-btn {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
   cursor: pointer;
 }
 .pers-cab__fill-garage-desc-titles-title {
@@ -8414,7 +8423,7 @@ input:focus:-ms-input-placeholder {
   text-transform: none;
 }
 .history-order__content-title-block {
-  padding: 3.2rem 2rem 2rem 2rem;
+  padding: 3.2rem 2rem;
   background: #ffffff;
   display: none;
   position: absolute;
@@ -8433,12 +8442,12 @@ input:focus:-ms-input-placeholder {
 }
 .history-order__content-title-block-item::after {
   content: "";
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 0.1rem;
   display: block;
   background-color: #f0f1f5;
-  top: 2rem;
+  top: 1.2rem;
 }
 .history-order__content-title-block-item:hover {
   color: #4ec1c1;
@@ -9416,6 +9425,9 @@ input:focus:-ms-input-placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .catalog .input-datalist-form__blocks {
   display: -webkit-box;

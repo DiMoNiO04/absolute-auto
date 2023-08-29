@@ -25,6 +25,8 @@
 
   &__content-panel {
     margin-bottom: 0.5rem;
+		display: flex;
+		justify-content: end;
   }
 
   &__content-panel-status {
