@@ -101,15 +101,19 @@ $(document).ready(() => {
     hide.slideToggle();
   });
 
-  $('.your-order')
-    .find('.btn-form')
-    .each(function () {
-      if ($(this).attr('disabled') === 'disabled') {
-        $(this).next().fadeOut();
-      } else {
-        $(this).next().fadeIn();
-      }
-    });
+  $('.your-order').on('mouseenter', function () {
+    const button = $(this).find('.btn-form');
+    const notification = $(this).find('.your-order__notification');
+
+    if (button.attr('disabled') !== 'disabled') {
+      notification.fadeIn();
+    }
+  });
+
+  $('.your-order').on('mouseleave', function () {
+    const notification = $(this).find('.your-order__notification');
+    notification.fadeOut();
+  });
 
   function setPlaceholderInput() {
     const defaultPlaceholder = 'Поиск по VIN номеру, названию, OEM номеру, артикулу';
@@ -181,22 +185,27 @@ $(document).ready(() => {
 
   $('.choose-auto__open').on('click', () => {
     $('.choose-auto').addClass('active');
+    $(document.body).addClass('hidden');
   });
 
   $('.choose-auto__close').on('click', () => {
     $('.choose-auto').removeClass('active');
+    $(document.body).removeClass('hidden');
   });
 
   $('.catalog-filter-open').click(() => {
     $('.catalog__filter-mob').addClass('active');
+    $(document.body).addClass('hidden');
   });
 
   $('.catalog__filter-mob-close').click(() => {
     $('.catalog__filter-mob').removeClass('active');
+    $(document.body).removeClass('hidden');
   });
 
   $('.sort').on('click', () => {
     $('.select-sort').addClass('active');
+    $(document.body).addClass('hidden');
   });
 });
 

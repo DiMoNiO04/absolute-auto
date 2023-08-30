@@ -194,6 +194,7 @@ input:focus:-ms-input-placeholder {
 
   &-radio {
     margin-bottom: 2rem;
+    position: relative;
 
     &:not(:last-child) {
       margin-bottom: 1.2rem;
@@ -210,19 +211,24 @@ input:focus:-ms-input-placeholder {
       justify-content: space-between;
 
       input:checked {
-        & ~ label::after {
-          content: '';
-          width: 30rem;
-          height: 50rem;
-          transform: rotate(-90deg);
-          flex-shrink: 0;
-          background: rgba(78, 193, 193, 0.5);
-          filter: blur(25rem);
-          position: absolute;
-          right: 10rem;
-          top: -12rem;
-          display: block;
-          z-index: -1;
+        & ~ label {
+          .input-radio__inp-img {
+            transform: rotate(-90deg);
+          }
+          &::after {
+            content: '';
+            width: 30rem;
+            height: 50rem;
+            transform: rotate(-90deg);
+            flex-shrink: 0;
+            background: rgba(78, 193, 193, 0.5);
+            filter: blur(25rem);
+            position: absolute;
+            right: 10rem;
+            top: -12rem;
+            display: block;
+            z-index: -1;
+          }
         }
       }
 
@@ -237,6 +243,19 @@ input:focus:-ms-input-placeholder {
         column-gap: 1.2rem;
         align-items: center;
         position: relative;
+        span {
+          width: 100%;
+        }
+
+        .input-radio__inp-img {
+          transition: all 0.3s ease-in-out;
+          width: 2rem;
+          height: 2rem;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
 
         &:before {
           content: '';
@@ -423,7 +442,7 @@ input:focus:-ms-input-placeholder {
     line-height: 130%;
 
     &::placeholder {
-      color: $grey;
+      color: $black;
       font-size: 1.6rem;
       font-weight: 600;
       line-height: 130%;
@@ -569,7 +588,7 @@ input:focus:-ms-input-placeholder {
       }
 
       .input-datalist-form__block-input::placeholder {
-        color: $grey;
+        color: $black;
       }
 
       .btn-arrows {
@@ -599,6 +618,10 @@ input:focus:-ms-input-placeholder {
           font-size: 4.2vw;
           line-height: 130%;
           column-gap: 3.2vw;
+
+          .input-radio__inp-img {
+            display: none;
+          }
 
           &:before {
             height: 5.3vw;

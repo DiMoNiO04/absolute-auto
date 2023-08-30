@@ -21,6 +21,15 @@
     }
   }
 
+  &-arrows__yet {
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    .btn-arrows__img {
+      transform: rotate(90deg);
+    }
+  }
+
   &-back {
     justify-content: flex-start;
 

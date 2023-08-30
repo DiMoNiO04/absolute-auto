@@ -430,6 +430,11 @@
   justify-content: center;
   background-color: $watermarkBackground;
 
+  .input-datalist-form__block-arrow img {
+    transition: all 0.3s ease-in-out;
+    transform: rotate(90deg);
+  }
+
   &-img {
     height: 50.3rem;
     width: 66rem;

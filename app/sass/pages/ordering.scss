@@ -79,6 +79,7 @@
 
   &__order-form-item-bank {
     padding: 0;
+    background: none;
     .input__block {
       grid-area: auto !important;
     }
@@ -160,11 +161,10 @@
         grid-area: auto;
       }
     }
-				&__order-form-item-bank {
-		
-					.input__block:nth-child(10) {
-						grid-area: auto !important;
-					}
-				}
+    &__order-form-item-bank {
+      .input__block:nth-child(10) {
+        grid-area: auto !important;
+      }
+    }
   }
 }
