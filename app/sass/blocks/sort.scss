@@ -18,8 +18,8 @@
 
   &__arrow {
     transition: all 0.5s ease-in-out;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 2rem;
+    height: 2rem;
     img {
       width: 100%;
       height: 100%;
@@ -117,18 +117,6 @@
     }
 
     &__block {
-      // top: 18vw;
-      // left: -40vw;
-      // width: fit-content;
-      // box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-      // padding: 2.8vw;
-
-      // option {
-      //   font-size: 4vw;
-      //   line-height: 130%;
-      //   padding-bottom: 2.1vw;
-      //   width: calc(50% - 2rem);
-      // }
       background: $background;
       width: 100%;
       height: 100%;

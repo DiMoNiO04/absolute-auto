@@ -5173,8 +5173,8 @@ input:focus:-ms-input-placeholder {
 .sort__arrow {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
 }
 .sort__arrow img {
   width: 100%;
@@ -8287,8 +8287,8 @@ input:focus:-ms-input-placeholder {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin: auto 0 auto auto;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
 }
 .pers-cab__fill-history-content-item-inner div:nth-child(6) button img {
   width: 100%;

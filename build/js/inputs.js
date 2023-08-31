@@ -15,6 +15,19 @@ $(document).ready(() => {
     }
   }
 
+  $('.input__block-pass').each(function () {
+    const button = $(this).find('button');
+    const input = $(this).find('input');
+    button.fadeOut();
+
+    input.on('focus', () => {
+      button.fadeIn();
+    });
+    input.on('blur', () => {
+      button.fadeOut();
+    });
+  });
+
   $('.input__block').each(function () {
     const input = $(this).find('input');
     const button = $(this).find('button');
@@ -32,7 +45,8 @@ $(document).ready(() => {
     }
 
     if (input.attr('type') === 'password') {
-      button.on('click', function () {
+      button.on('mousedown', function (event) {
+        event.preventDefault();
         $(this).parent().toggleClass('open');
 
         if (input.attr('type') === 'password') {
@@ -40,7 +54,6 @@ $(document).ready(() => {
         } else {
           input.attr('type', 'password');
         }
-        input.focus();
       });
     }
   });
