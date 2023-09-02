@@ -125,10 +125,11 @@ $(document).ready(() => {
         changeDisableButton(inputBlock, formRes);
       });
 
-      input.on('input', function () {
-        const text = $(this).val().toUpperCase();
-        datalist.find('option').each(function () {
-          if ($(this).val().toUpperCase().indexOf(text) > -1) {
+      input.on('input', () => {
+        const inputValue = input.val().toLowerCase();
+        option.each(function () {
+          const optionValue = $(this).val().toLowerCase();
+          if (optionValue.indexOf(inputValue) === 0) {
             $(this).css('display', 'block');
           } else {
             $(this).css('display', 'none');

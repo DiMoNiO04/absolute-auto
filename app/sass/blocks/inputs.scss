@@ -537,6 +537,7 @@ input:focus:-ms-input-placeholder {
   textarea {
     padding: 3vw 11vw 3vw 4.27vw;
     font-size: 3.76vw;
+    margin-bottom: 3vw;
   }
 
   .input-radio__backg::after {
@@ -670,13 +671,10 @@ input:focus:-ms-input-placeholder {
   }
 
   .input-datalist-form {
-    padding: 2vw 0 2vw 0;
-    &:first-child {
-      padding-top: 2vw;
-    }
     &__block {
       column-gap: 4vw;
       padding: 3.2vw 5.33vw 3.2vw 4vw;
+      margin-bottom: 3vw;
     }
 
     &__block-arrow {
@@ -703,7 +701,7 @@ input:focus:-ms-input-placeholder {
     }
 
     &__list {
-      top: 17vw;
+      top: 16vw;
       padding: 2.8vw 5.3vw;
     }
 

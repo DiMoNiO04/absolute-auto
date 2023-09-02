@@ -14,6 +14,21 @@ $(document).ready(function () {
     $(`[data-block-entrance=${contentName}]`).fadeIn(1000);
   }
 
+  function getWidthScrol() {
+    const div = document.createElement('div');
+
+    div.style.overflowY = 'scroll';
+    div.style.width = '50px';
+    div.style.height = '50px';
+
+    document.body.append(div);
+    const scrollWidth = div.offsetWidth - div.clientWidth;
+
+    div.remove();
+
+    return scrollWidth;
+  }
+
   class Modal {
     constructor(name) {
       this.name = name;
@@ -27,12 +42,14 @@ $(document).ready(function () {
       this.modal.classList.remove('success', 'error');
       this.modal.classList.add('active');
       document.body.style.overflow = 'hidden';
+      document.body.style.width = `${document.body.clientWidth - getWidthScrol()}px`;
       this.modal.addEventListener('click', this.closeHendler);
     }
 
     close() {
       this.modal.classList.remove('active');
       document.body.style.overflow = 'unset';
+      document.body.style.width = 'auto';
       this.modal.removeEventListener('click', this.closeHendler);
     }
 

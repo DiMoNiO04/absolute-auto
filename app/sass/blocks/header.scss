@@ -405,7 +405,7 @@
   background: $background;
   top: 10rem;
   display: none;
-  z-index: 10;
+  z-index: 8;
 
   &-btn {
     position: absolute;
@@ -925,8 +925,8 @@
   .header__menu-mob {
     background: $background;
     width: 100%;
-    height: calc(100% - 20rem);
-    top: 20rem;
+    height: calc(100% - 23rem);
+    top: 23rem;
     left: 0;
     position: fixed;
     z-index: 10;

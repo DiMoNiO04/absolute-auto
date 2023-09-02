@@ -313,7 +313,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 6rem;
-    padding: 6rem 0 15rem 0;
+    padding-bottom: 15rem;
   }
 
   &-brands__top {
@@ -322,26 +322,28 @@
   }
 
   &-brands__swiper-wrapper {
-    height: 55rem;
+    height: 47rem;
+  }
+
+  &__pagination {
+    margin-top: 4rem;
   }
 
   &-brands__swiper-slide {
-    border: 0.2rem solid rgba(255, 255, 255, 0.8);
-    background-color: rgba(255, 255, 255, 0.35);
+    background: transparent url('../../img/brands/brands-bg.webp') center center no-repeat;
+    background-size: contain;
     width: auto;
-    height: 22rem;
+    height: calc(53% - 30px);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
     img {
       width: 14rem;
       height: 6rem;
     }
     &:hover {
-      background: url('../img/brands/brands-hover-bg.svg') no-repeat center;
-      background-color: none;
-      border: 0;
-      border-color: $white;
+      background: transparent url('../img/brands/brands-hover-bg.svg') center center no-repeat;
       background-size: contain;
       cursor: pointer;
     }
@@ -351,12 +353,6 @@
     background-color: $background;
     position: relative;
     overflow: hidden;
-  }
-
-  &-about__top {
-    padding-top: 10rem;
-    border-bottom: 0.1rem solid;
-    border-color: rgba(255, 255, 255, 0.8);
   }
 
   &-about__top-desc {
@@ -652,12 +648,12 @@
     }
 
     &-brands__swiper-wrapper {
-      height: 83vw;
+      height: 86.7vw;
     }
 
     &-brands__swiper-slide {
-      width: auto !important;
-      height: 38vw;
+      width: 46vw !important;
+      height: 42vw;
       animation: a 1s;
 
       img {

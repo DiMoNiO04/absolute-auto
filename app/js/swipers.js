@@ -16,7 +16,7 @@ $(document).ready(() => {
             clickable: true,
           },
         },
-        768: {
+        769: {
           slidesPerView: 6,
           slidesPerColumn: 2,
           observer: true,

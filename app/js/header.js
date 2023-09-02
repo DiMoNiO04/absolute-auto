@@ -3,37 +3,53 @@ $(document).ready(() => {
   $('.details-buttons button').click(function () {
     $('.details-content').fadeIn(500);
     $('.details-buttons button').not($(this)).removeClass('active');
-    $(this).toggleClass('active');
+    $(this).addClass('active');
     $('.main-overlay').addClass('active');
     $('.header').addClass('active');
 
     $('.catalog-desc-content').fadeOut(200);
     $('.catalog-open-desc').removeClass('active');
+    $('.catalog-open-desc').removeClass('close');
 
     $('.header__menu-mob').removeClass('active');
     $('.burger-open').removeClass('active');
 
     $('.panel-button-mob-content').fadeOut(200);
     $('.panel-button-mob button').removeClass('active');
+
+    $('.header__bottom-button-content').fadeOut();
+    $('.header__bottom-button button').removeClass('active');
+    $('.burger-open').removeClass('close');
   });
 
   // Клик на закрытие меню выбора деталей
   $('.close-details').click(() => {
     $('.details-content').fadeOut();
     $('.main-overlay').removeClass('active');
-    $(document.body).toggleClass('hidden');
     $('.header').removeClass('active');
     $('.details-buttons button').removeClass('active');
   });
 
   // Клик на кнопку раскрытия категории
   $('.catalog-open-desc').click(function () {
-    $(document.body).toggleClass('hidden');
-    $('.catalog-desc-content').fadeIn(500);
-    $(this).addClass('active');
-    $('.main-overlay').addClass('active');
-    $('.header').addClass('active');
-    $('.catalog-desc-content').addClass('active');
+    if ($(this).hasClass('close')) {
+      $('.catalog-desc-content').fadeOut(500);
+      $(this).removeClass('active');
+      $(this).removeClass('close');
+      $('.main-overlay').removeClass('active');
+      $('.header').removeClass('active');
+      $('.catalog-desc-content').removeClass('active');
+    } else {
+      $('.catalog-desc-content').fadeIn(500);
+      $(this).addClass('active');
+      $(this).addClass('close');
+      $('.main-overlay').addClass('active');
+      $('.header').addClass('active');
+      $('.catalog-desc-content').addClass('active');
+    }
+
+    $('.header__bottom-button-content').fadeOut();
+    $('.header__bottom-button button').removeClass('active');
 
     $('.details-content').fadeOut(200);
     $('.details-buttons button').removeClass('active');
@@ -41,12 +57,12 @@ $(document).ready(() => {
 
   // Клик на кнопку закрытия категории
   $('.header__bottom-category-close').click(() => {
-    $(document.body).toggleClass('hidden');
     $('.catalog-desc-content').fadeToggle();
     $('.catalog-open-desc').toggleClass('active');
     $('.main-overlay').toggleClass('active');
     $('.header').toggleClass('active');
     $('.catalog-desc-content').removeClass('active');
+    $('.catalog-open-desc').removeClass('close');
   });
 
   // Клик на кнопки в панели меню
@@ -67,6 +83,7 @@ $(document).ready(() => {
     if (event.target.classList.value === 'main-overlay active') {
       $('.catalog-desc-content').fadeOut(200);
       $('.catalog-open-desc').removeClass('active');
+      $('.catalog-open-desc').removeClass('close');
 
       $(document.body).removeClass('hidden');
 
@@ -81,18 +98,30 @@ $(document).ready(() => {
   // Мобильная версия
   // Бургер меню
   $('.burger-open').click(function () {
-    $(document.body).toggleClass('hidden');
-    $(this).toggleClass('active');
-    $('.header__menu-mob').toggleClass('active');
+    if ($(this).hasClass('close')) {
+      $(document.body).removeClass('hidden');
+      $('.header').removeClass('active');
+      $(this).removeClass('active');
+      $(this).removeClass('close');
+      $('.header__menu-mob').removeClass('active');
+    } else {
+      $(document.body).addClass('hidden');
+      $('.header').addClass('active');
+      $(this).addClass('active');
+      $(this).addClass('close');
+      $('.header__menu-mob').addClass('active');
+    }
+
     $('.details-content').fadeOut();
     $('.details-buttons button').removeClass('active');
     $('.main-overlay').removeClass('active');
-    $('.header').toggleClass('active');
   });
 
   // Открыть каталог в моб
   $('.catalog-open-mob').click(() => {
     $('.catalog-open-mob-content').addClass('active');
+    $('.header__bottom-button-content').fadeOut();
+    $('.header__bottom-button button').removeClass('active');
   });
 
   // Закрыть каталог в моб
@@ -130,15 +159,4 @@ $(document).ready(() => {
       });
     });
   }
-
-  // $(window).resize(() => {
-  //   if (window.innerWidth >= 768 && $('.header__menu-mob').hasClass('active')) {
-  //     $(document.body).removeClass('hidden');
-  //     $(this).removeClass('active');
-  //     $('.header__menu-mob').removeClass('active');
-  //     $('.burger-open').removeClass('active');
-  //     $('.main-overlay').removeClass('active');
-  //     $('.header').removeClass('active');
-  //   }
-  // });
 });
