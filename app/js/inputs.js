@@ -23,9 +23,6 @@ $(document).ready(() => {
     input.on('focus', () => {
       button.fadeIn();
     });
-    input.on('blur', () => {
-      button.fadeOut();
-    });
   });
 
   $('.input__block').each(function () {
@@ -126,9 +123,9 @@ $(document).ready(() => {
       });
 
       input.on('input', () => {
-        const inputValue = input.val().toLowerCase();
+        const inputValue = input.val().toLowerCase().trim();
         option.each(function () {
-          const optionValue = $(this).val().toLowerCase();
+          const optionValue = $(this).text().toLowerCase();
           if (optionValue.indexOf(inputValue) === 0) {
             $(this).css('display', 'block');
           } else {

@@ -540,6 +540,7 @@ html {
 .search input {
   padding: 0 !important;
   border: none !important;
+  margin-bottom: 0;
 }
 .search input::-webkit-input-placeholder {
   color: #98a0b1;
@@ -870,6 +871,8 @@ input {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .btn-arrows:hover .btn-arrows__title {
   color: #4ec1c1;
@@ -878,9 +881,11 @@ input {
 }
 .btn-arrows:hover .btn-arrows__img {
   background: url(../img/icon/arrows-blue.svg) no-repeat center;
-  background-size: cover;
+  background-size: contain;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  width: 3.3rem;
+  height: 1.8rem;
 }
 .btn-arrows__yet {
   -webkit-box-orient: vertical;
@@ -929,8 +934,8 @@ input {
 .btn-arrows__img {
   background: url(../img/icon/arrows-black.svg) no-repeat center;
   background-size: contain;
-  width: 3rem;
-  height: 1.4rem;
+  width: 3.3rem;
+  height: 1.8rem;
 }
 .btn-form {
   display: -webkit-box;
@@ -1512,7 +1517,7 @@ input {
   position: absolute;
   left: 0;
   background: #eaebf0;
-  top: 10rem;
+  top: 12rem;
   display: none;
   z-index: 8;
 }
@@ -2817,7 +2822,6 @@ input:focus:-ms-input-placeholder {
   -webkit-column-gap: 1.2rem;
      -moz-column-gap: 1.2rem;
           column-gap: 1.2rem;
-  padding: 1rem 2.4rem;
   background: rgba(255, 255, 255, 0.35);
   position: relative;
   overflow: hidden;
@@ -2851,6 +2855,7 @@ input:focus:-ms-input-placeholder {
 }
 .input-radio__inp label {
   color: #2c2a3b;
+  padding: 1rem 2.4rem;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 130%;
@@ -3188,7 +3193,6 @@ input:focus:-ms-input-placeholder {
   textarea {
     padding: 3vw 11vw 3vw 4.27vw;
     font-size: 3.76vw;
-    margin-bottom: 3vw;
   }
   .input-radio__backg::after {
     width: 65vw;
@@ -3274,7 +3278,6 @@ input:focus:-ms-input-placeholder {
     -webkit-column-gap: 3.2vw;
        -moz-column-gap: 3.2vw;
             column-gap: 3.2vw;
-    padding: 3.6vw 2.8vw;
   }
   .input-radio__inp label {
     font-size: 4.2vw;
@@ -3282,6 +3285,7 @@ input:focus:-ms-input-placeholder {
     -webkit-column-gap: 3.2vw;
        -moz-column-gap: 3.2vw;
             column-gap: 3.2vw;
+    padding: 3.6vw 2.8vw;
   }
   .input-radio__inp label .input-radio__inp-img {
     display: none;
@@ -3306,6 +3310,9 @@ input:focus:-ms-input-placeholder {
   .input-radio__panel button svg {
     width: 5.3vw;
     height: 5.3vw;
+  }
+  .input-count {
+    left: 0;
   }
   .input-count input {
     font-size: 4.27vw;
@@ -4482,6 +4489,8 @@ input:focus:-ms-input-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .card__content:hover {
   border-color: #4ec1c1;
@@ -5521,6 +5530,7 @@ input:focus:-ms-input-placeholder {
   }
   .choose-auto .input-datalist-form {
     width: 100%;
+    margin-bottom: 3vw;
   }
   .choose-auto .input-datalist-form__blocks {
     -webkit-box-orient: vertical;
@@ -5967,7 +5977,7 @@ input:focus:-ms-input-placeholder {
   top: -23rem;
   opacity: 0.6;
   width: 100%;
-  background-image: url("../img/backgrounds/main.svg");
+  background-image: url("./img/backgrounds/main.svg");
   background-size: cover;
 }
 .main-main__search {
@@ -6302,7 +6312,7 @@ input:focus:-ms-input-placeholder {
   margin-top: 4rem;
 }
 .main-brands__swiper-slide {
-  background: transparent url("../../img/brands/brands-bg.webp") center center no-repeat;
+  background: transparent url("../img/brands/brands-bg.webp") center center no-repeat;
   background-size: contain;
   width: auto;
   height: calc(53% - 30px);
@@ -6467,6 +6477,9 @@ input:focus:-ms-input-placeholder {
   }
   .main-main__search-btns {
     margin-bottom: 6.4vw;
+  }
+  .main-main__search-form-inputs-vin {
+    margin-bottom: 3vw;
   }
   .main-main__search-btn.active .main-main__search-btn-title {
     font-size: 4vw;
@@ -9815,6 +9828,9 @@ input:focus:-ms-input-placeholder {
     -webkit-column-gap: 0;
        -moz-column-gap: 0;
             column-gap: 0;
+  }
+  .catalog .input-datalist-form {
+    margin-bottom: 3vw;
   }
   .catalog .right-body__bg,
   .catalog .left-body__bg {

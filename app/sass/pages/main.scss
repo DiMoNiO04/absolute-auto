@@ -23,7 +23,7 @@
     top: -23rem;
     opacity: 0.6;
     width: 100%;
-    background-image: url('../img/backgrounds/main.svg');
+    background-image: url('./img/backgrounds/main.svg');
     background-size: cover;
   }
 
@@ -330,7 +330,7 @@
   }
 
   &-brands__swiper-slide {
-    background: transparent url('../../img/brands/brands-bg.webp') center center no-repeat;
+    background: transparent url('../img/brands/brands-bg.webp') center center no-repeat;
     background-size: contain;
     width: auto;
     height: calc(53% - 30px);
@@ -473,6 +473,10 @@
 
     &-main__search-btns {
       margin-bottom: 6.4vw;
+    }
+
+    &-main__search-form-inputs-vin {
+      margin-bottom: 3vw;
     }
 
     &-main__search-btn {
