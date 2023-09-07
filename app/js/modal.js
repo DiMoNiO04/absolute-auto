@@ -111,4 +111,7 @@ $(document).ready(function () {
     ? new Modal('purchase-returns')
     : null;
   const modalChoiceCar = document.querySelector('[data-modal="choice-car"]') ? new Modal('choice-car') : null;
+  const modalChoiceCarMain = document.querySelector('[data-modal="choice-car-main"]')
+    ? new Modal('choice-car-main')
+    : null;
 });

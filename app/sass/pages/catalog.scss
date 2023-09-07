@@ -18,10 +18,19 @@
     margin-bottom: 6.5rem;
   }
 
-  &__left {
+  &__left,
+  &__filters {
     width: 38.5rem;
     display: flex;
     flex-direction: column;
+    position: relative;
+    row-gap: 5rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     row-gap: 5rem;
   }
 
@@ -92,6 +101,47 @@
     row-gap: 2rem;
   }
 
+  &__item-form {
+    .btn-arrows {
+      column-gap: 1.2rem;
+      &__title {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__item-form-block {
+    .input-radio__inp {
+      background: none;
+      border: none;
+
+      label {
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+
+        div {
+          color: $black;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 130%;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .input-radio__inp input:checked ~ label::after {
+      display: none;
+    }
+
+    .input-radio__inp input:checked ~ label div {
+      color: $mainColor;
+    }
+  }
+
   &__item-main {
     display: flex;
     justify-content: flex-start;
@@ -113,8 +163,8 @@
         height: 3rem;
       }
       &:last-child {
-        width: 1.4rem;
-        height: 1.4rem;
+        width: 1.6rem;
+        height: 1rem;
         transition: all 0.5s ease-in-out;
       }
     }
@@ -174,8 +224,8 @@
       line-height: 140%;
     }
     img {
-      width: 1.4rem;
-      height: 1.4rem;
+      width: 1.6rem;
+      height: 1rem;
       transition: all 0.5s ease-in-out;
     }
     &.active {
@@ -203,7 +253,7 @@
     .input-checkbox input[type='checkbox']:checked + span:before {
       background-color: transparent;
     }
-    ul {
+    &-items {
       padding-left: 1.6rem;
       display: flex;
       flex-direction: column;
@@ -230,6 +280,7 @@
     padding: 2rem 3.2rem;
     display: flex;
     justify-content: center;
+    border-top: $border;
   }
 
   &__item-form-title {
@@ -307,8 +358,14 @@
   .catalog {
     padding: 5.3vw 0 24vw 0;
 
+    .btn-arrows__title {
+      font-size: 5.3vw;
+    }
+
     &__container {
       column-gap: 0;
+      flex-direction: column;
+      row-gap: 8vw;
     }
 
     .input-datalist-form {
@@ -336,7 +393,7 @@
     }
 
     &__left {
-      width: 0;
+      width: 100%;
     }
 
     &__right {
@@ -364,11 +421,7 @@
       }
     }
 
-    &__item-main {
-      display: none;
-    }
-
-    &__item {
+    &__filters {
       background: $background;
       width: 100%;
       height: 100%;
@@ -376,23 +429,83 @@
       left: 0;
       position: fixed;
       z-index: 10;
-      padding: 2.8vw 0 10.6vw 0;
-      row-gap: 6.4vw;
+      padding: 20vw 0 18vw 0;
+      row-gap: 10.6vw;
       overflow: scroll;
       transform: translateX(100%);
       transition: 0.5s all linear;
+      justify-content: space-between;
 
       &.active {
         transform: translateX(0%);
       }
     }
 
+    &__item {
+      row-gap: 0;
+    }
+
+    &__item-main {
+      padding: 0 3.2vw;
+      column-gap: 3.2vw;
+      span {
+        font-size: 4.8vw;
+        font-weight: 700;
+        line-height: 130%;
+        width: 100%;
+        text-align: left;
+      }
+      img {
+        &:first-child {
+          width: 5.3vw;
+          height: 5.3vw;
+        }
+        &:last-child {
+          width: 4.27vw;
+          height: 3.2vw;
+        }
+      }
+    }
+
+    &__filters-btns {
+      display: flex;
+      column-gap: 3.2vw;
+      padding: 0 3.2vw;
+
+      .form-btn-reset {
+        background: $black;
+
+        span {
+          color: $white;
+        }
+      }
+    }
+
+    &__items {
+      row-gap: 10.6vw;
+    }
+
+    &__item-form-title {
+      padding: 0 3.2vw 3.6vw 3.2vw;
+      color: $black;
+      font-size: 4.8vw;
+      font-weight: 700;
+      line-height: 130%;
+      border-bottom: $border;
+    }
+
+    &__item-filter {
+      .catalog__item-form-block-inner span {
+        font-size: 4vw;
+        font-weight: 600;
+      }
+    }
+
     &__item-form {
       width: 100%;
-      margin-top: 16vw;
       min-height: 90%;
+      padding-top: 6.4vw;
       height: fit-content;
-      display: flex !important;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
@@ -400,6 +513,28 @@
       border: none;
       & > div {
         width: 100%;
+      }
+
+      .btn-arrows {
+        display: none;
+      }
+    }
+
+    &__item-form-block {
+      .input-radio__inp {
+        label {
+          flex-direction: row-reverse;
+          div {
+            font-size: 3.8vw;
+          }
+
+          &::before {
+            display: block;
+          }
+        }
+      }
+      .input-radio__inp input:checked ~ label div {
+        color: $black;
       }
     }
 
@@ -431,6 +566,9 @@
     }
 
     &__item-form-block {
+      &:first-child {
+        border-top: $border;
+      }
       &:first-child {
         .catalog__item-form-block-content {
           padding-left: 3.2vw;
@@ -512,24 +650,22 @@
       height: 5.3vw;
       position: absolute;
       top: 5.3vw;
-      right: 3vw;
+      right: 2.8vw;
     }
 
     &__item-form-block-inner {
       span {
         font-size: 4vw;
+        font-weight: 600;
       }
       img {
-        width: 4.8vw;
-        height: 4.8vw;
+        width: 4.27vw;
+        height: 3.2vw;
       }
     }
 
     &__item-form-block {
-      padding: 4.27vw 2.8vw 0 2.8vw;
-      &:first-child {
-        border-top: $border;
-      }
+      padding: 4.27vw 3.2vw 0 3.2vw;
       &:last-child {
         border-bottom: $border;
       }
@@ -542,10 +678,17 @@
     &__item-form-block-content {
       padding-bottom: 4.27vw;
       padding-left: 5.3vw;
+      margin: 0;
     }
 
     &__item-form-block-content .input-checkbox:not(:last-child) {
       margin-bottom: 5.3vw;
+    }
+
+    &__item-form-block-content-items {
+      row-gap: 5.3vw;
+      padding: 0;
+      margin: 0;
     }
 
     &__item-form-block-reset-btn {

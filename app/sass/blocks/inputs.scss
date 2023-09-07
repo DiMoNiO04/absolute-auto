@@ -132,6 +132,7 @@ input:focus:-ms-input-placeholder {
   &-address {
     display: flex;
     flex-direction: column;
+    position: relative;
     row-gap: 2rem;
     margin-top: 2.4rem;
 
@@ -336,20 +337,21 @@ input:focus:-ms-input-placeholder {
   }
 
   &-checkbox span {
-    display: inline-block;
     position: relative;
-    padding: 0 0 0 4rem;
     color: $black;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 140%;
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
     &::before {
       content: '';
       display: inline-block;
       width: 2.5rem;
       height: 2.5rem;
       border: $border;
-      position: absolute;
+      position: relative;
       left: 0;
       top: 0.5rem;
       background: none;
@@ -399,7 +401,7 @@ input:focus:-ms-input-placeholder {
     column-gap: 1.5rem;
     align-items: center;
     justify-content: space-between;
-    padding: 0.9rem 1.2rem;
+    padding: 1.2rem;
     background-color: $white;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -454,7 +456,7 @@ input:focus:-ms-input-placeholder {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 120%;
-    padding: 1.4rem;
+    padding: 1.3rem 1.5rem;
     background: $greyLight;
     color: $grey;
     transition: all 0.5s ease-in-out;
@@ -497,6 +499,7 @@ input:focus:-ms-input-placeholder {
     }
 
     option {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       background-color: $white;
       color: $black;
       font-size: 1.5rem;
@@ -636,6 +639,7 @@ input:focus:-ms-input-placeholder {
         padding: 0;
         flex-direction: column-reverse;
         row-gap: 4vw;
+        padding: 2.8vw 2.8vw 2.8vw 0;
 
         button svg {
           width: 5.3vw;
@@ -655,9 +659,10 @@ input:focus:-ms-input-placeholder {
     }
 
     &-checkbox span {
-      padding: 0 0 0 8vw;
       font-size: 3.75vw;
       line-height: 130%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
 
       &::before {
         width: 5.3vw;
@@ -678,8 +683,8 @@ input:focus:-ms-input-placeholder {
     }
 
     &__block-arrow {
-      width: 5.3vw;
-      height: 5.3vw;
+      width: 4.8vw;
+      height: 4.8vw;
     }
 
     &__block-input {

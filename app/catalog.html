@@ -24,532 +24,484 @@
             <a href="#">Детали двигателя</a>
             <a href="#">Маслосъемные колпачки</a>
           </div>
-          <div class="choose-auto">
-            <button type="button" class="choose-auto__close --mob">
-              <img src="./img/icon/close-blue.svg" alt="" />
-            </button>
-            <form method="#" action="#" id="choose-car" class="choose-auto__form">
-              <div class="choose-auto__form-inputs">
-                <div class="choose-auto__form-change">
-                  <button type="button" class="choose-auto__form-change-btn">
-                    <div class="choose-auto__form-change-btn-icon">
-                      <img src="./img/icon/driving.svg" alt="" />
-                    </div>
-                    <span class="choose-auto__form-change-btn-text"> Ваш гараж </span>
-                    <div class="choose-auto__form-change-btn-arrow --mob">
-                      <img src="./img/icon/arrow-white.svg" alt="" />
-                    </div>
-                  </button>
-
-                  <div class="choose-auto__history">
-                    <div class="choose-auto__history-item active">
-                      <button type="button" class="choose-auto__history-item-icon">
-                        <img src="./img/icon/arrow-white.svg" alt="" />
-                      </button>
-                      <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                      <button type="button" class="choose-auto__history-item-btn">
-                        <img src="./img/icon/close-small.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="choose-auto__history-item">
-                      <button type="button" class="choose-auto__history-item-icon">
-                        <img src="./img/icon/arrow-white.svg" alt="" />
-                      </button>
-                      <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                      <button type="button" class="choose-auto__history-item-btn">
-                        <img src="./img/icon/close-small.svg" alt="" />
-                      </button>
-                    </div>
-                    <div class="choose-auto__history-item">
-                      <button type="button" class="choose-auto__history-item-icon">
-                        <img src="./img/icon/arrow-white.svg" alt="" />
-                      </button>
-                      <div class="choose-auto__history-item-text">BMW Z4 Roadster (E89) sDrive 35 i</div>
-                      <button type="button" class="choose-auto__history-item-btn">
-                        <img src="./img/icon/close-small.svg" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="input-datalist-form__blocks">
-                  <div class="input-datalist-form">
-                    <div class="input-datalist-form__block">
-                      <div class="input-datalist-form__block-icon">01</div>
-                      <input
-                        class="input-datalist-form__block-input"
-                        autocomplete="off"
-                        role="combobox"
-                        list=""
-                        name="brands"
-                        placeholder="Марка"
-                      />
-                      <div class="input-datalist-form__block-arrow">
-                        <img src="./img/icon/arrow-blue.svg" alt="" />
-                      </div>
-                    </div>
-                    <div class="input-datalist-form__list" style="display: none">
-                      <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                        <button type="button" class="input-datalist-form__list-reset">Марка</button>
-                        <option value="Acura">Acura</option>
-                        <option value="Audi">Audi</option>
-                        <option value="Alfa Romeo">Alfa Romeo</option>
-                        <option value="Bentley">Bentley</option>
-                        <option value="BMW">BMW</option>
-                        <option value="Cadilac">Cadilac</option>
-                        <option value="Chery">Chery</option>
-                        <option value="Lada">Lada</option>
-                        <option value="Porsche">Porsche</option>
-                        <option value="Mazda">Mazda</option>
-                        <option value="Lamborgini">Lamborgini</option>
-                        <option value="Bentley">Bentley</option>
-                        <option value="Volkswagen">Volkswagen</option>
-                      </datalist>
-                    </div>
-                  </div>
-
-                  <div class="input-datalist-form">
-                    <div class="input-datalist-form__block">
-                      <div class="input-datalist-form__block-icon">02</div>
-                      <input
-                        class="input-datalist-form__block-input"
-                        autocomplete="off"
-                        role="combobox"
-                        list=""
-                        name="models"
-                        placeholder="Модель"
-                      />
-                      <div class="input-datalist-form__block-arrow">
-                        <img src="./img/icon/arrow-blue.svg" alt="" />
-                      </div>
-                    </div>
-                    <div class="input-datalist-form__list" style="display: none">
-                      <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                        <button type="button" class="input-datalist-form__list-reset">Модель</button>
-                        <option value="A3">A3</option>
-                        <option value="A4">A4</option>
-                        <option value="A6">A6</option>
-                        <option value="A8">A8</option>
-                        <option value="Q5">Q5</option>
-                        <option value="Q7">Q7</option>
-                        <option value="RS6">RS6</option>
-                        <option value="RS6C6">RS6C6</option>
-                      </datalist>
-                    </div>
-                  </div>
-
-                  <div class="input-datalist-form">
-                    <div class="input-datalist-form__block">
-                      <div class="input-datalist-form__block-icon">03</div>
-                      <input
-                        class="input-datalist-form__block-input"
-                        autocomplete="off"
-                        role="combobox"
-                        list=""
-                        name="engine"
-                        placeholder="Двигатель"
-                      />
-                      <div class="input-datalist-form__block-arrow">
-                        <img src="./img/icon/arrow-blue.svg" alt="" />
-                      </div>
-                    </div>
-                    <div class="input-datalist-form__list" style="display: none">
-                      <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
-                        <button class="input-datalist-form__list-reset">Двигатель</button>
-                        <option value="1.6 Дизель">1.6 Дизель</option>
-                        <option value="2.0 Бензин">2.0 Бензин</option>
-                        <option value="1.9 Безин">1.9 Безин</option>
-                        <option value="1.6 Бензин">1.6 Бензин</option>
-                        <option value="1.6 Дизель">1.6 Дизель</option>
-                        <option value="2.0 Бензин">2.0 Бензин</option>
-                        <option value="1.9 Безин">1.9 Безин</option>
-                        <option value="1.6 Бензин">1.6 Бензин</option>
-                      </datalist>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="btn-form choose-auto__btn --desc" type="submit" name="#">
-                <span>Поиск</span>
-                <img src="./img/icon/arrows-black.svg" alt="" />
-                <img src="./img/icon/arrows-blue.svg" alt="" />
-              </button>
-              <div class="choose-auto__btns --mob">
-                <button disabled form="choose-car-mob" type="reset" class="choose-auto__btns-reset form-btn-reset">
-                  <span>Очистить</span>
-                  <img src="./img/icon/arrows-black.svg" alt="" />
-                </button>
-                <button disabled form="choose-car-mob" type="submit" class="choose-auto__btns-submit btn-form">
-                  <span>Применить</span>
-                  <img src="./img/icon/arrows-white.svg" alt="" />
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <!--Если автомобиль выбран-->
-          <div class="select__choose-auto --mob">
-            <div class="select__choose-auto-icon">
-              <img src="./img/icon/bmw-logo.svg" alt="" />
-            </div>
-            <div class="select__choose-auto-name">BMW Z4 Roadster (E89) sDrive 35 i бензин 306 л.с.</div>
-            <button class="btn-arrows__img choose-auto__open"></button>
-          </div>
-
-          <!--Если автомобиля не выбран-->
-          <div class="select__choose-auto --mob" style="display: none">
-            <div class="select__choose-auto-icon">
-              <img src="./img/icon/search-auto.svg" alt="" />
-            </div>
-            <div class="select__choose-auto-name">Выберите свой автомобиль</div>
-            <button class="btn-arrows__img choose-auto__open"></button>
-          </div>
-
-          <div class="catalog-title">
-            <!--Если автомобиль выбран-->
-            <div class="catalog-title__text">
-              Маслосъемные колпачки на BMW Z4 Roadster (E89) sDrive 35 i бензин 306 л.с.
-            </div>
-
-            <!--Если автомобиль не выбран-->
-            <div class="catalog-title__text" style="display: none">Маслосъемные колпачки на</div>
-
-            <div class="select-sort">
-              <input class="select-sort__input" type="hidden" value="Популярные" name="" />
-              <div class="select-sort__head --desc">
-                <span>По умолчанию</span>
-                <img src="./img/icon/arrow-black.svg" alt="" />
-              </div>
-              <ul class="select-sort__list --desc" style="display: none">
-                <li class="select-sort__item active">Популярные</li>
-                <li class="select-sort__item">Новинки</li>
-                <li class="select-sort__item">Самые дешевые</li>
-                <li class="select-sort__item">Самые дорогие</li>
-              </ul>
-              <ul class="select-sort__list --mob">
-                <li class="select-sort__item active">Популярные</li>
-                <li class="select-sort__item">Новинки</li>
-                <li class="select-sort__item">Самые дешевые</li>
-                <li class="select-sort__item">Самые дорогие</li>
-              </ul>
-              <button type="button" class="select-sort__close --mob">
-                <img src="./img/icon/close-black.svg" alt="" />
-              </button>
-            </div>
-
-            <!--Кнопки фильтра и сортировки моб-->
-            <div class="catalog__title-btns --mob">
-              <div class="catalog__title-btns-filter catalog-filter-open">
-                <img src="./img/icon/filter-white.svg" alt="" />
-                <span>Фильтр</span>
-              </div>
-              <div class="sort">
-                <div class="sort__icon"></div>
-                <div class="sort__arrow">
-                  <img src="./img/icon/arrow-left-blue.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="catalog__container">
             <div class="catalog__left">
-              <div class="catalog__item catalog__filter-mob">
-                <div class="catalog__item-main">
-                  <img src="./img/icon/filter.svg" alt="" />
-                  <span>Фильтры</span>
-                  <img src="./img/icon/arrow-black.svg" alt="" />
+              <!--Если автомобиль не выбран-->
+              <div class="select__choose-auto" style="display: none">
+                <div class="select__choose-auto-top">
+                  <div class="select__choose-auto-top-icon">
+                    <img src="./img/icon/search-auto.svg" alt="" />
+                  </div>
+                  <button type="button" class="btn-arrows" data-modal-el="choice-car-main">
+                    <div class="btn-arrows__title select__choose-auto-top-name">Выберите свой автомобиль</div>
+                    <div class="btn-arrows__img"></div>
+                  </button>
                 </div>
+              </div>
+
+              <!--Если автомобиль не выбран-->
+              <div class="select__choose-auto auto-available">
+                <div class="select__choose-auto-top">
+                  <div class="select__choose-auto-top-icon">
+                    <img src="./img/icon/bmw-logo.svg" alt="" />
+                  </div>
+                  <button type="button" class="btn-arrows" data-modal-el="choice-car-main">
+                    <div class="btn-arrows__title select__choose-auto-top-name">BMW Z4 Roadster (E89) sD...</div>
+                    <div class="btn-arrows__img"></div>
+                  </button>
+                </div>
+                <div class="select__choose-auto-bottom">
+                  <button type="button" class="btn-arrows">
+                    <div class="btn-arrows__title">Добавить в гараж</div>
+                    <div class="btn-arrows__img"></div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="catalog__filters">
                 <button type="button" class="catalog__filter-mob-close --mob">
                   <img src="./img/icon/close-black.svg" alt="" />
                 </button>
-                <form action="#" name="filter" method="#" id="filters" class="catalog__item-form">
-                  <div>
-                    <fieldset class="catalog__item-form-block toggle-block">
-                      <div class="catalog__item-form-block-inner toggle-block-inner">
-                        <span>Цена</span>
-                        <img src="./img/icon/arrow-black.svg" alt="" />
-                      </div>
-                      <div class="catalog__item-form-block-content toggle-block-content">
-                        <div class="range__inputs">
-                          <div class="range__inputs-field">
-                            <input
-                              name="#"
-                              id="range__input-min"
-                              type="number"
-                              class="range__inputs-field-min"
-                              value="0"
-                            />
-                          </div>
-                          <div class="range__inputs-field">
-                            <input
-                              name="#"
-                              id="range__input-max"
-                              type="number"
-                              class="range__inputs-field-max"
-                              value="10000"
-                            />
-                          </div>
-                        </div>
-                        <div class="range__slider" id="range-slider"></div>
-                      </div>
-                    </fieldset>
-                    <fieldset class="catalog__item-form-block toggle-block">
-                      <div class="catalog__item-form-block-inner toggle-block-inner">
-                        <span>Бренд</span>
-                        <img src="./img/icon/arrow-black.svg" alt="" />
-                      </div>
-                      <div class="catalog__item-form-block-content toggle-block-content">
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>пластик</span>
-                        </label>
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>керамика</span>
-                        </label>
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>металл</span>
-                        </label>
-                      </div>
-                    </fieldset>
-                    <fieldset class="catalog__item-form-block toggle-block">
-                      <div class="catalog__item-form-block-inner toggle-block-inner">
-                        <span>Диаметр</span>
-                        <img src="./img/icon/arrow-black.svg" alt="" />
-                      </div>
-                      <div class="catalog__item-form-block-content toggle-block-content">
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>пластик</span>
-                        </label>
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>керамика</span>
-                        </label>
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>металл</span>
-                        </label>
-                      </div>
-                    </fieldset>
-                    <fieldset class="catalog__item-form-block toggle-block">
-                      <div class="catalog__item-form-block-inner toggle-block-inner">
-                        <span>Толщина</span>
-                        <img src="./img/icon/arrow-black.svg" alt="" />
-                      </div>
-                      <div class="catalog__item-form-block-content toggle-block-content">
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>пластик</span>
-                        </label>
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>керамика</span>
-                        </label>
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>металл</span>
-                        </label>
-                      </div>
-                    </fieldset>
-                    <fieldset class="catalog__item-form-block toggle-block">
-                      <div class="catalog__item-form-block-inner toggle-block-inner">
-                        <span>Материал</span>
-                        <img src="./img/icon/arrow-black.svg" alt="" />
-                      </div>
-                      <div class="catalog__item-form-block-content toggle-block-content">
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>пластик</span>
-                        </label>
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>керамика</span>
-                        </label>
-                        <label class="input-checkbox">
-                          <input type="checkbox" name="#" />
-                          <span>металл</span>
-                        </label>
-                      </div>
-                    </fieldset>
-                  </div>
-                  <div class="catalog__filter-item-block catalog__item-form-block-reset">
-                    <button type="reset" form="filters" class="btn-arrows --desc">
-                      <div class="btn-arrows__title">Сбросить</div>
-                      <div class="btn-arrows__img"></div>
-                    </button>
-                    <button form="filters" type="reset" class="catalog__item-form-block-reset-btn form-btn-reset --mob">
-                      <span>Очистить</span>
-                      <img src="./img/icon/arrows-black.svg" alt="" />
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div class="catalog__item catalog__item-filter --desc">
-                <div class="catalog__item-main">
-                  <img src="./img/icon/category-icon.svg" alt="" />
-                  <span>Категории</span>
-                  <img src="./img/icon/arrow-black.svg" alt="" />
-                </div>
-                <div class="catalog__item-form --desc" style="display: none">
-                  <div class="catalog__item-form-title">Двигатель</div>
-                  <div class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Детали двигателя</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <ul>
-                        <li>Болты ГБЦ</li>
-                        <li>Вкладыши коренные</li>
-                        <li>Вкладыши шатунные</li>
-                        <li>Воздушный патрубок</li>
-                        <li>Гидрокомпенсаторы</li>
-                        <li>Клапан вентиляции картера</li>
-                        <li>Крышка маслозаливной горловины</li>
-                        <li class="active">Маслосъемные колпачки</li>
-                        <li>Масляный насос</li>
-                        <li>Масляный поддон</li>
-                        <li>Направляющие клапана</li>
-                      </ul>
-                      <button type="button" class="btn-arrows">
-                        <div class="btn-arrows__title">Показать еще</div>
-                        <div class="btn-arrows__img"></div>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Прокладки двигателя</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <ul>
-                        <li>Болты ГБЦ</li>
-                        <li>Вкладыши коренные</li>
-                        <li>Вкладыши шатунные</li>
-                        <li>Воздушный патрубок</li>
-                        <li>Гидрокомпенсаторы</li>
-                        <li>Клапан вентиляции картера</li>
-                        <li>Крышка маслозаливной горловины</li>
-                        <li>Маслосъемные колпачки</li>
-                        <li>Масляный насос</li>
-                        <li>Масляный поддон</li>
-                        <li>Направляющие клапана</li>
-                      </ul>
-                      <button type="button" class="btn-arrows">
-                        <div class="btn-arrows__title">Показать еще</div>
-                        <div class="btn-arrows__img"></div>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Система выпуска</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <ul>
-                        <li>Болты ГБЦ</li>
-                        <li>Вкладыши коренные</li>
-                        <li>Вкладыши шатунные</li>
-                        <li>Воздушный патрубок</li>
-                        <li>Гидрокомпенсаторы</li>
-                        <li>Клапан вентиляции картера</li>
-                        <li>Крышка маслозаливной горловины</li>
-                        <li>Маслосъемные колпачки</li>
-                        <li>Масляный насос</li>
-                        <li>Масляный поддон</li>
-                        <li>Направляющие клапана</li>
-                      </ul>
-                      <button type="button" class="btn-arrows">
-                        <div class="btn-arrows__title">Показать еще</div>
-                        <div class="btn-arrows__img"></div>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Ремни, цепи и натяжители</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <ul>
-                        <li>Болты ГБЦ</li>
-                        <li>Вкладыши коренные</li>
-                        <li>Вкладыши шатунные</li>
-                        <li>Воздушный патрубок</li>
-                        <li>Гидрокомпенсаторы</li>
-                        <li>Клапан вентиляции картера</li>
-                        <li>Крышка маслозаливной горловины</li>
-                        <li>Маслосъемные колпачки</li>
-                        <li>Масляный насос</li>
-                        <li>Масляный поддон</li>
-                        <li>Направляющие клапана</li>
-                      </ul>
-                      <button type="button" class="btn-arrows">
-                        <div class="btn-arrows__title">Показать еще</div>
-                        <div class="btn-arrows__img"></div>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
-                      <span>Топливная система и управление двигателем</span>
-                      <img src="./img/icon/arrow-black.svg" alt="" />
-                    </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <ul>
-                        <li>Болты ГБЦ</li>
-                        <li>Вкладыши коренные</li>
-                        <li>Вкладыши шатунные</li>
-                        <li>Воздушный патрубок</li>
-                        <li>Гидрокомпенсаторы</li>
-                        <li>Клапан вентиляции картера</li>
-                        <li>Крышка маслозаливной горловины</li>
-                        <li>Маслосъемные колпачки</li>
-                        <li>Масляный насос</li>
-                        <li>Масляный поддон</li>
-                        <li>Направляющие клапана</li>
-                      </ul>
-                      <button type="button" class="btn-arrows">
-                        <div class="btn-arrows__title">Показать еще</div>
-                        <div class="btn-arrows__img"></div>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="catalog__item-form-block toggle-block">
-                    <div class="catalog__item-form-block-inner toggle-block-inner">
+                <div class="catalog__items">
+                  <div class="catalog__item">
+                    <div class="catalog__item-main">
+                      <img src="./img/icon/filter.svg" alt="" />
                       <span>Фильтры</span>
                       <img src="./img/icon/arrow-black.svg" alt="" />
                     </div>
-                    <div class="catalog__item-form-block-content toggle-block-content">
-                      <ul>
-                        <li>Болты ГБЦ</li>
-                        <li>Вкладыши коренные</li>
-                        <li>Вкладыши шатунные</li>
-                        <li>Воздушный патрубок</li>
-                        <li>Гидрокомпенсаторы</li>
-                        <li>Клапан вентиляции картера</li>
-                        <li>Крышка маслозаливной горловины</li>
-                        <li>Маслосъемные колпачки</li>
-                        <li>Масляный насос</li>
-                        <li>Масляный поддон</li>
-                        <li>Направляющие клапана</li>
-                      </ul>
-                      <button type="button" class="btn-arrows">
-                        <div class="btn-arrows__title">Показать еще</div>
-                        <div class="btn-arrows__img"></div>
-                      </button>
-                    </div>
+                    <form action="#" name="filter" method="#" id="filters" class="catalog__item-form">
+                      <div>
+                        <fieldset class="catalog__item-form-block toggle-block">
+                          <div class="catalog__item-form-block-inner toggle-block-inner">
+                            <span>Цена</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-form-block-content toggle-block-content">
+                            <div class="range__inputs">
+                              <div class="range__inputs-field">
+                                <input
+                                  name="#"
+                                  id="range__input-min"
+                                  type="number"
+                                  class="range__inputs-field-min"
+                                  value="0"
+                                />
+                              </div>
+                              <div class="range__inputs-field">
+                                <input
+                                  name="#"
+                                  id="range__input-max"
+                                  type="number"
+                                  class="range__inputs-field-max"
+                                  value="10000"
+                                />
+                              </div>
+                            </div>
+                            <div class="range__slider" id="range-slider"></div>
+                          </div>
+                        </fieldset>
+                        <fieldset class="catalog__item-form-block toggle-block">
+                          <div class="catalog__item-form-block-inner toggle-block-inner">
+                            <span>Бренд</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-form-block-content toggle-block-content">
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>пластик</span>
+                            </label>
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>керамика</span>
+                            </label>
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>металл</span>
+                            </label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="catalog__item-form-block toggle-block">
+                          <div class="catalog__item-form-block-inner toggle-block-inner">
+                            <span>Диаметр</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-form-block-content toggle-block-content">
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>пластик</span>
+                            </label>
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>керамика</span>
+                            </label>
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>металл</span>
+                            </label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="catalog__item-form-block toggle-block">
+                          <div class="catalog__item-form-block-inner toggle-block-inner">
+                            <span>Толщина</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-form-block-content toggle-block-content">
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>пластик</span>
+                            </label>
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>керамика</span>
+                            </label>
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>металл</span>
+                            </label>
+                          </div>
+                        </fieldset>
+                        <fieldset class="catalog__item-form-block toggle-block">
+                          <div class="catalog__item-form-block-inner toggle-block-inner">
+                            <span>Материал</span>
+                            <img src="./img/icon/arrow-black.svg" alt="" />
+                          </div>
+                          <div class="catalog__item-form-block-content toggle-block-content">
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>пластик</span>
+                            </label>
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>керамика</span>
+                            </label>
+                            <label class="input-checkbox">
+                              <input type="checkbox" name="#" />
+                              <span>металл</span>
+                            </label>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="catalog__filter-item-block catalog__item-form-block-reset --desc">
+                        <button type="reset" form="filters" class="btn-arrows --desc">
+                          <div class="btn-arrows__title">Сбросить</div>
+                          <div class="btn-arrows__img"></div>
+                        </button>
+                      </div>
+                    </form>
                   </div>
+                  <div class="catalog__item catalog__item-filter">
+                    <div class="catalog__item-main">
+                      <img src="./img/icon/category-icon.svg" alt="" />
+                      <span>Категории</span>
+                      <img src="./img/icon/arrow-black.svg" alt="" />
+                    </div>
+                    <form action="#" name="catalog" method="#" id="catalog" class="catalog__item-form">
+                      <div class="catalog__item-form-title">Двигатель</div>
+
+                      <div class="catalog__item-form-block toggle-block">
+                        <div class="catalog__item-form-block-inner toggle-block-inner">
+                          <span>Прокладки двигателя</span>
+                          <img src="./img/icon/arrow-black.svg" alt="" />
+                        </div>
+                        <div class="catalog__item-form-block-content toggle-block-content">
+                          <div class="catalog__item-form-block-content-items">
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-1" value="catalog-1" />
+                              <label for="catalog-1">
+                                <div>Болты ГБЦ</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-2" value="catalog-2" />
+                              <label for="catalog-2">
+                                <div>Вкладыши коренные</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-3" value="catalog-3" />
+                              <label for="catalog-3">
+                                <div>Вкладыши шатунные</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-4" value="catalog-4" />
+                              <label for="catalog-4">
+                                <div>Воздушный патрубок</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-5" value="catalog-5" />
+                              <label for="catalog-5">
+                                <div>Гидрокомпенсаторы</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-6" value="catalog-6" />
+                              <label for="catalog-6">
+                                <div>Клапан вентиляции картера</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-7" value="catalog-7" />
+                              <label for="catalog-7">
+                                <div>Крышка маслозаливной горловины</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-8" value="catalog-8" />
+                              <label for="catalog-8">
+                                <div>Маслосъемные колпачки</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-9" value="catalog-9" />
+                              <label for="catalog-9">
+                                <div>Масляный насос</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-10" value="catalog-10" />
+                              <label for="catalog-10">
+                                <div>Маслосъемные колпачки</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-11" value="catalog-11" />
+                              <label for="catalog-11">
+                                <div>Масляный насос</div>
+                              </label>
+                            </div>
+                          </div>
+                          <button type="button" class="btn-arrows">
+                            <div class="btn-arrows__title">Показать еще</div>
+                            <div class="btn-arrows__img"></div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="catalog__item-form-block toggle-block">
+                        <div class="catalog__item-form-block-inner toggle-block-inner">
+                          <span>Детали двигателя</span>
+                          <img src="./img/icon/arrow-black.svg" alt="" />
+                        </div>
+                        <div class="catalog__item-form-block-content toggle-block-content">
+                          <div class="catalog__item-form-block-content-items">
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-12" value="catalog-12" />
+                              <label for="catalog-12">
+                                <div>Болты ГБЦ</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-13" value="catalog-13" />
+                              <label for="catalog-13">
+                                <div>Вкладыши коренные</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-14" value="catalog-14" />
+                              <label for="catalog-14">
+                                <div>Вкладыши шатунные</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-15" value="catalog-15" />
+                              <label for="catalog-15">
+                                <div>Воздушный патрубок</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-16" value="catalog-16" />
+                              <label for="catalog-16">
+                                <div>Гидрокомпенсаторы</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-17" value="catalog-17" />
+                              <label for="catalog-17">
+                                <div>Клапан вентиляции картера</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-18" value="catalog-18" />
+                              <label for="catalog-18">
+                                <div>Крышка маслозаливной горловины</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-19" value="catalog-19" />
+                              <label for="catalog-19">
+                                <div>Маслосъемные колпачки</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-20" value="catalog-20" />
+                              <label for="catalog-20">
+                                <div>Масляный насос</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-21" value="catalog-21" />
+                              <label for="catalog-21">
+                                <div>Маслосъемные колпачки</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-22" value="catalog-22" />
+                              <label for="catalog-22">
+                                <div>Масляный насос</div>
+                              </label>
+                            </div>
+                          </div>
+                          <button type="button" class="btn-arrows">
+                            <div class="btn-arrows__title">Показать еще</div>
+                            <div class="btn-arrows__img"></div>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="catalog__item-form-block toggle-block">
+                        <div class="catalog__item-form-block-inner toggle-block-inner">
+                          <span>Система выпуска</span>
+                          <img src="./img/icon/arrow-black.svg" alt="" />
+                        </div>
+                        <div class="catalog__item-form-block-content toggle-block-content">
+                          <div class="catalog__item-form-block-content-items">
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-23" value="catalog-23" />
+                              <label for="catalog-23">
+                                <div>Болты ГБЦ</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-24" value="catalog-24" />
+                              <label for="catalog-24">
+                                <div>Вкладыши коренные</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-25" value="catalog-25" />
+                              <label for="catalog-25">
+                                <div>Вкладыши шатунные</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-26" value="catalog-26" />
+                              <label for="catalog-26">
+                                <div>Воздушный патрубок</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-27" value="catalog-27" />
+                              <label for="catalog-27">
+                                <div>Гидрокомпенсаторы</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-28" value="catalog-28" />
+                              <label for="catalog-28">
+                                <div>Клапан вентиляции картера</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-29" value="catalog-29" />
+                              <label for="catalog-29">
+                                <div>Крышка маслозаливной горловины</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-30" value="catalog-30" />
+                              <label for="catalog-30">
+                                <div>Маслосъемные колпачки</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-31" value="catalog-31" />
+                              <label for="catalog-31">
+                                <div>Масляный насос</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-32" value="catalog-32" />
+                              <label for="catalog-32">
+                                <div>Маслосъемные колпачки</div>
+                              </label>
+                            </div>
+                            <div class="input-radio__inp">
+                              <input type="radio" name="catalog" id="catalog-33" value="catalog-33" />
+                              <label for="catalog-33">
+                                <div>Масляный насос</div>
+                              </label>
+                            </div>
+                          </div>
+                          <button type="button" class="btn-arrows">
+                            <div class="btn-arrows__title">Показать еще</div>
+                            <div class="btn-arrows__img"></div>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="catalog__filters-btns --mob">
+                  <button form="filters" type="reset" class="choose-auto__btns-reset form-btn-reset">
+                    <span>Очистить</span>
+                    <img src="./img/icon/arrows-white.svg" alt="" />
+                  </button>
+                  <button form="filters" type="submit" class="choose-auto__btns-submit btn-form">
+                    <span>Применить</span>
+                    <img src="./img/icon/arrows-white.svg" alt="" />
+                  </button>
                 </div>
               </div>
             </div>
 
             <div class="catalog__right">
+              <div class="catalog-title">
+                <!--Если автомобиль выбран-->
+                <div class="catalog-title__text">
+                  Маслосъемные колпачки на BMW Z4 Roadster (E89) sDrive 35 i бензин 306 л.с.
+                </div>
+
+                <!--Если автомобиль не выбран-->
+                <div class="catalog-title__text" style="display: none">Маслосъемные колпачки на</div>
+
+                <div class="select-sort">
+                  <input class="select-sort__input" type="hidden" value="Популярные" name="" />
+                  <div class="select-sort__head --desc">
+                    <span>По умолчанию</span>
+                    <img src="./img/icon/arrow-black.svg" alt="" />
+                  </div>
+                  <ul class="select-sort__list --desc" style="display: none">
+                    <li class="select-sort__item active">Популярные</li>
+                    <li class="select-sort__item">Новинки</li>
+                    <li class="select-sort__item">Самые дешевые</li>
+                    <li class="select-sort__item">Самые дорогие</li>
+                  </ul>
+                  <ul class="select-sort__list --mob">
+                    <li class="select-sort__item active">Популярные</li>
+                    <li class="select-sort__item">Новинки</li>
+                    <li class="select-sort__item">Самые дешевые</li>
+                    <li class="select-sort__item">Самые дорогие</li>
+                  </ul>
+                  <button type="button" class="select-sort__close --mob">
+                    <img src="./img/icon/close-black.svg" alt="" />
+                  </button>
+                </div>
+
+                <!--Кнопки фильтра и сортировки моб-->
+                <div class="catalog__title-btns --mob">
+                  <div class="catalog__title-btns-filter catalog-filter-open">
+                    <img src="./img/icon/filter-white.svg" alt="" />
+                    <span>Фильтр</span>
+                  </div>
+                  <div class="sort">
+                    <div class="sort__icon"></div>
+                    <div class="sort__arrow">
+                      <img src="./img/icon/arrow-left-blue.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="catalog__cards cards">
                 <div class="card card-available">
                   <div class="card__content">

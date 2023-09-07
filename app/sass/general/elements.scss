@@ -15,6 +15,10 @@
   overflow: hidden;
 }
 
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .subtitle {
   color: $black;
   font-family: Good Timing, sans-serif;

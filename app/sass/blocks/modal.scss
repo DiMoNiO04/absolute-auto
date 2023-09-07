@@ -482,8 +482,23 @@
 
   .input-datalist-form__block,
   .main-main__search-form-vin {
-    margin-bottom: 0;
+    margin: 0;
     padding: 1.2rem 3.2rem;
+  }
+}
+
+.modal__content-choice-main {
+  backdrop-filter: blur(5rem);
+
+  .main-main__search {
+    min-height: 85rem;
+    width: 65.8rem;
+  }
+}
+
+[data-modal='choice-car-main'] {
+  .modal__content {
+    border: none;
   }
 }
 
@@ -737,8 +752,12 @@
 
     &-form-title {
       font-size: 4.27vw;
-      line-height: 130%;
-      padding: 6.4vw 4vw;
+      line-height: 110%;
+      padding: 6.4vw 4vw 0 4vw;
+    }
+
+    .input-datalist-form__list {
+      top: 18vw;
     }
 
     &-form-btns {
@@ -765,6 +784,21 @@
       &:focus {
         border-color: transparent;
       }
+    }
+
+    .input-datalist-form__block,
+    .main-main__search-form-vin {
+      padding: 3.2vw 5.33vw 3.2vw 4vw;
+      margin: 2.2vw 0;
+    }
+  }
+
+  .modal__content-choice-main {
+    backdrop-filter: blur(5rem);
+
+    .main-main__search {
+      min-height: 200vw;
+      width: 94.5vw;
     }
   }
 }

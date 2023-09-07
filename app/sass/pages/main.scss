@@ -346,6 +346,8 @@
       background: transparent url('../img/brands/brands-hover-bg.svg') center center no-repeat;
       background-size: contain;
       cursor: pointer;
+      width: auto;
+      height: calc(53% - 30px);
     }
   }
 
@@ -666,8 +668,8 @@
       }
 
       &:hover {
-        width: calc((100% / 4) - 2.8vw);
-        height: 38vw;
+        width: 46vw !important;
+        height: 42vw;
       }
     }
 

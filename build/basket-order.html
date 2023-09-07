@@ -161,7 +161,7 @@
                 <!--нету-->
                 <div class="header__bottom-button-content-empty" style="display: none">
                   <div class="header__bottom-button-content-text">В избранном нет товаров</div>
-                  <a href="./catalog.html" class="btn-form" type="button">
+                  <a href="./catalog.html" class="btn-form">
                     <span>Перейти в каталог</span>
                     <img src="./img/icon/arrows-white.svg" alt="" />
                   </a>
@@ -171,7 +171,7 @@
                 <!--есть-->
                 <div class="header__bottom-button-content-fill">
                   <div class="header__bottom-button-content-text">В избранном 3 товара</div>
-                  <a href="./personal-cab-ind.html#favorites" class="btn-form" type="button">
+                  <a href="./personal-cab-ind.html#favorites" class="btn-form">
                     <span>Перейти в избранное</span>
                     <img src="./img/icon/arrows-white.svg" alt="" />
                   </a>
@@ -291,7 +291,7 @@
                 <!--нету-->
                 <div class="header__bottom-button-content-empty" style="display: none">
                   <div class="header__bottom-button-content-text">В корзине нет товаров</div>
-                  <a href="./catalog.html" class="btn-form" type="button">
+                  <a href="./catalog.html" class="btn-form">
                     <span>Перейти в каталог</span>
                     <img src="./img/icon/arrows-white.svg" alt="" />
                   </a>
@@ -361,7 +361,7 @@
                     <div>Итого</div>
                     <div>13 549 ₽</div>
                   </div>
-                  <a href="./basket-order.html" class="btn-form" type="button">
+                  <a href="./basket-order.html" class="btn-form">
                     <span>Перейти в корзину</span>
                     <img src="./img/icon/arrows-white.svg" alt="" />
                   </a>
@@ -449,7 +449,7 @@
                 <!--нету-->
                 <div class="header__bottom-button-content-empty" style="display: none">
                   <div class="header__bottom-button-content-text">В корзине нет товаров</div>
-                  <a href="./catalog.html" class="btn-form" type="button">
+                  <a href="./catalog.html" class="btn-form">
                     <span>Перейти в каталог</span>
                     <img src="./img/icon/arrows-white.svg" alt="" />
                   </a>
@@ -519,7 +519,7 @@
                     <div>Итого</div>
                     <div>13 549 ₽</div>
                   </div>
-                  <a href="./basket-order.html" class="btn-form" type="button">
+                  <a href="./basket-order.html" class="btn-form">
                     <span>Перейти в корзину</span>
                     <img src="./img/icon/arrows-white.svg" alt="" />
                   </a>
@@ -546,7 +546,7 @@
                 <!--нету-->
                 <div class="header__bottom-button-content-empty" style="display: none">
                   <div class="header__bottom-button-content-text">В избранном нет товаров</div>
-                  <a href="./catalog.html" class="btn-form" type="button">
+                  <a href="./catalog.html" class="btn-form">
                     <span>Перейти в каталог</span>
                     <img src="./img/icon/arrows-white.svg" alt="" />
                   </a>
@@ -556,7 +556,7 @@
                 <!--есть-->
                 <div class="header__bottom-button-content-fill">
                   <div class="header__bottom-button-content-text">В избранном 3 товара</div>
-                  <a href="./personal-cab-ind.html#favorites" class="btn-form" type="button">
+                  <a href="./personal-cab-ind.html#favorites" class="btn-form">
                     <span>Перейти в избранное</span>
                     <img src="./img/icon/arrows-white.svg" alt="" />
                   </a>
@@ -3699,6 +3699,239 @@
   </div>
 </div>
 <!------------------------>
+
+<!--Модалка выбор авто форма с главной-->
+<div class="modal close-x" data-modal="choice-car-main">
+  <div class="modal__inner">
+    <div class="modal__content modal__content-choice-main">
+      <div class="main-main__search">
+        <div class="main-main__search-top">
+          <div class="main-main__search-top-title">Выбор автомобиля</div>
+        </div>
+        <div class="main-main__search-center">
+          <form class="main-main__search-form active" id="search-auto" action="#" method="#">
+            <div class="main-main__search-form-inputs">
+              <div class="input__block">
+                <input
+                  class="main-main__search-form-inputs-vin"
+                  autocomplete="off"
+                  type="text"
+                  name="#"
+                  placeholder="VIN номер"
+                />
+                <button type="button">
+                  <img src="./img/icon/close-small.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="input-datalist-form__blocks">
+                <div class="input-datalist-form">
+                  <div class="input-datalist-form__block">
+                    <div class="input-datalist-form__block-icon">01</div>
+                    <input
+                      class="input-datalist-form__block-input"
+                      autocomplete="off"
+                      role="combobox"
+                      list=""
+                      name="brands"
+                      placeholder="Марка"
+                    />
+                    <div class="input-datalist-form__block-arrow">
+                      <img src="./img/icon/arrow-blue.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="input-datalist-form__list" style="display: none">
+                    <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                      <button type="button" class="input-datalist-form__list-reset">Марка</button>
+                      <option value="Acura">Acura</option>
+                      <option value="Audi">Audi</option>
+                      <option value="Alfa Romeo">Alfa Romeo</option>
+                      <option value="Bentley">Bentley</option>
+                      <option value="BMW">BMW</option>
+                      <option value="Cadilac">Cadilac</option>
+                      <option value="Chery">Chery</option>
+                      <option value="Lada">Lada</option>
+                      <option value="Porsche">Porsche</option>
+                      <option value="Mazda">Mazda</option>
+                      <option value="Lamborgini">Lamborgini</option>
+                      <option value="Bentley">Bentley</option>
+                      <option value="Volkswagen">Volkswagen</option>
+                    </datalist>
+                  </div>
+                </div>
+                <div class="input-datalist-form" style="display: none">
+                  <div class="input-datalist-form__block">
+                    <div class="input-datalist-form__block-icon">02</div>
+                    <input
+                      class="input-datalist-form__block-input"
+                      autocomplete="off"
+                      role="combobox"
+                      list=""
+                      name="models"
+                      placeholder="Модель"
+                    />
+                    <div class="input-datalist-form__block-arrow">
+                      <img src="./img/icon/arrow-blue.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="input-datalist-form__list" style="display: none">
+                    <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                      <button type="button" class="input-datalist-form__list-reset">Модель</button>
+                      <option value="A3">A3</option>
+                      <option value="A4">A4</option>
+                      <option value="A6">A6</option>
+                      <option value="A8">A8</option>
+                      <option value="Q5">Q5</option>
+                      <option value="Q7">Q7</option>
+                      <option value="RS6">RS6</option>
+                      <option value="RS6C6">RS6C6</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="input-datalist-form" style="display: none">
+                  <div class="input-datalist-form__block">
+                    <div class="input-datalist-form__block-icon">03</div>
+                    <input
+                      class="input-datalist-form__block-input"
+                      autocomplete="off"
+                      role="combobox"
+                      list=""
+                      name="year_create"
+                      placeholder="Год выпуска"
+                    />
+                    <div class="input-datalist-form__block-arrow">
+                      <img src="./img/icon/arrow-blue.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="input-datalist-form__list" style="display: none">
+                    <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                      <button class="input-datalist-form__list-reset">Год выпуска</button>
+                      <option value="2022">2022</option>
+                      <option value="2021">2021</option>
+                      <option value="2020">2020</option>
+                      <option value="2019">2019</option>
+                      <option value="2018">2018</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="input-datalist-form" style="display: none">
+                  <div class="input-datalist-form__block">
+                    <div class="input-datalist-form__block-icon">04</div>
+                    <input
+                      class="input-datalist-form__block-input"
+                      autocomplete="off"
+                      role="combobox"
+                      list=""
+                      name="body-car"
+                      placeholder="Кузов"
+                    />
+                    <div class="input-datalist-form__block-arrow">
+                      <img src="./img/icon/arrow-blue.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="input-datalist-form__list" style="display: none">
+                    <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                      <button class="input-datalist-form__list-reset">Кузов</button>
+                      <option value="Седан">Седан</option>
+                      <option value="Хатчбэк">Хатчбэк</option>
+                      <option value="Универсал">Универсал</option>
+                      <option value="Купе">Купе</option>
+                      <option value="Кабриолет">Кабриолет</option>
+                      <option value="Тарга">Тарга</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="input-datalist-form" style="display: none">
+                  <div class="input-datalist-form__block">
+                    <div class="input-datalist-form__block-icon">05</div>
+                    <input
+                      class="input-datalist-form__block-input"
+                      autocomplete="off"
+                      role="combobox"
+                      list=""
+                      name="engine"
+                      placeholder="Двигатель"
+                    />
+                    <div class="input-datalist-form__block-arrow">
+                      <img src="./img/icon/arrow-blue.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="input-datalist-form__list" style="display: none">
+                    <datalist class="input-datalist-form__list-datalist" datalist role="listbox">
+                      <button class="input-datalist-form__list-reset">Двигатель</button>
+                      <option value="1.6 Дизель">1.6 Дизель</option>
+                      <option value="2.0 Бензин">2.0 Бензин</option>
+                      <option value="1.9 Безин">1.9 Безин</option>
+                      <option value="1.6 Бензин">1.6 Бензин</option>
+                      <option value="1.6 Дизель">1.6 Дизель</option>
+                      <option value="2.0 Бензин">2.0 Бензин</option>
+                      <option value="1.9 Безин">1.9 Безин</option>
+                      <option value="1.6 Бензин">1.6 Бензин</option>
+                    </datalist>
+                  </div>
+                </div>
+
+                <div class="input-datalist-form" style="display: none">
+                  <div class="input-datalist-form__block">
+                    <div class="input-datalist-form__block-icon">06</div>
+                    <input
+                      class="input-datalist-form__block-input"
+                      autocomplete="off"
+                      role="combobox"
+                      list=""
+                      name="modification"
+                      placeholder="Модификация"
+                    />
+                    <div class="input-datalist-form__block-arrow">
+                      <img src="./img/icon/arrow-blue.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="input-datalist-form__list" style="display: none">
+                    <datalist class="input-datalist-form__list-datalist modification-datalist" datalist role="listbox">
+                      <button class="input-datalist-form__list-reset">Модификация</button>
+                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
+                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
+                      </option>
+                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
+                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
+                      </option>
+                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
+                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
+                      </option>
+                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
+                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
+                      </option>
+                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
+                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
+                      </option>
+                      <option value="2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)">
+                        2.0 AWD 276 Л.с. 02.2013 — 07.2023 (LTG)
+                      </option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-main__search-form-btns">
+              <button disabled class="btn-form" type="submit" name="#">
+                <span>Найти запчасть</span>
+                <img src="./img/icon/arrows-white.svg" alt="" />
+              </button>
+              <button disabled form="search-auto" type="reset" class="form-btn-reset">Сбросить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

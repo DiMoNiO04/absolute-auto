@@ -18,7 +18,7 @@
         background: url(../img/icon/arrows-blue.svg) no-repeat center;
         background-size: contain;
         transition: all 0.5s ease-in-out;
-        width: 3.3rem;
+        width: 3.9rem;
         height: 1.8rem;
       }
     }
@@ -66,7 +66,7 @@
   &-arrows__img {
     background: url(../img/icon/arrows-black.svg) no-repeat center;
     background-size: contain;
-    width: 3.3rem;
+    width: 3.9rem;
     height: 1.8rem;
   }
 
@@ -129,6 +129,12 @@
   .btn {
     &-arrows {
       column-gap: 3.2vw;
+      &:hover {
+        .btn-arrows__img {
+          width: 7.8vw;
+          height: 3.6vw;
+        }
+      }
     }
 
     &-reset {
@@ -142,8 +148,8 @@
     }
 
     &-arrows__img {
-      width: 6.4vw;
-      height: 3.2vw;
+      width: 7.8vw;
+      height: 3.6vw;
     }
 
     &-form {
@@ -156,6 +162,11 @@
       img {
         width: 6.2vw;
         height: 2.7vw;
+      }
+
+      &:not([disabled]):hover {
+        background: $mainColor;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
