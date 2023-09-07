@@ -1514,7 +1514,7 @@
               <a href="./category-go.html">Двигатель</a>
             </div>
             <!--Если автомобиль не выбран-->
-            <div class="select__choose-auto" style="display: none">
+            <div class="select__choose-auto">
               <div class="select__choose-auto-top">
                 <div class="select__choose-auto-top-icon">
                   <img src="./img/icon/search-auto.svg" alt="" />
@@ -1527,7 +1527,7 @@
             </div>
 
             <!--Если автомобиль не выбран-->
-            <div class="select__choose-auto auto-available">
+            <div class="select__choose-auto auto-available" style="display: none">
               <div class="select__choose-auto-top">
                 <div class="select__choose-auto-top-icon">
                   <img src="./img/icon/bmw-logo.svg" alt="" />
@@ -1550,374 +1550,54 @@
           <div class="container">
             <div class="title">Двигатель</div>
             <div class="category-details__container">
-              <div class="category-details__detail active" data-open-block="engine-parts">
+              <a href="#" class="category-details__detail">
                 <img src="./img/category/engine-parts.svg" alt="" />
                 <div>Детали двигателя</div>
-              </div>
-              <div class="category-details__detail" data-open-block="engine-gaskets">
+              </a>
+              <a href="#" class="category-details__detail">
                 <img src="./img/category/engine-gaskets.svg" alt="" />
                 <div>Прокладки двигателя</div>
-              </div>
-              <div class="category-details__detail" data-open-block="exhaust-system">
+              </a>
+              <a href="#" class="category-details__detail">
                 <img src="./img/category/exhaust-system.svg" alt="" />
                 <div>Система выпуска</div>
-              </div>
-              <div class="category-details__detail" data-open-block="chain-belts">
+              </a>
+              <a href="#" class="category-details__detail">
                 <img src="./img/category/chain-belts.svg" alt="" />
                 <div>Ремни, цепи и натяжители</div>
-              </div>
-
-              <div class="category-details__lists">
-                <div class="category-details__lists-content active" data-block="engine-parts">
-                  <div class="category-details__lists-content-title">Детали двигателя</div>
-                  <div class="category-details__lists-content-title-items">
-                    <ul>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши коренные</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши шатунные</a>
-                      </li>
-                      <li>
-                        <a href="#">Воздушный патрубок</a>
-                      </li>
-                      <li>
-                        <a href="#">Гидрокомпенсаторы</a>
-                      </li>
-                      <li>
-                        <a href="#">Клапан вентиляции картера</a>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <a href="#">Крышка маслозаливной горловины</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный насос</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный поддон</a>
-                      </li>
-                      <li>
-                        <a href="#">Направляющие клапана</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="category-details__lists-content" data-block="engine-gaskets">
-                  <div class="category-details__lists-content-title">Прокладки двигателя</div>
-                  <div class="category-details__lists-content-title-items">
-                    <ul>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши коренные</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши шатунные</a>
-                      </li>
-                      <li>
-                        <a href="#">Воздушный патрубок</a>
-                      </li>
-                      <li>
-                        <a href="#">Гидрокомпенсаторы</a>
-                      </li>
-                      <li>
-                        <a href="#">Клапан вентиляции картера</a>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <a href="#">Крышка маслозаливной горловины</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный насос</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный поддон</a>
-                      </li>
-                      <li>
-                        <a href="#">Направляющие клапана</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="category-details__lists-content" data-block="exhaust-system">
-                  <div class="category-details__lists-content-title">Система выпуска</div>
-                  <div class="category-details__lists-content-title-items">
-                    <ul>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши коренные</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши шатунные</a>
-                      </li>
-                      <li>
-                        <a href="#">Воздушный патрубок</a>
-                      </li>
-                      <li>
-                        <a href="#">Гидрокомпенсаторы</a>
-                      </li>
-                      <li>
-                        <a href="#">Клапан вентиляции картера</a>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <a href="#">Крышка маслозаливной горловины</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный насос</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный поддон</a>
-                      </li>
-                      <li>
-                        <a href="#">Направляющие клапана</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="category-details__lists-content" data-block="chain-belts">
-                  <div class="category-details__lists-content-title">Ремни, цепи и натяжители</div>
-                  <div class="category-details__lists-content-title-items">
-                    <ul>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши коренные</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши шатунные</a>
-                      </li>
-                      <li>
-                        <a href="#">Воздушный патрубок</a>
-                      </li>
-                      <li>
-                        <a href="#">Гидрокомпенсаторы</a>
-                      </li>
-                      <li>
-                        <a href="#">Клапан вентиляции картера</a>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <a href="#">Крышка маслозаливной горловины</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный насос</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный поддон</a>
-                      </li>
-                      <li>
-                        <a href="#">Направляющие клапана</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="category-details__lists-content" data-block="fuel-system-engine-management">
-                  <div class="category-details__lists-content-title">Топливная система и управление двигателем</div>
-                  <div class="category-details__lists-content-title-items">
-                    <ul>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши коренные</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши шатунные</a>
-                      </li>
-                      <li>
-                        <a href="#">Воздушный патрубок</a>
-                      </li>
-                      <li>
-                        <a href="#">Гидрокомпенсаторы</a>
-                      </li>
-                      <li>
-                        <a href="#">Клапан вентиляции картера</a>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <a href="#">Крышка маслозаливной горловины</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный насос</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный поддон</a>
-                      </li>
-                      <li>
-                        <a href="#">Направляющие клапана</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="category-details__lists-content" data-block="turbines-compressors">
-                  <div class="category-details__lists-content-title">Турбины и компрессоры</div>
-                  <div class="category-details__lists-content-title-items">
-                    <ul>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши коренные</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши шатунные</a>
-                      </li>
-                      <li>
-                        <a href="#">Воздушный патрубок</a>
-                      </li>
-                      <li>
-                        <a href="#">Гидрокомпенсаторы</a>
-                      </li>
-                      <li>
-                        <a href="#">Клапан вентиляции картера</a>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <a href="#">Крышка маслозаливной горловины</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный насос</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный поддон</a>
-                      </li>
-                      <li>
-                        <a href="#">Направляющие клапана</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="category-details__lists-content" data-block="filters">
-                  <div class="category-details__lists-content-title">Фильтры</div>
-                  <div class="category-details__lists-content-title-items">
-                    <ul>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Болты ГБЦ</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши коренные</a>
-                      </li>
-                      <li>
-                        <a href="#">Вкладыши шатунные</a>
-                      </li>
-                      <li>
-                        <a href="#">Воздушный патрубок</a>
-                      </li>
-                      <li>
-                        <a href="#">Гидрокомпенсаторы</a>
-                      </li>
-                      <li>
-                        <a href="#">Клапан вентиляции картера</a>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <a href="#">Крышка маслозаливной горловины</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный насос</a>
-                      </li>
-                      <li>
-                        <a href="#">Масляный поддон</a>
-                      </li>
-                      <li>
-                        <a href="#">Направляющие клапана</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                      <li>
-                        <a href="#">Подушка двигателя</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="category-details__detail" data-open-block="fuel-system-engine-management">
+              </a>
+              <a href="#" class="category-details__detail">
                 <img src="./img/category/fuel-system-engine-management.svg" alt="" />
                 <div>Топливная система и управление двигателем</div>
-              </div>
-              <div class="category-details__detail" data-open-block="turbines-compressors">
+              </a>
+              <a href="#" class="category-details__detail">
                 <img src="./img/category/turbines-compressors.svg" alt="" />
                 <div>Турбины и компрессоры</div>
-              </div>
-              <div class="category-details__detail" data-open-block="filters">
+              </a>
+              <a href="#" class="category-details__detail">
                 <img src="./img/category/filters.svg" alt="" />
                 <div>Фильтры</div>
-              </div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/fuel-system-engine-management.svg" alt="" />
+                <div>Топливная система и управление двигателем</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/turbines-compressors.svg" alt="" />
+                <div>Турбины и компрессоры</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/exhaust-system.svg" alt="" />
+                <div>Система выпуска</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/chain-belts.svg" alt="" />
+                <div>Ремни, цепи и натяжители</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/fuel-system-engine-management.svg" alt="" />
+                <div>Топливная система и управление двигателем</div>
+              </a>
             </div>
           </div>
         </section>

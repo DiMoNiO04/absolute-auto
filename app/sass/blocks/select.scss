@@ -1,4 +1,20 @@
 .select {
+  &__choose-auto {
+    .btn-arrows {
+      width: 95%;
+      justify-content: center;
+    }
+    .btn-arrows__title {
+      color: #2c2a3b;
+      font-family: Gilroy, sans-serif;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      text-transform: inherit;
+    }
+  }
+
   &-sort {
     position: relative;
     display: flex;
@@ -88,6 +104,10 @@
     &.active {
       color: $mainColor;
     }
+  }
+
+  &__choose-auto {
+    width: 38.5rem;
   }
 
   &__choose-auto-top,
@@ -214,11 +234,12 @@
 
       .btn-arrows {
         width: 85%;
-        justify-content: center;
-        // &__img {
-        // width: 8vw;
-        // height: 4.2vw;
-        // }
+      }
+    }
+
+    &__choose-auto {
+      .btn-arrows__title {
+        font-size: 5.3vw;
       }
     }
 
@@ -233,15 +254,6 @@
       width: 8vw;
       height: 8vw;
       flex-shrink: 0;
-    }
-
-    &__choose-auto-top-name {
-      font-size: 5.3vw;
-      font-weight: 700;
-      line-height: 120%;
-      width: 100%;
-      font-family: Gilroy, sans-serif;
-      text-transform: none;
     }
   }
 }

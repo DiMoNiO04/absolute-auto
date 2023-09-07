@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Переход в каталог</title>
+  </head>
+
+  <body>
+    @@include('./template/header.html')
+
+    <main>
+      <div class="main-overlay"></div>
+      <div class="category">
+        <div class="left-body__bg"></div>
+        <div class="right-body__bg"></div>
+        <section class="category-top">
+          <div class="container">
+            <div class="bread-crumbs">
+              <a href="./main.html">Главная</a>
+              <a href="./category-go.html">Двигатель</a>
+            </div>
+            <!--Если автомобиль не выбран-->
+            <div class="select__choose-auto">
+              <div class="select__choose-auto-top">
+                <div class="select__choose-auto-top-icon">
+                  <img src="./img/icon/search-auto.svg" alt="" />
+                </div>
+                <button type="button" class="btn-arrows" data-modal-el="choice-car-main">
+                  <div class="btn-arrows__title select__choose-auto-top-name">Выберите свой автомобиль</div>
+                  <div class="btn-arrows__img"></div>
+                </button>
+              </div>
+            </div>
+
+            <!--Если автомобиль не выбран-->
+            <div class="select__choose-auto auto-available" style="display: none">
+              <div class="select__choose-auto-top">
+                <div class="select__choose-auto-top-icon">
+                  <img src="./img/icon/bmw-logo.svg" alt="" />
+                </div>
+                <button type="button" class="btn-arrows" data-modal-el="choice-car-main">
+                  <div class="btn-arrows__title select__choose-auto-top-name">BMW Z4 Roadster (E89) sD...</div>
+                  <div class="btn-arrows__img"></div>
+                </button>
+              </div>
+              <div class="select__choose-auto-bottom">
+                <button type="button" class="btn-arrows">
+                  <div class="btn-arrows__title">Добавить в гараж</div>
+                  <div class="btn-arrows__img"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="category-details">
+          <div class="container">
+            <div class="title">Двигатель</div>
+            <div class="category-details__container">
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/engine-parts.svg" alt="" />
+                <div>Детали двигателя</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/engine-gaskets.svg" alt="" />
+                <div>Прокладки двигателя</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/exhaust-system.svg" alt="" />
+                <div>Система выпуска</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/chain-belts.svg" alt="" />
+                <div>Ремни, цепи и натяжители</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/fuel-system-engine-management.svg" alt="" />
+                <div>Топливная система и управление двигателем</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/turbines-compressors.svg" alt="" />
+                <div>Турбины и компрессоры</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/filters.svg" alt="" />
+                <div>Фильтры</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/fuel-system-engine-management.svg" alt="" />
+                <div>Топливная система и управление двигателем</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/turbines-compressors.svg" alt="" />
+                <div>Турбины и компрессоры</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/exhaust-system.svg" alt="" />
+                <div>Система выпуска</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/chain-belts.svg" alt="" />
+                <div>Ремни, цепи и натяжители</div>
+              </a>
+              <a href="#" class="category-details__detail">
+                <img src="./img/category/fuel-system-engine-management.svg" alt="" />
+                <div>Топливная система и управление двигателем</div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="category-other">
+          <div class="container">
+            <div class="category-other__container">
+              <div class="title">Другие категории запчастей</div>
+              <div class="category-other__details">
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/brake.svg" alt="" />
+                  <div>Тормозная система</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/filters.svg" alt="" />
+                  <div>Фильтры</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/battery.svg" alt="" />
+                  <div>Запуск и зарядка</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/clutch.svg" alt="" />
+                  <div>Сцепление и маховик</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/wheel-drive.svg" alt="" />
+                  <div>Привод колеса</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/wheels-and-tires.svg" alt="" />
+                  <div>Диски и шины</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/mechanical-box.svg" alt="" />
+                  <div>Механическая коробка</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/depreciation.svg" alt="" />
+                  <div>Амортизация</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/belt-drive.svg" alt="" />
+                  <div>Ременный привод</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/fuel-supply-system.svg" alt="" />
+                  <div>Система подачи топлива</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/body-parts.svg" alt="" />
+                  <div>Кузовные детали</div>
+                </a>
+                <a href="#" class="category-other__details-detail">
+                  <img src="./img/category/elictrics.svg" alt="" />
+                  <div>Электрика</div>
+                </a>
+              </div>
+              <a href="#" class="btn-arrows">
+                <div class="btn-arrows__title">Смотреть все</div>
+                <div class="btn-arrows__img"></div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    @@include('./template/footer.html')
+  </body>
+</html>

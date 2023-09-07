@@ -59,16 +59,6 @@
     }
   }
 
-  .btn-arrows__title {
-    color: $black;
-    font-family: Gilroy, sans-serif;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-    text-transform: inherit;
-  }
-
   &__cards {
     display: flex;
     row-gap: 3rem;
@@ -357,10 +347,6 @@
 @media screen and (max-width: 48em) {
   .catalog {
     padding: 5.3vw 0 24vw 0;
-
-    .btn-arrows__title {
-      font-size: 5.3vw;
-    }
 
     &__container {
       column-gap: 0;
