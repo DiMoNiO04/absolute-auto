@@ -17,6 +17,7 @@
   }
 
   &-other {
+    margin-top: 15rem;
     &__container {
       display: flex;
       flex-direction: column;
@@ -76,7 +77,6 @@
   }
 
   &-details {
-    margin-bottom: 15rem;
     position: relative;
   }
 
@@ -195,6 +195,10 @@
       column-gap: 2.8vw;
     }
 
+    &-other {
+      margin-top: 24vw;
+    }
+
     &-other__details {
       margin-bottom: 6.4vw;
       row-gap: 2.8vw;
@@ -219,10 +223,6 @@
         height: auto;
         width: 100%;
       }
-    }
-
-    &-details {
-      margin-bottom: 24vw;
     }
 
     &-details__detail {
