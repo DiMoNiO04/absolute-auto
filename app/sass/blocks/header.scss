@@ -10,6 +10,13 @@
   &__bottom {
     border-bottom: 0.2rem solid rgba(255, 255, 255, 0.8);
     position: relative;
+  }
+
+  &__top {
+    z-index: 6;
+  }
+
+  &__bottom {
     z-index: 4;
   }
 
@@ -20,7 +27,7 @@
   }
 
   &__top-search {
-    width: 75rem;
+    width: 83rem;
     padding: 2.1rem 4rem;
     border-left: 0.2rem solid rgba(255, 255, 255, 0.8);
     border-right: 0.2rem solid rgba(255, 255, 255, 0.8);
@@ -28,7 +35,6 @@
 
   &__top-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -36,6 +42,7 @@
     display: flex;
     align-items: center;
     column-gap: 2rem;
+    margin-left: 3.8rem;
     li {
       list-style-type: none;
     }
@@ -620,6 +627,10 @@
 
     &__container {
       padding: 4.27vw 0 0 0;
+    }
+
+    &__top-container {
+      justify-content: space-between;
     }
 
     &__top-logo {

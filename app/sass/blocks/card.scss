@@ -8,10 +8,14 @@
     }
   }
 
+  &__pagination {
+    width: 100%;
+  }
+
   &__content {
     padding: 2rem;
     background: $white;
-    max-width: 29.5rem;
+    width: 29.5rem;
     height: 100%;
     border: $border;
     border-color: transparent;
@@ -93,10 +97,10 @@
     }
   }
 
-  &__btn-buy {
+  &__btn-buy,
+  &__btn-add {
     column-gap: 1.2rem;
     justify-content: flex-start;
-    display: none;
     height: 4rem;
     .btn-arrows__title {
       color: $black;
@@ -106,6 +110,35 @@
       line-height: 120%;
       text-transform: inherit;
     }
+  }
+
+  &__bottom-btns {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    &.active {
+      display: flex;
+    }
+
+    button {
+      margin: 0;
+    }
+
+    .card__btn-add {
+      .btn-arrows__title {
+        font-size: 1.6rem;
+      }
+      .btn-arrows__img {
+        width: 3rem;
+      }
+    }
+  }
+
+  &__btn-buy {
+    margin: 0;
+    display: none;
+
     &.active {
       display: flex;
     }
@@ -144,16 +177,18 @@
   }
 
   .input-count {
-    display: none;
     width: fit-content;
     input {
       font-weight: 700;
       border: 0;
       height: 2.3rem;
+      width: 3.4rem;
     }
 
-    &.active {
-      display: inline-flex;
+    .number-minus,
+    .number-plus {
+      width: 3rem;
+      height: 3rem;
     }
   }
 }
@@ -162,7 +197,7 @@
   .card {
     &__content {
       padding: 2.8vw 2.8vw 3.2vw 2.8vw;
-      max-width: 46vw;
+      width: 46vw;
       height: 100%;
     }
 
@@ -206,7 +241,8 @@
       }
     }
 
-    &__btn-buy {
+    &__btn-buy,
+    &__btn-add {
       column-gap: 3.2vw;
       height: 8vw;
 
@@ -236,11 +272,39 @@
       height: 5.3vw;
     }
 
+    &__bottom-btns {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .card__btn-add {
+        .btn-arrows__title {
+          font-size: 3.8vw;
+        }
+        .btn-arrows__img {
+          width: 6vw;
+        }
+      }
+    }
+
     .input-count {
       input {
         font-weight: 700;
         border: 0;
         height: 8vw;
+      }
+
+      .number-minus,
+      .number-plus {
+        width: 8vw;
+        height: 8vw;
+      }
+
+      .number-minus {
+        justify-content: flex-start;
+      }
+
+      .number-plus {
+        justify-content: flex-end;
       }
     }
   }
